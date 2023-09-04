@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.invocation": {
+			"animation_length": 1,
+			"bones": {
+				"invoca": {
+					"position": {
+						"0.5": [0, 0, 0],
+						"0.9167": [0, 0.17, 0],
+						"1.0": [0, -19, 0]
+					},
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.5": [1, 1, 1]
+					}
+				}
+			}
+		}
+	}
+}

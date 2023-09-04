@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "porkyn:foto_rin",
+      "materials": {
+        "default": "glow"
+      },
+      "textures": {
+        "default": "textures/blocos/foto_rin"
+      },
+      "geometry": {
+        "default": "geometry.foto_rin"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 0
+      },
+      "render_controllers": [ "controller.render.glow" ]
+    }
+  }
+}

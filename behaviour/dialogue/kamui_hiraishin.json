@@ -1,0 +1,338 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "hiraishin",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fHiraishin"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": ""
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 1"
+								}
+							]
+						},
+						"commands": [
+							"tag @s remove corvos",
+							"tag @s add hiraishin1",
+							"tag @s remove kamui",
+							"tag @s remove areia_subs",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:hiraishin_1]",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 2"
+								}
+							]
+						},
+						"commands": [
+							"tag @s remove corvos",
+							"tag @s add hiraishin1",
+							"tag @s remove kamui",
+							"tag @s remove areia_subs",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:hiraishin_2]",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 3"
+								}
+							]
+						},
+						"commands": [
+							"tag @s remove corvos",
+							"tag @s add hiraishin1",
+							"tag @s remove kamui",
+							"tag @s remove areia_subs",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:hiraishin_3]",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 4"
+								}
+							]
+						},
+						"commands": [
+							"tag @s remove corvos",
+							"tag @s add hiraishin1",
+							"tag @s remove kamui",
+							"tag @s remove areia_subs",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:hiraishin_4]",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 5"
+								}
+							]
+						},
+						"commands": [
+							"tag @s remove corvos",
+							"tag @s add hiraishin1",
+							"tag @s remove kamui",
+							"tag @s remove areia_subs",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:hiraishin_5]",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 6"
+								}
+							]
+						},
+						"commands": [
+							"tag @s remove corvos",
+							"tag @s add hiraishin1",
+							"tag @s remove kamui",
+							"tag @s remove areia_subs",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:hiraishin_5]",
+							"playsound hiraishin @a[x=~,y=~,z=~,r=5]"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "rinnegan_s",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fAmenotejiraka"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": ""
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 1"
+								}
+							]
+						},
+						"commands": [
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:rinnegan_1]",
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 2"
+								}
+							]
+						},
+						"commands": [
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:rinnegan_2]",
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 3"
+								}
+							]
+						},
+						"commands": [
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:rinnegan_3]",
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 4"
+								}
+							]
+						},
+						"commands": [
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:rinnegan_4]",
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 5"
+								}
+							]
+						},
+						"commands": [
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:rinnegan_5]",
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fMarca 6"
+								}
+							]
+						},
+						"commands": [
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]",
+							"/tp @p @e[c=1,type=porkyn:rinnegan_5]",
+							"playsound teleport_rinnegan @a[x=~,y=~,z=~,r=5]"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "kamui",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fKamui"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": ""
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fKamui"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[scores={chakra=..49}] ~~~ playsound note.bass ",
+							"execute as @p[scores={chakra=50..}] ~~~ execute as @p[scores={chakra=200..}] ~~~ tag @s remove loadkamui2",
+							"execute as @p[scores={chakra=50..}] ~~~ playanimation @s animation.kamui porkyn 100",
+							"execute as @p[scores={chakra=50..}] ~~~ playsound kamui @a[r=5]",
+							"execute as @p[scores={chakra=50..}] ~~~ tag @s add loadkamui",
+							"execute as @p[scores={chakra=50..}] ~~~ scoreboard players remove @s chakra 50"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fLocal 1"
+								}
+							]
+						},
+						"commands": [
+							"execute as @s[tag=sair] ~~~ tag @s remove sair",
+							"/tp @p @e[c=1,type=porkyn:kamui_1]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fLocal 2"
+								}
+							]
+						},
+						"commands": [
+							"execute as @s[tag=sair] ~~~ tag @s remove sair",
+							"/tp @p @e[c=1,type=porkyn:kamui_2]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fLocal 3"
+								}
+							]
+						},
+						"commands": [
+							"execute as @s[tag=sair] ~~~ tag @s remove sair",
+							"/tp @p @e[c=1,type=porkyn:kamui_3]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fLocal 4"
+								}
+							]
+						},
+						"commands": [
+							"execute as @s[tag=sair] ~~~ tag @s remove sair",
+							"/tp @p @e[c=1,type=porkyn:kamui_4]"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fLocal 5"
+								}
+							]
+						},
+						"commands": [
+							"execute as @s[tag=sair] ~~~ tag @s remove sair",
+							"/tp @p @e[c=1,type=porkyn:kamui_5]"
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,143 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "vila1",
+				"npc_name": { "rawtext": [ {"text":"§l§fAldeia"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+
+							"/dialogue open @s @p vila5"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fFolha"} ] },
+						"commands": [
+							"tag @p add folha",
+							"/dialogue open @s @p cla1"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p vila2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "vila2",
+				"npc_name": { "rawtext": [ {"text":"§l§fAldeia"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p vila1"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fAreia"} ] },
+						"commands": [
+							"/dialogue open @s @p cla1",
+							"tag @p add areia"
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p vila3"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "vila3",
+				"npc_name": { "rawtext": [ {"text":"§l§fAldeia"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p vila2"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fPedra"} ] },
+						"commands": [
+							"/dialogue open @s @p cla1",
+							"tag @p add pedra"
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p vila4"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "vila4",
+				"npc_name": { "rawtext": [ {"text":"§l§fAldeia"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p vila3"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fNévoa"} ] },
+						"commands": [
+							"/dialogue open @s @p cla1",
+							"tag @p add nevoa"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p vila5"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "vila5",
+				"npc_name": { "rawtext": [ {"text":"§l§fAldeia"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p vila4"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fNuvem"} ] },
+						"commands": [
+							"/dialogue open @s @p cla1",
+							"tag @p add nuvem"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p vila1"
+						]
+							}
+						]
+					}
+				]
+			}
+		}
+		

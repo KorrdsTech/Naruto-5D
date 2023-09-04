@@ -1,0 +1,52 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:rinneganmenu",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": false,
+			"minecraft:foil": true,
+			"minecraft:icon": {
+				"texture": "rinnegan_s"
+		},
+		"minecraft:render_offsets": {
+			"main_hand": {
+				"third_person": {
+				  "position": [0.26, 1.0, -0.55],
+					"scale": [0, 0, 0]
+				},
+				"first_person": {
+					"position": [7.08, -1.6, -12.8],
+					"scale": [0, 0, 0]
+				}
+			 }
+	  },
+			"minecraft:display_name": {
+				"value": "§lAmenotejiraka"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "porkyn:open"
+				}
+			},
+			"minecraft:should_despawn": true,
+			"minecraft:allow_off_hand": false
+		},
+		"events": {
+			"porkyn:open": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon porkyn:rinneganmenu ~~~ porkyn:open"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

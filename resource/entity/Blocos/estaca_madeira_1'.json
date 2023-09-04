@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "porkyn:estaca_madeira_1",
+      "materials": {
+        "default": "glow"
+      },
+      "textures": {
+        "default": "textures/jutsus/estaca_madeira"
+      },
+      "geometry": {
+        "default": "geometry.estaca_madeira"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 0
+      },
+      "render_controllers": [ "controller.render.glow" ]
+    }
+  }
+}

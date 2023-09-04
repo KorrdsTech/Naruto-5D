@@ -1,0 +1,1387 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "idade1",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fIdade Inicial"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p idade3",
+							"/playanimation @p[r=1] animation.idade1 porkyn 0"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fCriança"
+								}
+							]
+						},
+						"commands": [
+							"tag @p add idade1",
+							"tag @p add idade",
+							"/dialogue open @s @p pele3"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p idade2",
+							"/playanimation @p[r=1] animation.idade2 porkyn 100000"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "idade2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fIdade Inicial"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p idade1",
+							"/playanimation @p[r=1] animation.idade1 porkyn 100000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fJovem"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p pele3",
+							"tag @p add idade2",
+							"tag @p add idade"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p idade3",
+							"/playanimation @p[r=1] animation.idade2 porkyn 0"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "idade3",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fIdade Inicial"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p idade2",
+							"/playanimation @p[r=1] animation.idade2 porkyn 100000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fAdulto"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p pele3",
+							"tag @p add idade"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p idade1",
+							"/playanimation @p[r=1] animation.idade1 porkyn 100000"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "pele1",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor da sua Pele"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1] ~~~ event entity @s branco_amarelo",
+							"/dialogue open @s @p pele4"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p olho1",
+							"tag @p add escuro",
+							"tag @p add pele"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1] ~~~ event entity @s moreno_amarelo",
+							"/dialogue open @s @p pele2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "pele2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor da sua Pele"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1] ~~~ event entity @s negro_amarelo",
+							"/dialogue open @s @p pele1"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p olho1",
+							"tag @p add moreno",
+							"tag @p add pele"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1] ~~~ event entity @s claro_amarelo",
+							"/dialogue open @s @p pele3"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "pele3",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor da sua Pele"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1] ~~~ event entity @s moreno_amarelo",
+							"/dialogue open @s @p pele2"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p olho1",
+							"tag @p add claro",
+							"tag @p add pele"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1] ~~~ event entity @s branco_amarelo",
+							"/dialogue open @s @p pele4"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "pele4",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor da sua Pele"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1] ~~~ event entity @s claro_amarelo",
+							"/dialogue open @s @p pele3"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p olho1",
+							"tag @p add branco",
+							"tag @p add pele"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1] ~~~ event entity @s negro_amarelo",
+							"/dialogue open @s @p pele1"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "olho1",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor do seu Olho"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_branco",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_branco",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_branco",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_branco",
+							"/dialogue open @s @p olho6"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"tag @p add olho",
+							"/dialogue open @s @p[tag=!cla] cabelo1",
+							"tag @p add olho_amarelo",
+							"replaceitem entity @p[tag=!cla,r=1] slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_vermelho",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_vermelho",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_vermelho",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_vermelho",
+							"/dialogue open @s @p olho2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "olho2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor do seu Olho"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_amarelo",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_amarelo",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_amarelo",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_amarelo",
+							"/dialogue open @s @p olho1"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"tag @p add olho",
+							"/dialogue open @s @p[tag=!cla] cabelo1",
+							"tag @p add olho_vermelho",
+							"replaceitem entity @p[tag=!cla,r=1] slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_verde",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_verde",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_verde",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_verde",
+							"/dialogue open @s @p olho3"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "olho3",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor do seu Olho"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_vermelho",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_vermelho",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_vermelho",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_vermelho",
+							"/dialogue open @s @p olho2"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"tag @p add olho",
+							"/dialogue open @s @p[tag=!cla] cabelo1",
+							"tag @p add olho_verde",
+							"replaceitem entity @p[tag=!cla,r=1] slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_azul",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_azul",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_azul",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_azul",
+							"/dialogue open @s @p olho4"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "olho4",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor do seu Olho"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_verde",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_verde",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_verde",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_verde",
+							"/dialogue open @s @p olho3"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"tag @p add olho",
+							"/dialogue open @s @p[tag=!cla] cabelo1",
+							"tag @p add olho_azul",
+							"replaceitem entity @p[tag=!cla,r=1] slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_preto",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_preto",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_preto",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_preto",
+							"/dialogue open @s @p olho5"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "olho5",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor do seu Olho"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_azul",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_azul",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_azul",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_azul",
+							"/dialogue open @s @p olho4"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"tag @p add olho",
+							"/dialogue open @s @p[tag=!cla] cabelo1",
+							"tag @p add olho_preto",
+							"replaceitem entity @p[tag=!cla,r=1] slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_branco",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_branco",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_branco",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_branco",
+							"/dialogue open @s @p olho6"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "olho6",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fCor do seu Olho"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_preto",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_preto",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_preto",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_preto",
+							"/dialogue open @s @p olho5"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"tag @p add olho",
+							"/dialogue open @s @p[tag=!cla] cabelo1",
+							"tag @p add olho_branco",
+							"replaceitem entity @p[tag=!cla,r=1] slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=branco] ~~~ event entity @s branco_amarelo",
+							"/execute as @p[r=1,tag=escuro] ~~~ event entity @s negro_amarelo",
+							"/execute as @p[r=1,tag=claro] ~~~ event entity @s claro_amarelo",
+							"/execute as @p[r=1,tag=moreno] ~~~ event entity @s moreno_amarelo",
+							"/dialogue open @s @p olho1"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cla1",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fUchiha"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "    §l§4Dano:§f+50%\n   §l§aVida:§f-25%\n   §l§bChakra:§f-25%"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p[tag=!completo] cla6",
+							"/dialogue open @s @p[tag=completo] cla8",
+							"replaceitem entity @p slot.armor.head 1 porkyn:kazekage_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/tag @p add uchiha",
+							"/tag @p add cla",
+							"/tag @p add fogo",
+							"/tag @p add elemento",
+							"replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"replaceitem entity @p slot.armor.head 1 porkyn:sharingan_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p roupa_inicial",
+							"/scoreboard players add @p chakra 2000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla2",
+							"replaceitem entity @p slot.armor.chest 1 porkyn:uzumaki_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cla2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fUzumaki"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "    §l§4Dano:§f-25%\n   §l§aVida:§f+100%\n   §l§bChakra:§f+250%"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla1",
+							"replaceitem entity @p slot.armor.head 1 porkyn:uchiha_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p ele_fogo",
+							"/tag @p add uzumaki",
+							"replaceitem entity @p slot.armor.chest 1 porkyn:correntes_adamantinas_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/tag @p add cla",
+							"/scoreboard players add @p chakra 2000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla3",
+							"replaceitem entity @p slot.armor.head 1 porkyn:hyuuga_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cla3",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fHyuuga"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "    §l§4Dano:§f+25%\n   §l§aVida:§f+25%\n   §l§bChakra:§f+50%"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla2",
+							"replaceitem entity @p slot.armor.chest 1 porkyn:uzumaki_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p ele_fogo",
+							"replaceitem entity @p slot.armor.head 1 porkyn:byakugan 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/tag @p add hyuuga",
+							"/tag @p add cla",
+							"/scoreboard players add @p chakra 2000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla4",
+							"replaceitem entity @p slot.armor.head 1 porkyn:senju 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cla4",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fSenju"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "    §l§4Dano:§f-50%\n   §l§aVida:§f+100%\n   §l§bChakra:§f+300%"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla3",
+							"replaceitem entity @p slot.armor.head 1 porkyn:hyuuga_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p ele_fogo",
+							"replaceitem entity @p slot.armor.head 1 porkyn:senju_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/tag @p add senju",
+							"/tag @p add cla",
+							"/scoreboard players add @p chakra 2000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla5",
+							"replaceitem entity @p slot.armor.head 1 porkyn:chinoike_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cla5",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fChinoike"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "    §l§4Dano:§f+200%\n   §l§aVida:§f-50%\n   §l§bChakra:§f+50%"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla4",
+							"replaceitem entity @p slot.armor.head 1 porkyn:senju 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p ele_fogo",
+							"replaceitem entity @p slot.armor.head 1 porkyn:ketsuryugan_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/tag @p add chinoike",
+							"/tag @p add cla",
+							"/scoreboard players add @p chakra 2000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla6",
+							"replaceitem entity @p slot.armor.head 1 porkyn:kazekage_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cla6",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fKazekage"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "    §l§4Dano:§f-25%\n   §l§aVida:§f+75%\n   §l§bChakra:§f+100%"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla5",
+							"replaceitem entity @p slot.armor.head 1 porkyn:chinoike_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p kazekage",
+							"replaceitem entity @p slot.armor.chest 1 porkyn:cabaca_areia_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/tag @p add kazekage",
+							"/tag @p add cla",
+							"/tag @p add areia",
+							"/tag @p add vento",
+							"/tag @p add terra",
+							"/dialogue open @s @p roupa_inicial1",
+							"/scoreboard players add @p chakra 2000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p[tag=!completo] cla1",
+							"/dialogue open @s @p[tag=completo] cla7",
+							"replaceitem entity @p slot.armor.head 1 porkyn:uchiha_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cla7",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fUchiha+Hyuuga"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "\n   §l§aForça: §f+27\n   §l§4Vida: §f+175\n   §l§bChakra:§f+1000"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla6",
+							"replaceitem entity @p slot.armor.head 1 porkyn:cbc_areia_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p ele_fogo",
+							"/tag @p add namikaze",
+							"/tag @p add cla"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla8",
+							"/dialogue open @s @p cla8",
+							"replaceitem entity @p slot.armor.head 1 porkyn:msb_obito 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cla8",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fHyuuga+Senju"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "       §l§fSenju+Hyuuga\n   §l§aForça: §f+27\n   §l§4Vida: §f+175\n   §l§bChakra:§f+1000"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla7",
+							"replaceitem entity @p slot.armor.head 1 porkyn:kunai_m 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSelecionar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p ele_fogo",
+							"/tag @p add uchihahyuuga",
+							"/tag @p add uchiha",
+							"/tag @p add cla",
+							"/tag @p add fogo",
+							"/tag @p add elemento"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/function limpar_mds",
+							"/dialogue open @s @p cla9",
+							"replaceitem entity @p slot.armor.head 1 porkyn:hashirama_jougan 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "kazekage",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "Escolha sua Kekkei Genkai!"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": ""
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "Areia"
+								}
+							]
+						},
+						"commands": [
+							"/tag @p add areia",
+							"/tag @p add terra",
+							"/tag @p add vento",
+							"/tag @p add elemento"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "Ferro"
+								}
+							]
+						},
+						"commands": [
+							"/tag @p add areia_ferro",
+							"/tag @p add terra",
+							"/tag @p add vento",
+							"/tag @p add elemento"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "Em breve.."
+								}
+							]
+						},
+						"commands": []
+					}
+				]
+			}
+		]
+	}
+}

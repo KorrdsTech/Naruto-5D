@@ -1,0 +1,69 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "isshiki1",
+				"npc_name": { "rawtext": [ {"text":"§l§fRenascer como Isshiki?"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+
+							"/dialogue open @s @p isshiki2"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fSim"} ] },
+						"commands": [
+
+							"event entity @p[r=5] isshiki_base",
+							"replaceitem entity @p slot.armor.legs 1 porkyn:roupa_isshiki",
+							"replaceitem entity @p slot.armor.feet 1 air",
+							"tag @p add isshiki",
+							"give @p porkyn:cubes_isshiki_jutsu",
+							"clear @p porkyn:isshikimenu",
+							"clear @p porkyn:karma_isshiki"
+						
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p isshiki2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "isshiki2",
+				"npc_name": { "rawtext": [ {"text":"§l§fRenascer como Isshiki?"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p isshiki1"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fNão"} ] },
+						"commands": [
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p isshiki1"
+						]
+							}
+						]
+					}
+				]
+			}
+		}
+		

@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bandana": {
+			"animation_length": 0.70833,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4167": [-130, 15, -17.5],
+						"0.5833": [-152.5, 0, -17.5],
+						"0.7083": [0, 0, "0["]
+					},
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

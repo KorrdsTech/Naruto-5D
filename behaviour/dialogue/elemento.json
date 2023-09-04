@@ -1,0 +1,177 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "ele_fogo",
+				"npc_name": { "rawtext": [ {"text":"§l§fElemento do Chakra"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_agua"
+
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fFogo"} ] },
+						"commands": [
+							"/tag @p add fogo",
+							"/tag @p add elemento",
+							"/replaceitem entity @p[r=1,tag=folha] slot.armor.legs 1 porkyn:roupa_folha 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=areia] slot.armor.legs 1 porkyn:roupa_areia 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nuvem] slot.armor.legs 1 porkyn:roupa_nuvem 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nevoa] slot.armor.legs 1 porkyn:roupa_nevoa 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=pedra] slot.armor.legs 1 porkyn:roupa_pedra 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p roupa_inicial1"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_vento"
+
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "ele_vento",
+				"npc_name": { "rawtext": [ {"text":"§l§fElemento do Chakra"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_fogo"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fVento"} ] },
+						"commands": [
+							"/tag @p add vento",
+							"/tag @p add elemento",
+
+							"/replaceitem entity @p[r=1,tag=folha] slot.armor.legs 1 porkyn:roupa_folha 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=areia] slot.armor.legs 1 porkyn:roupa_areia 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nuvem] slot.armor.legs 1 porkyn:roupa_nuvem 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nevoa] slot.armor.legs 1 porkyn:roupa_nevoa 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=pedra] slot.armor.legs 1 porkyn:roupa_pedra 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p roupa_inicial1"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_raio"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "ele_raio",
+				"npc_name": { "rawtext": [ {"text":"§l§fElemento do Chakra"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_vento"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fRaio"} ] },
+						"commands": [
+							"/tag @p add raio",
+							"/tag @p add elemento",
+							"/replaceitem entity @p[r=1,tag=folha] slot.armor.legs 1 porkyn:roupa_folha 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=areia] slot.armor.legs 1 porkyn:roupa_areia 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nuvem] slot.armor.legs 1 porkyn:roupa_nuvem 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nevoa] slot.armor.legs 1 porkyn:roupa_nevoa 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=pedra] slot.armor.legs 1 porkyn:roupa_pedra 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p roupa_inicial1"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_terra"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "ele_terra",
+				"npc_name": { "rawtext": [ {"text":"§l§fElemento do Chakra"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_raio"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fTerra"} ] },
+						"commands": [
+							"/tag @p add terra",
+							"/tag @p add elemento",
+
+							"/replaceitem entity @p[r=1,tag=folha] slot.armor.legs 1 porkyn:roupa_folha 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=areia] slot.armor.legs 1 porkyn:roupa_areia 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nuvem] slot.armor.legs 1 porkyn:roupa_nuvem 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nevoa] slot.armor.legs 1 porkyn:roupa_nevoa 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=pedra] slot.armor.legs 1 porkyn:roupa_pedra 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p roupa_inicial1"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_agua"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "ele_agua",
+				"npc_name": { "rawtext": [ {"text":"§l§fElemento do Chakra"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_terra"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fÁgua"} ] },
+						"commands": [
+							"/tag @p add agua",
+							"/tag @p add elemento",
+
+							"/replaceitem entity @p[r=1,tag=folha] slot.armor.legs 1 porkyn:roupa_folha 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=areia] slot.armor.legs 1 porkyn:roupa_areia 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nuvem] slot.armor.legs 1 porkyn:roupa_nuvem 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nevoa] slot.armor.legs 1 porkyn:roupa_nevoa 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=pedra] slot.armor.legs 1 porkyn:roupa_pedra 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p roupa_inicial1"
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p ele_fogo"
+						]
+							}
+						]
+					}
+				]
+			}
+		}
+		

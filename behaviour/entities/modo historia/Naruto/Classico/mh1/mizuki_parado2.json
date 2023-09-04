@@ -1,0 +1,136 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "porkyn:mizuki_parado2",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              }
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 1,
+        "time_down_event": {
+          "event": "on:efeitos"
+        }
+      },
+      "minecraft:type_family": {
+        "family": [
+          "mushroomcow"
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:push_through": {
+        "value": 1.0
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 1.3
+      },
+      "minecraft:nameable": {},
+      "minecraft:health": {
+        "value": 1000000,
+        "max": 10000000
+      },
+      "minecraft:movement": {
+        "value": 0.0
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.panic": {
+        "priority": 0,
+        "speed_multiplier": 0.0
+      },
+      "minecraft:behavior.mount_pathing": {
+        "priority": 0,
+        "speed_multiplier": 0.0,
+        "target_dist": 0.0,
+        "track_target": true
+      },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "become_cow": {
+        "remove": {},
+        "add": {
+          "component_groups": [
+            "minecraft:mooshroom_become_cow"
+          ]
+        }
+      },
+      "minecraft:entity_transformed": {
+        "remove": {},
+        "add": {
+          "component_groups": [
+            "minecraft:cow_adult"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 100,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "minecraft:cow_adult"
+              ]
+            }
+          }
+        ]
+      },
+      "on:efeitos": {
+        "run_command": {
+          "command": [
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ fill ~~14~-15~40~24~20 air",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ kill @e[type=item,r=200]",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ kill @e[type=porkyn:ninja_folha_agressivo,r=200]",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ kill @e[type=porkyn:death_ninja_folha,r=200]",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ summon porkyn:iruka_1 ~30~~",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Iruka-Sensei>§fNaruto!!\"}]}",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ structure load floresta ~-2~-1~-27",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ tp @e[r=8] ~-2~1~-27",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ fill ~~1~~~1~ air",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=!fala2] ~~~ tag @s add fala2",
+            "execute as @p[r=8,tag=pergaminho,tag=!mh1_naruto] ~~~ execute as @e[r=5,type=porkyn:mizuki_parado2,tag=fala2] ~~~ tp @p ~25~3~25",
+            "execute as @e[r=5,type=porkyn:mizuki_parado2,tag=fala2] ~~~ kill @s"
+          ]
+        }
+      }
+    }
+  }
+}

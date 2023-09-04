@@ -1,0 +1,170 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "roupa_inicial1",
+				"npc_name": { "rawtext": [ {"text":"§l§fRoupa Inicial"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial6",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_obito 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fSelecionar"} ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial2",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid2 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "roupa_inicial2",
+				"npc_name": { "rawtext": [ {"text":"§l§fRoupa Inicial"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial1",
+							"/replaceitem entity @p[r=1,tag=folha] slot.armor.legs 1 porkyn:roupa_folha 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=areia] slot.armor.legs 1 porkyn:roupa_areia 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nuvem] slot.armor.legs 1 porkyn:roupa_nuvem 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=nevoa] slot.armor.legs 1 porkyn:roupa_nevoa 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/replaceitem entity @p[r=1,tag=pedra] slot.armor.legs 1 porkyn:roupa_pedra 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fSelecionar"} ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial3",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid3 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "roupa_inicial3",
+				"npc_name": { "rawtext": [ {"text":"§l§fRoupa Inicial"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial2",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid2 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fSelecionar"} ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial4",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid4 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "roupa_inicial4",
+				"npc_name": { "rawtext": [ {"text":"§l§fRoupa Inicial"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial3",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid3 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fSelecionar"} ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial5",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid5 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "roupa_inicial5",
+				"npc_name": { "rawtext": [ {"text":"§l§fRoupa Inicial"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial4",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid4 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fSelecionar"} ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial6",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_obito 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "roupa_inicial6",
+				"npc_name": { "rawtext": [ {"text":"§l§fRoupa Inicial"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial5",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid5 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fSelecionar"} ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p roupa_inicial1",
+							"/replaceitem entity @p slot.armor.legs 1 porkyn:roupa_sasuke_kid1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+						]
+							}
+						]
+					}
+				]
+			}
+		}
+		

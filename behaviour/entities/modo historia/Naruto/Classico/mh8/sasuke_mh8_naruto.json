@@ -1,0 +1,229 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "porkyn:sasuke_mh8_naruto",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"mizuki"
+				]
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:boss": {
+				"name": "§lSasuke Uchiha",
+				"hud_range": 25
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": 1,
+				"time_down_event": {
+					"event": "on:efeitos"
+				}
+			},
+			"minecraft:on_hurt": {
+				"event": "on:hurt",
+				"target": "self"
+			},
+			"minecraft:on_hurt_by_player": {
+				"event": "on:hurt_by_player",
+				"target": "self"
+			},
+			"minecraft:on_ignite": {
+				"event": "on:ignite",
+				"target": "self"
+			},
+			"minecraft:on_target_acquired": {
+				"event": "on:target_acquired",
+				"target": "self"
+			},
+			"minecraft:on_target_escape": {
+				"event": "on:target_escape",
+				"target": "self"
+			},
+			"minecraft:on_wake_with_owner": {
+				"event": "on:wake_with_owner",
+				"target": "self"
+			},
+			"minecraft:attack": {
+				"damage": 250
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 1,
+				"speed_multiplier": 1.5,
+				"track_target": false
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:collision_box": {
+				"width": 0.9,
+				"height": 1.8
+			},
+			"minecraft:nameable": {},
+			"minecraft:health": {
+				"value": 23100,
+				"max": 23100
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"must_see": true,
+				"reselect_targets": true,
+				"within_radius": 25.0,
+				"must_see_forget_duration": 17.0,
+				"entity_types": {
+					"filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							}
+						]
+					},
+					"max_dist": 35
+				}
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 0.8
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 9
+			},
+			"minecraft:balloonable": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/creepy_skeleton.json"
+			},
+			"minecraft:test_angry": {
+				"minecraft:angry": {
+					"duration": 25,
+					"broadcast_anger": true,
+					"broadcast_range": 20,
+					"calm_event": {
+						"event": "minecraft:on_calm",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:test_calm": {
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				}
+			},
+			"minecraft:on_death": {
+				"event": "on:death",
+				"target": "self"
+			}
+		},
+		"events": {
+			"minecraft:become_angry": {
+				"remove": {
+					"component_groups": [
+						"minecraft:test_calm"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:test_angry"
+					]
+				}
+			},
+			"on:death": {
+				"run_command": {
+					"command": [
+						"execute as @p[r=10] ~~~ title @p title §eMissão Concluida!",
+						"execute as @p[r=10] ~~~ title @p subtitle O Fim Das Lágrimas",
+						"scoreboard players add @a[r=2] tp 400",
+						"execute as @p[r=10] ~~~ tag @s add mh8_naruto"
+					]
+				}
+			},
+			"on:hurt": {
+				"run_command": {
+					"command": [
+						"scoreboard players add @s pdn 1",
+						"scoreboard players add @p[r=5] tp 1",
+						"scoreboard players add @p[r=5] xp 1",
+						"scoreboard players add @p[r=5] money 1"
+					]
+				}
+			},
+			"on:hurt_by_player": {
+				"run_command": {
+					"command": [
+						"scoreboard players add @s pdn 1",
+						"scoreboard players add @p[r=5] tp 1",
+						"scoreboard players add @p[r=5] xp 1",
+						"scoreboard players add @p[r=5] money 1"
+					]
+				}
+			},
+			"on:efeitos": {
+				"run_command": {
+					"command": [
+						"execute as @e[type=porkyn:sasuke_mh8_naruto,r=1] ~~~ scoreboard players add @s cntr 1",
+						"execute as @s[scores={cntr=10}] ~~~ function bola_fogo_sasuke",
+						"execute as @s[scores={cntr=30}] ~~~ function bola_fogo_sasuke",
+						"execute as @s[scores={cntr=25}] ~~~ playsound sharingan @a[r=12]",
+						"effect @s[scores={cntr=25}] speed 50 4 true",
+						"execute as @s[scores={cntr=40}] ~~~ function bola_fogo_sasuke",
+						"execute as @s[scores={cntr=1}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Sasuke>§f Apenas cale a boca uma vez! O que diabos você sabe sobre isso?! Não é como se você tivesse uma família em primeiro lugar! Você estava sozinho desde o começo, o que faz você pensar que sabe alguma coisa sobre isso?! Hã?! Eu estou sofrendo agora porque eu tinha esses laços, como você poderia entender como é perder tudo isso!\"}]}",
+						"execute as @s[scores={cntr=20}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Sasuke>§f Eu sei que nós quatro trabalhamos juntos. E por um tempo, eu pensei que poderia escolher esse caminho. Mas no final, eu decidi me vingar. Esse sempre foi o meu propósito de viver\"}]}",
+						"execute as @s[scores={cntr=35}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Sasuke>§f É por termos laços, que sofremos…\"}]}",
+						"scoreboard players add @p[r=5] money 1",
+						"execute as @e[scores={cntr=50}] ~~~ scoreboard players set @s cntr 0"
+					]
+				}
+			}
+		}
+	}
+}

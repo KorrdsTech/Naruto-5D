@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "porkyn:pergaminho",
+      "materials": {
+        "default": "glow"
+      },
+      "textures": {
+        "default": "textures/blocks/pergaminho"
+      },
+      "geometry": {
+        "default": "geometry.pergaminho"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 0
+      },
+      "render_controllers": [ "controller.render.glow" ]
+    }
+  }
+}

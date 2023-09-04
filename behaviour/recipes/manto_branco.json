@@ -1,0 +1,54 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:manto_branco"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A C",
+      "DEF",
+      "GHI"
+    ],
+    "key": {
+      "A": {
+        "item": "wool",
+        "data": 0
+      },
+      "C": {
+        "item": "wool",
+        "data": 0
+      },
+      "D": {
+        "item": "wool",
+        "data": 0
+      },
+      "E": {
+        "item": "wool",
+        "data": 0
+      },
+      "F": {
+        "item": "wool",
+        "data": 0
+      },
+      "G": {
+        "item": "wool",
+        "data": 0
+      },
+      "H": {
+        "item": "wool",
+        "data": 0
+      },
+      "I": {
+        "item": "wool",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "porkyn:manto_branco",
+      "count": 1,
+      "data": 0
+    }
+  }
+}

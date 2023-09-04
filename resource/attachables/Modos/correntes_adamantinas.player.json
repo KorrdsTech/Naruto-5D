@@ -1,0 +1,34 @@
+
+{
+	"format_version": "1.10.0",
+	 "minecraft:attachable": {
+	   "description": {
+		 "identifier": "porkyn:correntes_adamantinas_1",
+		 "item": { "porkyn:correntes_adamantinas_1": "query.owner_identifier == 'minecraft:player'" },
+		 "materials": {
+		   "default": "charged",
+		   "enchanted": "armor_enchanted"
+		 },
+		 "textures": {
+		   "default": "textures/modos/correntes_adamantinas",
+		   "enchanted": "textures/misc/enchanted_item_glint"
+		 },
+		 "geometry": {
+		   "default": "geometry.correntes_adamantinas1"
+		 },
+		 "animations": {
+		   "default_controller": "controller.animation.correntes_adamantinas",
+		   "default": "animation.ativar_correntes"
+		 },
+		 "scripts": {
+		   "parent_setup": "variable.chest_layer_visible = 0.0;",
+			 "animate": [
+			 "default",
+				"default_controller"
+		   ]
+		 },
+		 "render_controllers": [ "controller.render.armor" ]
+	   }
+	 }
+   }
+   

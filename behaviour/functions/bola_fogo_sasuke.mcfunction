@@ -1,0 +1,299 @@
+playsound bola_fogo @a[x=~,y=~,z=~,r=12]
+
+execute as @s ~~~ fill ^ ^ ^9 ^ ^1 ^12 fire
+
+execute as @s ^^^10 execute as @e[r=10] ~~~ effect @e[r=5] instant_damage 1 0 true
+execute as @s ^^2^7 execute as @e[r=10] ~~~ effect @e[r=5] instant_damage 1 0 true
+execute as @s ^^^4 execute as @e[r=10] ~~~ effect @e[r=5] instant_damage 1 0 true
+execute as @s ^^2^1 execute as @e[r=10] ~~~ effect @e[r=5] instant_damage 1 0 true
+
+effect @s instant_damage 0 0 true
+
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^1
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^1.2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^1.4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^1.6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^1.8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^3.2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^3.4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^3.6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^3.8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^3
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^3.2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^3.4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^3.6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^3.8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^5
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^5.2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^5.4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^5.6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^5.8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^6.2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^6.4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^6.6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^6.8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^7
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^7.2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^7.4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^7.6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^7.8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^ ^1 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1.5 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^2 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^.5 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^ ^12
+
+
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-0.5 ^1 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^1 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^11
+execute as @s ~~ particle minecraft:mobflame_single ^1 ^1 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^-1 ^1 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^1.5 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^2 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^9
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^9.4
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^.5 ^.5 ^12
+
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^9.2
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^9.6
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^9.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^10
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^10.2
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^10.4
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^10.6
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^10.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^11
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^11.2
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^11.4
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^11.6
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^11.8
+execute as @s ~~~ particle minecraft:mobflame_single ^1 ^ ^12
+
+
+scoreboard players remove @s chakra 40

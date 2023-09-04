@@ -1,0 +1,55 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+	  "description": {
+		"identifier": "porkyn:jutsu_sexy",
+		"category": "equipment"
+	  },
+	  "components": {
+		"minecraft:display_name": {
+		  "value": "§ljutsu Sexy"
+		},
+		"minecraft:render_offsets": {
+			"main_hand": {
+				"third_person": {
+				  "position": [0.26, 1.0, -0.55],
+					"scale": [0, 0, 0]
+				},
+				"first_person": {
+					"position": [3.54, -0.8, -6.4],
+					"scale": [0, 0, 0]
+				}
+			 }
+	  },
+		"minecraft:icon": {
+		  "texture": "jutsu_sexy"
+		},
+		"minecraft:max_stack_size": 1,
+		"minecraft:armor": {},
+		"minecraft:wearable": {
+		  "slot": "slot.armor.head"
+		},
+		"minecraft:cooldown": {
+		"category": "sexy",
+		"duration": 1.0
+		},
+		"minecraft:on_use": {
+		  "on_use": {
+			"event": "command",
+			"target": "self" 
+		  }
+		}
+	  },
+	  "events": {
+		"command": {
+		"run_command": {
+		  "command": [
+			"playsound sexy @a[r=20]"
+			],
+			"target": "self"
+		  }
+		}
+	  }
+	}
+  }
+

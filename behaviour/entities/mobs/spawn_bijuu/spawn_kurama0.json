@@ -1,0 +1,113 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "porkyn:spawn_kurama0",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"porkyn:waitopen": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 0.1,
+					"time_down_event": {
+						"event": "porkyn:opengui"
+					}
+				}
+			},
+			"porkyn:killdelay": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 300,
+					"time_down_event": {
+						"event": "porkyn:kill"
+					}
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": false
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 3
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:movement": {
+				"value": 0
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"time": 300,
+				"time_down_event": {
+					"event": "porkyn:kill"
+				}
+			},
+			"minecraft:friction_modifier": {
+				"value": 300
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			}
+		},
+		"events": {
+			"porkyn:kill": {
+				"run_command": {
+					"command": [
+						"execute as @s[tag=matatabi] ~~~ summon porkyn:matatabi2 ~~15~",
+						"execute as @s[tag=shukaku] ~~~ summon porkyn:shukaku2 ~~15~",
+						"execute as @s[tag=kurama] ~~~ summon porkyn:kurama2 ~~15~",
+						"summon lightning_bolt ~~~",
+						"summon lightning_bolt ~~~",
+						"summon lightning_bolt ~~~",
+						"summon lightning_bolt ~~~",
+						"execute as @s[tag=shukaku] ~~~ fill ~4 ~-1 ~4 ~-4 ~-1 ~-4 sand 0 replace grass",
+						"execute as @s[tag=shukaku] ~~~ fill ~5 ~-1 ~-3 ~-5 ~-1 ~3 sand 0 replace grass",
+						"execute as @s[tag=shukaku] ~~~ fill ~6 ~-1 ~-2 ~-6 ~-1 ~2 sand 0 replace grass",
+						"execute as @s[tag=shukaku] ~~~ fill ~-4 ~-1 ~4 ~4 ~-1 ~-4 sand 0 replace grass",
+						"execute as @s[tag=shukaku] ~~~ fill ~-3 ~-1 ~5 ~3 ~-1 ~-5 sand 0 replace grass",
+						"execute as @s[tag=shukaku] ~~~ fill ~2 ~-1 ~5 ~2 ~-1 ~-5 sand 0 replace grass",
+						"weather thunder",
+						"tp @s ~ ~80 ~",
+						"kill @s"
+					]
+				}
+			},
+			"porkyn:open": {
+				"add": {
+					"component_groups": [
+						"porkyn:waitopen"
+					]
+				}
+			},
+			"porkyn:opengui": {
+				"run_command": {
+					"command": [
+						""
+					]
+				},
+				"add": {
+					"component_groups": [
+						"porkyn:killdelay"
+					]
+				}
+			}
+		}
+	}
+}

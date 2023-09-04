@@ -1,0 +1,47 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:roupa_sasuke_2",
+			"category": "equipment"
+		},
+		"components": {
+           "minecraft:icon": {
+                "texture": "roupa_sasuke"
+            },
+            "minecraft:display_name": {
+                "value": "§lRoupa Sasuke [SHIPPUDEN]"
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.leggings"
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [3.54, -0.8, -6.4],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
+            
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 15,
+				"slot": "armor_legs"
+			},
+
+			"minecraft:damage": 1,
+			"minecraft:armor": {
+				"protection": 3
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.legs"
+			},
+			"minecraft:allow_off_hand": false
+		}
+	}
+}

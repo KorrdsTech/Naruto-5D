@@ -1,0 +1,1537 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.death": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "dead": "!query.is_alive"
+            }
+          ]
+        },
+        "dead": {
+          "on_entry": [
+            "function niveis",
+            "/execute as @s[scores={tp=1..}] ~~~ scoreboard players remove @s tp 1"
+          ],
+          "transitions": [
+            {
+              "default": "query.is_alive"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.walk": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walk": "(1.0)"
+            }
+          ],
+          "on_exit": [
+            "/function set",
+            "/execute as @s[tag=kage_bunshin] ~~~ function kage_bunshin"
+          ]
+        },
+        "walk": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_exit": [
+            "/function set"
+          ]
+        }
+      }
+    },
+    "controller.animation.subs": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "subs": "query.get_equipped_item_name == 'desativar_modo' && query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/execute as @s[tag=!corvos,tag=!kamui,tag=!hiraishin1,tag=!areia_subs] ~~~ function subs",
+            "/execute as @s[tag=corvos] ~~~ function subs_itachi",
+            "/execute as @s[tag=kamui] ~~~ function subs_obito",
+            "/execute as @s[tag=hiraishin1] ~~~ function subs_hiraishin",
+            "/execute as @s[tag=areia_subs] ~~~ function subs_areia"
+          ]
+        },
+        "subs": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'desativar_modo' && query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.hiraishin_tp": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hiraishin_tp": "query.get_equipped_item_name == 'kunai_m' && query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/execute as @p[scores={chakra=..49},tag=hiraishin] ~~~ playsound note.bass ",
+            "/execute as @s[scores={chakra=50..},tag=hiraishin] ~~~ execute as @s[tag=hiraishin] ~~~ playsound hiraishin @a[x=~,y=~,z=~,r=15]",
+            "/execute as @s[scores={chakra=50..},tag=hiraishin] ~~~ execute as @s[tag=hiraishin] ~~~ tp @s @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1]",
+            "/execute as @s[scores={chakra=50..},tag=hiraishin] ~~~ scoreboard players remove @s chakra 50"
+          ]
+        },
+        "hiraishin_tp": {
+          "transitions": [
+            {
+              "default": "!query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.amaterasu_i": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "amaterasu_i": "query.get_equipped_item_name == 'amaterasu_i' && query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/execute as @s[tag=amaterasu_katon] ~~~ function katon_amaterasu"
+          ]
+        },
+        "amaterasu_i": {
+          "transitions": [
+            {
+              "default": "!query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.rinneganmenu": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rinneganmenu": "query.get_equipped_item_name == 'rinneganmenu' && query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/execute as @s[scores={chakra=50..},tag=rinnegantp] ~~~ tag @s add rinneganativo",
+            "/execute as @s[scores={chakra=50..},tag=rinnegantp] ~~~ playsound teleport_rinnegan @a[r=5]",
+            "/execute as @s[scores={chakra=50..},tag=rinnegantp] ~~~ summon porkyn:rinnegantp_1 ~~~",
+            "/execute as @s[scores={chakra=50..},tag=rinnegantp] ~~~ execute as @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1,tag=!rinneganativo,r=50] ~~~ summon porkyn:rinnegantp_2 ~~~",
+            "/execute as @s[scores={chakra=50..},tag=rinnegantp] ~~~ execute as @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1,tag=!rinneganativo,r=50] ~~~ tp @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,r=50,tag=!rinneganativo,c=1] @e[c=1,type=porkyn:rinnegantp_1,r=50]",
+            "/execute as @s[scores={chakra=50..},tag=rinnegantp] ~~~ tp @s @e[type=porkyn:rinnegantp_2,r=50,c=1]",
+            "/execute as @s[scores={chakra=50..},tag=rinnegantp] ~~~ tag @s remove rinneganativo",
+            "/execute as @p[scores={chakra=..49},tag=rinnegantp] ~~~ playsound note.bass ",
+            "/execute as @s[scores={chakra=50..},tag=rinnegantp] ~~~ scoreboard players remove @s chakra 50"
+          ]
+        },
+        "rinneganmenu": {
+          "transitions": [
+            {
+              "default": "!query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.itachi_tp": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "itachi_tp": "query.get_equipped_item_name == 'kunai_m' && query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ tp @e[type=corvo] ~~1000~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ kill @e[type=corvo]",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ playsound corvos @a[x=~,y=~,z=~,r=15]",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ tp @s @e[tag=!corvo,c=1]",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ playsound corvos @a[x=~,y=~,z=~,r=15]",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute as @s[scores={subs=5..}] ~~~ execute as @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute as @s[scores={subs=5..}] ~~~ scoreboard players remove @s subs 5"
+          ]
+        },
+        "itachi_tp": {
+          "transitions": [
+            {
+              "default": "!query.is_jumping && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.water": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "water": "query.is_in_contact_with_water"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        },
+        "water": {
+          "transitions": [
+            {
+              "default": "!query.is_in_contact_with_water"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.samehada": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "samehada": "query.get_equipped_item_name == 'samehada' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function samehada"
+          ]
+        },
+        "samehada": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'samehada' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.samehadab": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "samehadab": "query.get_equipped_item_name == 'samehadab' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function samehadab"
+          ]
+        },
+        "samehadab": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'samehadab' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.foice_tripla": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "foice_tripla": "query.get_equipped_item_name == 'foice_tripla' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function foice_tripla"
+          ]
+        },
+        "foice_tripla": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'foice_tripla' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.gunbai": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "gunbai": "query.get_equipped_item_name == 'gunbai' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        },
+        "gunbai": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'gunbai' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kubikiribocho": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kubikiribocho": "query.get_equipped_item_name == 'kubikiribocho' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function kubikiribocho"
+          ]
+        },
+        "kubikiribocho": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kubikiribocho' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_preto": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_preto": "query.get_equipped_item_name == 'kakashi_preto' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_preto": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_preto' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_branco": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_branco": "query.get_equipped_item_name == 'kakashi_branco' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_branco": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_branco' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_marrom": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_marrom": "query.get_equipped_item_name == 'kakashi_marrom' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_marrom": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_marrom' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_cinza": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_cinza": "query.get_equipped_item_name == 'kakashi_cinza' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_cinza": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_cinza' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_azul_e": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_azul_e": "query.get_equipped_item_name == 'kakashi_azul_e' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_azul_e": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_azul_e' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_azul_c": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_azul_c": "query.get_equipped_item_name == 'kakashi_azul_c' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_azul_c": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_azul_c' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_verde_e": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_verde_e": "query.get_equipped_item_name == 'kakashi_verde_e' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_verde_e": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_verde_e' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_verde_c": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_verde_c": "query.get_equipped_item_name == 'kakashi_verde_c' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_verde_c": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_verde_c' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_vermelho": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_vermelho": "query.get_equipped_item_name == 'kakashi_vermelho' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_vermelho": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_vermelho' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_amarelo": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_amarelo": "query.get_equipped_item_name == 'kakashi_amarelo' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_amarelo": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_amarelo' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_laranja": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_laranja": "query.get_equipped_item_name == 'kakashi_laranja' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_laranja": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_laranja' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_roxo": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_roxo": "query.get_equipped_item_name == 'kakashi_roxo' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_roxo": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_roxo' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_rosa_e": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_rosa_e": "query.get_equipped_item_name == 'kakashi_rosa_e' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_rosa_e": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_rosa_e' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi_rosa_c": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi_rosa_c": "query.get_equipped_item_name == 'kakashi_rosa_c' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi"
+          ]
+        },
+        "kakashi_rosa_c": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi_rosa_c' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_preto": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_preto": "query.get_equipped_item_name == 'kakashi2_preto' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_preto": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_preto' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_branco": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_branco": "query.get_equipped_item_name == 'kakashi2_branco' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_branco": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_branco' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_marrom": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_marrom": "query.get_equipped_item_name == 'kakashi2_marrom' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_marrom": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_marrom' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_cinza": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_cinza": "query.get_equipped_item_name == 'kakashi2_cinza' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_cinza": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_cinza' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_azul_e": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_azul_e": "query.get_equipped_item_name == 'kakashi2_azul_e' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_azul_e": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_azul_e' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_azul_c": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_azul_c": "query.get_equipped_item_name == 'kakashi2_azul_c' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_azul_c": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_azul_c' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_verde_e": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_verde_e": "query.get_equipped_item_name == 'kakashi2_verde_e' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_verde_e": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_verde_e' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_verde_c": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_verde_c": "query.get_equipped_item_name == 'kakashi2_verde_c' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_verde_c": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_verde_c' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_vermelho": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_vermelho": "query.get_equipped_item_name == 'kakashi2_vermelho' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_vermelho": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_vermelho' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_amarelo": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_amarelo": "query.get_equipped_item_name == 'kakashi2_amarelo' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_amarelo": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_amarelo' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_laranja": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_laranja": "query.get_equipped_item_name == 'kakashi2_laranja' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_laranja": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_laranja' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_roxo": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_roxo": "query.get_equipped_item_name == 'kakashi2_roxo' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_roxo": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_roxo' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_rosa_e": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_rosa_e": "query.get_equipped_item_name == 'kakashi2_rosa_e' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_rosa_e": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_rosa_e' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kakashi2_rosa_c": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kakashi2_rosa_c": "query.get_equipped_item_name == 'kakashi2_rosa_c' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function hair_kakashi2"
+          ]
+        },
+        "kakashi2_rosa_c": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kakashi2_rosa_c' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.foice_triplab": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "foice_triplab": "query.get_equipped_item_name == 'foice_triplab' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function foice_triplab"
+          ]
+        },
+        "foice_triplab": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'foice_triplab' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.gunbaib": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "gunbaib": "query.get_equipped_item_name == 'gunbaib' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function gunbaib"
+          ]
+        },
+        "gunbaib": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'gunbaib' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kubikiribochob": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kubikiribochob": "query.get_equipped_item_name == 'kubikiribochob' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/function kubikiribochob"
+          ]
+        },
+        "kubikiribochob": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kubikiribochob' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.rasengan": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rasengan": "query.get_equipped_item_name == 'rasengan' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/playanimation @s animation.rasengan2 a 2"
+          ]
+        },
+        "rasengan": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'rasengan' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.rinnegan_1": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rinnegan_1": "query.get_equipped_item_name == 'rinnegan_1' && query.is_sneaking"
+            }
+          ],
+          "on_exit": []
+        },
+        "rinnegan_1": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'rinnegan_1' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:rinnegan_1]",
+            "/summon porkyn:rinnegan_1"
+          ]
+        }
+      }
+    },
+    "controller.animation.rinnegan_2": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rinnegan_2": "query.get_equipped_item_name == 'rinnegan_2' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:rinnegan_2]",
+            "/summon porkyn:rinnegan_2"
+          ]
+        },
+        "rinnegan_2": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'rinnegan_2' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.rinnegan_3": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rinnegan_3": "query.get_equipped_item_name == 'rinnegan_3' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:rinnegan_3]",
+            "/summon porkyn:rinnegan_3"
+          ]
+        },
+        "rinnegan_3": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'rinnegan_3' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.rinnegan_4": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rinnegan_4": "query.get_equipped_item_name == 'rinnegan_4' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:rinnegan_4]",
+            "/summon porkyn:rinnegan_4"
+          ]
+        },
+        "rinnegan_4": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'rinnegan_4' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.rinnegan_5": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rinnegan_5": "query.get_equipped_item_name == 'rinnegan_5' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:rinnegan_5]",
+            "/summon porkyn:rinnegan_5"
+          ]
+        },
+        "rinnegan_5": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'rinnegan_5' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.rinnegan_6": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rinnegan_6": "query.get_equipped_item_name == 'rinnegan_6' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:rinnegan_6]",
+            "/summon porkyn:rinnegan_6"
+          ]
+        },
+        "rinnegan_6": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'rinnegan_6' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.hiraishinmarca_1": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hiraishinmarca_1": "query.get_equipped_item_name == 'hiraishinmarca_1' && query.is_sneaking"
+            }
+          ],
+          "on_exit": []
+        },
+        "hiraishinmarca_1": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'hiraishinmarca_1' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:hiraishin_1]",
+            "/summon porkyn:hiraishin_1"
+          ]
+        }
+      }
+    },
+    "controller.animation.hiraishinmarca_2": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hiraishinmarca_2": "query.get_equipped_item_name == 'hiraishinmarca_2' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:hiraishin_2]",
+            "/summon porkyn:hiraishin_2"
+          ]
+        },
+        "hiraishinmarca_2": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'hiraishinmarca_2' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.hiraishinmarca_3": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hiraishinmarca_3": "query.get_equipped_item_name == 'hiraishinmarca_3' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:hiraishin_3]",
+            "/summon porkyn:hiraishin_3"
+          ]
+        },
+        "hiraishinmarca_3": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'hiraishinmarca_3' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.hiraishinmarca_4": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hiraishinmarca_4": "query.get_equipped_item_name == 'hiraishinmarca_4' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:hiraishin_4]",
+            "/summon porkyn:hiraishin_4"
+          ]
+        },
+        "hiraishinmarca_4": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'hiraishinmarca_4' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.hiraishinmarca_5": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hiraishinmarca_5": "query.get_equipped_item_name == 'hiraishinmarca_5' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:hiraishin_5]",
+            "/summon porkyn:hiraishin_5"
+          ]
+        },
+        "hiraishinmarca_5": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'hiraishinmarca_5' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.hiraishinmarca_6": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hiraishinmarca_6": "query.get_equipped_item_name == 'hiraishinmarca_6' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:hiraishin_6]",
+            "/summon porkyn:hiraishin_6"
+          ]
+        },
+        "hiraishinmarca_6": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'hiraishinmarca_6' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kamui_1": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kamui_1": "query.get_equipped_item_name == 'kamui_1' && query.is_sneaking"
+            }
+          ],
+          "on_exit": []
+        },
+        "kamui_1": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kamui_1' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:kamui_1]",
+            "/summon porkyn:kamui_1"
+          ]
+        }
+      }
+    },
+    "controller.animation.kamui_2": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kamui_2": "query.get_equipped_item_name == 'kamui_2' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:kamui_2]",
+            "/summon porkyn:kamui_2"
+          ]
+        },
+        "kamui_2": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kamui_2' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kamui_3": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kamui_3": "query.get_equipped_item_name == 'kamui_3' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:kamui_3]",
+            "/summon porkyn:kamui_3"
+          ]
+        },
+        "kamui_3": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kamui_3' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kamui_4": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kamui_4": "query.get_equipped_item_name == 'kamui_4' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:kamui_4]",
+            "/summon porkyn:kamui_4"
+          ]
+        },
+        "kamui_4": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kamui_4' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    },
+    "controller.animation.kamui_5": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "kamui_5": "query.get_equipped_item_name == 'kamui_5' && query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            "/kill @e[type=porkyn:kamui_5]",
+            "/summon porkyn:kamui_5"
+          ]
+        },
+        "kamui_5": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name == 'kamui_5' && !query.is_sneaking"
+            }
+          ],
+          "on_exit": [
+            ""
+          ]
+        }
+      }
+    }
+  }
+}

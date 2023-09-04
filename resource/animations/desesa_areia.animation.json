@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.defesa_areia": {
+			"loop": true,
+			"animation_length": 7.5,
+			"bones": {
+				"c": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"c2": {
+					"rotation": [0, 0, 0]
+				},
+				"c3": {
+					"rotation": [0, 0, 0]
+				},
+				"c4": {
+					"rotation": [0, 0, 0]
+				},
+				"c5": {
+					"rotation": [0, 0, 0]
+				},
+				"c6": {
+					"rotation": [0, 0, 0]
+				},
+				"c7": {
+					"rotation": [0, 0, 0]
+				},
+				"all": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"7.5": [0, 360, 0]
+					}
+				}
+			}
+		}
+	}
+}

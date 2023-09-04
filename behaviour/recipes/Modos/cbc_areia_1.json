@@ -1,0 +1,58 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:cbc_areia_1"
+    },
+    
+    "tags": [ "nb_craft" ],
+    "pattern": [
+      "ABC",
+      "DEF",
+      "GHI"
+    ],
+    "key": {
+      "A": {
+        "item": "sandstone",
+        "data": 0
+      },
+      "B": {
+        "item": "sandstone",
+        "data": 0
+      },
+      "C": {
+        "item": "sandstone",
+        "data": 0
+      },
+      "D": {
+        "item": "sandstone",
+        "data": 0
+      },
+      "E": {
+        "item": "sand",
+        "data": 0
+      },
+      "F": {
+        "item": "sandstone",
+        "data": 0
+      },
+      "G": {
+        "item": "sandstone",
+        "data": 0
+      },
+      "H": {
+        "item": "sandstone",
+        "data": 0
+      },
+      "I": {
+        "item": "sandstone",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "porkyn:cbc_areia_1",
+      "count": 1,
+      "data": 0
+    }
+  }
+}

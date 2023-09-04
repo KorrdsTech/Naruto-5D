@@ -1,0 +1,79 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_d",
+              "quantity": 20
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 30
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_c",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 40
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_b",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 50
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_a",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_s",
+              "quantity": 1
+            }
+          ]
+          
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,942 @@
+{
+  "resource_pack_name": "kaka Bedrock",
+  "texture_name": "atlas.items",
+  "texture_data": {
+   "sharingan_1": {
+      "textures": "textures/items/sharingan_1"
+    },
+   "sharingan_2": {
+      "textures": "textures/items/sharingan_2"
+    },
+   "sharingan_3": {
+      "textures": "textures/items/sharingan_3"
+},
+"ryo": {
+   "textures": "textures/items/ryo"
+},
+"help": {
+   "textures": "textures/items/help"
+},
+"help_vermelho": {
+   "textures": "textures/items/help_vermelho"
+},
+"help_verde": {
+   "textures": "textures/items/help_verde"
+},
+"help_azul": {
+   "textures": "textures/items/help_azul"
+},
+"senju_1": {
+   "textures": "textures/items/senju_1"
+},
+"senju_2": {
+   "textures": "textures/items/senju_2"
+},
+"senju_3": {
+   "textures": "textures/items/senju_3"
+},
+"senju_4": {
+   "textures": "textures/items/senju_4"
+},
+"senju_5": {
+   "textures": "textures/items/senju_5"
+},
+"kurama_1": {
+   "textures": "textures/items/kurama_1"
+},
+"kurama_2": {
+   "textures": "textures/items/kurama_2"
+},
+"kurama_3": {
+   "textures": "textures/items/kurama_3"
+},
+"kurama_4": {
+   "textures": "textures/items/kurama_4"
+},
+"kurama_5": {
+   "textures": "textures/items/kurama_5"
+},
+"kurama_6": {
+   "textures": "textures/items/kurama_6"
+},
+"matatabi_1": {
+   "textures": "textures/items/matatabi_1"
+},
+"matatabi_2": {
+   "textures": "textures/items/matatabi_2"
+},
+"matatabi_3": {
+   "textures": "textures/items/matatabi_3"
+},
+"matatabi_4": {
+   "textures": "textures/items/matatabi_4"
+},
+"matatabi_5": {
+   "textures": "textures/items/matatabi_5"
+},
+"matatabi_6": {
+   "textures": "textures/items/matatabi_6"
+},
+"golem_1": {
+   "textures": "textures/items/golem_1"
+},
+"golem_2": {
+   "textures": "textures/items/golem_2"
+},
+"mil_mao": {
+   "textures": "textures/items/mil_mao"
+},
+"kage": {
+   "textures": "textures/items/kage"
+},
+"amenotejiraka": {
+   "textures": "textures/items/amenotejiraka"
+},
+"amenotejiraka1": {
+   "textures": "textures/items/amenotejiraka1"
+},
+"amenotejiraka2": {
+   "textures": "textures/items/amenotejiraka2"
+},
+"amenotejiraka3": {
+   "textures": "textures/items/amenotejiraka3"
+},
+"amenotejiraka4": {
+   "textures": "textures/items/amenotejiraka4"
+},
+"amenotejiraka5": {
+   "textures": "textures/items/amenotejiraka5"
+},
+"amenotejiraka6": {
+   "textures": "textures/items/amenotejiraka6"
+    },
+   "correntes_adamantinas_1": {
+      "textures": "textures/items/correntes_adamantinas_1"
+   },
+   "correntes_adamantinas_2": {
+      "textures": "textures/items/correntes_adamantinas_2"
+   },
+   "correntes_adamantinas_3": {
+      "textures": "textures/items/correntes_adamantinas_3"
+   },
+   "correntes_adamantinas_4": {
+      "textures": "textures/items/correntes_adamantinas_4"
+   },
+   "correntes_adamantinas_5": {
+      "textures": "textures/items/correntes_adamantinas_5"
+   },
+   "correntes_adamantinas_6": {
+      "textures": "textures/items/correntes_adamantinas_6"
+       },
+   "ms_sasuke": {
+      "textures": "textures/items/ms_sasuke"
+},
+"rs_t": {
+   "textures": "textures/items/rs_t"
+      },
+   "salgadinho": {
+      "textures": "textures/items/icon_salgadinho"
+},
+"icon_pergaminho": {
+   "textures": "textures/items/icon_pergaminho"
+},
+"icon_pergaminho_2": {
+   "textures": "textures/items/icon_pergaminho_2"
+    },
+   "ms_itachi": {
+      "textures": "textures/items/ms_itachi"
+    },
+   "ms_shisui": {
+      "textures": "textures/items/ms_shisui"
+    },
+   "ms_madara": {
+      "textures": "textures/items/ms_madara"
+    },
+   "ms_obito": {
+      "textures": "textures/items/ms_obito"
+    },
+   "mse_itachi": {
+      "textures": "textures/items/mse_itachi"
+    },
+   "mse_shisui": {
+      "textures": "textures/items/mse_shisui"
+    },
+   "mse_madara": {
+      "textures": "textures/items/mse_madara"
+    },
+   "mse_obito": {
+      "textures": "textures/items/mse_obito"
+   },
+   "s1_sasuke": {
+      "textures": "textures/items/s1_sasuke"     
+    },
+   "s1_itachi": {
+      "textures": "textures/items/s1_itachi"
+    },
+   "s1_shisui": {
+      "textures": "textures/items/s1_shisui"
+    },
+   "s1_madara": {
+      "textures": "textures/items/s1_madara"
+    },
+   "s1_obito": {
+      "textures": "textures/items/s1_obito"
+    },
+   "s2_sasuke": {
+      "textures": "textures/items/s2_sasuke"
+    },
+   "s2_itachi": {
+      "textures": "textures/items/s2_itachi"
+    },
+   "s2_shisui": {
+      "textures": "textures/items/s2_shisui"
+    },
+   "s2_madara": {
+      "textures": "textures/items/s2_madara"
+    },
+   "s2_obito": {
+      "textures": "textures/items/s2_obito"
+    },
+   "s3_sasuke": {
+      "textures": "textures/items/s3_sasuke"
+    },
+   "s3_itachi": {
+      "textures": "textures/items/s3_itachi"
+    },
+   "s3_shisui": {
+      "textures": "textures/items/s3_shisui"
+    },
+   "s3_madara": {
+      "textures": "textures/items/s3_madara"
+    },
+   "s3_obito": {
+      "textures": "textures/items/s3_obito"
+    },
+   "s4_sasuke": {
+      "textures": "textures/items/s4_sasuke"
+    },
+   "s4_itachi": {
+      "textures": "textures/items/s4_itachi"
+    },
+   "s4_shisui": {
+      "textures": "textures/items/s4_shisui"
+    },
+   "s4_madara": {
+      "textures": "textures/items/s4_madara"
+    },
+   "s4_obito": {
+      "textures": "textures/items/s4_obito"
+    },
+   "kunai": {
+      "textures": "textures/items/kunai"
+    },
+   "samehada": {
+      "textures": "textures/items/samehada"
+    },
+   "menu": {
+      "textures": "textures/items/menu"
+    },
+   "amaterasu": {
+      "textures": "textures/items/amaterasu"
+    },
+   "tsukiyomi": {
+      "textures": "textures/items/tsukiyomi"
+    },
+   "estilo_fogo": {
+      "textures": "textures/items/estilo_fogo"
+    },
+    "estilo_agua": {
+       "textures": "textures/items/estilo_agua" 
+    },
+    "estilo_raio": {
+       "textures": "textures/items/estilo_raio" 
+    },
+    "estilo_terra": {
+        "textures": "textures/items/estilo_terra" 
+    },
+    "estilo_vento": {
+        "textures": "textures/items/estilo_vento"      
+    },
+    "jutsu_sexy": {
+        "textures": "textures/items/jutsu_sexy" 
+    },
+    "hair_naruto": {
+        "textures": "textures/items/hair_naruto"     
+    },
+    "hair_sasuke": {
+        "textures": "textures/items/hair_sasuke"   
+    },
+    "hair_sakura": {
+        "textures": "textures/items/hair_sakura"   
+    },
+    "hair_kakashi": {
+        "textures": "textures/items/hair_kakashi"   
+    },
+    "hair_hinata": {
+        "textures": "textures/items/hair_hinata"   
+    },
+    "hair_neji": {
+        "textures": "textures/items/hair_neji"   
+    },
+    "hair_temari": {
+        "textures": "textures/items/hair_temari"   
+    },
+    "hair_gaara": {
+        "textures": "textures/items/hair_gaara"   
+    },
+    "hair_itachi": {
+        "textures": "textures/items/hair_itachi"   
+    },
+    "hair_madara": {
+        "textures": "textures/items/hair_madara"   
+    },
+    "hair_pain": {
+        "textures": "textures/items/hair_pain"   
+      },
+      "karma1": {
+          "textures": "textures/items/karma1"  
+    },
+    "hair_tenten": {
+        "textures": "textures/items/hair_tenten"   
+      },
+      "otsu_cla": {
+          "textures": "textures/items/otsu_cla" 
+      },
+      "meteoro": {
+          "textures": "textures/items/meteoro"   
+    },
+    "hair_jiraya": {
+        "textures": "textures/items/hair_jiraya" 
+      },
+      "cubes": {
+          "textures": "textures/items/cubes" 
+    },
+    "hair_rocklee": {
+        "textures": "textures/items/hair_rocklee"        
+    },
+    "hair_deidara": {
+        "textures": "textures/items/hair_deidara"  
+      },
+      "hair_tobi": {
+          "textures": "textures/items/hair_tobi"            
+    },
+    "subs": {
+        "textures": "textures/items/subs" 
+      },
+      "roupa_anbu": {
+          "textures": "textures/items/roupa_anbu"   
+      },
+      "roupa_rocklee": {
+          "textures": "textures/items/roupa_rocklee"  
+      },
+      "roupa_isshiki": {
+          "textures": "textures/items/roupa_isshiki" 
+   },
+   "ketsuryugan_1": {
+         "textures": "textures/items/ketsuryugan1"   
+   },
+   "ketsuryugan_2": {
+         "textures": "textures/items/ketsuryugan2"        
+   },
+   "ketsuryugan_3": {
+         "textures": "textures/items/ketsuryugan3"    
+   },
+   "ketsuryugan_4": {
+         "textures": "textures/items/ketsuryugan4"     
+      },
+      "ketsuryugan_5": {
+            "textures": "textures/items/ketsuryugan5"   
+      },
+      "cbda_1": {
+            "textures": "textures/items/cbda_1"   
+      },
+      "cbda_2": {
+            "textures": "textures/items/cbda_2"        
+      },
+      "cbda_3": {
+            "textures": "textures/items/cbda_3"    
+      },
+      "cbda_4": {
+            "textures": "textures/items/cbda_4"     
+         },
+         "cbda_5": {
+               "textures": "textures/items/cbda_5" 
+   },
+   "areia": {
+         "textures": "textures/items/areia" 
+      },
+   "byakugan": {
+         "textures": "textures/items/byakugan"
+      },
+      "byakugan2": {
+            "textures": "textures/items/byakugan2"
+      },
+      "byakugan3": {
+            "textures": "textures/items/byakugan3"
+   },
+   "byakugan_d": {
+         "textures": "textures/items/byakugan_d"      
+   },
+   "tenseigan": {
+         "textures": "textures/items/tenseigan" 
+   },
+   "jougan": {
+         "textures": "textures/items/jougan"  
+   },
+   "rasengan": {
+         "textures": "textures/items/rasengan" 
+   },
+   "ketsuryugan": {
+         "textures": "textures/items/ketsuryugan"
+   },
+   "rinnegan": {
+         "textures": "textures/items/rinnegan"
+   },
+   "rinnegan_s": {
+         "textures": "textures/items/rinnegan_s"
+   },
+   "kamui": {
+         "textures": "textures/items/kamui"
+   },
+   "kunai_m": {
+         "textures": "textures/items/kunai_m" 
+   },
+   "foice_dupla": {
+         "textures": "textures/items/foice_dupla"  
+      },
+      "Kubikiribocho": {
+            "textures": "textures/items/Kubikiribocho"           
+   },
+   "gunbai": {
+         "textures": "textures/items/gunbai"
+   },
+   "foice_tripla": {
+         "textures": "textures/items/foice_tripla"            
+   },
+   "amaterasu_2": {
+         "textures": "textures/items/amaterasu_2"  
+   },
+   "kyuubi": {
+         "textures": "textures/items/kyuubi"
+   },
+   "selo": {
+         "textures": "textures/items/selo"
+   },
+   "mk3_kurama": {
+         "textures": "textures/items/mk3_kurama"  
+   },
+   "mk1_kurama": {
+         "textures": "textures/items/mk1_kurama"
+   },
+   "rasengan_kurama": {
+         "textures": "textures/items/rasengan_kurama"
+      },
+      "manto_akt": {
+            "textures": "textures/items/manto_akat"  
+      },
+      "manto_preto": {
+            "textures": "textures/items/manto_preto"   
+      },
+      "manto_vermelho": {
+            "textures": "textures/items/manto_vermelho"
+      },
+      "manto_verde": {
+            "textures": "textures/items/manto_verde"
+      },
+      "manto_amarelo": {
+            "textures": "textures/items/manto_amarelo"  
+      },
+      "manto_laranja": {
+            "textures": "textures/items/manto_laranja"
+      },
+      "manto_marrom": {
+            "textures": "textures/items/manto_marrom"     
+      },
+      "manto_branco": {
+            "textures": "textures/items/manto_branco"
+      },
+      "manto_azul": {
+            "textures": "textures/items/manto_azul"    
+      },
+      "manto_roxo": {
+            "textures": "textures/items/manto_roxo"   
+      },
+      "manto_akatsuki_white": {
+            "textures": "textures/items/manto_akt_white"  
+      },
+      "manto_preto2": {
+            "textures": "textures/items/manto_preto2"   
+      },
+      "manto_vermelho2": {
+            "textures": "textures/items/manto_vermelho2"
+      },
+      "manto_verde2": {
+            "textures": "textures/items/manto_verde2"
+      },
+      "manto_amarelo2": {
+            "textures": "textures/items/manto_amarelo2"  
+      },
+      "manto_laranja2": {
+            "textures": "textures/items/manto_laranja2"
+      },
+      "manto_marrom2": {
+            "textures": "textures/items/manto_marrom2"     
+      },
+      "manto_branco2": {
+            "textures": "textures/items/manto_branco2"
+      },
+      "manto_azul2": {
+            "textures": "textures/items/manto_azul2"    
+      },
+      "manto_roxo2": {
+            "textures": "textures/items/manto_roxo2"  
+      },
+      "asa_papel": {
+            "textures": "textures/items/asa_papel" 
+      },
+      "areia_de_ferro_1": {
+            "textures": "textures/items/areia_de_ferro_1"
+      },
+      "areia_de_ferro_2": {
+            "textures": "textures/items/areia_de_ferro_2"  
+      },
+      "areia_de_ferro_3": {
+            "textures": "textures/items/areia_de_ferro_3" 
+      },
+      "areia_de_ferro_4": {
+            "textures": "textures/items/areia_de_ferro_4" 
+      },
+      "caixao_areia": {
+            "textures": "textures/items/caixao_areia"   
+      },
+      "defesa_areia": {
+            "textures": "textures/items/defesa_areia"   
+      },
+      "piramide_areia": {
+            "textures": "textures/items/piramide_areia"
+      },
+      "piramide_areia_ferro": {
+            "textures": "textures/items/piramide_areia_ferro" 
+      },
+      "defesa_areia_ferro": {
+            "textures": "textures/items/defesa_areia_ferro"   
+      },
+      "caixao_areia_ferro": {
+            "textures": "textures/items/caixao_areia_ferro"  
+      },
+      "piramide_areia_ouro": {
+            "textures": "textures/items/piramide_areia_ouro" 
+      },
+      "defesa_areia_ouro": {
+            "textures": "textures/items/defesa_areia_ouro"   
+      },
+      "caixao_areia_ouro": {
+            "textures": "textures/items/caixao_areia_ouro"  
+      },
+      "modo_sennin_sapos": {
+            "textures": "textures/items/modo_sennin_sapos"       
+      },
+      "roupa_sennin_sapos": {
+            "textures": "textures/items/roupa_sennin_sapos" 
+      },
+      "roupa_naruto_hokage": {
+            "textures": "textures/items/roupa_naruto_hokage" 
+      },
+      "sennin_hashirama": {
+            "textures": "textures/items/sennin_hashirama" 
+      },
+      "roupa_tobirama": {
+            "textures": "textures/items/roupa_tobirama"    
+      },
+      "roupa_tobirama_vermelho": {
+            "textures": "textures/items/roupa_tobirama_vermelho"   
+      },
+      "roupa_tobirama_verde": {
+            "textures": "textures/items/roupa_tobirama_verde"       
+      },
+      "roupa_naruto_kid": {
+            "textures": "textures/items/roupa_naruto_kid"  
+      },
+      "roupa_naruto_s": {
+            "textures": "textures/items/roupa_naruto_s" 
+      },
+      "roupa_obito": {
+            "textures": "textures/items/roupa_obito"  
+      },
+      "roupa_neji": {
+            "textures": "textures/items/roupa_neji"  
+      },
+      "roupa_mitsuki": {
+            "textures": "textures/items/roupa_mitsuki" 
+      },
+      "roupa_inicial": {
+            "textures": "textures/items/roupa_inicial" 
+      },
+      "roupa_inicial2": {
+            "textures": "textures/items/roupa_inicial2" 
+      },
+      "roupa_inicial3": {
+            "textures": "textures/items/roupa_inicial3" 
+      },
+      "roupa_inicial4": {
+            "textures": "textures/items/roupa_inicial4"     
+      },
+      "roupa_inicial5": {
+            "textures": "textures/items/roupa_inicial5"   
+      },
+      "uchiha_inicial": {
+            "textures": "textures/items/uchiha_inicial" 
+      },
+      "uchiha_inicial2": {
+            "textures": "textures/items/uchiha_inicial2" 
+      },
+      "uchiha_inicial3": {
+            "textures": "textures/items/uchiha_inicial3"  
+      },
+      "uchiha_inicial4": {
+            "textures": "textures/items/uchiha_inicial4" 
+      },
+      "uchiha_inicial5": {
+            "textures": "textures/items/uchiha_inicial5"   
+      },
+      "roupa_boruto": {
+            "textures": "textures/items/roupa_boruto"    
+      },
+      "roupa_sasuke": {
+            "textures": "textures/items/roupa_sasuke"  
+      },
+      "roupa_folha": {
+            "textures": "textures/items/roupa_folha"    
+      },
+      "roupa_areia": {
+            "textures": "textures/items/roupa_areia"   
+      },
+      "roupa_nevoa": {
+            "textures": "textures/items/roupa_nevoa"   
+      },
+      "roupa_pedra": {
+            "textures": "textures/items/roupa_pedra"   
+      },
+      "roupa_nuvem": {
+            "textures": "textures/items/roupa_nuvem"            
+      },
+      "hiraishin_1": {
+            "textures": "textures/items/hiraishin_1"   
+      },
+      "hiraishin_2": {
+            "textures": "textures/items/hiraishin_2"                                                                                                                        
+      },
+      "hiraishin_3": {
+            "textures": "textures/items/hiraishin_3" 
+                  },
+      "hiraishin_4": {
+            "textures": "textures/items/hiraishin_4" 
+      },
+      "hiraishin_5": {
+            "textures": "textures/items/hiraishin_5" 
+      },
+      "hiraishin_6": {
+            "textures": "textures/items/hiraishin_6" 
+      },
+      "hiraishin": {
+            "textures": "textures/items/hiraishin" 
+      },
+      "kamui_1": {
+            "textures": "textures/items/kamui_1"   
+      },
+      "kamui_2": {
+            "textures": "textures/items/kamui_2"                                                                                                                        
+      },
+      "kamui_3": {
+            "textures": "textures/items/kamui_3" 
+                  },
+      "kamui_4": {
+            "textures": "textures/items/kamui_4" 
+      },
+      "kamui_5": {
+            "textures": "textures/items/kamui_5"
+      },
+      "boost_chakra": {
+            "textures": "textures/items/boost_chakra"  
+      },
+      "icon_naruto_c": {
+            "textures": "textures/items/icon_naruto_c"   
+      },
+      "icon_sasuke_c": {
+            "textures": "textures/items/icon_sasuke_c"                                                                                                                        
+      },
+      "icon_sakura_c": {
+            "textures": "textures/items/icon_sakura_c" 
+                  },
+      "icon_kakashi": {
+            "textures": "textures/items/icon_kakshi" 
+      },
+      "icon_itachi": {
+            "textures": "textures/items/icon_itachi"
+      },
+      "icon_naruto_s": {
+            "textures": "textures/items/icon_naruto_s"   
+      },
+      "icon_sasuke_s": {
+            "textures": "textures/items/icon_sasuke_s"                                                                                                                        
+      },
+      "icon_sakura_s": {
+            "textures": "textures/items/icon_sakura_s" 
+                  },
+      "icon_choji": {
+            "textures": "textures/items/icon_choji" 
+      },
+      "icon_deidara": {
+            "textures": "textures/items/icon_deidara"
+                  },
+      "shuriken_papel": {
+            "textures": "textures/items/shuriken_papel"
+      },
+      "shinra": {
+            "textures": "textures/items/shinra"
+      },
+      "banshou": {
+            "textures": "textures/items/banshou"
+      },
+      "chibaku": {
+            "textures": "textures/items/chibaku"
+      },
+      "areia_on": {
+            "textures": "textures/items/areia_on"
+      },
+      "areia_off": {
+            "textures": "textures/items/areia_off"
+      },
+      "areia_ouro_on": {
+            "textures": "textures/items/areia_ouro_on"
+      },
+      "areia_ouro_off": {
+            "textures": "textures/items/areia_ouro_off"
+      },
+      "areia_ferro_on": {
+            "textures": "textures/items/areia_ferro_on"
+      },
+      "areia_ferro_off": {
+            "textures": "textures/items/areia_ferro_off"
+      },
+      "katana": {
+            "textures": "textures/items/katana"
+      },
+      "k_amaterasu": {
+            "textures": "textures/items/k_amaterasu"
+      },
+      "shukaku_1": {
+            "textures": "textures/items/shukaku_1"
+      },
+      "shukaku_2": {
+            "textures": "textures/items/shukaku_2"
+      },
+      "shukaku_3": {
+            "textures": "textures/items/shukaku_3"
+      },
+      "shukaku_4": {
+            "textures": "textures/items/shukaku_4"
+      },
+      "shukaku_5": {
+            "textures": "textures/items/shukaku_5"
+      },
+      "hair": {
+            "textures": "textures/items/hair"
+      },
+      "bexiga": {
+            "textures": "textures/items/bexiga"
+      },
+      "bola_fogo_d": {
+            "textures": "textures/items/bola_fogo_d"
+      },
+      "bola_fogo_c": {
+            "textures": "textures/items/bola_fogo_c"
+      },
+      "bola_fogo_b": {
+            "textures": "textures/items/bola_fogo_b"
+      },
+      "bola_fogo_a": {
+            "textures": "textures/items/bola_fogo_a"
+      },
+      "bola_fogo_s": {
+            "textures": "textures/items/bola_fogo_s"
+      },
+      "bola_agua_d": {
+            "textures": "textures/items/bola_agua_d"
+      },
+      "bola_agua_c": {
+            "textures": "textures/items/bola_agua_c"
+      },
+      "bola_agua_b": {
+            "textures": "textures/items/bola_agua_b"
+      },
+      "bola_agua_a": {
+            "textures": "textures/items/bola_agua_a"
+      },
+      "bola_agua_s": {
+            "textures": "textures/items/bola_agua_s"
+      },
+      "bola_amarela": {
+            "textures": "textures/items/bola_amarela"
+      },
+      "bola_raio_d": {
+            "textures": "textures/items/bola_raio_d"
+      },
+      "bola_raio_c": {
+            "textures": "textures/items/bola_raio_c"
+      },
+      "bola_raio_b": {
+            "textures": "textures/items/bola_raio_b"
+      },
+      "bola_raio_a": {
+            "textures": "textures/items/bola_raio_a"
+      },
+      "bola_raio_s": {
+            "textures": "textures/items/bola_raio_s"
+      },
+      "selo_d": {
+            "textures": "textures/items/selo_d"
+      },
+      "selo_c": {
+            "textures": "textures/items/selo_c"
+      },
+      "selo_b": {
+            "textures": "textures/items/selo_b"
+      },
+      "selo_a": {
+            "textures": "textures/items/selo_a"
+      },
+      "selo_s": {
+            "textures": "textures/items/selo_s"
+      },
+      "kage_d": {
+            "textures": "textures/items/kage_d"
+      },
+      "kage_c": {
+            "textures": "textures/items/kage_c"
+      },
+      "kage_b": {
+            "textures": "textures/items/kage_b"
+      },
+      "kage_a": {
+            "textures": "textures/items/kage_a"
+      },
+      "kage_s": {
+            "textures": "textures/items/kage_s"
+      },
+      "kamaitachi_d": {
+            "textures": "textures/items/kamaitachi_d"
+      },
+      "kamaitachi_c": {
+            "textures": "textures/items/kamaitachi_c"
+      },
+      "kamaitachi_b": {
+            "textures": "textures/items/kamaitachi_b"
+      },
+      "kamaitachi_a": {
+            "textures": "textures/items/kamaitachi_a"
+      },
+      "kamaitachi_s": {
+            "textures": "textures/items/kamaitachi_s"
+      },
+      "doton_renga_d": {
+            "textures": "textures/items/doton_renga_d"
+      },
+      "doton_renga_c": {
+            "textures": "textures/items/doton_renga_c"
+      },
+      "doton_renga_b": {
+            "textures": "textures/items/doton_renga_b"
+      },
+      "doton_renga_a": {
+            "textures": "textures/items/doton_renga_a"
+      },
+      "doton_renga_s": {
+            "textures": "textures/items/doton_renga_s"
+      },
+      "inv_sapo_d": {
+            "textures": "textures/items/inv_sapo_d"
+      },
+      "inv_sapo_c": {
+            "textures": "textures/items/inv_sapo_c"
+      },
+      "inv_sapo_b": {
+            "textures": "textures/items/inv_sapo_b"
+      },
+      "inv_sapo_a": {
+            "textures": "textures/items/inv_sapo_a"
+      },
+      "inv_sapo_s": {
+            "textures": "textures/items/inv_sapo_s"
+      },
+      "inv_cobra_d": {
+            "textures": "textures/items/inv_cobra_d"
+      },
+      "inv_cobra_c": {
+            "textures": "textures/items/inv_cobra_c"
+      },
+      "inv_cobra_b": {
+            "textures": "textures/items/inv_cobra_b"
+      },
+      "inv_cobra_a": {
+            "textures": "textures/items/inv_cobra_a"
+      },
+      "inv_cobra_s": {
+            "textures": "textures/items/inv_cobra_s"
+      },
+      "estaca_d": {
+            "textures": "textures/items/estaca_d"
+      },
+      "estaca_c": {
+            "textures": "textures/items/estaca_c"
+      },
+      "estaca_b": {
+            "textures": "textures/items/estaca_b"
+      },
+      "estaca_a": {
+            "textures": "textures/items/estaca_a"
+      },
+      "estaca_s": {
+            "textures": "textures/items/estaca_s"
+      },
+      "evoluir_idade": {
+            "textures": "textures/items/evoluir_idade"
+      },
+      "genjutsu_sharingan": {
+            "textures": "textures/items/genjutsu_sharingan"
+      },
+      "remover": {
+            "textures": "textures/items/remover"
+                  },
+      "dango": {
+            "textures": "textures/items/dango"
+      },
+      "abrir_kurama": {
+            "textures": "textures/items/abrir_kurama"
+      },
+      "fechar_kurama": {
+            "textures": "textures/items/fechar_kurama"
+      },
+      "abrir_matatabi": {
+            "textures": "textures/items/abrir_matatabi"
+      },
+      "fechar_matatabi": {
+            "textures": "textures/items/fechar_matatabi"
+      },
+      "abrir_shukaku": {
+            "textures": "textures/items/abrir_shukaku"
+      },
+      "fechar_shukaku": {
+            "textures": "textures/items/fechar_shukaku"
+      },
+      "selo_shukaku": {
+            "textures": "textures/items/selo_shukaku"
+      },
+      "jardim_amassos": {
+            "textures": "textures/items/jardim_amassos"
+      },
+      "lamen": {
+            "textures": "textures/items/lamen"
+     }
+  }
+}

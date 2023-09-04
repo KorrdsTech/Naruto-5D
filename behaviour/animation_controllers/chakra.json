@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.chakra": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"descer":
+"query.is_sneaking"
+							
+						},
+						{
+							"ex":                "query.is_sneaking"
+						}
+					]
+				},
+				"descer": {
+					"on_entry": [
+						"/function chakra"
+					],
+					"transitions": [
+						{
+							"default": "1"
+						}
+					]
+				},
+				"ex": {
+					"on_entry": [
+						"/function"
+					],
+					"transitions": [
+						{
+							"default": "1"
+						}
+					]
+				}
+			}
+		}
+	}
+}

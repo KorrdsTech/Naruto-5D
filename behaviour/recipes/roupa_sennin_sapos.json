@@ -1,0 +1,54 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:roupa_sennin_sapos"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A C",
+      "DEF",
+      "GHI"
+    ],
+    "key": {
+      "A": {
+        "item": "red_dye",
+        "data": 0
+      },
+      "C": {
+        "item": "red_dye",
+        "data": 0
+      },
+      "D": {
+        "item": "red_dye",
+        "data": 0
+      },
+      "E": {
+        "item": "red_dye",
+        "data": 0
+      },
+      "F": {
+        "item": "red_dye",
+        "data": 0
+      },
+      "G": {
+        "item": "black_dye",
+        "data": 0
+      },
+      "H": {
+        "item": "black_dye",
+        "data": 0
+      },
+      "I": {
+        "item": "black_dye",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "porkyn:roupa_sennin_sapos",
+      "count": 1,
+      "data": 0
+    }
+  }
+}

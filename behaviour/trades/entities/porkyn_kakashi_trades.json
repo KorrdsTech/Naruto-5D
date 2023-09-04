@@ -1,0 +1,121 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "porkyn:jardim_amassos",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:subs_clone",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 30
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_c",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 45
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_b",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 15
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_d",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 15
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_d",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 15
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_d",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 15
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_d",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 30
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:kunai_rank_c",
+              "quantity": 1
+            }
+          ]
+          
+        }
+      ]
+    }
+  ]
+}

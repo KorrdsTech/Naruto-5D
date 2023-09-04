@@ -1,0 +1,47 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spawn_bijuu2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "a",
+					"pivot": [0, 10, 0],
+					"cubes": [
+						{
+							"origin": [-0.5, 36, -15],
+							"size": [0, 12, 30],
+							"uv": {
+								"north": {"uv": [49, 34], "uv_size": [1, 7]},
+								"east": {"uv": [37, 32], "uv_size": [22, 10]},
+								"south": {"uv": [49, 34], "uv_size": [1, 7]},
+								"west": {"uv": [37, 32], "uv_size": [22, 10]},
+								"up": {"uv": [53, 42], "uv_size": [-4, -8]},
+								"down": {"uv": [53, 42], "uv_size": [-4, -8]}
+							}
+						},
+						{
+							"origin": [-1, 36, -15],
+							"size": [1, 12, 30],
+							"uv": {
+								"north": {"uv": [57, 24], "uv_size": [2, 3]},
+								"east": {"uv": [5, 23], "uv_size": [54, 17]},
+								"south": {"uv": [57, 24], "uv_size": [2, 3]},
+								"west": {"uv": [5, 23], "uv_size": [54, 17]},
+								"up": {"uv": [59, 41], "uv_size": [-2, -17]},
+								"down": {"uv": [59, 41], "uv_size": [-2, -17]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

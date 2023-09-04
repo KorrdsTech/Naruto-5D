@@ -1,0 +1,173 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "pergaminho",
+				"npc_name": { "rawtext": [ {"text":"§l§fAprender Jutsus"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_outros"
+
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fEstilo Fogo"} ] },
+						"commands": [
+							"/dialogue open @s @p estilo_fogo"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_vento"
+
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "jutsu_vento",
+				"npc_name": { "rawtext": [ {"text":"§l§fAprender Jutsus"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_fogo"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fEstilo Vento"} ] },
+						"commands": [
+							"/dialogue open @s @p estilo_vento"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_raio"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "jutsu_raio",
+				"npc_name": { "rawtext": [ {"text":"§l§fAprender Jutsus"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_vento"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fEstilo Raio"} ] },
+						"commands": [
+
+							"/dialogue open @s @p estilo_raio"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_terra"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "jutsu_terra",
+				"npc_name": { "rawtext": [ {"text":"§l§fAprender Jutsus"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_raio"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fEstilo Terra"} ] },
+						"commands": [
+
+
+							"/dialogue open @s @p estilo_terra"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_agua"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "jutsu_agua",
+				"npc_name": { "rawtext": [ {"text":"§l§fAprender Jutsus"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_terra"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fEstilo Água"} ] },
+						"commands": [
+							"/dialogue open @s @p estilo_agua"
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_outros"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "jutsu_outros",
+				"npc_name": { "rawtext": [ {"text":"§l§fAprender Jutsus"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsu_terra"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fOutros"} ] },
+						"commands": [
+							"/dialogue open @s @p jutsus_normal"
+
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"commands": [
+							"/dialogue open @s @p pergaminho"
+						]
+							}
+						]
+					}
+				]
+			}
+			
+		}
+		
+
+
+	
+		

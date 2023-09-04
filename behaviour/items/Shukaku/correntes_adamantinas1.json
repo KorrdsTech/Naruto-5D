@@ -1,0 +1,56 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+	  "description": {
+		"identifier": "porkyn:shukaku_1",
+		"category": "equipment"
+	  },
+	  "components": {
+		"minecraft:display_name": {
+		  "value": "§lModo Shukaku §l§b[Rank D]"
+		},
+		"minecraft:render_offsets": {
+			"main_hand": {
+				"third_person": {
+				  "position": [0.26, 1.0, -0.55],
+					"scale": [0, 0, 0]
+				},
+				"first_person": {
+					"position": [3.54, -0.8, -6.4],
+					"scale": [0, 0, 0]
+				}
+			 }
+	  },
+		"minecraft:icon": {
+		  "texture": "shukaku_1"
+		},
+		"minecraft:max_stack_size": 1,
+		"minecraft:armor": {},
+		"minecraft:wearable": {
+		  "slot": "slot.armor.chest"
+		},
+		"minecraft:cooldown": {
+		"category": "shukaku",
+		"duration": 1.0
+		},
+		"minecraft:on_use": {
+		  "on_use": {
+			"event": "command",
+			"target": "self" 
+		  }
+		}
+	  },
+	  "events": {
+		"command": {
+		"run_command": {
+		  "command": [
+
+			],
+			"target": "self"
+		  }
+		}
+	  }
+	}
+  }
+
+

@@ -1,0 +1,135 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "conf",
+				"npc_name": { "rawtext": [ {"text":"§l§fConfigurações"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§fAjuda"} ] },
+						"commands": [
+							"/function help"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fCréditos"} ] },
+						"commands": [
+							"tellraw @p {\"rawtext\":[{\"text\":\"§lCriador/Dono: §ePorkyn Play\"}]}"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fMusicas"} ] },
+						"commands": [
+							"/dialogue open @p @p stop_music"
+						]
+					},
+					{
+						"name": { "rawtext": [ {"text":"§l§fVoltar"} ] },
+						"commands": [
+							"/dialogue open @p @p p"
+					]
+				}
+			]
+		},
+		{
+			"scene_tag": "stop_music",
+			"npc_name": { "rawtext": [ {"text":"§l§fMúsicas"} ] },
+			"text": { "rawtext": [ {"text":" "} ] },
+			"buttons": [
+				{
+					"name": { "rawtext": [ {"text":"§l§f<"} ] },
+					"commands": [
+						"/dialogue open @p @p stop_music2"
+					]
+				},
+				{
+					"name": { "rawtext": [ {"text":"§l§fOff"} ] },
+					"commands": [
+						"tag @s add off_music"
+					]
+				},
+				{
+					"name": { "rawtext": [ {"text":"§l§f>"} ] },
+					"commands": [
+						"/dialogue open @p @p stop_music2"
+				]
+			}
+		]
+	},
+	{
+		"scene_tag": "stop_music2",
+		"npc_name": { "rawtext": [ {"text":"§l§fMúsicas"} ] },
+		"text": { "rawtext": [ {"text":" "} ] },
+		"buttons": [
+			{
+				"name": { "rawtext": [ {"text":"§l§f<"} ] },
+				"commands": [
+					"/dialogue open @p @p stop_music"
+				]
+			},
+			{
+				"name": { "rawtext": [ {"text":"§l§fOn"} ] },
+				"commands": [
+					"tag @s remove off_music"
+				]
+			},
+			{
+				"name": { "rawtext": [ {"text":"§l§f>"} ] },
+				"commands": [
+					"/dialogue open @p @p stop_music"
+			]
+		}
+	]
+},
+{
+			
+			"scene_tag": "musicas",
+			"npc_name": { "rawtext": [ {"text":"§l§fMúsicas"} ] },
+			"text": { "rawtext": [ {"text":" "} ] },
+			"buttons": [
+				{
+					"name": { "rawtext": [ {"text":"§l§fParar Música"} ] },
+					"commands": [
+						"/stopsound @s"
+					]
+				},
+				{
+					"name": { "rawtext": [ {"text":"§l§fMusica 1"} ] },
+					"commands": [
+						"/playsound music1 @s"
+					]
+				},
+				{
+					"name": { "rawtext": [ {"text":"§l§fMusica 2"} ] },
+					"commands": [
+						"/playsound music2 @s"
+					]
+				},
+				{
+					"name": { "rawtext": [ {"text":"§l§fMusica 3"} ] },
+					"commands": [
+						"/playsound music3 @s"
+					]
+				},
+				{
+					"name": { "rawtext": [ {"text":"§l§fMusica 4"} ] },
+					"commands": [
+						"/playsound music4 @s"
+					]
+				},
+				{
+					"name": { "rawtext": [ {"text":"§l§fMusica 5"} ] },
+					"commands": [
+						"/playsound music5 @s"
+					]
+						}
+					]
+				}
+			]
+		}
+	}
+	

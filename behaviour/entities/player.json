@@ -1,0 +1,1174 @@
+{
+  "format_version": "1.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "walk",
+          "modos",
+          "dead",
+          "water",
+          "chakra",
+          "subs",
+    "kamui_1",
+    "amaterasu_i",
+    "kamui_2",
+    "kamui_3",
+    "kamui_4",
+    "kamui_5",
+    "rinnegan_1",
+    "rinnegan_2",
+    "rinnegan_3",
+    "rinnegan_4",
+    "rinnegan_5",
+    "rinnegan_6",
+    "hiraishinmarca_1",
+    "hiraishinmarca_2",
+    "hiraishinmarca_3",
+    "hiraishinmarca_4",
+    "hiraishinmarca_5",
+    "hiraishinmarca_6",
+    "kakashi_branco",
+	  "kakashi_preto",
+    "kakashi_marrom",
+	  "kakashi_cinza",
+    "kakashi_amarelo",
+    "kakashi_laranja",
+	  "kakashi_amarelo",
+    "kakashi_azul_c",
+	  "kakashi_azul_e",
+    "kakashi_verde_c",
+	  "kakashi_verde_e",
+    "kakashi_roxo",
+    "kakashi_rosa_c",
+	  "kakashi_rosa_e",
+    "kakashi2_branco",
+    "kakashi2_preto",
+    "kakashi2_marrom",
+    "kakashi2_cinza",
+    "kakashi2_amarelo",
+    "kakashi2_laranja",
+    "kakashi2_amarelo",
+    "kakashi2_azul_c",
+    "kakashi2_azul_e",
+    "kakashi2_verde_c",
+    "kakashi2_verde_e",
+    "kakashi2_roxo",
+    "kakashi2_rosa_c",
+    "kakashi2_rosa_e",
+	  "samehada",
+    "samehadab",
+    "foice_tripla",
+    "gunbai",
+    "kubikiribocho",
+    "foice_triplab",
+    "gunbaib",
+    "kubikiribochob",
+    "walk",
+    "health",
+    "max_health",
+    "hiraishin_tp",
+    "itachi_tp",
+    "rasengan",
+    "rinneganmenu"
+        ]
+      },
+      "animations": {
+        "modos": "controller.animation.modos",
+	"chakra": "controller.animation.chakra",
+  "hiraishin_tp": "controller.animation.hiraishin_tp",
+  "itachi_tp": "controller.animation.itachi_tp",
+  "dead": "controller.animation.death",
+  "subs":"controller.animation.subs",
+  "water": "controller.animation.water",
+  "amaterasu_i": "controller.animation.amaterasu_i",
+  "kamui_1": "controller.animation.kamui_1",
+  "kamui_2": "controller.animation.kamui_2",
+  "kamui_3": "controller.animation.kamui_3",
+  "kamui_4": "controller.animation.kamui_4",
+  "kamui_5": "controller.animation.kamui_5",
+  "hiraishinmarca_1": "controller.animation.hiraishinmarca_1",
+  "hiraishinmarca_2": "controller.animation.hiraishinmarca_2",
+  "hiraishinmarca_3": "controller.animation.hiraishinmarca_3",
+  "hiraishinmarca_4": "controller.animation.hiraishinmarca_4",
+  "hiraishinmarca_5": "controller.animation.hiraishinmarca_5",
+  "hiraishinmarca_6": "controller.animation.hiraishinmarca_6",
+  "rinnegan_1": "controller.animation.rinnegan_1",
+  "rinnegan_2": "controller.animation.rinnegan_2",
+  "rinnegan_3": "controller.animation.rinnegan_3",
+  "rinnegan_4": "controller.animation.rinnegan_4",
+  "rinnegan_5": "controller.animation.rinnegan_5",
+  "rinnegan_6": "controller.animation.rinnegan_6",
+  "kakashi_branco": "controller.animation.kakashi_branco",
+	"kakashi_preto": "controller.animation.kakashi_preto",
+	"kakashi_marrom": "controller.animation.kakashi_marrom",
+  "kakashi_cinza": "controller.animation.kakashi_cinza",
+	"kakashi_laranja": "controller.animation.kakashi_laranja",
+  "kakashi_azul_e": "controller.animation.kakashi_azul_e",
+	"kakashi_azul_c": "controller.animation.kakashi_azul_c",
+	"kakashi_verde_c": "controller.animation.kakashi_verde_c",
+  "kakashi_verde_e": "controller.animation.kakashi_verde_e",
+	"kakashi_roxo": "controller.animation.kakashi_roxo",
+	"kakashi_rosa_e": "controller.animation.kakashi_rosa_e",
+  "kakashi_rosa_c": "controller.animation.kakashi_rosa_c",
+	"kakashi_amarelo": "controller.animation.kakashi_amarelo",
+  "kakashi2_branco": "controller.animation.kakashi2_branco",
+  "kakashi2_preto": "controller.animation.kakashi2_preto",
+  "kakashi2_marrom": "controller.animation.kakashi2_marrom",
+  "kakashi2_cinza": "controller.animation.kakashi2_cinza",
+  "kakashi2_laranja": "controller.animation.kakashi2_laranja",
+  "kakashi2_azul_e": "controller.animation.kakashi2_azul_e",
+  "kakashi2_azul_c": "controller.animation.kakashi2_azul_c",
+  "kakashi2_verde_c": "controller.animation.kakashi2_verde_c",
+  "kakashi2_verde_e": "controller.animation.kakashi2_verde_e",
+  "kakashi2_roxo": "controller.animation.kakashi2_roxo",
+  "kakashi2_rosa_e": "controller.animation.kakashi2_rosa_e",
+  "kakashi2_rosa_c": "controller.animation.kakashi2_rosa_c",
+  "kakashi2_amarelo": "controller.animation.kakashi2_amarelo",
+  "samehada": "controller.animation.samehada",
+  "samehadab": "controller.animation.samehadab",
+  "foice_tripla": "controller.animation.foice_tripla",
+  "gunbai": "controller.animation.gunbai",
+  "kubikiribocho": "controller.animation.kubikiribocho",
+  "foice_triplab": "controller.animation.foice_triplab",
+  "gunbaib": "controller.animation.gunbaib",
+  "kubikiribochob": "controller.animation.kubikiribochob",
+  "walk": "controller.animation.walk",
+  "rasengan": "controller.animation.rasengan",
+  "health": "controller.animation.health",
+  "max_health": "controller.animation.max_health",
+  "rinneganmenu": "controller.animation.rinneganmenu" 
+      }
+    },
+    "component_groups": {
+      "claro_azul":{
+        "minecraft:variant": {
+          "value": 201
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      }, 
+      "claro_verde":{
+        "minecraft:variant": {
+          "value": 202
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },  
+      "claro_amarelo":{
+        "minecraft:variant": {
+          "value": 203
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "claro_preto":{
+        "minecraft:variant": {
+          "value": 204
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "claro_vermelho":{
+        "minecraft:variant": {
+          "value": 205
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "claro_branco":{
+        "minecraft:variant": {
+          "value": 206
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      }, 
+      "negro_azul":{
+        "minecraft:variant": {
+          "value": 207
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      }, 
+      "negro_verde":{
+        "minecraft:variant": {
+          "value": 208
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },  
+      "negro_amarelo":{
+        "minecraft:variant": {
+          "value": 209
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "negro_preto":{
+        "minecraft:variant": {
+          "value": 210
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "negro_vermelho":{
+        "minecraft:variant": {
+          "value": 211
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "negro_branco":{
+        "minecraft:variant": {
+          "value": 212
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      }, 
+      "moreno_azul":{
+        "minecraft:variant": {
+          "value": 213
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      }, 
+      "moreno_verde":{
+        "minecraft:variant": {
+          "value": 214
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },  
+      "moreno_amarelo":{
+        "minecraft:variant": {
+          "value": 215
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "moreno_preto":{
+        "minecraft:variant": {
+          "value": 216
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "moreno_vermelho":{
+        "minecraft:variant": {
+          "value": 217
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "moreno_branco":{
+        "minecraft:variant": {
+          "value": 218
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      }, 
+      "branco_azul":{
+        "minecraft:variant": {
+          "value": 219
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      }, 
+      "branco_verde":{
+        "minecraft:variant": {
+          "value": 220
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },  
+      "branco_amarelo":{
+        "minecraft:variant": {
+          "value": 221
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "branco_preto":{
+        "minecraft:variant": {
+          "value": 222
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "branco_vermelho":{
+        "minecraft:variant": {
+          "value": 223
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "branco_branco":{
+        "minecraft:variant": {
+          "value": 224
+        }
+      },
+      "isshiki_base":{
+        "minecraft:variant": {
+          "value": 225
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      }, 
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(query.player_level * 7, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [ "player" ]
+      },
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 5
+      },
+      "minecraft:player.saturation": {
+        "value": 100
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [ 0.4, -0.2, -0.1 ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [ -0.4, -0.2, -0.1 ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:scaffolding_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:trigger_raid"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "claro_azul"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "claro_azul"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "claro_verde"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 2
+                }
+              ]
+            },
+            "event": "claro_verde"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "claro_amarelo"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 3
+                }
+              ]
+            },
+            "event": "claro_amarelo"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "claro_preto"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 4
+                }
+              ]
+            },
+            "event": "claro_preto"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "claro_vermelho"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 5
+                }
+              ]
+            },
+            "event": "claro_vermelho"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "claro_branco"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 6
+                }
+              ]
+            },
+            "event": "claro_branco"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "moreno_azul"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 7
+                }
+              ]
+            },
+            "event": "moreno_azul"
+            },
+            {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "moreno_verde"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 8
+                }
+              ]
+            },
+            "event": "moreno_verde"
+            },
+            {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "moreno_amarelo"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 9
+                }
+              ]
+            },
+            "event": "moreno_amarelo"
+            },
+            {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "moreno_preto"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 10
+                }
+              ]
+            },
+            "event": "moreno_preto"
+            },
+            {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "moreno_vermelho"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 11
+                }
+              ]
+            },
+            "event": "moreno_vermelho"
+            },
+            {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "moreno_branco"
+                },
+                {
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "!=",
+                  "value": 12
+                }
+              ]
+            },
+            "event": "moreno_branco"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_azul"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 13
+                  }
+                ]
+              },
+              "event": "negro_azul"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_verde"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 14
+                  }
+                ]
+              },
+              "event": "negro_verde"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_amarelo"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 15
+                  }
+                ]
+              },
+              "event": "negro_amarelo"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_preto"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 16
+                  }
+                ]
+              },
+              "event": "negro_preto"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_vermelho"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 17
+                  }
+                ]
+              },
+              "event": "negro_vermelho"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_branco"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 18
+                  }
+                ]
+              },
+              "event": "negro_branco"
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_azul"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 19
+                    }
+                  ]
+                },
+                "event": "branco_azul"
+                },
+                {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_verde"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 20
+                    }
+                  ]
+                },
+                "event": "branco_verde"
+                },
+                {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_amarelo"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 21
+                    }
+                  ]
+                },
+                "event": "branco_amarelo"
+                },
+                {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_preto"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 22
+                    }
+                  ]
+                },
+                "event": "branco_preto"
+                },
+                {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_vermelho"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 23
+                    }
+                  ]
+                },
+                "event": "branco_vermelho"
+                },
+                {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_branco"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 24
+                    }
+                  ]
+                },
+                "event": "branco_branco"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "isshiki_base"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 25
+                  }
+                ]
+              },
+              "event": "isshiki_base"
+              
+          }
+        ]
+      }
+    },
+    "events": { 
+      "claro_azul": {
+        "add": {
+          "component_groups": [
+            "claro_azul"
+          ]
+        }
+      },
+      "claro_vermelho": {
+        "add": {
+          "component_groups": [
+            "claro_vermelho"
+          ]
+        }
+      },
+      "claro_amarelo": {
+        "add": {
+          "component_groups": [
+            "claro_amarelo"
+          ]
+        }
+      },
+      "claro_verde": {
+        "add": {
+          "component_groups": [
+            "claro_verde"
+          ]
+        }
+      },
+      "claro_preto": {
+        "add": {
+          "component_groups": [
+            "claro_preto"
+          ]
+        }
+      },
+      "claro_branco": {
+        "add": {
+          "component_groups": [
+            "claro_branco"
+          ]
+        }
+      },
+      "branco_azul": {
+        "add": {
+          "component_groups": [
+            "branco_azul"
+          ]
+        }
+      },
+      "branco_vermelho": {
+        "add": {
+          "component_groups": [
+            "branco_vermelho"
+          ]
+        }
+      },
+      "branco_amarelo": {
+        "add": {
+          "component_groups": [
+            "branco_amarelo"
+          ]
+        }
+      },
+      "branco_verde": {
+        "add": {
+          "component_groups": [
+            "branco_verde"
+          ]
+        }
+      },
+      "branco_preto": {
+        "add": {
+          "component_groups": [
+            "branco_preto"
+          ]
+        }
+      },
+      "branco_branco": {
+        "add": {
+          "component_groups": [
+            "branco_branco"
+          ]
+        }
+      },
+      "negro_azul": {
+        "add": {
+          "component_groups": [
+            "negro_azul"
+          ]
+        }
+      },
+      "negro_vermelho": {
+        "add": {
+          "component_groups": [
+            "negro_vermelho"
+          ]
+        }
+      },
+      "negro_amarelo": {
+        "add": {
+          "component_groups": [
+            "negro_amarelo"
+          ]
+        }
+      },
+      "negro_verde": {
+        "add": {
+          "component_groups": [
+            "negro_verde"
+          ]
+        }
+      },
+      "negro_preto": {
+        "add": {
+          "component_groups": [
+            "negro_preto"
+          ]
+        }
+      },
+      "negro_branco": {
+        "add": {
+          "component_groups": [
+            "negro_branco"
+          ]
+        }
+      },
+      "moreno_azul": {
+        "add": {
+          "component_groups": [
+            "moreno_azul"
+          ]
+        }
+      },
+      "moreno_vermelho": {
+        "add": {
+          "component_groups": [
+            "moreno_vermelho"
+          ]
+        }
+      },
+      "moreno_amarelo": {
+        "add": {
+          "component_groups": [
+            "moreno_amarelo"
+          ]
+        }
+      },
+      "moreno_verde": {
+        "add": {
+          "component_groups": [
+            "moreno_verde"
+          ]
+        }
+      },
+      "moreno_preto": {
+        "add": {
+          "component_groups": [
+            "moreno_preto"
+          ]
+        }
+      },
+      "moreno_branco": {
+        "add": {
+          "component_groups": [
+            "moreno_branco"
+          ]
+        }
+      },
+      "isshiki_base": {
+        "add": {
+          "component_groups": [
+            "isshiki_base"
+          ]
+        }
+      },
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      }
+    }
+  }
+}

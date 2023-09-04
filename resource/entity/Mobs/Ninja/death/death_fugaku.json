@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+	  "description": {
+		"identifier": "porkyn:death_fugaku",
+		"materials": {
+		  "default": "glow"
+		},
+		"textures": {
+		  "default": "textures/entity/fugaku_dead"
+		},
+		"geometry": {
+		  "default": "geometry.death3"
+		},
+		"spawn_egg": {
+		  "texture": "spawn_egg",
+		  "texture_index": 0
+		},
+		"render_controllers": [ "controller.render.glow" ]
+	  }
+	}
+  }

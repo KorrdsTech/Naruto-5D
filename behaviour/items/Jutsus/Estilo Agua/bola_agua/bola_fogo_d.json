@@ -1,0 +1,57 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:bola_agua_d",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+ 
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 0,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "destroy"
+				}
+			},
+			"minecraft:use_duration": 1,
+			"minecraft:display_name": {
+				"value": "§lSuiton Goukakyuu No Jutsu §b[Rank D]"
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
+			"minecraft:cooldown": {
+				"category": "bola_agua_d",
+				"duration": 1.0
+			},
+			"minecraft:icon": {
+				"texture": "bola_agua_d"
+			}
+		},
+		"events": {
+			"destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"function bola_agua_d"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

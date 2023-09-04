@@ -1,0 +1,469 @@
+{
+  "click": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/click",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "menu": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/menu",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "bamboo": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/sound/bamboo",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "music1": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/music1",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "music2": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/music2",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "music3": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/music3",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "music4": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/music4",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "music5": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/music5",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "fala_kurama_1": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/falas/fala_kurama_1",
+        "stream": true,
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "fala_itachi1": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/falas/fala_itachi1",
+        "stream": true,
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "fala_itachi2": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/falas/fala_itachi2",
+        "stream": true,
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "sharingan": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/sharingan",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "estacas": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/estacas",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "teleport_rinnegan": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/teleport_rinnegan",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "kage": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/kage",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "corvos": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/corvos",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+    "kagebushin": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/kagebushin",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+ "byakugan": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/byakugan",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+ "amaterasu_s": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/amaterasu_s",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+ "amaterasu_i": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/amaterasu_i",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mangekyou_i": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/mangekyou_i",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mangekyou": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/mangekyou",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+"kamui": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/kamui",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "rinnegan": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/rinnegan",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "jougan": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jougan",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "sexy": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/sexy",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+
+  
+  
+  
+  "susanoo": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/susanoo",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "bola_fogo": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/bola_fogo",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "tsukuyomi": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/tsukuyomi",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "bola_agua": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/bola_agua",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "estilo_vento": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/estilo_vento",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "estilo_terra": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/estilo_terra",
+        "stream": true,
+        "volume": 0.4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "jutsu": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/jutsu",
+        "stream": true,
+        "volume": 4,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "subs": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/subs",
+        "stream": true,
+        "volume": 0.5,
+        "load_on_low_memory": true              
+      }
+    ]
+  },
+  "rasengan": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/rasengan",
+        "stream": true,
+        "volume": 4,
+        "load_on_low_memory": true              
+      }
+    ]
+  },
+  "bansho": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/bansho",
+        "stream": true,
+        "volume": 4,
+        "load_on_low_memory": true   
+      }
+    ]
+  },
+  "shinra": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/shinra",
+        "stream": true,
+        "volume": 4,
+        "load_on_low_memory": true    
+      }
+    ]
+  },
+  "hiraishin": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsus/hiraishin",
+        "stream": true,
+        "volume": 0.5,
+        "load_on_low_memory": true    
+      }
+    ]
+  },
+  "mob.porkyn_naruto_classico.idle": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/mob/porkyn_naruto_classico/idle",
+        "stream": true,
+        "volume": 4,
+        "load_on_low_memory": true 
+      }
+    ]
+  },
+  "mob.porkyn_naruto_classico.death": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/shinra",
+        "stream": true,
+        "volume": 4,
+        "load_on_low_memory": true                                                                
+      }        
+    ]
+  },
+  "lvl": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/sound/levelup",
+        "stream": true,
+        "volume": 0.5,
+        "load_on_low_memory": true                                                                
+      }        
+    ]
+  },
+  "item": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/sound/item",
+        "stream": true,
+        "volume": 0.5,
+        "load_on_low_memory": true                                                                
+      }        
+    ]
+  }
+}
+

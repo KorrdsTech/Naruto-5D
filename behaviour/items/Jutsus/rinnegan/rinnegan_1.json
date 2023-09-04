@@ -1,0 +1,58 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:rinnegan_1",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+ 
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 0,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "destroy"
+				}
+			},
+			"minecraft:use_duration": 1,
+			"minecraft:display_name": {
+				"value": "§lLocal 1 [Amenotejiraka]"
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
+			"minecraft:cooldown": {
+				"category": "amaterasu",
+				"duration": 1.0
+			},
+			"minecraft:icon": {
+				"texture": "amenotejiraka1"
+			}
+		},
+		"events": {
+			"destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"replaceitem entity @p slot.weapon.mainhand 0 air",
+								"replaceitem entity @p slot.weapon.mainhand 1 porkyn:rinnegan_2 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

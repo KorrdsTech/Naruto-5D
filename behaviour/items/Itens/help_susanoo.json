@@ -1,0 +1,59 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:help_susanoo",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+ 
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 0,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "destroy"
+				}
+			},
+			"minecraft:use_duration": 1,
+			"minecraft:display_name": {
+				"value": "§lSusanoo [Como usar]"
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
+			"minecraft:cooldown": {
+				"category": "chakra",
+				"duration": 1.0
+			},
+			"minecraft:icon": {
+				"texture": "help"
+			}
+		},
+		"events": {
+			"destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"tellraw @p {\"rawtext\":[{\"text\":\"§lParabéns por despertar seu Mangekyou Sharingan!\n§fUma habilidade do Mangekyou Sharingan é o Susanoo, no momento o seu susanoo pode chegar apenas até a 3ª forma.\n§eComo usar o Susanoo?\n§fA força do seu Susanoo irá depender do seu chakra, quanto mais chakra você ter, mais forte será seu susanoo.\"}]}",
+								"tellraw @p {\"rawtext\":[{\"text\":\"§b§lForma 1§ §fcusta 150 Chakra\n§a§lForma 2 §fcusta 200 Chakra\n§6§lForma 3§f custa 250 Chakra \n§e§lForma 4§f custa 300 Chakra\"}]}",
+								"clear @p porkyn:help_susanoo"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,217 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "porkyn:inv_sapo_b",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+
+		"component_groups": {},
+
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"mob"
+				]
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:boss": {
+				"name": "§lGamabunta",
+				"hud_range": 7
+			},
+			"minecraft:scale":{
+				"value": 0.6
+			},
+			"minecraft:timer":
+			{
+				"looping": false,
+				"time": 35,
+				"time_down_event": {
+					"event": "on:efeitos"
+				}
+			},
+			  "minecraft:on_hurt": {
+				"event": "on:hurt",
+				"target": "self"
+			  },
+			  "minecraft:on_hurt_by_player": {
+				"event": "on:hurt_by_player",
+				"target": "self"
+			  },
+			  "minecraft:on_ignite": {
+				"event": "on:ignite",
+				"target": "self"
+			  },
+			  "minecraft:on_target_acquired": {
+				"event": "on:target_acquired",
+				"target": "self"
+			  },
+			  "minecraft:on_target_escape": {
+				"event": "on:target_escape",
+				"target": "self"
+			  },
+			  "minecraft:on_wake_with_owner": {
+				"event": "on:wake_with_owner",
+				"target": "self"
+			  },
+			"minecraft:attack": {
+				"damage": 32
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 1,
+				"speed_multiplier": 1,
+				"track_target": false
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:collision_box": {
+				"width": 9,
+				"height": 9
+			},
+			"minecraft:nameable": {},
+			"minecraft:health": {
+				"value": 945,
+				"max": 945
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"must_see": true,
+				"reselect_targets": true,
+				"within_radius": 75.0,
+				"must_see_forget_duration": 17.0,
+				"entity_types": 
+				  {
+					"filters": {
+					  "any_of": [
+						{ "test": "is_family", "subject": "other", "value": "mob" }
+					  ]
+					},
+					"max_dist": 75
+				  }
+				  
+			},
+			"minecraft:movement": {
+				"value": 1
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 0.8
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 100,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 2
+			},
+			"minecraft:balloonable": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/creepy_skeleton.json"
+			},
+			"minecraft:test_angry": {
+				"minecraft:angry": {
+					"duration": 25,
+					"broadcast_anger": true,
+					"broadcast_range": 20,
+					"calm_event": {
+						"event": "minecraft:on_calm",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:test_calm": {
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				}
+			},
+			"minecraft:on_death": {
+				"event": "on:death",
+				"target": "self"
+			}
+		},
+		"events": {
+			"minecraft:become_angry": {
+				"remove": {
+					"component_groups": [
+						"minecraft:test_calm"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:test_angry"
+					]
+				}
+			},
+			"on:death": {
+				"run_command": {
+				  "command": [
+					"particle minecraft:egg_destroy_emitter ~~1~",
+					"particle minecraft:egg_destroy_emitter ~~1~",
+					"playsound subs @a[x=~,y=~,z=~,r=6]",
+					"kill @e[type=item,r=6]"
+				  ]
+				}
+			  },
+			  "on:hurt": {
+				"run_command": {
+				  "command": [
+				  ]
+				}
+			  },
+			  "on:hurt_by_player": {
+				"run_command": {
+				  "command": [
+				  ]
+				}
+			  },
+			  "on:efeitos": {
+				  "run_command": {
+					"command": [
+						"kill @s"
+					]
+				  }
+				}
+			  }
+		  }
+	  }
+	  

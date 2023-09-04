@@ -1,0 +1,106 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "porkyn:rinnegantp_1",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"porkyn:waitopen": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 0.1,
+					"time_down_event": {
+						"event": "porkyn:opengui"
+					}
+				}
+			},
+			"porkyn:killdelay": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"event": "porkyn:kill"
+					}
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": false
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:npc": {},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:movement": {
+				"value": 0
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"time": 1,
+				"time_down_event": {
+					"event": "porkyn:kill"
+				}
+			},
+			"minecraft:friction_modifier": {
+				"value": 300
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:health": {
+			  "value": 100000,
+			  "max": 100000
+			}
+		},
+		"events": {
+			"porkyn:kill": {
+				"run_command": {
+					"command": [
+
+            "tp @s ~~500~",
+            "kill @s"
+			
+					]
+				}
+			},
+			"porkyn:open": {
+				"add": {
+					"component_groups": [
+						"porkyn:waitopen"
+					]
+				}
+			},
+			"porkyn:opengui": {
+				"run_command": {
+					"command": [
+						""
+					]
+				},
+				"add": {
+					"component_groups": [
+						"porkyn:killdelay"
+					]
+				}
+			}
+		}
+	}
+}

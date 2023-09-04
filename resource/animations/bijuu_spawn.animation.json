@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bijuu_spawn": {
+			"loop": true,
+			"animation_length": 9,
+			"bones": {
+				"cubo": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"3.0": [90, 0, -180],
+						"9.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

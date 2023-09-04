@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gijinka.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    }
+  }
+}

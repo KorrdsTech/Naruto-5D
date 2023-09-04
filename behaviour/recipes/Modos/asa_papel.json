@@ -1,0 +1,58 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:asa_papel"
+    },
+    
+    "tags": [ "nb_craft" ],
+    "pattern": [
+      "ABC",
+      "DEF",
+      "GHI"
+    ],
+    "key": {
+      "A": {
+        "item": "paper",
+        "data": 0
+      },
+      "B": {
+        "item": "paper",
+        "data": 0
+      },
+      "C": {
+        "item": "paper",
+        "data": 0
+      },
+      "D": {
+        "item": "paper",
+        "data": 0
+      },
+      "E": {
+        "item": "paper",
+        "data": 0
+      },
+      "F": {
+        "item": "paper",
+        "data": 0
+      },
+      "G": {
+        "item": "paper",
+        "data": 0
+      },
+      "H": {
+        "item": "paper",
+        "data": 0
+      },
+      "I": {
+        "item": "paper",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "porkyn:asa_papel",
+      "count": 1,
+      "data": 0
+    }
+  }
+}

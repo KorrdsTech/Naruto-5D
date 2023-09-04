@@ -1,0 +1,403 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "cor_cinza",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+						
+							"/function hair_vermelho",
+							"/dialogue open @s @p cor_vermelho"
+
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fCinza"} ] },
+							"commands": [
+								"/function cabelos_cinza",
+								"/tag @p add hair",
+								"tag @p add cinza",
+								"/dialogue open @s @p[tag=!cla] vila1"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+							"/function hair_branco",
+							"/dialogue open @s @p cor_branco"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_branco",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+						
+							"/function hair_cinza",
+							"/dialogue open @s @p cor_cinza"
+
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fBranco"} ] },
+							"commands": [
+								"/function cabelos_branco",
+								"/tag @p add hair",
+								"tag @p add branco_hair",
+								"/dialogue open @s @p[tag=!cla] vila1"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+							"/function hair_preto",
+							"/dialogue open @s @p cor_preto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_preto",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+						
+							"/function hair_branco",
+							"/dialogue open @s @p cor_branco"
+
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fPreto"} ] },
+							"commands": [
+								"/function cabelos_preto",
+								"/tag @p add hair",
+								"tag @p add preto",
+								"/dialogue open @s @p[tag=!cla] vila1"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+							"/function hair_marrom",
+							"/dialogue open @s @p cor_marrom"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_marrom",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_preto",
+							"/dialogue open @s @p cor_preto"
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fMarrom"} ] },
+							"commands": [
+								"/tag @p add hair",
+								"tag @p add marrom",
+								"/dialogue open @s @p[tag=!cla] vila1"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_laranja",
+								"/dialogue open @s @p cor_laranja"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_laranja",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_marrom",
+							"/dialogue open @s @p cor_marrom"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fLaranja"} ] },
+							"commands": [
+								"/dialogue open @s @p[tag=!cla] vila1",
+								"/tag @p add hair",
+								"tag @p add laranja"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_amarelo",
+								"/dialogue open @s @p cor_amarelo"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_amarelo",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_laranja",
+							"/dialogue open @s @p cor_laranja"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fAmarelo"} ] },
+							"commands": [
+								"/dialogue open @s @p[tag=!cla] vila1",
+								"/tag @p add hair",
+								"tag @p add amarelo"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_verde_c",
+								"/dialogue open @s @p cor_verde_c"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_verde_c",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_amarelo",
+							"/dialogue open @s @p cor_amarelo"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fVerde 1"} ] },
+							"commands": [
+								"/dialogue open @s @p[tag=!cla] vila1",
+								"/tag @p add hair",
+								"tag @p add verde_c"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_verde_e",
+								"/dialogue open @s @p cor_verde_e"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_verde_e",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_verde_c",
+							"/dialogue open @s @p cor_verde_c"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fVerde 2"} ] },
+							"commands": [
+								"/dialogue open @s @p[tag=!cla] vila1",
+								"/tag @p add hair",
+								"tag @p add verde_e"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_azul_e",
+								"/dialogue open @s @p cor_azul_e"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_azul_e",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_verde_e",
+							"/dialogue open @s @p cor_verde_e"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fAzul 1"} ] },
+							"commands": [
+								"/dialogue open @s @p[tag=!cla] vila1",
+								"/tag @p add hair",
+								"tag @p add azul_e"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_azul_c",
+								"/dialogue open @s @p cor_azul_c"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_azul_c",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_azul_e",
+							"/dialogue open @s @p cor_azul_e"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fAzul 2"} ] },
+							"commands": [
+								"/dialogue open @s @p[tag=!cla] vila1",
+								"/tag @p add hair",
+								"tag @p add azul_c "
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_rosa_c",
+								"/dialogue open @s @p cor_rosa_c"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_rosa_c",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_azul_c",
+							"/dialogue open @s @p cor_azul_c"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fRosa"} ] },
+							"commands": [
+								"/dialogue open @s @p[tag=!cla] vila1",
+								"/tag @p add hair",
+								"tag @p add rosa_c"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_roxo",
+								"/dialogue open @s @p cor_roxo"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_roxo",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_azul_c",
+							"/dialogue open @s @p cor_azul_c"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fRoxo"} ] },
+							"commands": [
+								"/dialogue open @s @p[tag=!cla] vila1",
+								"/tag @p add hair",
+								"tag @p add roxo"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_vermelho",
+								"/dialogue open @s @p cor_vermelho"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cor_vermelho",
+				"npc_name": { "rawtext": [ {"text":"§l§fCor do Cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function hair_roxo",
+							"/dialogue open @s @p cor_roxo"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fVermelho"} ] },
+							"commands": [
+								"/dialogue open @s @p[tag=!cla] vila1",
+								"/tag @p add hair",
+								"tag @p add vermelho",
+								"tag @p add vermelho_e"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function hair_cinza",
+								"/dialogue open @s @p cor_cinza"
+						]
+							}
+						]
+					}
+				]
+			}
+		}
+		

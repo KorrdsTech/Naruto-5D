@@ -1,0 +1,20 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "playernpcscreen",
+				"text": { "rawtext": [ {"text":"Add-on criado por Porkyn"} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"Close GUI"} ] },
+						"commands": [
+						]
+					}
+				]
+			}
+		]
+	}
+}

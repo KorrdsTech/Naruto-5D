@@ -1,0 +1,99 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "shop",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fLoja"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": ""
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fItens"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p shop_item1"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fFerramentas"
+								}
+							]
+						},
+						"commands": [
+							"/summon porkyn:tenten ~1~~1"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fRoupas"
+								}
+							]
+						},
+						"commands": [
+							"/summon porkyn:tenten2 ~1~~1"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fJutsus"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p[tag=pergaminho] pergaminho",
+							"/execute as @p[r=1,tag=!pergaminho] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§lVocê precisa pegar o Pergaminho de Jutsus para liberar essa opção!\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fComidas"
+								}
+							]
+						},
+						"commands": [
+							"/summon porkyn:ichiraku ~1~~1"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fVoltar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "§ePorkyn",
+    "name": "§l§6Naruto §f5D v4.0",
+    "uuid": "f888684c-1890-4f02-9dae-65bbce318a79",
+    "version": [
+      1,
+      8,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "§ePorkyn",
+      "type": "data",
+      "uuid": "14cb0c86-8540-4ecd-9fff-8a157a6e4c2f",
+      "version": [
+        1,
+        8,
+        0
+      ]
+    }
+  ],
+  "dependencies": null
+}

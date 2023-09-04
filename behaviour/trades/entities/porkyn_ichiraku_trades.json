@@ -1,0 +1,50 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 2
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:lamen",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 3
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:dango",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 3
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:salgadinho",
+              "quantity": 1
+            }
+          ]   
+        }
+      ]
+    }
+  ]
+}

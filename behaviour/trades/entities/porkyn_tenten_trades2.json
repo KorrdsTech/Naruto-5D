@@ -1,0 +1,459 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_sasuke_kid1",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_sasuke_kid2",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_sasuke_kid3",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_sasuke_kid4",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_sasuke_kid5",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_gaara",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_mitsuki",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_obito",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_hiruzen",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_neji",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_rock_lee",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 20
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_boruto",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 25
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_naruto_kid",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 25
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_naruto_s",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 64
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:naruto_hokage_manto",
+              "quantity": 1
+            }
+          ]
+          
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 50
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_sasuke_2",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 45
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_anbu",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 30
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_folha",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 30
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_nevoa",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 30
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_areia",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 30
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_pedra",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 30
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_nuvem",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 40
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:manto_akatsuki",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 40
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:manto_akatsuki_white",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 40
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:mantoc_akatsukic",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 40
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:mantoc_akatsuki_white_c",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 40
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:manto_preto",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 40
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:mantoc_pretoc",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_tobirama",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_tobirama_verde",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:roupa_tobirama_vermelho",
+              "quantity": 1
+            }
+          ]
+
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "porkyn:hiraishin_2",
+      "materials": {
+        "default": "glow"
+      },
+      "textures": {
+        "default": "textures/items3d/kunai_m"
+      },
+      "geometry": {
+        "default": "geometry.kunai_m_c"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 0
+      },
+      "render_controllers": [ "controller.render.glow" ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+clear @p porkyn:uchiha_1
+clear @p porkyn:hyuuga_1
+clear @p porkyn:uzumaki_1
+clear @p porkyn:chinoike_1
+clear @p porkyn:msb_obito
+clear @p porkyn:kazekage_1
+clear @p porkyn:senju
+clear @p porkyn:kunai_m
+clear @p porkyn:hashirama_jougan

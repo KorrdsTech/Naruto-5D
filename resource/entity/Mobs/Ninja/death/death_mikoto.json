@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+	  "description": {
+		"identifier": "porkyn:death_mikoto",
+		"materials": {
+		  "default": "glow"
+		},
+		"textures": {
+		  "default": "textures/entity/mikoto_dead"
+		},
+		"geometry": {
+		  "default": "geometry.death3"
+		},
+		"spawn_egg": {
+		  "texture": "spawn_egg",
+		  "texture_index": 0
+		},
+		"render_controllers": [ "controller.render.glow" ]
+	  }
+	}
+  }

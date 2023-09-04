@@ -1,0 +1,58 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:roupa_tobirama"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABC",
+      "DEF",
+      "GHI"
+    ],
+    "key": {
+      "A": {
+        "item": "wool",
+        "data": 0
+      },
+      "B": {
+        "item": "wool",
+        "data": 0
+      },
+      "C": {
+        "item": "wool",
+        "data": 0
+      },
+      "D": {
+        "item": "black_dye",
+        "data": 0
+      },
+      "E": {
+        "item": "blue_dye",
+        "data": 0
+      },
+      "F": {
+        "item": "black_dye",
+        "data": 0
+      },
+      "G": {
+        "item": "blue_dye",
+        "data": 0
+      },
+      "H": {
+        "item": "blue_dye",
+        "data": 0
+      },
+      "I": {
+        "item": "blue_dye",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "porkyn:roupa_tobirama",
+      "count": 1,
+      "data": 0
+    }
+  }
+}

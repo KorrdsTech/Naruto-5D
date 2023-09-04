@@ -1,0 +1,763 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "mh1",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fEscolha o modo história!"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "          "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh2"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fNaruto"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh1_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fEscolha o modo história!"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "          "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh1"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSasuke"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fÉ necessário completar o modo história do Naruto primeiro.\"}]}",
+							"/dialogue open @s @p[r=1,tag=mh8_naruto] mh1_sasuke"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh1"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh1_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fPergaminho Sagrado!"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "     §l§b[Rank D]"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh11_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=!mh1_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Mizuki-Sensei>§f É uma pena que você não tenha passado no teste final..\nMas eu posso te ajudar! tem um pergaminho na sala do Hokage.\nDizem que ele contém diversos jutsus secretos..\"}]}",
+							"/execute as @p[r=1,tag=mh1_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§eVocê não pode fazer esta missão de novo.\"}]}",
+							"/execute as @p[r=1,tag=!mh1_naruto] ~~~ execute as @p[r=1,tag=!mh1_naruto] ~~~ structure load konoha ~~-1~",
+							"/execute as @p[r=1,tag=!mh1_naruto] ~~~ fill ~~1~~~~ air",
+							"/execute as @p[r=1,tag=!mh1_naruto] ~~~ time set midnight",
+							"/execute as @p[r=1,tag=!mh1_naruto] ~~~ execute as @p ~~1~22 spawnpoint",
+							"/execute as @p[r=1,tag=!mh1_naruto] ~~~ summon porkyn:mizuki_parado ~1~~17",
+							"/execute as @p[r=1,tag=!mh1_naruto] ~~~ tp @p ~~~22"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh2_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh2_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fO Pervertido"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "     §l§b[Rank D]"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh1_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh1_naruto] ~~~ stopsound @s",
+							"/execute as @p[r=1,tag=mh1_naruto] ~~~ time set day",
+							"/execute as @p[r=1,tag=mh1_naruto] ~~~ execute as @p ~~1~ spawnpoint",
+							"/execute as @p[r=1,tag=mh1_naruto] ~~~ summon porkyn:ebisu ~1~~5",
+							"/execute as @p[r=1,tag=mh1_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Ebisu-Sensei>§f Konohamaru!! Fique longe desse garoto!! \nEle é uma má influencia para você!\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh3_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh3_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fTime 7"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "     §l§b[Rank D]"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh2_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh2_naruto] ~~~ time set day",
+							"/execute as @p[r=1,tag=mh2_naruto] ~~~ execute as @p ~~1~ spawnpoint",
+							"/execute as @p[r=1,tag=mh2_naruto] ~~~ summon porkyn:kakashi_parado ~1~1~5",
+							"/execute as @p[r=1,tag=mh2_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kakashi-Sensei>§f Para vocês passarem, só precisam pegar um desses guizos\n\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh4_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh4_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fUma missão perigosa"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "     §l§a[Rank C]"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh3_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh3_naruto] ~~~ time set day",
+							"/execute as @p[r=1,tag=mh3_naruto] ~~~ execute as @p ~~1~ spawnpoint",
+							"/execute as @p[r=1,tag=mh3_naruto] ~~~ summon porkyn:zabuza_mh4_naruto ~1~~5",
+							"/execute as @p[r=1,tag=mh3_naruto] ~~~ summon porkyn:velho_mh4 ~1~~",
+							"/execute as @p[r=1,tag=mh3_naruto] ~~~ summon porkyn:haku_mh4_naruto ~-1~~5",
+							"/execute as @p[r=1,tag=mh3_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fProteja o Contrutor de Pontes!\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh5_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh5_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fExame Chunnin"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "     §l§a[Rank C]"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh4_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh4_naruto] ~~~ time set day",
+							"/execute as @p[r=1,tag=mh4_naruto] ~~~ structure load parte1 ~~~",
+							"/execute as @p[r=1,tag=mh4_naruto] ~~~ structure load parte2 ~64~~",
+							"/execute as @p[r=1,tag=mh4_naruto] ~~~ structure load parte3 ~~~64",
+							"/execute as @p[r=1,tag=mh4_naruto] ~~~ structure load parte4 ~64~~64",
+							"/summon porkyn:arena_load ~~~",
+							"/execute as @p[r=1,tag=mh4_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote Neji!\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh6_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh6_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fJinchuuriki Vs. Jinchuuriki"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "     §l§6[Rank B]"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh5_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh5_naruto,tag=inv_sapo] ~~~ time set day",
+							"/execute as @p[r=1,tag=mh5_naruto,tag=inv_sapo] ~~~ summon porkyn:gaara_mh6_naruto ~~~",
+							"replaceitem entity @e[type=porkyn:gaara_mh6_naruto,tag=inv_sapo] slot.armor.legs 1 porkyn:modo_shukaku_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute as @p[r=1,tag=mh5_naruto,tag=inv_sapo] ~~~ playsound music2 @p",
+							"execute as @p[r=1,tag=mh5_naruto,tag=!inv_sapo] ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§fPara fazer essa missão é necessário que você aprenda o Jutsu de Invocação!\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh7_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh7_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fUm Novo Inimigo Aparece!"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "     §l§6[Rank B]"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh6_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh6_naruto] ~~~ time set day",
+							"/execute as @p[r=1,tag=mh6_naruto] ~~~ summon porkyn:kimimaro_mh7_naruto ~3~~",
+							"/execute as @p[r=1,tag=mh6_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Kimimaro!\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh8_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh8_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fO Fim Das Lágrimas"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "     §l§e[Rank A]"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh7_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh7_naruto] ~~~ time set day",
+							"/execute as @p[r=1,tag=mh7_naruto] ~~~ summon porkyn:sasuke_mh8_naruto ~~~",
+							"/execute as @p[r=1,tag=mh7_naruto] ~~~ playsound music2 @p"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh9_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh9_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fA chegada de naruto a vila"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": ""
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh8_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh8_naruto] ~~~ time set day",
+							"/execute as @p[r=1,tag=mh8_naruto] ~~~ summon porkyn:kakashi_mh9_naruto ~2~~",
+							"/execute as @p[r=1,tag=mh8_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote Kakashi!\"}]}",
+							"/execute as @p[r=1,tag=mh8_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fe não deixe a sakura morrer.\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh10_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh10_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fNaruto Vs. Kakuzu"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": ""
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh9_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh9_naruto] ~~~ time set day",
+							"/execute as @p[r=1,tag=mh9_naruto] ~~~ summon porkyn:kakuzu_mh10_naruto ~3~~",
+							"/execute as @p[r=1,tag=mh9_naruto] ~~~ summon porkyn:hidan_mh10_naruto ~3~~",
+							"/execute as @p[r=1,tag=mh9_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Kakuzu e Hidan!\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh11_naruto"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mh11_naruto",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fO Mundo Conhece A Dor"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "     §l§6[Rank B]"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh10_naruto"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fIniciar"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[r=1,tag=mh10_naruto] ~~~ summon porkyn:pain_caminhos ~3~~",
+							"/execute as @p[r=1,tag=mh10_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Pain!\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh1_naruto"
+						]
+					}
+				]
+			}
+		]
+	}
+}

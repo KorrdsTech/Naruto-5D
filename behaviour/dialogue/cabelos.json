@@ -1,0 +1,910 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "cabelo1",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:mitsuki_azul_c 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo26"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fNaruto 1"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_amarelo",
+								"/tag @p add cabelo_naruto"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:naruto_3_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo3"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo2",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo1"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fNaruto 2"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_amarelo",
+								"/tag @p add cabelo_naruto_2"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:naruto_3_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo3"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo3",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo1"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fNaruto 2"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_amarelo",
+								"/tag @p add cabelo_naruto_3"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:naruto_4_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo4"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo4",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:naruto_3_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo3"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fNaruto 3"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_amarelo",
+								"/tag @p add cabelo_naruto_4"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:sasuke_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo5"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo5",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:naruto_4_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo4"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fSasuke 1"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_preto",
+								"/tag @p add cabelo_sasuke"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:sasuke_2_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo6"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo6",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:sasuke_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo5"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fSasuke 2"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_preto",
+								"/tag @p add cabelo_sasuke_2"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:sasuke_3_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo7"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo7",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:sasuke_2_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo6"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fSasuke 3"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_preto",
+								"/tag @p add cabelo_sasuke_3"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:sasuke_4_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo8"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo8",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:sasuke_3_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo7"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fSasuke 4"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_preto",
+								"/tag @p add cabelo_sasuke_4"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:sakura_rosa_c 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo9"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo9",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:sasuke_4_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo8"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fSakura"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_rosa_c",
+								"/tag @p add cabelo_sakura"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:kakashi_branco 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo10"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo10",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:sakura_rosa_c 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo9"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fKakashi"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_branco",
+								"/tag @p add cabelo_kakashi",
+								"/tag @p add hair_kakashi"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:jiraya_branco 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo11"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo11",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:kakashi_branco 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo10"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fJiraiya"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_branco",
+								"/tag @p add cabelo_jiraiya"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:pain_laranja 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo12"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo12",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:jiraya_branco 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo11"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fYahiko"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_laranja",
+								"/tag @p add cabelo_pain"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:deidara_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo13"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo13",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:pain_laranja 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo12"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fDeidara"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_amarelo",
+								"/tag @p add cabelo_deidara"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:itachi_cinza 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo14"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo14",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:deidara_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo13"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fItachi"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_cinza",
+								"/tag @p add cabelo_itachi"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:madara_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo15"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo15",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:itachi_cinza 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo14"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fMadara"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_preto",
+								"/tag @p add cabelo_madara"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:hinata_roxo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo16"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo16",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:madara_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo15"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fHinata"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_roxo",
+								"/tag @p add cabelo_hinata"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:hinata_roxo_2 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo16_1"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo16_1",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:hinata_roxo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo16"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fHinata 2"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_roxo",
+								"/tag @p add cabelo_hinata_2"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:neji_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo17"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo17",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:hinata_roxo_2 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo16_1"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fNeji"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_preto",
+								"/tag @p add cabelo_neji"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:rocklee_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo18"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo18",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:neji_ 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo17"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fRock Lee"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_preto",
+								"/tag @p add cabelo_rocklee"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:tenten_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo19"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo19",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:rocklee_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo18"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fTenten"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_preto",
+								"/tag @p add cabelo_tenten"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:gaara_vermelho 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo20"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo20",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:tenten_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo19"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fGaara"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_vermelho",
+								"/tag @p add cabelo_gaara"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:temari_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo21"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo21",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:gaara_vermelho 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo20"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fTemari"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_amarelo",
+								"/tag @p add cabelo_temari"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:anko_roxo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo21.1"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo21.1",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:temari_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo21"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fAnko"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_roxo",
+								"/tag @p add cabelo_anko"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:tobirama_branco 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo22"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo22",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:anko_roxo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo21.1"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fTobirama"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_branco",
+								"/tag @p add cabelo_tobirama"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:minato_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo23"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo23",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:tobirama_branco 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo22"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fMinato"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_amarelo",
+								"/tag @p add cabelo_minato"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:tobi_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo24"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo24",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:minato_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo23"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fTobi"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_preto",
+								"/tag @p add cabelo_tobi"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:boruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo25"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo25",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:tobi_preto 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo24"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fBoruto"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_amarelo",
+								"/tag @p add cabelo_boruto"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:mitsuki_azul_c 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo26"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabelo26",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:boruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo25"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fMitsuki"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_azul_c",
+								"/tag @p add cabelo_mitsuki"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo1"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "cabel",
+				"npc_name": { "rawtext": [ {"text":"§l§fEscolha seu cabelo!"} ] },
+				"text": { "rawtext": [ {"text":""} ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/function limpar_cabelos",
+							"replaceitem entity @p slot.armor.feet 1 hair:boruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/dialogue open @s @p cabelo25"
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fMitsuki"} ] },
+							"commands": [
+								"/dialogue open @s @p cor_branco",
+								"/tag @p add cabelo_mitsuki"
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/function limpar_cabelos",
+								"replaceitem entity @p slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/dialogue open @s @p cabelo1"
+						]
+							}
+						]
+					}
+				]
+			}
+		}
+		

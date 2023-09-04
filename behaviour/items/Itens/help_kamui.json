@@ -1,0 +1,58 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:help_kamui",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+ 
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 0,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "destroy"
+				}
+			},
+			"minecraft:use_duration": 1,
+			"minecraft:display_name": {
+				"value": "§lKamui[Como usar]"
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
+			"minecraft:cooldown": {
+				"category": "chakra",
+				"duration": 1.0
+			},
+			"minecraft:icon": {
+				"texture": "help"
+			}
+		},
+		"events": {
+			"destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"tellraw @p {\"rawtext\":[{\"text\":\"§lKamui é um poderoso Ninjutsu Espaço-Tempo utilizado através do Mangekyō Sharingan.\n§eComo usar o Kamui?\n§fUsando o item Local 1 você pode marcar diversos lugares, para fazer uma marcação você tem que agachar com o item na mão. É possível marcar até 5 lugares diferentes, basta clicar com o botão direito/segurar na tela com o item Local 1, assim você muda o Local que você quer marcar.\n Para se teletransportar para o local marcado, use o item Kamui, irá abrir um menu com todos locais marcados, para se teletransportar gasta 50 §bchakra. \n§eSkill Secundária: \n §fO kamui possuí uma skill secundária, é possível se teletransportar para um mob que estiver proxímo, basta pegar o item Kamui na mão e usar o substituição (agachar e pular).\"}]}",
+								"clear @p porkyn:help_kamui"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

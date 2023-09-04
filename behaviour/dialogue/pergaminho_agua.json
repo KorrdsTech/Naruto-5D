@@ -1,0 +1,122 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "estilo_agua",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fBola de Água §b200 TP"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p estilo_agua2"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fAprender"
+								}
+							]
+						},
+						"commands": [
+							"/execute as @p[scores={tp=..199}] ~~~ playsound note.bass ",
+							"/execute as @p[scores={tp=..199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
+							"/execute as @p[scores={tp=200..}] ~~~ give @p porkyn:bola_agua_d 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute as @p[scores={tp=200..}] ~~~ playsound bamboo @s",
+							"/dialogue open @s @p estilo_agua",
+							"/execute as @p[scores={tp=200..}] ~~~ scoreboard players remove @p[r=1] tp 200"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p estilo_agua2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "estilo_agua2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§f"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p estilo_agua"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fVoltar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p pergaminho"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p estilo_agua"
+						]
+					}
+				]
+			}
+		]
+	}
+}

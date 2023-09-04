@@ -1,0 +1,61 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:branco_azul",
+			"category": ""
+		},
+		"components": {
+           "minecraft:icon": {
+                "texture": "icon_pele"
+            },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "consumed",
+          "target": "self"
+        }
+      },
+            "minecraft:display_name": {
+                "value": "§lPele"
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.head"
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
+            
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 15,
+				"slot": "armor_torso"
+			},
+			"minecraft:damage": 0,
+			"minecraft:armor": {
+				"protection": 0
+			},
+			"minecraft:wearable": {
+				"slot": "slot.chest"
+			},
+			"minecraft:allow_off_hand": false
+    },
+            "events": {
+        "consumed": {
+				"run_command": {
+					"command": [
+					]
+				},
+				"decrement_stack": {}
+   		}
+		}
+	}
+}

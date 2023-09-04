@@ -1,0 +1,58 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:help_1",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+ 
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 0,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "destroy"
+				}
+			},
+			"minecraft:use_duration": 1,
+			"minecraft:display_name": {
+				"value": "§lBásico sobre o Add-on"
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
+			"minecraft:cooldown": {
+				"category": "chakra",
+				"duration": 1.0
+			},
+			"minecraft:icon": {
+				"texture": "help_vermelho"
+			}
+		},
+		"events": {
+			"destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"tellraw @p {\"rawtext\":[{\"text\":\"§b§lSeja muito bem-vindo ao Naruto Bedrock!\n§f§lSe essa é sua primeira vez jogando esse add-on, deve estar um pouco perdido, mas não se preocupe, separei um pequeno tutorial sobre o add-on!\n§fUsando o Menu você pode criar seu personagem (Lembre-se de usar o menu estando no modo sobrevivência), após escolher seu clã você irá ganhar um modo inicial, você pode upar ele com TP.\n§eComo ganhar TP e RYO?\n§fVocê pode ganhar TP e RYO fazendo o modo história, ou matando os ninjas que spawnam pelo mundo.\n§eJutsu de substituição\n§fPara usar o Jutsu de substiuição pegue o item 'Desativar Modo' e use Shift + Pulo ( Agache e pule).\n§eComo evoluir seus Modos e Jutsus?\n§fPara evoluir seus modos e Jutsus é só ativar seu modo ou usar seu Jutsu que ele ira evoluir automaticamente se você ter a quantidade de TP necessária.\n§e§lTP necessário para upar seus Modos:\n§b§lRank D §f> §a§lRank C §fcusta 200 TP\n§a§lRank C §f> §6§lRank B §fcusta 800 TP\n§6§lRank B §f> §e§lRank A §fcusta 3200 TP\n§e§lRank A §f> §d§lRank S §fcusta 12800 TP \n§e§lTP necessário para upar seus Jutsus:\n§b§lRank D §f> §a§lRank C §fcusta 100 TP\n§a§lRank C §f> §6§lRank B §fcusta 400 TP\n§6§lRank B §f> §e§lRank A §fcusta 1600 TP\n§e§lRank A §f> §d§lRank S §fcusta 6400 TP\"}]}",
+								"clear @p porkyn:help_1"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:novidades",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+ 
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 0,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "destroy"
+				}
+			},
+			"minecraft:use_duration": 1,
+			"minecraft:display_name": {
+				"value": "§lNovidades da versão 3.7"
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
+			"minecraft:cooldown": {
+				"category": "chakra",
+				"duration": 1.0
+			},
+			"minecraft:icon": {
+				"texture": "help_verde"
+			}
+		},
+		"events": {
+			"destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"tellraw @p {\"rawtext\":[{\"text\":\"§l§eNovidades da versão 4.0\n\n§l§fModo História Naruto (até saga do Pain)\nEscolher Vila Nativa\n§l§fDrop de Ryo\nTrocas em NPC\n§l§fKarma\nSe tornar o Isshiki Otsutsuki\nNova Bijuu: Matatabi\nSe tornar Jinchurike da Matatabi\nCabelo Gaara (Remake)\nCabaça de Areia (Remake)\n\n\nJutsus:\n\nMeteoro do Madara (Mangekyou)\nCubos Negro de Isshiki\nMúltiplos clones da sombras (Bufado)\nGenjutsu Sharingan\n\n§l§fRoupas:\n \nRoupa Anbu\nRoupa Gaara\nRoupa Rock Lee\nRoupa Tobirama (Variação vermelha)\nRoupa Tobirama (Variação verde)\nManto Akatsuki (Variação White)\nManto Akatsuki com capuz (Variação White)\nRoupa Shinobi da Folha\nRoupa Shinobi da Areia\nRoupa Shinobi da Nuvem\nRoupa Shinobi da Pedra\nRoupa Shinobi da Névoa\n\"}]}",
+								"clear @p porkyn:novidades"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

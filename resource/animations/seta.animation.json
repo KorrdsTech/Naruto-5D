@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.seta": {
+			"loop": true,
+			"animation_length": 5,
+			"override_previous_animation": true,
+			"bones": {
+				"seta": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, 360, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"2.5": [0, 1.5, 0],
+						"4.9667": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

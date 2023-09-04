@@ -1,0 +1,52 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "porkyn:kunai_m",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:foil": false,
+			"minecraft:icon": {
+				"texture": "kunai_m"
+			},
+			"minecraft:display_name": {
+				"value": "§lHiraishin §l§e[Rank A]"
+			},
+			"minecraft:creative_category": {
+			  "parent": "itemGroup.name.sword"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "porkyn:open"
+				}
+			},
+			"minecraft:should_despawn": true,
+			"minecraft:allow_off_hand": true,
+			"minecraft:durability": {
+			  "max_durability": 1562
+			},
+			"minecraft:mining_speed": 1.5,
+			"minecraft:damage": 30,
+			"minecraft:enchantable": {
+			  "value": 100,
+			  "slot": "sword"
+			}
+		},
+		"events": {
+			"porkyn:open": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon porkyn:hiraishinmenu ~~~ porkyn:open"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

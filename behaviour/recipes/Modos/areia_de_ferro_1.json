@@ -1,0 +1,58 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:areia_de_ferro_1"
+    },
+    
+    "tags": [ "nb_craft" ],
+    "pattern": [
+      "ABC",
+      "DEF",
+      "GHI"
+    ],
+    "key": {
+      "A": {
+        "item": "sand",
+        "data": 0
+      },
+      "B": {
+        "item": "sand",
+        "data": 0
+      },
+      "C": {
+        "item": "iron_nugget",
+        "data": 0
+      },
+      "D": {
+        "item": "iron_nugget",
+        "data": 0
+      },
+      "E": {
+        "item": "iron_ingot",
+        "data": 0
+      },
+      "F": {
+        "item": "iron_nugget",
+        "data": 0
+      },
+      "G": {
+        "item": "iron_nugget",
+        "data": 0
+      },
+      "H": {
+        "item": "sand",
+        "data": 0
+      },
+      "I": {
+        "item": "sand",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "porkyn:areia_de_ferro_1",
+      "count": 1,
+      "data": 0
+    }
+  }
+}

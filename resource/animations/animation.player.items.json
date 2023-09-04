@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.item": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"rightArm": {
+					"rotation": [0, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [16, 0, 0]
+				},
+				"rightLeg": {
+					"rotation": [0, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

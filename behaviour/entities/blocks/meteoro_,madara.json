@@ -1,0 +1,109 @@
+{
+	"format_version": "1.17.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "porkyn:meteoro_madara",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"porkyn:waitopen": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.1,
+					"time_down_event": {
+						"event": "porkyn:opengui"
+					}
+				}
+			},
+			"porkyn:killdelay": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 2,
+					"time_down_event": {
+						"event": "porkyn:kill"
+					}
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": false
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:npc": {},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:movement": {
+				"value": 0
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": 1,
+				"time_down_event": {
+					"event": "porkyn:kill"
+				}
+			},
+			"minecraft:friction_modifier": {
+				"value": 300
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:health": {
+				"value": 100000,
+				"max": 100000
+			}
+		},
+		"events": {
+			"porkyn:kill": {
+				"run_command": {
+					"command": [
+						"effect @s slow_falling",
+						"fill ~5~~-5 ~-5~~5 fire",
+						"effect @e[r=30,tag=!estaca,type=!porkyn:estaca_madeira_1,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] instant_damage 3 1 true",
+						"execute as @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^^2^3 minecraft:crystal_explode",
+						"execute as @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^3^2^ minecraft:crystal_explode",
+						"execute as @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^-3^2^ minecraft:crystal_explode",
+						"execute as @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^^2^-3 minecraft:crystal_explode"
+					]
+				}
+			},
+			"porkyn:open": {
+				"add": {
+					"component_groups": [
+						"porkyn:waitopen"
+					]
+				}
+			},
+			"porkyn:opengui": {
+				"run_command": {
+					"command": [
+						"kill @s"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"porkyn:killdelay"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,602 @@
+{
+  "namespace": "npc_interact",
+  
+
+  "basic_stack_panel@npc_interact.main_stack_panel": {
+    "controls": [
+      { "dialog_post_padding@npc_interact.label_padding": {} },
+      { "dialog__padding@npc_interact.label_padding": {} },
+      { "dialog_button@npc_interact.dialog_button": {} }
+    ]
+  },
+  
+  "dialog_button": {
+    "type": "panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "button@common_buttons.light_text_form_fitting_button": {
+          "$pressed_button_name": "button.dialog_button",
+          "$button_text": "Open Menu",
+          "layer": 2,
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "offset": [ 0, 50 ]
+        }
+      }
+    ]
+  },
+
+  "message_model" : {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "model@npc_interact.skin_model": {
+          "offset": [ 0, 0 ],
+          "bindings": [
+            {
+              "binding_type": "global",
+              "binding_name": "#student_model_update"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "clipped_message_model@npc_interact.skin_model_clipper": {
+    "controls": [
+      { "model@npc_interact.message_model": {} }
+    ]
+  },
+
+  "message_model_window@npc_interact.banner_fill": {
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+
+    "size": [ "0% - 0px - 0px", "0%" ],
+    "controls": [
+      { "model@npc_interact.clipped_message_model": {} }
+    ]
+  },
+
+  "skins_model": {
+    "type": "custom",
+    "renderer": "live_player_renderer",
+    "layer": 10,
+
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [ "50%", "50%" ],
+    "offset": [ 0, -20 ]
+  },
+
+  "edit_box_background@common.empty_panel": { },
+
+  "npc_message@npc_interact.multiline_text_edit_control": {
+    "$enabled": true,
+    "size": [ "100%", "100%cm" ],
+    "min_size": [ "100%", "90px" ],
+    "enabled": "$enabled",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "$text_background_default": "npc_interact.edit_box_background",
+    "$text_background_hover": "npc_interact.edit_box_background",
+    "$text_box_text_color": "$npc_dialog_text_color",
+    "$text_box_name": "student_message_bubble",
+    "$text_edit_box_content_binding_name": "#dialogtext",
+    "$color": "$npc_dialog_text_color",
+    "$disabled_alpha": 1,
+    "max_length": 1000,
+    "constrain_to_rect": false,
+    "$text_edit_box_placeholder_content_binding_name": "#placeholder_dialog_text",
+    "$text_alpha": 1,
+    "$locked_text_alpha": "$disabled_alpha",
+    "$locked_color": "$color",
+    "variables": [
+      {
+
+        "requires": "(not $is_worldbuilder)",
+        "$place_holder_text": "",
+        "$enabled": false
+      }
+    ],
+
+    "bindings": [
+    ],
+    "locked_control": "background",
+    "default_control": "background",
+    "hover_control": "background",
+    "pressed_control": "background",
+    "text_control": "label",
+    "place_holder_control": "place_holder",
+    "controls": [
+      {
+        "label@common.text_edit_box_label": {
+          "layer": 1,
+          "size": [ "100%", "default" ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "visibility_panel": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "controls": [
+            {
+              "place_holder@common.text_edit_box_place_holder_label": {
+                "layer": 1,
+                "size": [ "100%", "default" ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            }
+          ],
+
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "label",
+              "source_property_name": "(#item_name = '')",
+              "target_property_name": "#visible",
+              "resolve_sibling_scope": true
+            }
+          ]
+        }
+      },
+      { "background@common.empty_panel": { "size": [ "200%", "200%sm" ] } }
+    ]
+  },
+
+  "student_message_bubble": {
+    "type": "image",
+    "texture": "textures/ui/dialog",
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "size": [ 100, "100%" ],
+    "controls": [
+      {
+        "text_scroll@common.scrolling_panel": {
+          "size": [ "100% - 7px", "100% - 6px" ],
+          "$always_handle_scrolling": true,
+          "$scrolling_content": "npc_interact.npc_message",
+          "$show_background": false,
+          "$scroll_bar_left_padding_size": [ 0, 0 ],
+          "$scroll_bar_right_padding_size": [ 0, 0 ],
+          "$scroll_size": [ 5, "100% - 4px" ],
+          "$scroll_size_touch": "$scroll_size",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 3, 2 ]
+        }
+      }
+    ]
+  },
+
+
+  "bubble_point": {
+    "type": "image",
+    "texture": "textures/ui/test",
+    "size": [ 100, 100 ],
+    "layer": 5,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": [ 0, 0 ]
+  },
+  
+  "student_message_section@common.empty_panel": {
+    "size": [ "100%", 100 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "model@npc_interact.message_model_window": { }
+      },
+      {
+        "point@npc_interact.bubble_point": { }
+      },
+      {
+        "cuzinho@npc_interact.skins_model": { }
+      },
+      {
+        "message@npc_interact.student_message_bubble": { }
+      }
+    ]
+  },
+
+  
+  "student_button@common.empty_panel": {
+    "size": [ "33%", 20 ],
+    "controls": [
+      {
+        "button@common_buttons.light1_text_button": {
+          "$pressed_button_name": "button.student_button",
+          "layer": 4,
+          "size": [ "70% - 2px", "70% - 2px" ],
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "student_buttons_collection",
+              "binding_collection_prefix": "student_buttons"
+            }
+          ]
+        }
+      },
+      {
+
+        "url_label@edu_common.dark_label": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "text": "#text",
+          "color": "$npc_url_text_color",
+          "layer": 50,
+          "bindings": [
+            {
+              "binding_name": "#student_button_text",
+              "binding_type": "collection",
+              "binding_name_override": "#text",
+              "binding_collection_name": "student_buttons_collection"
+            },
+            {
+              "binding_name": "#is_url_button",
+              "binding_type": "collection",
+              "binding_name_override": "#visible",
+              "binding_collection_name": "student_buttons_collection"
+            }
+          ]
+        }
+      },
+      {
+        "command_label@edu_common.dark_label": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "text": "#text",
+          "layer": 50,
+          "bindings": [
+            {
+              "binding_name": "#student_button_text",
+              "binding_type": "collection",
+              "binding_name_override": "#text",
+              "binding_collection_name": "student_buttons_collection"
+            },
+            {
+              "binding_name": "#is_command_button",
+              "binding_type": "collection",
+              "binding_name_override": "#visible",
+              "binding_collection_name": "student_buttons_collection"
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#student_button_visible",
+        "binding_type": "collection",
+        "binding_name_override": "#visible",
+        "binding_collection_name": "student_buttons_collection"
+      }
+    ]
+  },
+
+  "student_buttons@common.empty_panel": {
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "buttons": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100% + 2px", "100%cm" ],
+          "controls": [
+            {
+              "actions": {
+                "type": "grid",
+                "size": [ "fill", "default" ],
+                "grid_item_template": "npc_interact.student_button",
+                "grid_dimension_binding": "#student_button_grid_dimensions",
+                "collection_name": "student_buttons_collection",
+                "bindings": [
+                  {
+                    "binding_name": "#student_button_grid_dimensions"
+                  }
+                ]
+              }
+            },
+            {
+              "immersive_reader_panel": {
+                "type": "panel",
+                "size": [ "100%c + 1px", "100%sm" ],
+                "min_size": [ "100%c + 1px", "100%c"],
+                "controls": [
+                  {
+                    "immersive_reader_button@im_reader.reader_button": {
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "size": [ 18, 18 ],
+                      "offset": [ 0, 1 ]
+                    }
+                  }
+                ],
+                "ignored": "($is_worldbuilder or not $education_edition)",
+                "bindings": [
+                  {
+                    "binding_name": "#im_reader_button_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "student_stack_panel@npc_interact.main_stack_panel": {
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      { "top_pad@common.empty_panel": { "size": [ "100%", 4 ] } },
+      { "message@npc_interact.student_message_section": {} },
+      { "message_pad@common.empty_panel": { "size": [ "100%", 4 ] } },
+      { "buttons@npc_interact.student_buttons": {} }
+    ]
+  },
+
+  "student_view_content": {
+
+    "type": "panel",
+    "size": [ "100%", "100%cm" ],
+    "controls": [
+      { "student@npc_interact.student_stack_panel": {} },
+      {
+        "close@npc_interact.close_button_holder": {
+          "$close_button_to_button_id": "button.exit_student"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#student_view_visible",
+        "binding_name_override": "#visible",
+        "binding_type": "global"
+      }
+    ]
+  },
+
+
+  "close_button_base": {
+    "type": "button",
+    "size": [ 21, 21 ],
+    "layer": 10,
+    "offset": [ -2, 2 ],
+    "locked_control": "",
+    "default_control": "default",
+    "hover_control": "hover",
+    "pressed_control": "pressed",
+    "focus_enabled": false,
+    "$close_button_panel_size": [ 15, 15 ],
+    "$close_button_to_button_id": "button.menu_exit",
+
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "focused"
+      },
+      {
+        
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "global"
+      }
+    ],
+    "controls": [
+      {
+        "default@common.close_button_panel": {
+          "$close_button_texture": "$default_texture"
+        }
+      },
+      {
+        "hover@common.close_button_panel": {
+          "$close_button_texture": "$hover_texture"
+        }
+      },
+      {
+        "pressed@common.close_button_panel": {
+          "$close_button_texture": "$pressed_texture"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "$visibility_binding_name",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "x_close_button@common.close_button": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "focused"
+      },
+      {
+    
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "global"
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "$visibility_binding_name",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  
+  "ignorable_x_close_button": {
+    "type": "panel",
+    "size": [ "100%c", "100%c" ],
+    "controls": [
+      { "button@npc_interact.x_close_button": {} }
+    ]
+  },
+
+  "close_button_holder": {
+    "type": "panel",
+    "size": [ "100%c", "100%c" ],
+
+    "anchor_from": "top_right",
+    "anchor_to": "bottom_right",
+    "offset": [ 8, -2 ],
+
+    "controls": [
+      {
+        "close_basic@npc_interact.x_close_button": {
+          "$close_button_to_button_id": "button.exit_basic",
+          "$visibility_binding_name": "#basic_visible"
+        }
+      },
+      {
+        "close_student_edit@npc_interact.ignorable_x_close_button": {
+          "ignored": "(not $is_worldbuilder)",
+          "$close_button_to_button_id": "button.exit_student_edit",
+          "$visibility_binding_name": "#student_view_visible"
+        }
+      },
+      {
+        "close_student@npc_interact.ignorable_x_close_button": {
+         
+          "ignored": "$is_worldbuilder",
+          "$close_button_to_button_id": "button.exit_student",
+          "$visibility_binding_name": "#student_view_visible"
+        }
+      },
+      {
+        "close_maximized_action_edit@npc_interact.close_button_base": {
+          "$close_button_to_button_id": "button.exit_maximized",
+          "$default_texture": "textures/ui/minimize",
+          "$hover_texture": "textures/ui/minimizeHover",
+          "$pressed_texture": "textures/ui/minimizePress",
+          "$visibility_binding_name": "#maximized_edit_visible"
+        }
+      },
+      {
+        "close_advanced@npc_interact.close_button_base": {
+          "$close_button_to_button_id": "button.exit_advanced",
+          "$default_texture": "textures/ui/back_button_default",
+          "$hover_texture": "textures/ui/back_button_hover",
+          "$pressed_texture": "textures/ui/back_button_pressed",
+          "$visibility_binding_name": "#advanced_visible"
+        }
+      }
+    ]
+  },
+
+  "main_content@common.empty_panel": {
+    "controls": [
+      { "basic@npc_interact.basic_content": {} },
+      { "advanced@npc_interact.advanced_scrolling_panel": {} },
+      { "maximized_action_edit@npc_interact.maximized_action_edit": {} },
+      { "close@npc_interact.close_button_holder": {} }
+    ]
+  },
+
+  "root_panel@common_dialogs.main_panel_no_buttons": {
+    "size": [ 325, 200 ],
+    "layer": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$title_panel": "common_dialogs.standard_title_label",
+    "$text_name": "#title_text",
+    "$title_text_binding_type": "global",
+    "$show_close_button": false
+  },
+
+  "gamepad_helper_exit_text": {
+    "type": "label",
+    "text": "controller.buttonTip.exit",
+    "color": "$gamepad_description_text_color"
+  },
+
+  "close_text@common.gamepad_helper_b": {
+    "$gamepad_description": "npc_interact.gamepad_helper_exit_text"
+  },
+
+  "npc_screen_contents": {
+    "type": "panel",
+    "controls": [
+      {
+        
+        "teacher@npc_interact.root_panel": {
+          "$child_control": "npc_interact.main_content",
+          "bindings": [
+            {
+              "binding_name": "#teacher_view_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+
+        "student@common_dialogs.form_fitting_main_panel_no_buttons": {
+          "$panel_size": [ 320, "100%cm" ],
+          "size": "$panel_size",
+          "$child_control": "npc_interact.student_view_content",
+          "$title_panel": "common_dialogs.standard_title_label",
+          "$text_name": "#title_text",
+          "$title_text_binding_type": "global",
+         
+          "$show_close_button": false,
+          "$custom_background": "common_dialogs.dialog_background_opaque_with_child",
+          "bindings": [
+            {
+              "binding_name": "#student_view_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "npc_screen_close@npc_interact.close_text": {
+          "anchor_to": "bottom_left",
+          "anchor_from": "bottom_left",
+          "offset": [ 20, 0 ]
+        }
+      }
+    ]
+  },
+
+  "npc_screen@common.base_screen": {
+    "type": "screen",
+    "$screen_content": "npc_interact.npc_screen_contents",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_exit",
+        "to_button_id": "button.menu_continue",
+        "mapping_type": "global"
+      }
+    ]
+  }
+}

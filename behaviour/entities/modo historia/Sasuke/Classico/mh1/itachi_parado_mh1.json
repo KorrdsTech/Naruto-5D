@@ -1,0 +1,142 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "porkyn:itachi_parado_mh1_sasuke",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              }
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 1,
+        "time_down_event": {
+          "event": "on:efeitos"
+        }
+      },
+      "minecraft:type_family": {
+        "family": [
+          "mushroomcow"
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:push_through": {
+        "value": 1.0
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 1.3
+      },
+      "minecraft:nameable": {},
+      "minecraft:health": {
+        "value": 1000000,
+        "max": 10000000
+      },
+      "minecraft:movement": {
+        "value": 0.0
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.panic": {
+        "priority": 0,
+        "speed_multiplier": 0.0
+      },
+      "minecraft:behavior.mount_pathing": {
+        "priority": 0,
+        "speed_multiplier": 0.0,
+        "target_dist": 0.0,
+        "track_target": true
+      },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "become_cow": {
+        "remove": {},
+        "add": {
+          "component_groups": [
+            "minecraft:mooshroom_become_cow"
+          ]
+        }
+      },
+      "minecraft:entity_transformed": {
+        "remove": {},
+        "add": {
+          "component_groups": [
+            "minecraft:cow_adult"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 100,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "minecraft:cow_adult"
+              ]
+            }
+          }
+        ]
+      },
+      "on:efeitos": {
+        "run_command": {
+          "command": [
+            "execute as @p[r=10,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke] ~~~ tag @s add cntr",
+            "execute as @e[r=10,type=porkyn:itachi_parado_mh1_sasuke,tag=cntr] ~~~ scoreboard players add @s cntr 1",
+            "execute as @p[r=25,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,tag=!itachi1_mh1_s] ~~~ playanimation @e[type=porkyn:itachi_parado_mh1_sasuke,r=1] animation.itachi_massacre a 1",
+            "execute as @p[r=25,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,tag=!itachi1_mh1_s] ~~~ tag @s add itachi1_mh1_s",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=10..},tag=!itachi2_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Meu irmãozinho tolo...\"}]}",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=10..},tag=!itachi2_mh1_s] ~~~ tag @s add itachi2_mh1_s",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=10..},tag=!itachi3_mh1_s] ~~~ playsound fala_itachi1 @a[r=25] ~~~",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=10..},tag=!itachi3_mh1_s] ~~~ tag @s add itachi3_mh1_s",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=47..},tag=!itachi5_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Porque eu fiz isso?\nApenas para medir o quão forte eu sou.\"}]}",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=47..},tag=!itachi5_mh1_s] ~~~ tag @s add itachi5_mh1_s",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=52..},tag=!itachi6_mh1_s] ~~~ title @p title Fuja do Itachi!!!",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=52..},tag=!itachi6_mh1_s] ~~~ summon porkyn:itachi_parado2_mh1_sasuke ~11~~-23",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=52..},tag=!itachi6_mh1_s] ~~~ tag @s add itachi6_mh1_s",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=22..},tag=!itachi4_mh1_s] ~~~ effect @p[r=30] nausea 20 3 true",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=22..},tag=!itachi4_mh1_s] ~~~ effect @p[r=30] slowness 20 255 true",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=22..},tag=!itachi4_mh1_s] ~~~ effect @p[r=30] darkness 20 3 true",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=22..},tag=!itachi4_mh1_s] ~~~ effect @p[r=30] poison 1 1 true",
+            "execute as @p[r=100,tag=!mh1_sasuke] ~~~ execute as @e[r=25,type=porkyn:itachi_parado_mh1_sasuke,scores={cntr=22..},tag=!itachi4_mh1_s] ~~~ tag @s add itachi4_mh1_s"
+          ]
+        }
+      }
+    }
+  }
+}

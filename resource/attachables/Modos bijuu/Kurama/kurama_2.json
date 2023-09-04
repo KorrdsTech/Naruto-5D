@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "porkyn:kurama_2",
+			"item": {
+				"porkyn:kurama_2": "query.owner_identifier == 'minecraft:player'"
+			},
+			"materials": {
+				"default": "slime_outer",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/modos/modo_kurama_2",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.modo_kurama_3"
+			},
+			"scripts": {
+				"parent_setup": "variable.chest_layer_visible = 0.0;"
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			]
+		}
+	}
+}
