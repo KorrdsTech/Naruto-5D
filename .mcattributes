@@ -14,3 +14,4 @@ diagnostic.disable.behaviorpack.entity.missing=true
 diagnostic.disable.minecraft.mode.gamemodes.invalid=true
 diagnostic.disable.minecraft.fakeentity.missing=true
 diagnostic.disable.resourcepack.anim_or_controller.missing=true
+diagnostic.disable.minecraft.commands.replaceitem.syntax=true

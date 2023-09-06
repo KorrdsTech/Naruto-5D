@@ -22,7 +22,7 @@ execute as @p[r=1,tag=cabelo_tobirama] ~~~ replaceitem entity @p slot.armor.feet
 execute as @p[r=1,tag=cabelo_boruto] ~~~ replaceitem entity @p slot.armor.feet 1 hair:boruto_marrom 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 execute as @p[r=1,tag=cabelo_mitsuki] ~~~ replaceitem entity @p slot.armor.feet 1 hair:mitsuki_marrom 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 execute as @p[r=1,tag=cabelo_tobi] ~~~ replaceitem entity @p slot.armor.feet 1 hair:tobi_marrom 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-dialogue open @p r=1,@p cor_marrom"
+dialogue open @s[r=1,tag=cor_marrom]
 execute as @p[r=1,tag=cabelo_sakura] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sakura_marrom 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 execute as @p[r=1,tag=cabelo_hinata_2] ~~~ replaceitem entity @p slot.armor.feet 1 hair:hinata_marrom_2 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 execute as @p[r=1,tag=cabelo_anko] ~~~ replaceitem entity @p slot.armor.feet 1 hair:anko_marrom 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}

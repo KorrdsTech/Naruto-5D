@@ -189,7 +189,7 @@ scoreboard players remove @s[scores={chakra=250..},tag=uchiha] chakra 150
 scoreboard players remove @s[scores={chakra=200..},tag=uchiha] chakra 100
 scoreboard players remove @s[scores={chakra=150..},tag=uchiha] chakra 50
 
-scoreboard players remove @s[tag=uchiha,tag=uchiha,scores={chakra=100..}] chakra 100
+scoreboard players remove @s[tag=uchiha,scores={chakra=100..}] chakra 100
 
 
 

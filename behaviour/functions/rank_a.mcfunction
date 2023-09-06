@@ -137,25 +137,25 @@ scoreboard players remove @s[scores={chakra=200..},tag=uchiha] chakra 100
 scoreboard players remove @s[scores={chakra=150..},tag=uchiha] chakra 50
 
 
-execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_sasuke] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_itachi] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_obito] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_madara] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_shisui] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s add rng
-execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
-execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s add rank_s
-execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800				
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_sasuke] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_itachi] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_obito] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_madara] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..},tag=msd_shisui] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s add rng_s
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s add rank_s
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..}] ~~~ give @p porkyn:help_amenotejiraka 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute as @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
+execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_sasuke] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_itachi] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_obito] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_madara] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_shisui] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s add rng
+execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
+execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s add rank_s
+execute as @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800				
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_sasuke] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_itachi] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_obito] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_madara] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..},tag=msd_shisui] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s add rng_s
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..}] ~~~ tag @s add rank_s
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..}] ~~~ give @p porkyn:help_amenotejiraka 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute as @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..}] ~~~ execute as @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
 scoreboard players remove @s[scores={chakra=100..},tag=uchiha] chakra 100
 
 

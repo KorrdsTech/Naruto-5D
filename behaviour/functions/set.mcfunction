@@ -205,7 +205,7 @@ execute as @s[tag=!otsutsuki,tag=kazekage] ~~~ execute as @s[scores={chakra=1000
 
 execute as @s[tag=!cla] ~~~ execute as @s[scores={chakra=1000..}] ~~~ scoreboard players set @s chakra 100
 execute as @s[scores={chakra=..0}] ~~~ scoreboard players set @s chakra 0
-execute as @s[scores={chakra=..0,tag=kurama] ~~~ scoreboard players set @s chakra_kurama 0
+execute as @s[scores={chakra=..0},tag=kurama] ~~~ scoreboard players set @s chakra_kurama 0
 
 execute as @s[tag=kurama2,scores={chakra=1000..}] ~~~ scoreboard players set @s chakra_kurama 1000
 execute as @s[tag=kurama2,scores={chakra=..0}] ~~~ scoreboard players set @s chakra_kurama 0

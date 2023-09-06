@@ -153,8 +153,8 @@ execute as @s[tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200.
 execute as @s[tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ effect @s[scores={chakra=100..}] health_boost 200 94 true
 execute as @s[tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ effect @s[scores={chakra=100..}] resistance 200 1 true
 execute as @s[tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
-execute as @s[tag=senju,tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ give @s porkyn:help_golem_madeira
-execute as @s[tag=senju,tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ tag @s remove rank_d
-execute as @s[tag=senju,tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ tag @s add rank_c
+execute as @s[tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ give @s porkyn:help_golem_madeira
+execute as @s[tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ tag @s remove rank_d
+execute as @s[tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ tag @s add rank_c
 execute as @s[tag=senju,scores={chakra=100..}] ~~~ execute as @s[scores={tp=200..}] ~~~ scoreboard players remove @s tp 200
 scoreboard players remove @s[tag=senju,scores={chakra=100..}] chakra 100

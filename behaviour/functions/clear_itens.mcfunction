@@ -110,7 +110,7 @@ execute as @s[tag=chinoike] ~~~ execute as @s[scores={chakra=1100..}] ~~~ scoreb
 execute as @s[tag=!chinoike,tag=!hyuuga,tag=!uchiha,tag=!uzumaki,tag=!senju] ~~~ execute as @s[scores={chakra=1100..}] ~~~ scoreboard players set @s chakra 1000
 execute as @s[scores={chakra=..0}] ~~~ scoreboard players set @s chakra 0
 execute as @s[scores={chakra=1000..},tag=kurama] ~~~ scoreboard players set @s chakra_kurama 1000
-execute as @s[scores={chakra=..0,tag=kurama] ~~~ scoreboard players set @s chakra_kurama 0
+execute as @s[scores={chakra=..0},tag=kurama] ~~~ scoreboard players set @s chakra_kurama 0
 execute as @s[tag=kurama_2,scores={chakra=1000..}] ~~~ scoreboard players set @s chakra_kurama 1000
 execute as @s[tag=kurama_2,scores={chakra=..0}] ~~~ scoreboard players set @s chakra_kurama 0
 

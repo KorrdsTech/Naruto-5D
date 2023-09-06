@@ -14,7 +14,7 @@ effect @s[scores={chakra=400..}] night_vision 1200 200 true
 
 =======================================================================================================
 
-tellraw @s[scores={chakra=400..} {"rawtext":[{"text":"§l>Você ativou o tenseigan!<"}]}
+tellraw @s[scores={chakra=400..}] {"rawtext":[{"text":"§l>Você ativou o tenseigan!<"}]}
 give @s[scores={chakra=..99}] porkyn:tenseigan
 tellraw @s[scores={chakra=..99}] {"rawtext":[{"text":"§4>Você não possui chakra para utilizar esse modo!<"}]}
 scoreboard players remove @s[scores={chakra=400..}] chakra 400		
