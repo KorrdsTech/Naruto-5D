@@ -423,7 +423,7 @@
         "damage": 1
       },
       "minecraft:player.saturation": {
-        "value": 20
+        "value": 120
       },
       "minecraft:player.exhaustion": {
         "value": 0,
