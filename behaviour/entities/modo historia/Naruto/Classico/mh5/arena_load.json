@@ -7,7 +7,9 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
+
 		"component_groups": {},
+
 		"components": {
 			"minecraft:type_family": {
 				"family": [
@@ -17,37 +19,38 @@
 			"minecraft:behavior.hurt_by_target": {
 				"priority": 1
 			},
-			"minecraft:timer": {
+			"minecraft:timer":
+			{
 				"looping": true,
 				"time": 3,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			"minecraft:on_hurt": {
+			  "minecraft:on_hurt": {
 				"event": "on:hurt",
 				"target": "self"
-			},
-			"minecraft:on_hurt_by_player": {
+			  },
+			  "minecraft:on_hurt_by_player": {
 				"event": "on:hurt_by_player",
 				"target": "self"
-			},
-			"minecraft:on_ignite": {
+			  },
+			  "minecraft:on_ignite": {
 				"event": "on:ignite",
 				"target": "self"
-			},
-			"minecraft:on_target_acquired": {
+			  },
+			  "minecraft:on_target_acquired": {
 				"event": "on:target_acquired",
 				"target": "self"
-			},
-			"minecraft:on_target_escape": {
+			  },
+			  "minecraft:on_target_escape": {
 				"event": "on:target_escape",
 				"target": "self"
-			},
-			"minecraft:on_wake_with_owner": {
+			  },
+			  "minecraft:on_wake_with_owner": {
 				"event": "on:wake_with_owner",
 				"target": "self"
-			},
+			  },
 			"minecraft:attack": {
 				"damage": 0
 			},
@@ -91,24 +94,23 @@
 					}
 				]
 			},
+
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
 				"reselect_targets": true,
 				"within_radius": 25.0,
 				"must_see_forget_duration": 17.0,
-				"entity_types": {
+				"entity_types": 
+				  {
 					"filters": {
-						"any_of": [
-							{
-								"test": "is_family",
-								"subject": "other",
-								"value": ""
-							}
-						]
+					  "any_of": [
+						{ "test": "is_family", "subject": "other", "value": "" }
+					  ]
 					},
 					"max_dist": 35
-				}
+				  }
+				  
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -116,6 +118,7 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
+			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0
@@ -174,34 +177,41 @@
 			},
 			"on:death": {
 				"run_command": {
-					"command": []
+				  "command": [
+
+				  ]
 				}
-			},
-			"on:hurt": {
+			  },
+			  "on:hurt": {
 				"run_command": {
-					"command": []
+				  "command": [
+
+				  ]
 				}
-			},
-			"on:hurt_by_player": {
+			  },
+			  "on:hurt_by_player": {
 				"run_command": {
-					"command": []
+				  "command": [
+				  ]
 				}
-			},
-			"on:efeitos": {
-				"run_command": {
+			  },
+			  "on:efeitos": {
+				  "run_command": {
 					"command": [
-						"execute as @e[r=1,type=porkyn:arena_load] ~~~ fill ~64~1~64~64~8~64 air",
-						"execute as @e[r=1,type=porkyn:arena_load] ~~~ fill ~~1~64~~8~64 air",
-						"execute as @e[r=1,type=porkyn:arena_load] ~~~ fill ~64~1~~64~8~ air",
-						"execute as @e[r=1,type=porkyn:arena_load] ~~~ fill ~~1~~~8~ air",
+					
+						"execute @e[r=1,type=porkyn:arena_load] ~~~ fill ~64~1~64~64~8~64 air",
+						"execute @e[r=1,type=porkyn:arena_load] ~~~ fill ~~1~64~~8~64 air",
+						"execute @e[r=1,type=porkyn:arena_load] ~~~ fill ~64~1~~64~8~ air",
+						"execute @e[r=1,type=porkyn:arena_load] ~~~ fill ~~1~~~8~ air",
 						"kill @e[type=item]",
-						"execute as @p[r=50,tag=!mh5_naruto] ~~~ tp @s ~34~2~76",
+						"execute @p[r=50,tag=!mh5_naruto] ~~~ tp @s ~34~2~76",
 						"summon porkyn:neji_mh5_naruto ~40~2~90",
 						"summon porkyn:arena_load2 ~34~2~76",
 						"kill @s"
 					]
+				  }
 				}
-			}
-		}
-	}
-}
+			  }
+		  }
+	  }
+	  

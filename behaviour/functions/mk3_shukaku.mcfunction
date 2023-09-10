@@ -15,5 +15,5 @@ tellraw @s[scores={chakra_bijuu=300..}] {"rawtext":[{"text":"§4-300CK"}]}
 tellraw @s[scores={chakra_bijuu=300..}] {"rawtext":[{"text":"§f§l======§4§lModo shukaku+Rikudou§f§l======\n§2§l+6 Velocidade\n§e§l+8 Força\n§4§l+0 Vida\n§c§l+3 Regeneração\n§1§l+4 Pulo\n§6§l+2 Resistência"}]}
 
 give @s[scores={chakra_bijuu=..299},tag=shukaku2] porkyn:mk3_shukaku
-execute as @s[scores={chakra=..299}] ~~~ playsound note.bass
+execute @s[scores={chakra=..299}] ~~~ playsound note.bass
 scoreboard players remove @s[scores={chakra_bijuu=300..},tag=shukaku2] chakra_bijuu 300		

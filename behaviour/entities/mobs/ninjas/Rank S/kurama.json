@@ -173,7 +173,8 @@
 					"clear @p[r=50,tag=kurama2] porkyn:kurama_3",
 					"replaceitem entity @p[r=50,tag=kurama2] slot.armor.head 1 porkyn:kurama_4",
 					"tellraw @p[r=50,tag=kurama2] {\"rawtext\":[{\"text\":\"§lA kurama foi derrotada!\n Agora você tem o controle do chakra dela.\"}]}",
-					"give @p porkyn:fechar_selo_kurama1"
+					"give @p porkyn:fechar_selo_kurama1",
+					"give @p porkyn:sair_mente_kurama"
 				  ]
 				}
 			  },

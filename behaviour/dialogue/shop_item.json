@@ -1,300 +1,160 @@
 {
 	"format_version": "1.17.100",
-	"minecraft:npc_dialogue": {
-		"scenes": [
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
 			{
 				"scene_tag": "shop_item1",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fBoost Chakra 1 §a20 TP"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fBoost Chakra 1 §a20 TP"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
+					
 							"/dialogue open @s @p shop_item5"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={tp=..19}] ~~~ playsound note.bass ",
+								"/execute @p[scores={tp=..19}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
+								"/execute @p[scores={tp=20..}] ~~~ give @p porkyn:boost_chakra_1",
+								"/execute @p[scores={tp=20..}] ~~~ playsound bamboo @s",
+								"/dialogue open @s @p shop_item1",
+								"/execute @p[scores={tp=20..}] ~~~ scoreboard players remove @p[r=1] tp 20"
 							]
 						},
-						"commands": [
-							"/execute as @p[scores={tp=..19}] ~~~ playsound note.bass ",
-							"/execute as @p[scores={tp=..19}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
-							"/execute as @p[scores={tp=20..}] ~~~ give @p porkyn:boost_chakra_1",
-							"/execute as @p[scores={tp=20..}] ~~~ playsound bamboo @s",
-							"/dialogue open @s @p shop_item1",
-							"/execute as @p[scores={tp=20..}] ~~~ scoreboard players remove @p[r=1] tp 20"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_item2"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [	
+								"/dialogue open @s @p shop_item2"
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "shop_item2",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fBoost Chakra 2 §a40 TP"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fBoost Chakra 2 §a40 TP"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_item1"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={tp=..39}] ~~~ playsound note.bass ",
+								"/execute @p[scores={tp=..39}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
+								"/execute @p[scores={tp=40..}] ~~~ give @p porkyn:boost_chakra_2",
+								"/execute @p[scores={tp=40..}] ~~~ playsound bamboo @s",
+								"/dialogue open @s @p shop_item2",
+								"/execute @p[scores={tp=40..}] ~~~ scoreboard players remove @p[r=1] tp 40"
+
 							]
 						},
-						"commands": [
-							"/execute as @p[scores={tp=..39}] ~~~ playsound note.bass ",
-							"/execute as @p[scores={tp=..39}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
-							"/execute as @p[scores={tp=40..}] ~~~ give @p porkyn:boost_chakra_2",
-							"/execute as @p[scores={tp=40..}] ~~~ playsound bamboo @s",
-							"/dialogue open @s @p shop_item2",
-							"/execute as @p[scores={tp=40..}] ~~~ scoreboard players remove @p[r=1] tp 40"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_item3"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_item3"
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "shop_item3",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fBoost Chakra 3 §a80 TP"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fBoost Chakra 3 §a80 TP"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_item2"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={tp=..79}] ~~~ playsound note.bass ",
+								"/execute @p[scores={tp=..79}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
+								"/execute @p[scores={tp=80..}] ~~~ give @p porkyn:boost_chakra_3",
+								"/execute @p[scores={tp=80..}] ~~~ dialogue open @s @p shop_item3",
+								"/execute @p[scores={tp=80..}] ~~~ scoreboard players remove @p[r=1] tp 80"
+
 							]
 						},
-						"commands": [
-							"/execute as @p[scores={tp=..79}] ~~~ playsound note.bass ",
-							"/execute as @p[scores={tp=..79}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
-							"/execute as @p[scores={tp=80..}] ~~~ give @p porkyn:boost_chakra_3",
-							"/execute as @p[scores={tp=80..}] ~~~ dialogue open @s @p shop_item3",
-							"/execute as @p[scores={tp=80..}] ~~~ scoreboard players remove @p[r=1] tp 80"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_item4"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_item4"
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "shop_item4",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fBoost Chakra 4 §a160 TP"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fBoost Chakra 4 §a160 TP"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_item3"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={tp=..159}] ~~~ playsound note.bass ",
+								"/execute @p[scores={tp=..159}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
+								"/execute @p[scores={tp=160..}] ~~~ give @p porkyn:boost_chakra_4",
+								"/execute @p[scores={tp=160..}] ~~~ dialogue open @s @p shop_item4",
+								"/execute @p[scores={tp=160..}] ~~~ scoreboard players remove @p[r=1] tp 160"
+
 							]
 						},
-						"commands": [
-							"/execute as @p[scores={tp=..159}] ~~~ playsound note.bass ",
-							"/execute as @p[scores={tp=..159}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
-							"/execute as @p[scores={tp=160..}] ~~~ give @p porkyn:boost_chakra_4",
-							"/execute as @p[scores={tp=160..}] ~~~ dialogue open @s @p shop_item4",
-							"/execute as @p[scores={tp=160..}] ~~~ scoreboard players remove @p[r=1] tp 160"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_item5"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_item5"
 						]
 					}
 				]
-			},
+			},	
 			{
 				"scene_tag": "shop_item5",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": " "
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": ""
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":" "} ] },
+				"text": { "rawtext": [ {"text":""} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"commands": [
+							"/dialogue open @s @p shop_item4"				
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fVoltar"} ] },
+							"commands": [
+								"/dialogue open @s @p p"
 							]
 						},
-						"commands": [
-							"/dialogue open @s @p shop_item4"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fVoltar"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p p"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_item1"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_item1"
+								]
+							}
 						]
 					}
 				]
 			}
-		]
-	}
-}
+		}
+		

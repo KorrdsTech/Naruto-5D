@@ -14,6 +14,7 @@
           "water",
           "chakra",
           "subs",
+	  "inicio",
     "kamui_1",
     "amaterasu_i",
     "kamui_2",
@@ -37,6 +38,7 @@
     "kakashi_marrom",
 	  "kakashi_cinza",
     "kakashi_amarelo",
+	  "kakashi_amarelo_e",
     "kakashi_laranja",
 	  "kakashi_amarelo",
     "kakashi_azul_c",
@@ -51,6 +53,7 @@
     "kakashi2_marrom",
     "kakashi2_cinza",
     "kakashi2_amarelo",
+    "kakashi2_amarelo_e",
     "kakashi2_laranja",
     "kakashi2_amarelo",
     "kakashi2_azul_c",
@@ -69,21 +72,26 @@
     "gunbaib",
     "kubikiribochob",
     "walk",
+    "minato_jounin",
     "health",
     "max_health",
     "hiraishin_tp",
     "itachi_tp",
     "rasengan",
-    "rinneganmenu"
+    "rinneganmenu",
+    "pele"  
         ]
       },
       "animations": {
         "modos": "controller.animation.modos",
+        "pele": "controller.animation.pele",
 	"chakra": "controller.animation.chakra",
   "hiraishin_tp": "controller.animation.hiraishin_tp",
   "itachi_tp": "controller.animation.itachi_tp",
   "dead": "controller.animation.death",
+	"inicio": "animation.inicio",
   "subs":"controller.animation.subs",
+  "minato_jounin":"controller.animation.minato_jounin",
   "water": "controller.animation.water",
   "amaterasu_i": "controller.animation.amaterasu_i",
   "kamui_1": "controller.animation.kamui_1",
@@ -108,6 +116,7 @@
 	"kakashi_marrom": "controller.animation.kakashi_marrom",
   "kakashi_cinza": "controller.animation.kakashi_cinza",
 	"kakashi_laranja": "controller.animation.kakashi_laranja",
+	"kakashi_vermelho": "controller.animation.kakashi_vermelho",
   "kakashi_azul_e": "controller.animation.kakashi_azul_e",
 	"kakashi_azul_c": "controller.animation.kakashi_azul_c",
 	"kakashi_verde_c": "controller.animation.kakashi_verde_c",
@@ -116,11 +125,13 @@
 	"kakashi_rosa_e": "controller.animation.kakashi_rosa_e",
   "kakashi_rosa_c": "controller.animation.kakashi_rosa_c",
 	"kakashi_amarelo": "controller.animation.kakashi_amarelo",
+	"kakashi_amarelo_e": "controller.animation.kakashi_amarelo_e",
   "kakashi2_branco": "controller.animation.kakashi2_branco",
   "kakashi2_preto": "controller.animation.kakashi2_preto",
   "kakashi2_marrom": "controller.animation.kakashi2_marrom",
   "kakashi2_cinza": "controller.animation.kakashi2_cinza",
   "kakashi2_laranja": "controller.animation.kakashi2_laranja",
+  "kakashi2_vermelho": "controller.animation.kakashi2_vermelho",
   "kakashi2_azul_e": "controller.animation.kakashi2_azul_e",
   "kakashi2_azul_c": "controller.animation.kakashi2_azul_c",
   "kakashi2_verde_c": "controller.animation.kakashi2_verde_c",
@@ -129,6 +140,7 @@
   "kakashi2_rosa_e": "controller.animation.kakashi2_rosa_e",
   "kakashi2_rosa_c": "controller.animation.kakashi2_rosa_c",
   "kakashi2_amarelo": "controller.animation.kakashi2_amarelo",
+  "kakashi2_amarelo_e": "controller.animation.kakashi2_amarelo_e",
   "samehada": "controller.animation.samehada",
   "samehadab": "controller.animation.samehadab",
   "foice_tripla": "controller.animation.foice_tripla",
@@ -408,10 +420,10 @@
         ]
       },
       "minecraft:attack": {
-        "damage": 5
+        "damage": 1
       },
       "minecraft:player.saturation": {
-        "value": 100
+        "value": 20
       },
       "minecraft:player.exhaustion": {
         "value": 0,

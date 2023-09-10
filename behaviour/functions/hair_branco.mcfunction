@@ -1,29 +1,29 @@
-execute as @p[r=1,tag=cabelo_naruto] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_naruto_2] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_2_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_naruto_3] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_3_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_naruto_4] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_4_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_sasuke] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sasuke_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_sasuke_2] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sasuke_2_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_sasuke_3] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sasuke_3_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_sasuke_4] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sasuke_4_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_kakashi] ~~~ replaceitem entity @p slot.armor.feet 1 hair:kakashi_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_jiraya] ~~~ replaceitem entity @p slot.armor.feet 1 hair:jiraya_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_pain] ~~~ replaceitem entity @p slot.armor.feet 1 hair:pain_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_deidara] ~~~ replaceitem entity @p slot.armor.feet 1 hair:deidara_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_itachi] ~~~ replaceitem entity @p slot.armor.feet 1 hair:itachi_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_madara] ~~~ replaceitem entity @p slot.armor.feet 1 hair:madara_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_hinata] ~~~ replaceitem entity @p slot.armor.feet 1 hair:hinata_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_neji] ~~~ replaceitem entity @p slot.armor.feet 1 hair:neji_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_rocklee] ~~~ replaceitem entity @p slot.armor.feet 1 hair:rocklee_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_tenten] ~~~ replaceitem entity @p slot.armor.feet 1 hair:tenten_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_temari] ~~~ replaceitem entity @p slot.armor.feet 1 hair:temari_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_gaara] ~~~ replaceitem entity @p slot.armor.feet 1 hair:gaara_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_tobirama] ~~~ replaceitem entity @p slot.armor.feet 1 hair:tobirama_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_boruto] ~~~ replaceitem entity @p slot.armor.feet 1 hair:boruto_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_mitsuki] ~~~ replaceitem entity @p slot.armor.feet 1 hair:mitsuki_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_tobi] ~~~ replaceitem entity @p slot.armor.feet 1 hair:tobi_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_minato] ~~~ replaceitem entity @p slot.armor.feet 1 hair:minato_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_naruto] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_naruto_2] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_2_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_naruto_3] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_3_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_naruto_4] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_4_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_sasuke] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sasuke_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_sasuke_2] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sasuke_2_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_sasuke_3] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sasuke_3_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_sasuke_4] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sasuke_4_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_kakashi] ~~~ replaceitem entity @p slot.armor.feet 1 hair:kakashi_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_jiraya] ~~~ replaceitem entity @p slot.armor.feet 1 hair:jiraya_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_pain] ~~~ replaceitem entity @p slot.armor.feet 1 hair:pain_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_deidara] ~~~ replaceitem entity @p slot.armor.feet 1 hair:deidara_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_itachi] ~~~ replaceitem entity @p slot.armor.feet 1 hair:itachi_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_madara] ~~~ replaceitem entity @p slot.armor.feet 1 hair:madara_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_hinata] ~~~ replaceitem entity @p slot.armor.feet 1 hair:hinata_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_neji] ~~~ replaceitem entity @p slot.armor.feet 1 hair:neji_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_rocklee] ~~~ replaceitem entity @p slot.armor.feet 1 hair:rocklee_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_tenten] ~~~ replaceitem entity @p slot.armor.feet 1 hair:tenten_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_temari] ~~~ replaceitem entity @p slot.armor.feet 1 hair:temari_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_gaara] ~~~ replaceitem entity @p slot.armor.feet 1 hair:gaara_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_tobirama] ~~~ replaceitem entity @p slot.armor.feet 1 hair:tobirama_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_boruto] ~~~ replaceitem entity @p slot.armor.feet 1 hair:boruto_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_mitsuki] ~~~ replaceitem entity @p slot.armor.feet 1 hair:mitsuki_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_tobi] ~~~ replaceitem entity @p slot.armor.feet 1 hair:tobi_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_minato] ~~~ replaceitem entity @p slot.armor.feet 1 hair:minato_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 dialogue open @s @p cor_branco"
-execute as @p[r=1,tag=cabelo_sakura] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sakura_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_hinata_2] ~~~ replaceitem entity @p slot.armor.feet 1 hair:hinata_branco_2 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute as @p[r=1,tag=cabelo_anko] ~~~ replaceitem entity @p slot.armor.feet 1 hair:anko_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_sakura] ~~~ replaceitem entity @p slot.armor.feet 1 hair:sakura_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_hinata_2] ~~~ replaceitem entity @p slot.armor.feet 1 hair:hinata_branco_2 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @p[r=1,tag=cabelo_anko] ~~~ replaceitem entity @p slot.armor.feet 1 hair:anko_branco 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}

@@ -39,21 +39,22 @@
 				"has_gravity": true
 			},
 			"minecraft:health": {
-				"value": 1000000,
-				"max": 1000000
+			  "value": 1000000,
+			  "max": 1000000
 			}
 		},
 		"events": {
 			"porkyn:kill": {
 				"run_command": {
 					"command": [
-						"effect @s jump_boost 9999 255 true",
-						"effect @e[r=6,tag=!estaca,type=!porkyn:estaca_madeira_1] instant_damage 1 1 true",
-						"scoreboard players add @e[type=porkyn:estaca_madeira_1,r=1] cntr 1",
-						"execute as @e[type=porkyn:estaca_madeira_1,tag=!estaca,scores={cntr=1..}] ~~~ playsound estacas @a[r=20]",
-						"execute as @e[type=porkyn:estaca_madeira_1,tag=!estaca,scores={cntr=1..}] ~~~ tag @s add estaca",
-						"execute as @e[type=porkyn:estaca_madeira_1,scores={cntr=20..}] ~~~ tp @s ~~-50~",
-						"execute as @e[type=porkyn:estaca_madeira_1,scores={cntr=23..}] ~~~ kill @s"
+            "effect @s jump_boost 9999 255 true",
+            "effect @e[r=6,tag=!estaca,type=!porkyn:estaca_madeira_1] instant_damage 1 1 true",
+            "scoreboard players add @e[type=porkyn:estaca_madeira_1,r=1] cntr 1",
+            "execute @e[type=porkyn:estaca_madeira_1,tag=!estaca,scores={cntr=1..}] ~~~ playsound estacas @a[r=20]",
+			"execute @e[type=porkyn:estaca_madeira_1,tag=!estaca,scores={cntr=1..}] ~~~ tag @s add estaca",
+			"execute @e[type=porkyn:estaca_madeira_1,scores={cntr=20..}] ~~~ tp @s ~~-50~",
+			"execute @e[type=porkyn:estaca_madeira_1,scores={cntr=23..}] ~~~ kill @s"
+
 					]
 				}
 			},
@@ -67,6 +68,7 @@
 			"porkyn:opengui": {
 				"run_command": {
 					"command": [
+            
 						""
 					]
 				},

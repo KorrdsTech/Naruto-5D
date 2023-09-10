@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "porkyn:subs_clone",
 			"category": "items"
+      
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -18,35 +19,19 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lSubstituição + Kage Bunshin"
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"third_person": {
-						"position": [
-							0.26,
-							1.0,
-							-0.55
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"first_person": {
-						"position": [
-							7.08,
-							-1.6,
-							-12.8
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
 			"minecraft:cooldown": {
 				"category": "kage",
 				"duration": 1.0
@@ -61,8 +46,8 @@
 					{
 						"run_command": {
 							"command": [
-								"execute as @s[scores={chakra=50..}] ~~~ summon porkyn:clone ~~~",
-								"execute as @s[scores={chakra=50..}] ~~~ function clones_pele",
+								"execute @s[scores={chakra=50..}] ~~~ summon porkyn:clone ~~~",
+								"execute @s[scores={chakra=50..}] ~~~ function clones_pele",
 								"tp @s ~2~5~10"
 							]
 						}

@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "porkyn:clones_sombras_s",
 			"category": "items"
+      
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -19,35 +20,19 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lJutsu Clones Das Sombras §l§d[Rank S]"
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"third_person": {
-						"position": [
-							0.26,
-							1.0,
-							-0.55
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"first_person": {
-						"position": [
-							7.08,
-							-1.6,
-							-12.8
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
 			"minecraft:cooldown": {
 				"category": "kage",
 				"duration": 1.0
@@ -62,11 +47,11 @@
 					{
 						"run_command": {
 							"command": [
-								"execute as @s[scores={chakra=50..}] ~~~ tag @s add kage_bunshin",
-								"execute as @s[scores={chakra=50..}] ~~~ tag @s add kage_bunshin_s",
-								"execute as @s[scores={chakra=50..}] ~~~ playanimation @s animation.naruto_kid_jutsu a 10",
-								"execute as @s[scores={chakra=..49}] ~~~ playsound note.bass",
-								"execute as @s[scores={chakra=50..}] ~~~ playsound kage @a[r=6]"
+								"execute @s[scores={chakra=50..}] ~~~ tag @s add kage_bunshin",
+								"execute @s[scores={chakra=50..}] ~~~ tag @s add kage_bunshin_s",
+								"execute @s[scores={chakra=50..}] ~~~ playanimation @s animation.naruto_kid_jutsu a 10",
+								"execute @s[scores={chakra=..49}] ~~~ playsound note.bass",
+								"execute @s[scores={chakra=50..}] ~~~ playsound kage @a[r=6]"
 							]
 						}
 					}

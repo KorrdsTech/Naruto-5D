@@ -153,7 +153,7 @@ tag @p remove shukaku2
 tag @p remove matatabi2
 tag @p remove matatabi
 tag @p remove batalha_shukaku
-tag @p remove batalha_kurama
+tag @p remove conversar_kurama
 tag @p remove batalha_matatabi
 tag @p remove kurama2
 tag @p remove hyuugasenju

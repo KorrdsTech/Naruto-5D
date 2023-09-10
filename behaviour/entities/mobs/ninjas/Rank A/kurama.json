@@ -7,7 +7,9 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
+
 		"component_groups": {},
+
 		"components": {
 			"minecraft:type_family": {
 				"family": [
@@ -16,23 +18,25 @@
 					"monster"
 				]
 			},
-			"minecraft:scale": {
+			"minecraft:scale":{
 				"value": 1
 			},
 			"minecraft:boss": {
 				"name": "§l§eKyuubi §l§a[Rank A]",
 				"hud_range": 55
 			},
-			"minecraft:timer": {
+			"minecraft:timer":
+			{
 				"looping": true,
 				"time": 50,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
+			
 			"minecraft:knockback_resistance": {
 				"protection": 1
-			},
+			  },
 			"minecraft:behavior.hurt_by_target": {
 				"priority": 1
 			},
@@ -79,24 +83,23 @@
 					}
 				]
 			},
+
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
 				"reselect_targets": true,
 				"within_radius": 25.0,
 				"must_see_forget_duration": 17.0,
-				"entity_types": {
+				"entity_types": 
+				  {
 					"filters": {
-						"any_of": [
-							{
-								"test": "is_family",
-								"subject": "other",
-								"value": "player"
-							}
-						]
+					  "any_of": [
+						{ "test": "is_family", "subject": "other", "value": "player" }
+					  ]
 					},
 					"max_dist": 35
-				}
+				  }
+				  
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -104,6 +107,7 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
+			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0.5
@@ -162,20 +166,20 @@
 			},
 			"on:death": {
 				"run_command": {
-					"command": [
-						"execute as @p[tag=selamento,r=100] ~~~ tag @s add kurama",
-						"execute as @p[tag=selamento,r=100] ~~~ give @s porkyn:help_kurama1",
-						"execute as @p[tag=selamento,r=100] ~~~ tellraw @a[r=10] {\"rawtext\":[{\"text\":\"§lA kurama foi derrotada!\n Você se tornou Jinchuuriki da kurama.\"}]}"
-					]
+				  "command": [
+					"execute @p[tag=selamento,r=100] ~~~ tag @s add kurama",
+					"execute @p[tag=selamento,r=100] ~~~ give @s porkyn:help_kurama1",
+					"execute @p[tag=selamento,r=100] ~~~ tellraw @a[r=10] {\"rawtext\":[{\"text\":\"§lA kurama foi derrotada!\n Você se tornou Jinchuuriki da kurama.\"}]}"
+				  ]
 				}
-			},
-			"on:efeitos": {
+			  },
+			  "on:efeitos": {
 				"run_command": {
-					"command": [
-						"effect @s instant_health 1 3 true"
-					]
+				  "command": [
+					  "effect @s instant_health 1 3 true"
+				  ]
 				}
-			}
+			  }
 		}
 	}
 }

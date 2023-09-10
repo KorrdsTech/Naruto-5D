@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "porkyn:clones_sombras_sexy",
 			"category": "nada"
+      
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -18,35 +19,19 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lJutsu Sexy"
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"third_person": {
-						"position": [
-							0.26,
-							1.0,
-							-0.55
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"first_person": {
-						"position": [
-							7.08,
-							-1.6,
-							-12.8
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
 			"minecraft:cooldown": {
 				"category": "estilo_agua_1",
 				"duration": 1.0
@@ -62,23 +47,23 @@
 						"run_command": {
 							"command": [
 								"clear @p porkyn:clones_sombras_sexy",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~4~1~",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~-4~4~",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~4~3~2",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~4~2~-2",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~~1~4",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~-4~4~4",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~-2~3~4",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~-1~1~1",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~1~3~12",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~4~2~-9",
-								"execute as @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~13~1~1",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~4~1~",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~-4~4~",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~4~3~2",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~4~2~-2",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~~1~4",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~-4~4~4",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~-2~3~4",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~-1~1~1",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~1~3~12",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~4~2~-9",
+								"execute @e[r=50,type=porkyn:ebisu] ~~~ summon porkyn:clone ~13~1~1",
 								"replaceitem entity @e[type=porkyn:clone,r=150] slot.armor.head 1 porkyn:jutsu_sexy",
 								"effect @e[type=porkyn:ebisu,r=150] levitation 200 25 true",
 								"playsound sexy @a[r=20]",
 								"scoreboard players add @p[r=20,tag=!mh2_naruto] tp 20",
-								"execute as @p[r=8,tag=!mh2_naruto] ~~~ title @p title §eMissão Concluida!!!",
-								"execute as @p[r=8,tag=!mh2_naruto] ~~~ title @p subtitle O Pervertido",
+								"execute @p[r=8,tag=!mh2_naruto] ~~~ title @p title §eMissão Concluida!!!",
+								"execute @p[r=8,tag=!mh2_naruto] ~~~ title @p subtitle O Pervertido",
 								"tag @p[tag=!mh2_naruto,tag=mh1_naruto] add mh2_naruto"
 							]
 						}

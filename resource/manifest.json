@@ -1,8 +1,8 @@
 {
   "format_version": 1,
   "header": {
-    "description": "§ePorkyn",
-    "name": "§l§6Naruto §f5D v4.0",
+    "description": "§ePorkyn, Solaris",
+    "name": "§l§6Naruto §f5D v4.1",
     "uuid": "e12abfb1-f588-4921-82d1-1ebc246033ae",
     "version": [
       1,
@@ -17,7 +17,7 @@
   },
   "modules": [
     {
-      "description": "§ePorkyn",
+      "description": "§ePorkyn, Solaris",
       "type": "resources",
       "uuid": "1c24be47-a9c9-4945-adb8-4c1080445667",
       "version": [

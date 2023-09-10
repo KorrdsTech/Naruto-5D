@@ -5,10 +5,10 @@ tellraw @s[scores={chakra=40..},tag=raio] {"rawtext":[{"text":"§l>Você utilizo
 tellraw @s[scores={chakra=..39},tag=raio] {"rawtext":[{"text":"§4>Você não possui chakra para utilizar esse jutsu!<"}]}
 	
 
-Sistema criado por @porkyn Play
+								       	Sistema criado por @porkyn Play
 
-execute as @e[tag=raio,scores={chakra=40..}] ~~~ summon lightning_bolt ^ ^-3 ^9
-execute as @e[tag=raio,scores={chakra=40..}] ~~~ summon lightning_bolt ^ ^-3 ^9
+execute @e[tag=raio,scores={chakra=40..}] ~~~ summon lightning_bolt ^ ^-3 ^9
+execute @e[tag=raio,scores={chakra=40..}] ~~~ summon lightning_bolt ^ ^-3 ^9
 
 
 scoreboard players remove @s[scores={chakra=40..},tag=raio] chakra 40

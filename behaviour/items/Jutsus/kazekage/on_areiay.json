@@ -8,6 +8,7 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
+ 
 			"minecraft:mining_speed": 1,
 			"minecraft:damage": 0,
 			"minecraft:on_use": {
@@ -18,35 +19,19 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lDefesa de Areia Automática [ON]"
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"third_person": {
-						"position": [
-							0.26,
-							1.0,
-							-0.55
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"first_person": {
-						"position": [
-							7.08,
-							-1.6,
-							-12.8
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
 			"minecraft:cooldown": {
 				"category": "defesa_areia",
 				"duration": 1.0
@@ -61,8 +46,8 @@
 					{
 						"run_command": {
 							"command": [
-								"execute as @s[tag=areia] ~~~ tag @s add areia_on",
-								"replaceitem entity @s slot.weapon.mainhand 1 porkyn:off_areia"
+"execute @s[tag=areia] ~~~ tag @s add areia_on",
+"replaceitem entity @s slot.weapon.mainhand 1 porkyn:off_areia"
 							]
 						}
 					}

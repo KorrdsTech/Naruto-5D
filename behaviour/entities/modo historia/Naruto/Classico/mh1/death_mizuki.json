@@ -70,8 +70,9 @@
 			"porkyn:kill": {
 				"run_command": {
 					"command": [
-						"execute as @p[r=3,tag=!fala1_mh1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Mizuki-Sensei>§fSe... seu desgra... desgraçado! Você nunca será mais que um simples orfão, garoto idiota!\"}]}",
+						"execute @p[r=3,tag=!fala1_mh1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Mizuki-Sensei>§fSe... seu desgra... desgraçado! Você nunca será mais que um simples orfão, garoto idiota!\"}]}",
 						"tag @p[r=3,tag=!fala1_mh1] add fala1_mh1"
+
 					]
 				}
 			},

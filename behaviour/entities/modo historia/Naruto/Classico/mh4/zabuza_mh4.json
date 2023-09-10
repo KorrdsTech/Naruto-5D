@@ -7,7 +7,9 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
+
 		"component_groups": {},
+
 		"components": {
 			"minecraft:type_family": {
 				"family": [
@@ -22,37 +24,38 @@
 				"name": "§lZabuza Momochi o Demônio do Gás Oculto",
 				"hud_range": 7
 			},
-			"minecraft:timer": {
+			"minecraft:timer":
+			{
 				"looping": false,
 				"time": 18,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			"minecraft:on_hurt": {
+			  "minecraft:on_hurt": {
 				"event": "on:hurt",
 				"target": "self"
-			},
-			"minecraft:on_hurt_by_player": {
+			  },
+			  "minecraft:on_hurt_by_player": {
 				"event": "on:hurt_by_player",
 				"target": "self"
-			},
-			"minecraft:on_ignite": {
+			  },
+			  "minecraft:on_ignite": {
 				"event": "on:ignite",
 				"target": "self"
-			},
-			"minecraft:on_target_acquired": {
+			  },
+			  "minecraft:on_target_acquired": {
 				"event": "on:target_acquired",
 				"target": "self"
-			},
-			"minecraft:on_target_escape": {
+			  },
+			  "minecraft:on_target_escape": {
 				"event": "on:target_escape",
 				"target": "self"
-			},
-			"minecraft:on_wake_with_owner": {
+			  },
+			  "minecraft:on_wake_with_owner": {
 				"event": "on:wake_with_owner",
 				"target": "self"
-			},
+			  },
 			"minecraft:attack": {
 				"damage": 48
 			},
@@ -96,24 +99,23 @@
 					}
 				]
 			},
+
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
 				"reselect_targets": true,
 				"within_radius": 25.0,
 				"must_see_forget_duration": 17.0,
-				"entity_types": {
+				"entity_types": 
+				  {
 					"filters": {
-						"any_of": [
-							{
-								"test": "is_family",
-								"subject": "other",
-								"value": "vitima"
-							}
-						]
+					  "any_of": [
+						{ "test": "is_family", "subject": "other", "value": "vitima" }
+					  ]
 					},
 					"max_dist": 35
-				}
+				  }
+				  
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -121,6 +123,7 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
+			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0.8
@@ -179,32 +182,39 @@
 			},
 			"on:death": {
 				"run_command": {
+				  "command": [
+					"scoreboard players add @a[r=20] tp 50",
+					"execute @p[r=15] ~~~ tag @s add kill1",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ title @p title §eMissão Concluida!!!",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ title @p subtitle §fUma missão Perigosa!!!",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ tp @e[type=porkyn:velho_mh4,r=150] ~~-500~",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ kill @e[type=porkyn:velho_mh4]",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ tag @s add mh4_naruto"
+
+				  ]
+				}
+			  },
+			  "on:hurt": {
+				"run_command": {
+				  "command": [
+
+				  ]
+				}
+			  },
+			  "on:hurt_by_player": {
+				"run_command": {
+				  "command": [
+
+				  ]
+				}
+			  },
+			  "on:efeitos": {
+				  "run_command": {
 					"command": [
-						"scoreboard players add @a[r=20] tp 50",
-						"execute as @p[r=15] ~~~ tag @s add kill1",
-						"execute as @p[r=10,tag=kill1,tag=kill2] ~~~ title @p title §eMissão Concluida!!!",
-						"execute as @p[r=10,tag=kill1,tag=kill2] ~~~ title @p subtitle §fUma missão Perigosa!!!",
-						"execute as @p[r=10,tag=kill1,tag=kill2] ~~~ tp @e[type=porkyn:velho_mh4,r=150] ~~-500~",
-						"execute as @p[r=10,tag=kill1,tag=kill2] ~~~ kill @e[type=porkyn:velho_mh4]",
-						"execute as @p[r=10,tag=kill1,tag=kill2] ~~~ tag @s add mh4_naruto"
 					]
+				  }
 				}
-			},
-			"on:hurt": {
-				"run_command": {
-					"command": []
-				}
-			},
-			"on:hurt_by_player": {
-				"run_command": {
-					"command": []
-				}
-			},
-			"on:efeitos": {
-				"run_command": {
-					"command": []
-				}
-			}
-		}
-	}
-}
+			  }
+		  }
+	  }
+	  
