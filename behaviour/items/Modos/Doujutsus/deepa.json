@@ -5,13 +5,13 @@
       "identifier": "porkyn:deepa",
       "category": "equipment"
     },
-    "minecraft:display_name": {
-      "value": "§l§cDeepa"
-    },
-    "minecraft:creative_category": {
-      "parent": "itemGroup.name.head"
-    },
     "components": {
+      "minecraft:display_name": {
+        "value": "§l§cDeepa"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.head"
+      },
       "minecraft:render_offsets": {
         "main_hand": {
           "first_person": {
@@ -47,7 +47,7 @@
         }
       },
       "minecraft:icon": {
-        "texture": "Deepa"
+        "texture": "deepa"
       },
       "minecraft:armor": {
         "protection": 20
@@ -56,11 +56,9 @@
       "minecraft:max_stack_size": 1,
       "minecraft:foil": false,
       "minecraft:hand_equipped": true,
-      "minecraft:on_use": {
-        "on_use": {
-          "event": "function",
-          "target": "self"
-        }
+      "minecraft:on_use_on_use": {
+        "event": "function",
+        "target": "self"
       },
       "minecraft:wearable": {
         "slot": "slot.armor.head"

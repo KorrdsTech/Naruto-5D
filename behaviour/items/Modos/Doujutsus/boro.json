@@ -5,13 +5,13 @@
       "identifier": "porkyn:boro",
       "category": "equipment"
     },
-    "minecraft:display_name": {
-      "value": "§l§dBoro"
-    },
-    "minecraft:creative_category": {
-      "parent": "itemGroup.name.head"
-    },
     "components": {
+      "minecraft:display_name": {
+        "value": "§l§dBoro"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.head"
+      },
       "minecraft:render_offsets": {
         "main_hand": {
           "first_person": {
@@ -47,32 +47,30 @@
         }
       },
       "minecraft:icon": {
-        "texture": "Boro",
+        "texture": "boro"
+      },
+      "minecraft:armor": {
         "protection": 20
       },
       "minecraft:stacked_by_data": false,
       "minecraft:max_stack_size": 1,
       "minecraft:foil": false,
       "minecraft:hand_equipped": true,
-      "minecraft:on_use": {
-        "on_use": {
-          "event": "function",
-          "target": "self"
-        }
+      "minecraft:on_use_on_use": {
+        "event": "function boro",
+        "target": "self"
       },
       "minecraft:wearable": {
-        "slot": "slot.armor.head"
+        "slot": "slot armor head"
       }
     },
-    "events": {
-      "function": {
-        "run_command": {
-          "command": [
-            "function boro",
-            "tag @s add games"
-          ],
-          "target": "self"
-        }
+    "events/function": {
+      "run_command function": {
+        "command function": [
+          "function boro",
+          "tag @s add games"
+        ],
+        "target": "self"
       }
     }
   }

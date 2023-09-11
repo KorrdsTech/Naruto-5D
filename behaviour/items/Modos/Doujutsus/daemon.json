@@ -5,13 +5,13 @@
       "identifier": "porkyn:daemon",
       "category": "equipment"
     },
-    "minecraft:display_name": {
-      "value": "§l§eDaemon"
-    },
-    "minecraft:creative_category": {
-      "parent": "itemGroup.name.head"
-    },
     "components": {
+      "minecraft:display_name": {
+        "value": "§l§eDaemon"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.head"
+      },
       "minecraft:render_offsets": {
         "main_hand": {
           "first_person": {
@@ -47,7 +47,7 @@
         }
       },
       "minecraft:icon": {
-        "texture": "Daemon"
+        "texture": "daemon"
       },
       "minecraft:armor": {
         "protection": 20
@@ -56,20 +56,18 @@
       "minecraft:max_stack_size": 1,
       "minecraft:foil": false,
       "minecraft:hand_equipped": true,
-      "minecraft:on_use": {
-        "on_use": {
-          "event": "function",
-          "target": "self"
-        }
+      "minecraft:on_use_on_use": {
+        "event": "function daemon",
+        "target": "self"
       },
       "minecraft:wearable": {
-        "slot": "slot.armor.head"
+        "slot": "slot armor head"
       }
     },
     "events": {
-      "function": {
-        "run_command": {
-          "command": [
+      "function daemon": {
+        "run_command daemon": {
+          "command daemon": [
             "function daemon",
             "tag @s add games"
           ],
