@@ -15,11 +15,11 @@
           "target": "self"
         }
       },
-            "minecraft:display_name": {
-                "value": "§lSennin+Jougan"
-            },
-            "minecraft:creative_category": {
-                "parent": "itemGroup.name.head"
+    "minecraft:display_name": {
+    "value": "§lSennin+Jougan"
+},
+"minecraft:creative_category": {
+"parent": "itemGroup.name.head"
             },
   	"minecraft:render_offsets": {
   		"main_hand": {

@@ -1,77 +1,78 @@
-//editado por GabriielCraft :)        
-{
-  "format_version": "1.16.100",
-  "minecraft:item": {
-    "description": {
-      "identifier": "porkyn:delta",
-      "category": "items"
-    },
-    "components": {
-      "minecraft:render_offsets": {
-        "main_hand": {
-          "first_person": {
-            "scale": [
-              0.002,
-              0.002,
-              0.002
-            ]
-          },
-          "third_person": {
-            "scale": [
-              0.006,
-              0.006,
-              0.006
-            ]
+        {
+          "format_version": "1.16.100",
+          "minecraft:item": {
+            "description": {
+              "identifier": "porkyn:delta",
+              "category": "items"
+            },
+            "components": {
+              "minecraft:render_offsets": {
+                "main_hand": {
+                  "first_person": {
+                    "scale": [
+                      0.002,
+                      0.002,
+                      0.002
+                    ]
+                  },
+                  "third_person": {
+                    "scale": [
+                      0.006,
+                      0.006,
+                      0.006
+                    ]
+                  }
+                },
+                "off_hand": {
+                  "first_person": {
+                    "scale": [
+                      0.002,
+                      0.002,
+                      0.002
+                    ]
+                  },
+                  "third_person": {
+                    "scale": [
+                      0.006,
+                      0.006,
+                      0.006
+                    ]
+                  }
+                }
+              },
+              "minecraft:icon": {
+                "texture": "delta"
+              },
+              "minecraft:armor": {
+                "protection": 20
+              },
+              "minecraft:stacked_by_data": false,
+              "minecraft:max_stack_size": 1,
+              "minecraft:foil": false,
+              "minecraft:hand_equipped": true,
+              "minecraft:on_use": {
+                "on_use": {
+                  "event": "function",
+                  "target": "self"
+                }
+              },
+              "minecraft:display_name": {
+                "value": "§cDelta"
+              },
+              "minecraft:wearable": {
+                "slot": "slot.armor.head"
+              }
+            },
+            "events": {
+              "function": {
+                "run_command": {
+                  "command": [
+                    "function delta",
+                    "tag @s add games"
+                  ],
+                  "target": "self"
+                }
+              }
+            }
           }
-        },
-        "off_hand": {
-          "first_person": {
-            "scale": [
-              0.002,
-              0.002,
-              0.002
-            ]
-          },
-          "third_person": {
-            "scale": [
-              0.006,
-              0.006,
-              0.006
-            ]
-          }
         }
-      },
-      "minecraft:armor": {},
-      "minecraft:icon": {
-        "texture": "Delta"
-      },
-      "minecraft:armor": {
-        "protection": 20
-      },
-      "minecraft:stacked_by_data": false,
-      "minecraft:max_stack_size": 1,
-      "minecraft:foil": false,
-      "minecraft:hand_equipped": true,
-      "minecraft:on_use": {
-        "on_use": {
-          "event": "function",
-          "target": "self"
-        }
-      },
-      "minecraft:wearable": {
-        "slot": "slot.armor.head"
-      }
-    },
-    "events": {
-      "function": {
-        "run_command": {
-          "command": [
-            "function delta",
-            "tag @s add games"
-          ],
-          "target": "self"
-        }
-      }
-    }
-  }
-}

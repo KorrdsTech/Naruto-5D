@@ -1,4 +1,3 @@
-//editado por GabriielCraft :)
 {
   "format_version": "1.16.100",
   "minecraft:item": {
@@ -40,7 +39,6 @@
           }
         }
       },
-      "minecraft:armor": {},
       "minecraft:icon": {
         "texture": "karmak2"
       },
@@ -55,6 +53,9 @@
           "event": "function",
           "target": "self"
         }
+      },
+      "minecraft:display_name": {
+        "value": "§lKarma Kawaki v2"
       },
       "minecraft:wearable": {
         "slot": "slot.armor.head"
