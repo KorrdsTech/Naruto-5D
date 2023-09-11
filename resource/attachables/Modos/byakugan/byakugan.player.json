@@ -2,8 +2,10 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "naruto:byakugan.player",
-      "item": { "naruto:byakugan": "query.owner_identifier == 'minecraft:player'" },
+      "identifier": "porkyn:byakugan.player",
+      "item": {
+        "porkyn:byakugan": "query.owner_identifier == 'minecraft:player'"
+      },
       "materials": {
         "default": "armor",
         "enchanted": "armor_enchanted"
@@ -18,7 +20,9 @@
       "scripts": {
         "parent_setup": "variable.helmet_layer_visible = 0.0;"
       },
-      "render_controllers": [ "controller.render.armor" ]
+      "render_controllers": [
+        "controller.render.armor"
+      ]
     }
   }
 }

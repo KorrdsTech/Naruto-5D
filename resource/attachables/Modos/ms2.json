@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "naruto:marca2s",
+      "identifier": "porkyn:marca2s",
       "materials": {
         "default": "elytra",
         "enchanted": "elytra_glint"
@@ -28,7 +28,9 @@
           "default_controller"
         ]
       },
-      "render_controllers": [ "controller.render.armor" ]
+      "render_controllers": [
+        "controller.render.armor"
+      ]
     }
   }
 }
