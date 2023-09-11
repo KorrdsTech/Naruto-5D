@@ -1,10 +1,15 @@
-//editado por GabriielCraft :)        
 {
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
       "identifier": "porkyn:deepa",
       "category": "equipment"
+    },
+    "minecraft:display_name": {
+      "value": "§l§cDeepa"
+    },
+    "minecraft:creative_category": {
+      "parent": "itemGroup.name.head"
     },
     "components": {
       "minecraft:render_offsets": {
@@ -41,7 +46,6 @@
           }
         }
       },
-      "minecraft:armor": {},
       "minecraft:icon": {
         "texture": "Deepa"
       },

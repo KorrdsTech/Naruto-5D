@@ -1,77 +1,81 @@
-//editado por GabriielCraft :)            
-{
-  "format_version": "1.16.100",
-  "minecraft:item": {
-    "description": {
-      "identifier": "porkyn:karmab",
-      "category": "equipment"
-    },
-    "components": {
-      "minecraft:render_offsets": {
-        "main_hand": {
-          "first_person": {
-            "scale": [
-              0.002,
-              0.002,
-              0.002
-            ]
+    {
+      "format_version": "1.16.100",
+      "minecraft:item": {
+        "description": {
+          "identifier": "porkyn:karmab",
+          "category": "equipment"
+        },
+        "minecraft:display_name": {
+          "value": "§l§9Karma B"
+        },
+        "minecraft:creative_category": {
+          "parent": "itemGroup.name.head"
+        },
+        "components": {
+          "minecraft:render_offsets": {
+            "main_hand": {
+              "first_person": {
+                "scale": [
+                  0.002,
+                  0.002,
+                  0.002
+                ]
+              },
+              "third_person": {
+                "scale": [
+                  0.006,
+                  0.006,
+                  0.006
+                ]
+              }
+            },
+            "off_hand": {
+              "first_person": {
+                "scale": [
+                  0.002,
+                  0.002,
+                  0.002
+                ]
+              },
+              "third_person": {
+                "scale": [
+                  0.006,
+                  0.006,
+                  0.006
+                ]
+              }
+            }
           },
-          "third_person": {
-            "scale": [
-              0.006,
-              0.006,
-              0.006
-            ]
+          "minecraft:icon": {
+            "texture": "karmab"
+          },
+          "minecraft:armor": {
+            "protection": 20
+          },
+          "minecraft:stacked_by_data": false,
+          "minecraft:max_stack_size": 1,
+          "minecraft:foil": false,
+          "minecraft:hand_equipped": true,
+          "minecraft:on_use": {
+            "on_use": {
+              "event": "function",
+              "target": "self"
+            }
+          },
+          "minecraft:wearable": {
+            "slot": "slot.armor.head"
           }
         },
-        "off_hand": {
-          "first_person": {
-            "scale": [
-              0.002,
-              0.002,
-              0.002
-            ]
-          },
-          "third_person": {
-            "scale": [
-              0.006,
-              0.006,
-              0.006
-            ]
+        "events": {
+          "function": {
+            "run_command": {
+              "command": [
+                "function karmab",
+                "tag @s add games"
+              ],
+              "target": "self"
+            }
           }
-        }
-      },
-      "minecraft:armor": {},
-      "minecraft:icon": {
-        "texture": "karmab"
-      },
-      "minecraft:armor": {
-        "protection": 20
-      },
-      "minecraft:stacked_by_data": false,
-      "minecraft:max_stack_size": 1,
-      "minecraft:foil": false,
-      "minecraft:hand_equipped": true,
-      "minecraft:on_use": {
-        "on_use": {
-          "event": "function",
-          "target": "self"
-        }
-      },
-      "minecraft:wearable": {
-        "slot": "slot.armor.head"
-      }
-    },
-    "events": {
-      "function": {
-        "run_command": {
-          "command": [
-            "function karmab",
-            "tag @s add games"
-          ],
-          "target": "self"
         }
       }
     }
-  }
-}

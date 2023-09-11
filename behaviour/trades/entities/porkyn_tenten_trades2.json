@@ -452,7 +452,49 @@
             }
           ]
 
-        }
+        },
+                {
+                  "wants": [
+                    {
+                      "item": "porkyn:ryo",
+                      "quantity": 60
+                    }
+                  ],
+                  "gives": [
+                    {
+                      "item": "porkyn:r1",
+                      "quantity": 1
+                    }
+                  ]
+                },
+                {
+                  "wants": [
+                    {
+                      "item": "porkyn:ryo",
+                      "quantity": 60
+                    }
+                  ],
+                  "gives": [
+                    {
+                      "item": "porkyn:r2",
+                      "quantity": 1
+                    }
+                  ]
+                },
+                {
+                  "wants": [
+                    {
+                      "item": "porkyn:ryo",
+                      "quantity": 60
+                    }
+                  ],
+                  "gives": [
+                    {
+                      "item": "porkyn:r33",
+                      "quantity": 1
+                    }
+                  ]
+                }
       ]
     }
   ]

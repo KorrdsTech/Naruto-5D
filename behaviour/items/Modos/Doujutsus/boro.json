@@ -5,6 +5,12 @@
       "identifier": "porkyn:boro",
       "category": "equipment"
     },
+    "minecraft:display_name": {
+      "value": "§l§dBoro"
+    },
+    "minecraft:creative_category": {
+      "parent": "itemGroup.name.head"
+    },
     "components": {
       "minecraft:render_offsets": {
         "main_hand": {
@@ -40,7 +46,6 @@
           }
         }
       },
-      "minecraft:armor": {},
       "minecraft:icon": {
         "texture": "Boro",
         "protection": 20

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.dragon",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, -3, 3], "size": [6, 17, 6], "pivot": [0, 0, 0], "rotation": [25, 0, 0], "uv": [0, 0]},
+						{"origin": [-3, 10, 8], "size": [6, 15, 6], "pivot": [0, 0, 0], "rotation": [50, 0, 0], "uv": [18, 18]},
+						{"origin": [-3, -20, 21], "size": [6, 11, 6], "pivot": [0, 0, 0], "rotation": [155, 0, 0], "uv": [24, 0]},
+						{"origin": [-3, -9, 21], "size": [6, 4, 4], "pivot": [0, 0, 0], "rotation": [155, 0, 0], "uv": [0, 35]},
+						{"origin": [-3, -23, 27], "size": [2, 8, 3], "pivot": [0, 0, 0], "rotation": [155, 0, 0], "uv": [20, 39]},
+						{"origin": [1, -23, 27], "size": [2, 8, 3], "pivot": [0, 0, 0], "rotation": [155, 0, 0], "uv": [0, 23]}
+					]
+				}
+			]
+		}
+	]
+}

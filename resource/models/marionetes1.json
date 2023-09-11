@@ -1,0 +1,134 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.marionetes1",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "Pernadireita",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 0, 4], "size": [3, 1, 2], "uv": [56, 15]},
+						{"origin": [1, 0, 4], "size": [2, 9, 2], "uv": [0, 37]}
+					]
+				},
+				{
+					"name": "Pernaesquerda",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 0, -5], "size": [3, 1, 2], "uv": [0, 48]},
+						{"origin": [1, 0, -5], "size": [2, 9, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "Corpo",
+					"parent": "Pernaesquerda",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 9, -6], "size": [1, 20, 13], "uv": [0, 38]},
+						{"origin": [-3, 9, -5], "size": [1, 20, 11], "uv": [34, 40]},
+						{"origin": [0, 9, -5], "size": [4, 20, 11], "uv": [0, 0]},
+						{"origin": [-1, -6, -30], "size": [6, 13, 1], "pivot": [0, 0, 0], "rotation": [-90, 0, 0], "uv": [64, 85]},
+						{"origin": [-1, 9, -7], "size": [6, 20, 1], "uv": [0, 71]},
+						{"origin": [0, 9, -8], "size": [4, 20, 1], "uv": [78, 80]},
+						{"origin": [-1, 9, 7], "size": [6, 20, 1], "uv": [40, 71]},
+						{"origin": [0, 9, 8], "size": [4, 20, 1], "uv": [54, 85]},
+						{"origin": [5, 9, -6], "size": [1, 20, 13], "uv": [17, 18]},
+						{"origin": [6, 9, -5], "size": [1, 20, 11], "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "Bracosesquerdo",
+					"parent": "Corpo",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [0, 25, -11], "size": [3, 3, 3], "uv": [82, 64]},
+						{"origin": [0, 13, -11], "size": [3, 3, 3], "uv": [80, 0]},
+						{"origin": [-15, 25, -13], "size": [17, 3, 3], "uv": [47, 45]},
+						{"origin": [-16, 13, -13], "size": [17, 3, 3], "uv": [47, 39]}
+					]
+				},
+				{
+					"name": "Bracosdireito",
+					"parent": "Bracosesquerdo",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [0, 25, 9], "size": [3, 3, 3], "uv": [77, 32]},
+						{"origin": [0, 13, 9], "size": [3, 3, 3], "uv": [65, 25]},
+						{"origin": [-15, 13, 11], "size": [16, 3, 3], "uv": [58, 51]},
+						{"origin": [-15, 25, 11], "size": [16, 3, 3], "uv": [58, 58]}
+					]
+				},
+				{
+					"name": "Dedos",
+					"parent": "Bracosdireito",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-18, 25, 13], "size": [3, 3, 1], "uv": [88, 88]},
+						{"origin": [-18, 25, -13], "size": [3, 3, 1], "uv": [87, 47]},
+						{"origin": [-18, 13, 13], "size": [3, 3, 1], "uv": [31, 79]},
+						{"origin": [-19, 13, -13], "size": [3, 3, 1], "uv": [87, 14]},
+						{"origin": [-17, 27, -11], "size": [2, 1, 1], "uv": [64, 15]},
+						{"origin": [-17, 27, 11], "size": [2, 1, 1], "uv": [28, 59]},
+						{"origin": [-17, 15, 11], "size": [2, 1, 1], "uv": [51, 6]},
+						{"origin": [-18, 15, -11], "size": [2, 1, 1], "uv": [6, 37]}
+					]
+				},
+				{
+					"name": "Cabeca",
+					"parent": "Dedos",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 30, -4], "size": [8, 7, 8], "uv": [56, 0]},
+						{"origin": [6, 31, -3], "size": [1, 6, 6], "uv": [30, 86]},
+						{"origin": [-2, 37, -3], "size": [8, 1, 6], "uv": [65, 15]},
+						{"origin": [-1, 31, 4], "size": [6, 5, 1], "uv": [45, 0]},
+						{"origin": [-1, 31, -5], "size": [6, 5, 1], "uv": [0, 31]}
+					]
+				},
+				{
+					"name": "Olhos",
+					"parent": "Cabeca",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 35, -1], "size": [1, 2, 2], "uv": [57, 4]},
+						{"origin": [-3, 33, 2], "size": [1, 2, 2], "uv": [28, 55]},
+						{"origin": [-3, 33, -4], "size": [1, 2, 2], "uv": [28, 51]}
+					]
+				},
+				{
+					"name": "Boca",
+					"parent": "Olhos",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 30, -2], "size": [1, 1, 4], "uv": [45, 6]},
+						{"origin": [-3, 31, -2], "size": [1, 2, 4], "uv": [84, 41]}
+					]
+				},
+				{
+					"name": "Cabelos",
+					"parent": "Boca",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1, 38, -1], "size": [6, 1, 2], "uv": [65, 22]},
+						{"origin": [-1, 36, 1], "size": [6, 5, 5], "uv": [14, 79]},
+						{"origin": [3, 36, 1], "size": [7, 5, 5], "uv": [54, 75]},
+						{"origin": [5, 31, -6], "size": [4, 8, 12], "uv": [45, 19]},
+						{"origin": [9, 31, -5], "size": [1, 8, 10], "uv": [18, 61]},
+						{"origin": [-1, 36, -6], "size": [6, 5, 5], "uv": [77, 70]},
+						{"origin": [3, 36, -6], "size": [7, 5, 5], "uv": [77, 22]},
+						{"origin": [-1, 31, -8], "size": [9, 8, 3], "uv": [58, 64]},
+						{"origin": [-1, 31, 5], "size": [9, 8, 3], "uv": [19, 0]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,4 +1,3 @@
-//editado por GabriielCraft :)        
 {
   "format_version": "1.16.100",
   "minecraft:item": {
@@ -6,6 +5,12 @@
       "identifier": "porkyn:delta",
       "category": "equipment"
     },
+                    "minecraft:display_name": {
+                      "value": "§l§cDelta"
+                    },
+                    "minecraft:creative_category": {
+                      "parent": "itemGroup.name.head"
+                    },
     "components": {
       "minecraft:render_offsets": {
         "main_hand": {
@@ -41,7 +46,6 @@
           }
         }
       },
-      "minecraft:armor": {},
       "minecraft:icon": {
         "texture": "Delta"
       },

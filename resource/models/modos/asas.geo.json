@@ -1,0 +1,80 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.asas",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Head",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "Body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "luk_asinha",
+					"parent": "Body",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "luk",
+					"parent": "luk_asinha",
+					"pivot": [0, 16, 0],
+					"cubes": [
+						{
+							"origin": [-42, -3, 1],
+							"size": [43, 43, 0],
+							"inflate": 0.1,
+							"pivot": [0.5, 17.5, 1],
+							"rotation": [0, 25, 0],
+							"uv": {
+								"north": {"uv": [2, 3], "uv_size": [53, 54]}
+							}
+						}
+					]
+				},
+				{
+					"name": "luk2",
+					"parent": "luk_asinha",
+					"pivot": [0, 16, 0],
+					"cubes": [
+						{
+							"origin": [-1, -3, 1],
+							"size": [43, 43, 0],
+							"inflate": 0.1,
+							"pivot": [-0.5, 17.5, 1],
+							"rotation": [0, -25, 0],
+							"uv": {
+								"north": {"uv": [55, 3], "uv_size": [-53, 54]}
+							}
+						}
+					]
+				},
+				{
+					"name": "RightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "LeftArm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "RightLeg",
+					"pivot": [-1.9, 12, 0]
+				},
+				{
+					"name": "LeftLeg",
+					"pivot": [1.9, 12, 0]
+				}
+			]
+		}
+	]
+}
