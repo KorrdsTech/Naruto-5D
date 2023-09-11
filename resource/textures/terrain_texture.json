@@ -4,25 +4,14 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
-    "habilidade": {
-      "textures": [
-        "textures/blocks/habilidade"
-      ]
+    "storm": {
+      "textures": "textures/block/storm"
     },
-    "nb_craft": {
-      "textures": [
-        "textures/blocks/nb_craft"
-      ]
+    "treino": {
+      "textures": "textures/block/treino"
     },
-    "amaterasu": {
-      "textures": [
-        "textures/blocks/amaterasu"
-      ]
-    },
-    "nb_craft_r": {
-      "textures": [
-        "textures/blocks/nb_craft_r"
-      ]
+    "luk_storm": {
+      "textures": "textures/block/luk_storm"
     }
   }
 }
