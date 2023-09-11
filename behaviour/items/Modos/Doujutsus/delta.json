@@ -41,7 +41,7 @@
                 }
               },
               "minecraft:icon": {
-                "texture": "delta"
+                "texture": "Delta"
               },
               "minecraft:armor": {
                 "protection": 20

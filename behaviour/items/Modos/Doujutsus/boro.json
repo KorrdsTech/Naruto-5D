@@ -41,7 +41,7 @@
                 }
               },
               "minecraft:icon": {
-                "texture": "boro"
+                "texture": "Boro"
               },
               "minecraft:armor": {
                 "protection": 20

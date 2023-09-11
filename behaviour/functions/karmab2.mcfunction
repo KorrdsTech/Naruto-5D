@@ -12,6 +12,6 @@ execute @s[scores={chakra=1999..1000001}] ~~~ effect @s health_boost 9999 20 tru
 execute @s[scores={chakra=1999..1000001}] ~~~ gamerule falldamage false
 execute @s[scores={chakra=1999..1000001}] ~~~ tag @s add asa_flyght
 execute @s[scores={chakra=1999..1000001}] ~~~ tag @s add chakra_form
-execute @s[scores={chakra=0..1998}] ~~~ tellraw @s{"rawtext":[{"text":"§rChakra Limite Insuficiente Lvl : 2000 Mínimo"}]}
+execute @s[scores={chakra=0..1998}] ~~~ tellraw @s {"rawtext":[{"text":"§rChakra Limite Insuficiente Lvl : 200 Mínimo"}]}
 
 

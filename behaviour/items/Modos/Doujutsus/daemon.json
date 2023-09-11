@@ -41,7 +41,7 @@
                 }
               },
               "minecraft:icon": {
-                "texture": "daemon"
+                "texture": "Daemon"
               },
               "minecraft:armor": {
                 "protection": 20

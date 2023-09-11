@@ -41,7 +41,7 @@
         }
       },
       "minecraft:icon": {
-        "texture": "kashin"
+        "texture": "Kashin"
       },
       "minecraft:armor": {
         "protection": 20
