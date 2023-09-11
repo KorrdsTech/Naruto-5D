@@ -3,33 +3,49 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "naruto:karmak2"
+      "identifier": "porkyn:karmak2"
     },
     "components": {
-		"minecraft:render_offsets": {
-			"main_hand": {
-			  "first_person": { 
-				"scale": [0.002,0.002,0.002]
- 			  },
-			  "third_person": { 
-				"scale": [0.006,0.006,0.006]
-			  }
-			},
-			"off_hand": {
-			  "first_person": { 
-	 			"scale": [0.002,0.002,0.002]
-	 		  },
-			  "third_person": { 
-				"scale": [0.006,0.006,0.006]
-			  }
-			}
-		  }, 
-      "minecraft:armor": {}, 
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "first_person": {
+            "scale": [
+              0.002,
+              0.002,
+              0.002
+            ]
+          },
+          "third_person": {
+            "scale": [
+              0.006,
+              0.006,
+              0.006
+            ]
+          }
+        },
+        "off_hand": {
+          "first_person": {
+            "scale": [
+              0.002,
+              0.002,
+              0.002
+            ]
+          },
+          "third_person": {
+            "scale": [
+              0.006,
+              0.006,
+              0.006
+            ]
+          }
+        }
+      },
+      "minecraft:armor": {},
       "minecraft:icon": {
         "texture": "karmak2"
-       },
-			"minecraft:armor": {
-				"protection": 20
+      },
+      "minecraft:armor": {
+        "protection": 20
       },
       "minecraft:stacked_by_data": true,
       "minecraft:hand_equipped": true,
@@ -42,12 +58,15 @@
       },
       "minecraft:wearable": {
         "slot": "slot.armor.head"
-      }	
+      }
     },
     "events": {
       "function": {
         "run_command": {
-          "command": ["function karmak2","tag @s add games"],
+          "command": [
+            "function karmak2",
+            "tag @s add games"
+          ],
           "target": "self"
         }
       }

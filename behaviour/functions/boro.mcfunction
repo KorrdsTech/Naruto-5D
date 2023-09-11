@@ -1,4 +1,4 @@
-execute @s[scores={chakralimite=1999..1000001}] ~~~ clear @s naruto:boro
+execute @s[scores={chakralimite=1999..1000001}] ~~~ clear @s porkyn:boro
 execute @s[scores={chakralimite=1999..1000001}] ~~~ replaceitem entity @s slot.armor.head 1 porkyn:boro
 
 execute @s[scores={chakralimite=1999..1000001}] ~~~ playsound rinnegan @a[x=~,y=~,z=~,r=5]
