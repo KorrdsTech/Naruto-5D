@@ -1,17 +1,12 @@
+//editado por GabriielCraft :)        
 {
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
       "identifier": "porkyn:delta",
-      "category": "equipment"
+      "category": "items"
     },
     "components": {
-      "minecraft:display_name": {
-        "value": "§l§cDelta"
-      },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.head"
-      },
       "minecraft:render_offsets": {
         "main_hand": {
           "first_person": {
@@ -46,8 +41,9 @@
           }
         }
       },
+      "minecraft:armor": {},
       "minecraft:icon": {
-        "texture": "delta"
+        "texture": "Delta"
       },
       "minecraft:armor": {
         "protection": 20
@@ -56,9 +52,11 @@
       "minecraft:max_stack_size": 1,
       "minecraft:foil": false,
       "minecraft:hand_equipped": true,
-      "minecraft:on_use_on_use": {
-        "event": "function",
-        "target": "self"
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "function",
+          "target": "self"
+        }
       },
       "minecraft:wearable": {
         "slot": "slot.armor.head"

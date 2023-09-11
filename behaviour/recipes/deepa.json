@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:deepa"
+    },
+    "tags": [
+      "storm"
+    ],
+    "pattern": [
+      "AAA",
+      "ABA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "porkyn:tpchakra"
+      },
+      "B": {
+        "item": "porkyn:byakuganativo"
+      }
+    },
+    "result": {
+      "item": "porkyn:deepa"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:eida"
+    },
+    "tags": [
+      "storm"
+    ],
+    "pattern": [
+      "ABC",
+      "DE"
+    ],
+    "key": {
+      "A": {
+        "item": "porkyn:chakrao1",
+        "data": 0
+      },
+      "B": {
+        "item": "porkyn:chakrao1",
+        "data": 0
+      },
+      "C": {
+        "item": "porkyn:chakrao1",
+        "data": 0
+      },
+      "D": {
+        "item": "porkyn:chakrao1",
+        "data": 0
+      },
+      "E": {
+        "item": "porkyn:daemon",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "porkyn:eida",
+      "count": 1
+    }
+  }
+}

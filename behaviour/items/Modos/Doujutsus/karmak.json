@@ -1,15 +1,10 @@
+//editado por GabriielCraft :)        
 {
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
       "identifier": "porkyn:karmak",
-      "category": "equipment"
-    },
-    "minecraft:display_name": {
-      "value": "§l§cKarma Kawaki"
-    },
-    "minecraft:creative_category": {
-      "parent": "itemGroup.name.head"
+      "category": "items"
     },
     "components": {
       "minecraft:render_offsets": {
@@ -46,6 +41,7 @@
           }
         }
       },
+      "minecraft:armor": {},
       "minecraft:icon": {
         "texture": "karmak"
       },

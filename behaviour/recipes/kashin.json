@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:kashin"
+    },
+    "tags": [
+      "storm"
+    ],
+    "pattern": [
+      "AAA",
+      "ABA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "porkyn:natureza"
+      },
+      "B": {
+        "item": "porkyn:boro"
+      }
+    },
+    "result": {
+      "item": "porkyn:kashin"
+    }
+  }
+}

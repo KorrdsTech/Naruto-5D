@@ -1,3 +1,4 @@
+//editado por GabriielCraft :)
 {
   "format_version": "1.16.100",
   "minecraft:item": {
@@ -39,6 +40,7 @@
           }
         }
       },
+      "minecraft:armor": {},
       "minecraft:icon": {
         "texture": "karmab2"
       },

@@ -1,75 +1,77 @@
-        {
-          "format_version": "1.16.100",
-          "minecraft:item": {
-            "description": {
-              "identifier": "porkyn:karmai2",
-              "category": "equipment"
-            },
-            "components": {
-              "minecraft:render_offsets": {
-                "main_hand": {
-                  "first_person": {
-                    "scale": [
-                      0.002,
-                      0.002,
-                      0.002
-                    ]
-                  },
-                  "third_person": {
-                    "scale": [
-                      0.006,
-                      0.006,
-                      0.006
-                    ]
-                  }
-                },
-                "off_hand": {
-                  "first_person": {
-                    "scale": [
-                      0.002,
-                      0.002,
-                      0.002
-                    ]
-                  },
-                  "third_person": {
-                    "scale": [
-                      0.006,
-                      0.006,
-                      0.006
-                    ]
-                  }
-                }
-              },
-              "minecraft:icon": {
-                "texture": "karmai2"
-              },
-              "minecraft:armor": {
-                "protection": 20
-              },
-              "minecraft:stacked_by_data": false,
-              "minecraft:max_stack_size": 1,
-              "minecraft:foil": false,
-              "minecraft:hand_equipped": true,
-              "minecraft:on_use": {
-                "on_use": {
-                  "event": "function",
-                  "target": "self"
-                }
-              },
-              "minecraft:wearable": {
-                "slot": "slot.armor.head"
-              }
-            },
-            "events": {
-              "function": {
-                "run_command": {
-                  "command": [
-                    "function karmai2",
-                    "tag @s add games"
-                  ],
-                  "target": "self"
-                }
-              }
-            }
+//editado por GabriielCraft :)                
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "porkyn:karmai2",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "first_person": {
+            "scale": [
+              0.002,
+              0.002,
+              0.002
+            ]
+          },
+          "third_person": {
+            "scale": [
+              0.006,
+              0.006,
+              0.006
+            ]
+          }
+        },
+        "off_hand": {
+          "first_person": {
+            "scale": [
+              0.002,
+              0.002,
+              0.002
+            ]
+          },
+          "third_person": {
+            "scale": [
+              0.006,
+              0.006,
+              0.006
+            ]
           }
         }
+      },
+      "minecraft:armor": {},
+      "minecraft:icon": {
+        "texture": "karmai2"
+      },
+      "minecraft:armor": {
+        "protection": 20
+      },
+      "minecraft:stacked_by_data": false,
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": true,
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "function",
+          "target": "self"
+        }
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head"
+      }
+    },
+    "events": {
+      "function": {
+        "run_command": {
+          "command": [
+            "function karmai2",
+            "tag @s add games"
+          ],
+          "target": "self"
+        }
+      }
+    }
+  }
+}

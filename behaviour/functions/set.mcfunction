@@ -120,7 +120,7 @@ tag @s[tag=dead] remove dead
 
 <KIT INICIAL>
 
-execute @s[tag=!ccc] ~~~ scoreboard players set @s health 120
+execute @s[tag=!ccc] ~~~ scoreboard players set @s health 20
 execute @s[tag=!ccc] ~~~ scoreboard players set @s chakra 1000
 execute @s[tag=!ccc] ~~~ scoreboard players set @s xp 0
 execute @s[tag=!ccc] ~~~ scoreboard players set @s tp 0

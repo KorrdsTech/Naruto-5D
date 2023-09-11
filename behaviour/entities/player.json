@@ -14,166 +14,166 @@
           "water",
           "chakra",
           "subs",
-          "inicio",
-          "kamui_1",
-          "amaterasu_i",
-          "kamui_2",
-          "kamui_3",
-          "kamui_4",
-          "kamui_5",
-          "rinnegan_1",
-          "rinnegan_2",
-          "rinnegan_3",
-          "rinnegan_4",
-          "rinnegan_5",
-          "rinnegan_6",
-          "hiraishinmarca_1",
-          "hiraishinmarca_2",
-          "hiraishinmarca_3",
-          "hiraishinmarca_4",
-          "hiraishinmarca_5",
-          "hiraishinmarca_6",
-          "kakashi_branco",
-          "kakashi_preto",
-          "kakashi_marrom",
-          "kakashi_cinza",
-          "kakashi_amarelo",
-          "kakashi_amarelo_e",
-          "kakashi_laranja",
-          "kakashi_amarelo",
-          "kakashi_azul_c",
-          "kakashi_azul_e",
-          "kakashi_verde_c",
-          "kakashi_verde_e",
-          "kakashi_roxo",
-          "kakashi_rosa_c",
-          "kakashi_rosa_e",
-          "kakashi2_branco",
-          "kakashi2_preto",
-          "kakashi2_marrom",
-          "kakashi2_cinza",
-          "kakashi2_amarelo",
-          "kakashi2_amarelo_e",
-          "kakashi2_laranja",
-          "kakashi2_amarelo",
-          "kakashi2_azul_c",
-          "kakashi2_azul_e",
-          "kakashi2_verde_c",
-          "kakashi2_verde_e",
-          "kakashi2_roxo",
-          "kakashi2_rosa_c",
-          "kakashi2_rosa_e",
-          "samehada",
-          "samehadab",
-          "foice_tripla",
-          "gunbai",
-          "kubikiribocho",
-          "foice_triplab",
-          "gunbaib",
-          "kubikiribochob",
-          "walk",
-          "minato_jounin",
-          "health",
-          "max_health",
-          "hiraishin_tp",
-          "itachi_tp",
-          "rasengan",
-          "rinneganmenu",
-          "pele"
+	  "inicio",
+    "kamui_1",
+    "amaterasu_i",
+    "kamui_2",
+    "kamui_3",
+    "kamui_4",
+    "kamui_5",
+    "rinnegan_1",
+    "rinnegan_2",
+    "rinnegan_3",
+    "rinnegan_4",
+    "rinnegan_5",
+    "rinnegan_6",
+    "hiraishinmarca_1",
+    "hiraishinmarca_2",
+    "hiraishinmarca_3",
+    "hiraishinmarca_4",
+    "hiraishinmarca_5",
+    "hiraishinmarca_6",
+    "kakashi_branco",
+	  "kakashi_preto",
+    "kakashi_marrom",
+	  "kakashi_cinza",
+    "kakashi_amarelo",
+	  "kakashi_amarelo_e",
+    "kakashi_laranja",
+	  "kakashi_amarelo",
+    "kakashi_azul_c",
+	  "kakashi_azul_e",
+    "kakashi_verde_c",
+	  "kakashi_verde_e",
+    "kakashi_roxo",
+    "kakashi_rosa_c",
+	  "kakashi_rosa_e",
+    "kakashi2_branco",
+    "kakashi2_preto",
+    "kakashi2_marrom",
+    "kakashi2_cinza",
+    "kakashi2_amarelo",
+    "kakashi2_amarelo_e",
+    "kakashi2_laranja",
+    "kakashi2_amarelo",
+    "kakashi2_azul_c",
+    "kakashi2_azul_e",
+    "kakashi2_verde_c",
+    "kakashi2_verde_e",
+    "kakashi2_roxo",
+    "kakashi2_rosa_c",
+    "kakashi2_rosa_e",
+	  "samehada",
+    "samehadab",
+    "foice_tripla",
+    "gunbai",
+    "kubikiribocho",
+    "foice_triplab",
+    "gunbaib",
+    "kubikiribochob",
+    "walk",
+    "minato_jounin",
+    "health",
+    "max_health",
+    "hiraishin_tp",
+    "itachi_tp",
+    "rasengan",
+    "rinneganmenu",
+    "pele"  
         ]
       },
       "animations": {
         "modos": "controller.animation.modos",
         "pele": "controller.animation.pele",
-        "chakra": "controller.animation.chakra",
-        "hiraishin_tp": "controller.animation.hiraishin_tp",
-        "itachi_tp": "controller.animation.itachi_tp",
-        "dead": "controller.animation.death",
-        "inicio": "animation.inicio",
-        "subs": "controller.animation.subs",
-        "minato_jounin": "controller.animation.minato_jounin",
-        "water": "controller.animation.water",
-        "amaterasu_i": "controller.animation.amaterasu_i",
-        "kamui_1": "controller.animation.kamui_1",
-        "kamui_2": "controller.animation.kamui_2",
-        "kamui_3": "controller.animation.kamui_3",
-        "kamui_4": "controller.animation.kamui_4",
-        "kamui_5": "controller.animation.kamui_5",
-        "hiraishinmarca_1": "controller.animation.hiraishinmarca_1",
-        "hiraishinmarca_2": "controller.animation.hiraishinmarca_2",
-        "hiraishinmarca_3": "controller.animation.hiraishinmarca_3",
-        "hiraishinmarca_4": "controller.animation.hiraishinmarca_4",
-        "hiraishinmarca_5": "controller.animation.hiraishinmarca_5",
-        "hiraishinmarca_6": "controller.animation.hiraishinmarca_6",
-        "rinnegan_1": "controller.animation.rinnegan_1",
-        "rinnegan_2": "controller.animation.rinnegan_2",
-        "rinnegan_3": "controller.animation.rinnegan_3",
-        "rinnegan_4": "controller.animation.rinnegan_4",
-        "rinnegan_5": "controller.animation.rinnegan_5",
-        "rinnegan_6": "controller.animation.rinnegan_6",
-        "kakashi_branco": "controller.animation.kakashi_branco",
-        "kakashi_preto": "controller.animation.kakashi_preto",
-        "kakashi_marrom": "controller.animation.kakashi_marrom",
-        "kakashi_cinza": "controller.animation.kakashi_cinza",
-        "kakashi_laranja": "controller.animation.kakashi_laranja",
-        "kakashi_vermelho": "controller.animation.kakashi_vermelho",
-        "kakashi_azul_e": "controller.animation.kakashi_azul_e",
-        "kakashi_azul_c": "controller.animation.kakashi_azul_c",
-        "kakashi_verde_c": "controller.animation.kakashi_verde_c",
-        "kakashi_verde_e": "controller.animation.kakashi_verde_e",
-        "kakashi_roxo": "controller.animation.kakashi_roxo",
-        "kakashi_rosa_e": "controller.animation.kakashi_rosa_e",
-        "kakashi_rosa_c": "controller.animation.kakashi_rosa_c",
-        "kakashi_amarelo": "controller.animation.kakashi_amarelo",
-        "kakashi_amarelo_e": "controller.animation.kakashi_amarelo_e",
-        "kakashi2_branco": "controller.animation.kakashi2_branco",
-        "kakashi2_preto": "controller.animation.kakashi2_preto",
-        "kakashi2_marrom": "controller.animation.kakashi2_marrom",
-        "kakashi2_cinza": "controller.animation.kakashi2_cinza",
-        "kakashi2_laranja": "controller.animation.kakashi2_laranja",
-        "kakashi2_vermelho": "controller.animation.kakashi2_vermelho",
-        "kakashi2_azul_e": "controller.animation.kakashi2_azul_e",
-        "kakashi2_azul_c": "controller.animation.kakashi2_azul_c",
-        "kakashi2_verde_c": "controller.animation.kakashi2_verde_c",
-        "kakashi2_verde_e": "controller.animation.kakashi2_verde_e",
-        "kakashi2_roxo": "controller.animation.kakashi2_roxo",
-        "kakashi2_rosa_e": "controller.animation.kakashi2_rosa_e",
-        "kakashi2_rosa_c": "controller.animation.kakashi2_rosa_c",
-        "kakashi2_amarelo": "controller.animation.kakashi2_amarelo",
-        "kakashi2_amarelo_e": "controller.animation.kakashi2_amarelo_e",
-        "samehada": "controller.animation.samehada",
-        "samehadab": "controller.animation.samehadab",
-        "foice_tripla": "controller.animation.foice_tripla",
-        "gunbai": "controller.animation.gunbai",
-        "kubikiribocho": "controller.animation.kubikiribocho",
-        "foice_triplab": "controller.animation.foice_triplab",
-        "gunbaib": "controller.animation.gunbaib",
-        "kubikiribochob": "controller.animation.kubikiribochob",
-        "walk": "controller.animation.walk",
-        "rasengan": "controller.animation.rasengan",
-        "health": "controller.animation.health",
-        "max_health": "controller.animation.max_health",
-        "rinneganmenu": "controller.animation.rinneganmenu"
+	"chakra": "controller.animation.chakra",
+  "hiraishin_tp": "controller.animation.hiraishin_tp",
+  "itachi_tp": "controller.animation.itachi_tp",
+  "dead": "controller.animation.death",
+	"inicio": "animation.inicio",
+  "subs":"controller.animation.subs",
+  "minato_jounin":"controller.animation.minato_jounin",
+  "water": "controller.animation.water",
+  "amaterasu_i": "controller.animation.amaterasu_i",
+  "kamui_1": "controller.animation.kamui_1",
+  "kamui_2": "controller.animation.kamui_2",
+  "kamui_3": "controller.animation.kamui_3",
+  "kamui_4": "controller.animation.kamui_4",
+  "kamui_5": "controller.animation.kamui_5",
+  "hiraishinmarca_1": "controller.animation.hiraishinmarca_1",
+  "hiraishinmarca_2": "controller.animation.hiraishinmarca_2",
+  "hiraishinmarca_3": "controller.animation.hiraishinmarca_3",
+  "hiraishinmarca_4": "controller.animation.hiraishinmarca_4",
+  "hiraishinmarca_5": "controller.animation.hiraishinmarca_5",
+  "hiraishinmarca_6": "controller.animation.hiraishinmarca_6",
+  "rinnegan_1": "controller.animation.rinnegan_1",
+  "rinnegan_2": "controller.animation.rinnegan_2",
+  "rinnegan_3": "controller.animation.rinnegan_3",
+  "rinnegan_4": "controller.animation.rinnegan_4",
+  "rinnegan_5": "controller.animation.rinnegan_5",
+  "rinnegan_6": "controller.animation.rinnegan_6",
+  "kakashi_branco": "controller.animation.kakashi_branco",
+	"kakashi_preto": "controller.animation.kakashi_preto",
+	"kakashi_marrom": "controller.animation.kakashi_marrom",
+  "kakashi_cinza": "controller.animation.kakashi_cinza",
+	"kakashi_laranja": "controller.animation.kakashi_laranja",
+	"kakashi_vermelho": "controller.animation.kakashi_vermelho",
+  "kakashi_azul_e": "controller.animation.kakashi_azul_e",
+	"kakashi_azul_c": "controller.animation.kakashi_azul_c",
+	"kakashi_verde_c": "controller.animation.kakashi_verde_c",
+  "kakashi_verde_e": "controller.animation.kakashi_verde_e",
+	"kakashi_roxo": "controller.animation.kakashi_roxo",
+	"kakashi_rosa_e": "controller.animation.kakashi_rosa_e",
+  "kakashi_rosa_c": "controller.animation.kakashi_rosa_c",
+	"kakashi_amarelo": "controller.animation.kakashi_amarelo",
+	"kakashi_amarelo_e": "controller.animation.kakashi_amarelo_e",
+  "kakashi2_branco": "controller.animation.kakashi2_branco",
+  "kakashi2_preto": "controller.animation.kakashi2_preto",
+  "kakashi2_marrom": "controller.animation.kakashi2_marrom",
+  "kakashi2_cinza": "controller.animation.kakashi2_cinza",
+  "kakashi2_laranja": "controller.animation.kakashi2_laranja",
+  "kakashi2_vermelho": "controller.animation.kakashi2_vermelho",
+  "kakashi2_azul_e": "controller.animation.kakashi2_azul_e",
+  "kakashi2_azul_c": "controller.animation.kakashi2_azul_c",
+  "kakashi2_verde_c": "controller.animation.kakashi2_verde_c",
+  "kakashi2_verde_e": "controller.animation.kakashi2_verde_e",
+  "kakashi2_roxo": "controller.animation.kakashi2_roxo",
+  "kakashi2_rosa_e": "controller.animation.kakashi2_rosa_e",
+  "kakashi2_rosa_c": "controller.animation.kakashi2_rosa_c",
+  "kakashi2_amarelo": "controller.animation.kakashi2_amarelo",
+  "kakashi2_amarelo_e": "controller.animation.kakashi2_amarelo_e",
+  "samehada": "controller.animation.samehada",
+  "samehadab": "controller.animation.samehadab",
+  "foice_tripla": "controller.animation.foice_tripla",
+  "gunbai": "controller.animation.gunbai",
+  "kubikiribocho": "controller.animation.kubikiribocho",
+  "foice_triplab": "controller.animation.foice_triplab",
+  "gunbaib": "controller.animation.gunbaib",
+  "kubikiribochob": "controller.animation.kubikiribochob",
+  "walk": "controller.animation.walk",
+  "rasengan": "controller.animation.rasengan",
+  "health": "controller.animation.health",
+  "max_health": "controller.animation.max_health",
+  "rinneganmenu": "controller.animation.rinneganmenu" 
       }
     },
     "component_groups": {
-      "claro_azul": {
+      "claro_azul":{
         "minecraft:variant": {
           "value": 201
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "claro_verde": {
+      }, 
+      "claro_verde":{
         "minecraft:variant": {
           "value": 202
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "claro_amarelo": {
+      },  
+      "claro_amarelo":{
         "minecraft:variant": {
           "value": 203
         },
@@ -181,7 +181,7 @@
           "value": 1.0
         }
       },
-      "claro_preto": {
+      "claro_preto":{
         "minecraft:variant": {
           "value": 204
         },
@@ -189,7 +189,7 @@
           "value": 1.0
         }
       },
-      "claro_vermelho": {
+      "claro_vermelho":{
         "minecraft:variant": {
           "value": 205
         },
@@ -197,31 +197,31 @@
           "value": 1.0
         }
       },
-      "claro_branco": {
+      "claro_branco":{
         "minecraft:variant": {
           "value": 206
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "negro_azul": {
+      }, 
+      "negro_azul":{
         "minecraft:variant": {
           "value": 207
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "negro_verde": {
+      }, 
+      "negro_verde":{
         "minecraft:variant": {
           "value": 208
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "negro_amarelo": {
+      },  
+      "negro_amarelo":{
         "minecraft:variant": {
           "value": 209
         },
@@ -229,7 +229,7 @@
           "value": 1.0
         }
       },
-      "negro_preto": {
+      "negro_preto":{
         "minecraft:variant": {
           "value": 210
         },
@@ -237,7 +237,7 @@
           "value": 1.0
         }
       },
-      "negro_vermelho": {
+      "negro_vermelho":{
         "minecraft:variant": {
           "value": 211
         },
@@ -245,31 +245,31 @@
           "value": 1.0
         }
       },
-      "negro_branco": {
+      "negro_branco":{
         "minecraft:variant": {
           "value": 212
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "moreno_azul": {
+      }, 
+      "moreno_azul":{
         "minecraft:variant": {
           "value": 213
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "moreno_verde": {
+      }, 
+      "moreno_verde":{
         "minecraft:variant": {
           "value": 214
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "moreno_amarelo": {
+      },  
+      "moreno_amarelo":{
         "minecraft:variant": {
           "value": 215
         },
@@ -277,7 +277,7 @@
           "value": 1.0
         }
       },
-      "moreno_preto": {
+      "moreno_preto":{
         "minecraft:variant": {
           "value": 216
         },
@@ -285,7 +285,7 @@
           "value": 1.0
         }
       },
-      "moreno_vermelho": {
+      "moreno_vermelho":{
         "minecraft:variant": {
           "value": 217
         },
@@ -293,31 +293,31 @@
           "value": 1.0
         }
       },
-      "moreno_branco": {
+      "moreno_branco":{
         "minecraft:variant": {
           "value": 218
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "branco_azul": {
+      }, 
+      "branco_azul":{
         "minecraft:variant": {
           "value": 219
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "branco_verde": {
+      }, 
+      "branco_verde":{
         "minecraft:variant": {
           "value": 220
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
-      "branco_amarelo": {
+      },  
+      "branco_amarelo":{
         "minecraft:variant": {
           "value": 221
         },
@@ -325,7 +325,7 @@
           "value": 1.0
         }
       },
-      "branco_preto": {
+      "branco_preto":{
         "minecraft:variant": {
           "value": 222
         },
@@ -333,7 +333,7 @@
           "value": 1.0
         }
       },
-      "branco_vermelho": {
+      "branco_vermelho":{
         "minecraft:variant": {
           "value": 223
         },
@@ -341,19 +341,19 @@
           "value": 1.0
         }
       },
-      "branco_branco": {
+      "branco_branco":{
         "minecraft:variant": {
           "value": 224
         }
       },
-      "isshiki_base": {
+      "isshiki_base":{
         "minecraft:variant": {
           "value": 225
         },
         "minecraft:scale": {
           "value": 1.0
         }
-      },
+      }, 
       "minecraft:add_bad_omen": {
         "minecraft:spell_effects": {
           "add_effects": [
@@ -365,10 +365,7 @@
           ]
         },
         "minecraft:timer": {
-          "time": [
-            0.0,
-            0.0
-          ],
+          "time": [ 0.0, 0.0 ],
           "looping": false,
           "time_down_event": {
             "event": "minecraft:clear_add_bad_omen",
@@ -377,7 +374,8 @@
         }
       },
       "minecraft:clear_bad_omen_spell_effect": {
-        "minecraft:spell_effects": {}
+        "minecraft:spell_effects": {
+        }
       },
       "minecraft:raid_trigger": {
         "minecraft:raid_trigger": {
@@ -396,11 +394,10 @@
         "on_death": "Math.Min(query.player_level * 7, 100)"
       },
       "minecraft:type_family": {
-        "family": [
-          "player"
-        ]
+        "family": [ "player" ]
       },
-      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:is_hidden_when_invisible": {
+      },
       "minecraft:loot": {
         "table": "loot_tables/empty.json"
       },
@@ -408,19 +405,15 @@
         "width": 0.6,
         "height": 1.8
       },
-      "minecraft:can_climb": {},
+      "minecraft:can_climb": {
+      },
       "minecraft:movement": {
         "value": 0.1
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": {
-              "test": "in_lava",
-              "subject": "self",
-              "operator": "==",
-              "value": true
-            },
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -430,7 +423,7 @@
         "damage": 1
       },
       "minecraft:player.saturation": {
-        "value": 120
+        "value": 20
       },
       "minecraft:player.exhaustion": {
         "value": 0,
@@ -454,7 +447,8 @@
         "always_show": true,
         "allow_name_tag_renaming": false
       },
-      "minecraft:physics": {},
+      "minecraft:physics": {
+      },
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": true
@@ -470,21 +464,13 @@
         "pull_in_entities": true,
         "seats": [
           {
-            "position": [
-              0.4,
-              -0.2,
-              -0.1
-            ],
+            "position": [ 0.4, -0.2, -0.1 ],
             "min_rider_count": 0,
             "max_rider_count": 0,
             "lock_rider_rotation": 0
           },
           {
-            "position": [
-              -0.4,
-              -0.2,
-              -0.1
-            ],
+            "position": [ -0.4, -0.2, -0.1 ],
             "min_rider_count": 1,
             "max_rider_count": 2,
             "lock_rider_rotation": 0
@@ -519,7 +505,8 @@
                   "subject": "self",
                   "value": "claro_azul"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -537,7 +524,8 @@
                   "subject": "self",
                   "value": "claro_verde"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -555,7 +543,8 @@
                   "subject": "self",
                   "value": "claro_amarelo"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -573,7 +562,8 @@
                   "subject": "self",
                   "value": "claro_preto"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -591,7 +581,8 @@
                   "subject": "self",
                   "value": "claro_vermelho"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -609,7 +600,8 @@
                   "subject": "self",
                   "value": "claro_branco"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -627,7 +619,8 @@
                   "subject": "self",
                   "value": "moreno_azul"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -636,8 +629,8 @@
               ]
             },
             "event": "moreno_azul"
-          },
-          {
+            },
+            {
             "filters": {
               "all_of": [
                 {
@@ -645,7 +638,8 @@
                   "subject": "self",
                   "value": "moreno_verde"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -654,8 +648,8 @@
               ]
             },
             "event": "moreno_verde"
-          },
-          {
+            },
+            {
             "filters": {
               "all_of": [
                 {
@@ -663,7 +657,8 @@
                   "subject": "self",
                   "value": "moreno_amarelo"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -672,8 +667,8 @@
               ]
             },
             "event": "moreno_amarelo"
-          },
-          {
+            },
+            {
             "filters": {
               "all_of": [
                 {
@@ -681,7 +676,8 @@
                   "subject": "self",
                   "value": "moreno_preto"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -690,8 +686,8 @@
               ]
             },
             "event": "moreno_preto"
-          },
-          {
+            },
+            {
             "filters": {
               "all_of": [
                 {
@@ -699,7 +695,8 @@
                   "subject": "self",
                   "value": "moreno_vermelho"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -708,8 +705,8 @@
               ]
             },
             "event": "moreno_vermelho"
-          },
-          {
+            },
+            {
             "filters": {
               "all_of": [
                 {
@@ -717,7 +714,8 @@
                   "subject": "self",
                   "value": "moreno_branco"
                 },
-                {},
+                {
+                },
                 {
                   "test": "is_variant",
                   "operator": "!=",
@@ -726,245 +724,259 @@
               ]
             },
             "event": "moreno_branco"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "negro_azul"
-                },
-                {},
-                {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 13
-                }
-              ]
             },
-            "event": "negro_azul"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "negro_verde"
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_azul"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 13
+                  }
+                ]
+              },
+              "event": "negro_azul"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_verde"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 14
+                  }
+                ]
+              },
+              "event": "negro_verde"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_amarelo"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 15
+                  }
+                ]
+              },
+              "event": "negro_amarelo"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_preto"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 16
+                  }
+                ]
+              },
+              "event": "negro_preto"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_vermelho"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 17
+                  }
+                ]
+              },
+              "event": "negro_vermelho"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "negro_branco"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 18
+                  }
+                ]
+              },
+              "event": "negro_branco"
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_azul"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 19
+                    }
+                  ]
                 },
-                {},
-                {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 14
-                }
-              ]
-            },
-            "event": "negro_verde"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "negro_amarelo"
+                "event": "branco_azul"
                 },
-                {},
                 {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 15
-                }
-              ]
-            },
-            "event": "negro_amarelo"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "negro_preto"
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_verde"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 20
+                    }
+                  ]
                 },
-                {},
-                {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 16
-                }
-              ]
-            },
-            "event": "negro_preto"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "negro_vermelho"
+                "event": "branco_verde"
                 },
-                {},
                 {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 17
-                }
-              ]
-            },
-            "event": "negro_vermelho"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "negro_branco"
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_amarelo"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 21
+                    }
+                  ]
                 },
-                {},
-                {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 18
-                }
-              ]
-            },
-            "event": "negro_branco"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "branco_azul"
+                "event": "branco_amarelo"
                 },
-                {},
                 {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 19
-                }
-              ]
-            },
-            "event": "branco_azul"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "branco_verde"
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_preto"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 22
+                    }
+                  ]
                 },
-                {},
-                {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 20
-                }
-              ]
-            },
-            "event": "branco_verde"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "branco_amarelo"
+                "event": "branco_preto"
                 },
-                {},
                 {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 21
-                }
-              ]
-            },
-            "event": "branco_amarelo"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "branco_preto"
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_vermelho"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 23
+                    }
+                  ]
                 },
-                {},
-                {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 22
-                }
-              ]
-            },
-            "event": "branco_preto"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "branco_vermelho"
+                "event": "branco_vermelho"
                 },
-                {},
                 {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 23
-                }
-              ]
-            },
-            "event": "branco_vermelho"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "branco_branco"
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "self",
+                      "value": "branco_branco"
+                    },
+                    {
+                    },
+                    {
+                      "test": "is_variant",
+                      "operator": "!=",
+                      "value": 24
+                    }
+                  ]
                 },
-                {},
-                {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 24
-                }
-              ]
-            },
-            "event": "branco_branco"
-          },
-          {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_tag",
-                  "subject": "self",
-                  "value": "isshiki_base"
-                },
-                {},
-                {
-                  "test": "is_variant",
-                  "operator": "!=",
-                  "value": 25
-                }
-              ]
-            },
-            "event": "isshiki_base"
+                "event": "branco_branco"
+              },
+              {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "subject": "self",
+                    "value": "isshiki_base"
+                  },
+                  {
+                  },
+                  {
+                    "test": "is_variant",
+                    "operator": "!=",
+                    "value": 25
+                  }
+                ]
+              },
+              "event": "isshiki_base"
+              
           }
         ]
       }
     },
-    "events": {
+    "events": { 
       "claro_azul": {
         "add": {
           "component_groups": [
@@ -1161,16 +1173,12 @@
       },
       "minecraft:trigger_raid": {
         "add": {
-          "component_groups": [
-            "minecraft:raid_trigger"
-          ]
+          "component_groups": [ "minecraft:raid_trigger" ]
         }
       },
       "minecraft:remove_raid_trigger": {
         "remove": {
-          "component_groups": [
-            "minecraft:raid_trigger"
-          ]
+          "component_groups": [ "minecraft:raid_trigger" ]
         }
       }
     }

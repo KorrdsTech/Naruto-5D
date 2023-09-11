@@ -1,0 +1,41 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:daemon"
+    },
+    "tags": [
+      "storm"
+    ],
+    "pattern": [
+      "ABC",
+      "DE"
+    ],
+    "key": {
+      "A": {
+        "item": "porkyn:rinne2",
+        "data": 0
+      },
+      "B": {
+        "item": "porkyn:urashiki2",
+        "data": 0
+      },
+      "C": {
+        "item": "porkyn:modotenseigan",
+        "data": 0
+      },
+      "D": {
+        "item": "porkyn:rinneazul",
+        "data": 0
+      },
+      "E": {
+        "item": "porkyn:rinnevermelho",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "porkyn:daemon",
+      "count": 1
+    }
+  }
+}

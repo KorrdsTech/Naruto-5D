@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "porkyn:delta"
+    },
+    "tags": [
+      "storm"
+    ],
+    "pattern": [
+      "AAA",
+      "ABA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "porkyn:chakrao1"
+      },
+      "B": {
+        "item": "porkyn:kashin"
+      }
+    },
+    "result": {
+      "item": "porkyn:delta"
+    }
+  }
+}

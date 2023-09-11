@@ -1,17 +1,12 @@
+//editado por GabriielCraft :)        
 {
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
       "identifier": "porkyn:eida",
-      "category": "equipment"
+      "category": "items"
     },
     "components": {
-      "minecraft:display_name": {
-        "value": "§l§bEida"
-      },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.head"
-      },
       "minecraft:render_offsets": {
         "main_hand": {
           "first_person": {
@@ -46,8 +41,9 @@
           }
         }
       },
+      "minecraft:armor": {},
       "minecraft:icon": {
-        "texture": "eida"
+        "texture": "Eida"
       },
       "minecraft:armor": {
         "protection": 20
@@ -56,18 +52,20 @@
       "minecraft:max_stack_size": 1,
       "minecraft:foil": false,
       "minecraft:hand_equipped": true,
-      "minecraft:on_use_on_use": {
-        "event": "function eida",
-        "target": "self"
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "function",
+          "target": "self"
+        }
       },
       "minecraft:wearable": {
-        "slot": "slot armor head"
+        "slot": "slot.armor.head"
       }
     },
     "events": {
-      "function eida": {
-        "run_command eida": {
-          "command eida": [
+      "function": {
+        "run_command": {
+          "command": [
             "function eida",
             "tag @s add games"
           ],
