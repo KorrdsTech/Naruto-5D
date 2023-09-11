@@ -1,0 +1,172 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers": {
+		"controller.animation.leecon": {
+		  "initial_state": "teste",
+		    "states": {
+			  "zdefault": {
+				"animations": [
+				  "leebase" 
+				],
+				"transitions": [
+				  {
+				    "zsneaking": "query.mark_variant == 2 && query.is_sneaking" 
+				      
+				  },
+				  {
+				    "zrunning": "query.mark_variant == 2 && query.is_sprinting" 
+				  },
+				  {
+				    "zataqueone": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 0"
+				  },
+				  {
+				    "zataquetwo": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 1"
+				  },
+				  {
+				    "zataquethree": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 2"
+				  },
+				  {
+				    "zataquefour": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 3"
+				  },
+				  {
+				    "zandando": "query.mark_variant == 2 && query.is_moving"
+				  }
+				],
+				"blend_transition": 0.1,
+				"blend_via_shortest_path": true
+			  },
+			  "zandando": {
+			    "animations": [
+			      "leeandando" 
+			    ],
+				"transitions": [
+				  {
+				    "zrunning": "query.mark_variant == 2 && query.is_sprinting" 
+				  },
+				  {
+				    "zsneaking": "query.mark_variant == 2 && query.is_sneaking" 
+				      
+				  },
+				  {
+				    "zdefault": "!query.is_moving && query.mark_variant == 2"
+				  },
+				  {
+				    "zataqueone": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 0"
+				  },
+				  {
+				    "zataquetwo": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 1"
+				  },
+				  {
+				    "zataquethree": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 2"
+				  },
+				  {
+				    "zataquefour": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 3"
+				  }
+				],
+				"blend_transition": 0.1,
+				"blend_via_shortest_path": true
+			  },
+			  "zrunning": {
+			    "animations": [
+			      "leecorrendo"
+			    ],
+				"transitions": [
+				  {
+				    "zsneaking": "query.mark_variant == 2 && query.is_sneaking" 
+				      
+				  },
+				  {
+				    "zdefault": "!query.is_sprinting && query.mark_variant == 2"
+				  },
+				  {
+				    "zataqueone": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 0"
+				  },
+				  {
+				    "zataquetwo": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 1"
+				  },
+				  {
+				    "zataquethree": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 2"
+				  },
+				  {
+				    "zataquefour": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 3"
+				  },
+				  {
+				    "zandando": "query.mark_variant == 2 && query.is_moving && !query.is_sprinting"
+				  }
+				],
+				"blend_transition": 0.1,
+				"blend_via_shortest_path": true
+			  },
+			  "zsneaking": {
+			    "animations": [
+			      "leeagachando" 
+			    ],
+				"transitions": [
+				  { 
+				    "zrunning": "query.mark_variant == 2 && query.is_sprinting"
+				  },
+				  {
+				    "zdefault": "!query.is_sneaking && query.mark_variant == 2" 
+				  },
+				  {
+				    "zataqueone": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 0"
+				  },
+				  {
+				    "zataquetwo": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 1"
+				  },
+				  {
+				    "zataquethree": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 2"
+				  },
+				  {
+				    "zataquefour": "query.mark_variant == 2 && variable.attack_time>0 && variable.randomfour == 3"
+				  }
+				]
+			  },
+			  "zataqueone": {
+				"animations": [
+				  "leeataqueum" 
+				],
+				"transitions": [
+				  {
+                    "zdefault": "query.all_animations_finished"
+                  }
+				],
+				"blend_transition": 0.2
+			  },
+			  "zataquetwo": {
+			    "animations": [
+			      "leeataquedois" 
+			    ],
+				"transitions": [
+				  {
+                    "zdefault": "query.all_animations_finished"
+                  }
+				],
+				"blend_transition": 0.2
+			  },
+			  "zataquethree": {
+			    "animations": [
+			      "leeataquetres" 
+			    ],
+				"transitions": [
+				  {
+                    "zdefault": "query.all_animations_finished"
+                  }
+				],
+				"blend_transition": 0.2
+			  },
+			  "zataquefour": {
+			    "animations": [
+			      "leeataquequatro" 
+			    ],
+				"transitions": [
+				  {
+                    "zdefault": "query.all_animations_finished"
+                  }
+				],
+				"blend_transition": 0.2
+			  }
+		  }
+	   }
+    }
+}

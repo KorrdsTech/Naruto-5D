@@ -1,0 +1,150 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers": {
+		"controller.animation.hiraishin": {
+		  "initial_state": "teste",
+		    "states": {
+			  "zdefault": {
+				"animations": [
+				  "hiraimove" 
+				],
+				"transitions": [
+				  {
+				    "zsneaking": "query.get_equipped_item_name == 'hiraishin' && query.is_sneaking" 
+				      
+				  },
+				  {
+				    "zrunning": "query.get_equipped_item_name == 'hiraishin' && query.is_sprinting" 
+				  },
+				  {
+				    "zataqueone": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 0"
+				  },
+				  {
+				    "zataquetwo": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 1"
+				  },
+				  {
+				    "zataquethree": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 2"
+				  },
+				  {
+				    "zandando": "query.get_equipped_item_name == 'hiraishin' && query.is_moving"
+				  }
+				],
+				"blend_transition": 0.1,
+				"blend_via_shortest_path": true
+			  },
+			  "zandando": {
+			    "animations": [
+			      "hiraiandando" 
+			    ],
+				"transitions": [
+				  {
+				    "zrunning": "query.get_equipped_item_name == 'hiraishin' && query.is_sprinting" 
+				  },
+				  {
+				    "zsneaking": "query.get_equipped_item_name == 'hiraishin' && query.is_sneaking" 
+				      
+				  },
+				  {
+				    "zdefault": "!query.is_moving && query.get_equipped_item_name == 'hiraishin'"
+				  },
+				  {
+				    "zataqueone": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 0"
+				  },
+				  {
+				    "zataquetwo": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 1"
+				  },
+				  {
+				    "zataquethree": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 2"
+				  }
+				],
+				"blend_transition": 0.1,
+				"blend_via_shortest_path": true
+			  },
+			  "zrunning": {
+			    "animations": [
+			      "hiraicorrendo",
+			      "hiraicorrendolegs"
+			    ],
+				"transitions": [
+				  {
+				    "zsneaking": "query.get_equipped_item_name == 'hiraishin' && query.is_sneaking" 
+				      
+				  },
+				  {
+				    "zdefault": "!query.is_sprinting && query.get_equipped_item_name == 'hiraishin'"
+				  },
+				  {
+				    "zataqueone": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 0"
+				  },
+				  {
+				    "zataquetwo": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 1"
+				  },
+				  {
+				    "zataquethree": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 2"
+				  },
+				  {
+				    "zandando": "query.get_equipped_item_name == 'hiraishin' && query.is_moving && !query.is_sprinting"
+				  }
+				],
+				"blend_transition": 0.1,
+				"blend_via_shortest_path": true
+			  },
+			  "zsneaking": {
+			    "animations": [
+			      "hiraiagachado" 
+			    ],
+				"transitions": [
+				  { 
+				    "zrunning": "query.get_equipped_item_name == 'hiraishin' && query.is_sprinting"
+				  },
+				  {
+				    "zdefault": "!query.is_sneaking && query.get_equipped_item_name == 'hiraishin'" 
+				  },
+				  {
+				    "zataqueone": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 0"
+				  },
+				  {
+				    "zataquetwo": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 1"
+				  },
+				  {
+				    "zataquethree": "query.get_equipped_item_name == 'hiraishin' && variable.attack_time>0 && variable.randomthree == 2"
+				  }
+				]
+			  },
+			  "zataqueone": {
+				"animations": [
+				  "hiraiataqueum" 
+				],
+				"transitions": [
+				  {
+                    "zdefault": "query.all_animations_finished"
+                  }
+				],
+				"blend_transition": 0.2
+			  },
+			  "zataquetwo": {
+			    "animations": [
+			      "hiraiataquedois" 
+			    ],
+				"transitions": [
+				  {
+                    "zdefault": "query.all_animations_finished"
+                  }
+				],
+				"blend_transition": 0.2
+			  },
+			  "zataquethree": {
+			    "animations": [
+			      "hiraiataquetres" 
+			    ],
+				"transitions": [
+				  {
+                    "zdefault": "query.all_animations_finished"
+                  }
+				],
+				"blend_transition": 0.2
+			  }
+		  }
+	   }
+    }
+}

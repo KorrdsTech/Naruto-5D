@@ -1,0 +1,30 @@
+{  
+	"format_version": "1.10.0",   
+	"animation_controllers": {
+		"controller.animation.skill": {  
+			"states": {    
+				"default": {     
+					"transitions": [
+					  {"foice_1": "(query.get_equipped_item_name == 'foice' && query.skin_id == 2)"},
+					  {"chidori_0": "(query.get_equipped_item_name == 'chidori' && query.is_using_item)"},
+					  {"rasengan_0": "(query.get_equipped_item_name == 'rasengan' && query.is_using_item)"}
+				  ]
+				},
+				"foice_1": { "animations" : [ "foice_1" ], "transitions": [ {"default": "(query.skin_id == 0)"} ] },
+				"chidori_0": { "animations" : [ "chidori_0" ], "transitions": [ {"default": "(!query.is_using_item && query.skin_id == 0)"},{"chidori_1": "(!query.is_using_item && query.skin_id == 3)"} ] },
+				"chidori_1": { "animations" : [ "chidori_1" ], "transitions": [ {"default": "(query.skin_id == 0)"} ] },
+				"rasengan_0": { "animations" : [ "rasengan_0" ], "blend_transition" : 0.2, "transitions": [ {"default": "(!query.is_using_item && query.skin_id == 0)"},{"rasengan_1": "(!query.is_using_item && query.skin_id == 4)"} ] },
+				"rasengan_1": { "animations" : [ "rasengan_1" ], "transitions": [ {"default": "(query.skin_id == 0)"} ] }
+	 	  }   
+ 	  },
+		"controller.animation.gc_item_hand": {  
+			"states": {    
+				"default": {  
+          "animations" : [ 
+            "a_gc_item_hand"
+          ]		
+        }
+	 	  }   
+ 	  }
+	} 
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.espada": {
+	  "states": {
+	    "default": {
+	      "animations": [ "parado" ],
+	      "transitions": [
+	        { "andar": "query.is_moving" },
+	        { "voar": "!query.is_on_ground" },
+			{ "atacar": "variable.attack>0" }
+	      ]
+	    },
+	    "andar": {
+	      "animations": [ "andar" ],
+	      "transitions": [
+	        { "default": "!query.is_moving" }
+	      ]
+	    },
+	    "voar": {
+	      "animations": [ "voar" ],
+	      "transitions": [
+	        { "default": "query.is_on_ground" }
+	      ]
+	    },
+	    "atacar": {
+	      "animations": [ "atacar" ],
+	      "transitions": [
+	        { "default": "variable.attack==0" }
+	      ]
+	    }
+	  }
+	}
+  }
+}

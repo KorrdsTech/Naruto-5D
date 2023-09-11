@@ -1,0 +1,90 @@
+/*
+
+	Hello, dear fellow reverse engineers :D
+
+	You can tear this addon apart 
+	and rip the parts off 
+	and make it your own, 
+	please just make sure 
+	you give me the proper credits.
+	Thank you.
+
+	- MyoHtet @bmheades
+
+*/
+
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {       
+		
+        "controller.animation.m1a2.sound_controller": {
+			"states": {
+				"default": {									
+					"transitions": [
+						{
+							"start": "query.is_moving"
+						}
+					]
+				},
+				"start": {
+					"sound_effects": [
+						{
+							"effect": "t_start"
+						}
+					],
+					"transitions": [
+						{
+							"mid": "query.is_moving"
+						},
+						{
+							"stop": "!query.is_moving"
+						}
+					]				
+				},
+				"mid": {
+					"sound_effects": [
+						{
+							"effect": "t_mid"
+						}
+					],
+					"transitions": [
+						{
+							"mid2": "query.is_moving"
+						},
+						{
+							"stop": "!query.is_moving"
+						}
+					]				
+				},
+				"mid2": {
+					"sound_effects": [
+						
+						{
+							"effect": "t_mid"
+						}
+					],
+					"transitions": [
+						{
+							"mid": "query.is_moving"
+						},
+						{
+							"stop": "!query.is_moving"
+						}
+					]				
+				},
+				"stop": {
+					"sound_effects": [
+						{
+							"effect": "t_stop"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.is_on_ground"
+						}
+					]				
+				}
+			}
+		}
+    }
+}

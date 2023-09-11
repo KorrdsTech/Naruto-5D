@@ -1,0 +1,117 @@
+/*
+
+	Hello, dear fellow reverse engineers :D
+
+	You can tear this addon apart 
+	and rip the parts off 
+	and make it your own, 
+	please just make sure 
+	you give me the proper credits.
+	Thank you.
+
+	- MyoHtet @bmheades
+
+*/
+
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {       
+		
+        "controller.animation.m1a2_fire": {
+			"states": {
+				"default": {
+                    "animations": [
+						"normal"
+					],		
+					"transitions": [
+					{
+						"fire": "query.variant != 0"
+					}
+					]
+				},
+				"fire": {
+					"animations": [
+						"firing"
+					],
+					"sound_effects": [
+						{
+							"effect": "maingunshoot"
+						}
+					],
+					"transitions": [
+					{
+						"default": "query.variant == 0"
+					}
+					]				
+				}
+			}
+		},
+		"controller.animation.m1a2.machinegun_fire": {
+			"states": {
+				"default": {
+                    "animations": [
+						"normal"
+					],				
+					"transitions": [
+					{
+						"fire": "query.mark_variant != 0"
+					}
+					]
+				},
+				"fire": {
+					"animations": [
+						"machinegun_firing"
+					],
+					"sound_effects": [
+						{
+							"effect": "machinegunshoot"
+						}
+					],
+					"transitions": [
+					{
+						"default": "query.mark_variant == 0"
+					}
+					]				
+				}
+			}
+		}		/*,
+		"controller.animation.m1a2_track_dust": {
+            "states": {
+                "default": {
+					
+                    "transitions": [
+                        {
+                            "driving0": "query.is_moving"
+                        }
+                    ]
+                },
+                "driving0": {
+					"animations": [
+						"track_particle"
+					],
+                    "transitions": [
+                        {
+                            "default": "!query.is_moving"
+                        },
+						{
+                            "driving1": "query.is_moving"
+                        }
+                    ]          
+                },
+				"driving1": {
+					"animations": [
+						"track_particle"
+					],
+                    "transitions": [
+                        {
+                            "default": "!query.is_moving"
+                        },
+						{
+                            "driving0": "query.is_moving"
+                        }
+                    ]          
+                }
+            }
+		} */
+    }
+}
