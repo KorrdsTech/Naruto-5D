@@ -1,384 +1,787 @@
 {
 	"format_version": "1.17.100",
-	"minecraft:npc_dialogue":
-	{
-		"scenes":
-		[
+	"minecraft:npc_dialogue": {
+		"scenes": [
 			{
 				"scene_tag": "reiniciar",
-				"npc_name": { "rawtext": [ {"text":"§l§fDeseja Reiniciar?"} ] },
-				"text": { "rawtext": [ {"text":""} ] },
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fDeseja Reiniciar?"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": ""
+						}
+					]
+				},
 				"buttons": [
 					{
-						"name": { "rawtext": [ {"text":"§l§f<"} ] },
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
 						"commands": [
 							"/dialogue open @p @p reiniciar_2"
 						]
 					},
 					{
-						"name": { "rawtext": [ {"text":"§l§fSim"} ] },
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fSim"
+								}
+							]
+						},
 						"commands": [
 							"execute @p ~~~ function reiniciar"
 						]
 					},
 					{
-						"name": { "rawtext": [ {"text":"§l§f>"} ] },
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
 						"commands": [
 							"/dialogue open @ @p reiniciar_2"
-					]
-				}
-			]
-		},
-		{
-			"scene_tag": "reiniciar_2",
-			"npc_name": { "rawtext": [ {"text":"§l§fDeseja Reiniciar?"} ] },
-			"text": { "rawtext": [ {"text":""} ] },
-			"buttons": [
-				{
-					"name": { "rawtext": [ {"text":"§l§f<"} ] },
-					"commands": [
-						"/dialogue open @s @p reiniciar"
-					]
-				},
-				{
-					"name": { "rawtext": [ {"text":"§l§fCancelar"} ] },
-					"commands": [
-					"/dialogue open @s @p p"
-					]
-				},
-				{
-					"name": { "rawtext": [ {"text":"§l§f>"} ] },
-					"commands": [
-						"/dialogue open @s @p reiniciar"
+						]
+					}
 				]
-			}
-		]
-	},
-	{
-				"scene_tag": "stop_music",
-				"npc_name": { "rawtext": [ {"text":"§l§fMúsicas"} ] },
-				"text": { "rawtext": [ {"text":" "} ] },
+			},
+			{
+				"scene_tag": "reiniciar_2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fDeseja Reiniciar?"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": ""
+						}
+					]
+				},
 				"buttons": [
 					{
-						"name": { "rawtext": [ {"text":"§l§f<"} ] },
-						"commands": [
-							"/dialogue open @s @p stop_music2"
-						]
-					},
-					{
-						"name": { "rawtext": [ {"text":"Off"} ] },
-						"commands": [
-							"tag @s add off_music"
-						]
-					},
-					{
-						"name": { "rawtext": [ {"text":"§l§f>"} ] },
-						"commands": [
-							"/dialogue open @s @p stop_music2"
-					]
-				}
-			]
-		},
-		{
-			"scene_tag": "stop_music2",
-			"npc_name": { "rawtext": [ {"text":"Músicas"} ] },
-			"text": { "rawtext": [ {"text":" "} ] },
-			"buttons": [
-				{
-					"name": { "rawtext": [ {"text":"§l§f<"} ] },
-					"commands": [
-						"/dialogue open @s @p stop_music"
-					]
-				},
-				{
-					"name": { "rawtext": [ {"text":"On"} ] },
-					"commands": [
-						"tag @s remove off_music"
-					]
-				},
-				{
-					"name": { "rawtext": [ {"text":"§l§f>"} ] },
-					"commands": [
-						"/dialogue open @s @p stop_music"
-				]
-			}
-		]
-	},
-	{
-		
-				"scene_tag": "conf",
-				"npc_name": { "rawtext": [ {"text":"§l§fOpções"} ] },
-				"text": { "rawtext": [ {"text":" "} ] },
-				"buttons": [
-					{
-						"name": { "rawtext": [ {"text":"Ajuda"} ] },
-						"commands": [
-							"/function help"
-						]
-					},
-					{
-						"name": { "rawtext": [ {"text":"Créditos"} ] },
-						"commands": [
-							"tellraw @s {\"rawtext\":[{\"text\":\"§lCriador/Dono: §ePorkyn Play\"}]}"
-						]
-					},
-					{
-						"name": { "rawtext": [ {"text":"Musicas"} ] },
-						"commands": [
-							"/dialogue open @s @p stop_music"
-						]
-					},
-					{
-						"name": { "rawtext": [ {"text":"Voltar"} ] },
-						"commands": [
-							"/dialogue open @s @p p"
-					]
-				}
-			]
-		},
-		{
-			"scene_tag": "personagem",
-			"npc_name": { "rawtext": [ {"text":"§l§fEditar Personagem"} ] },
-			"text": { "rawtext": [ {"text":" "} ] },
-			"buttons": [
-				{
-					"name": { "rawtext": [ {"text":"§l§f<"} ] },
-					"commands": [
-						"/dialogue open @s @p personagem4"
-					]
-				},
-				{
-					"name": { "rawtext": [ {"text":"§l§fCabelos"} ] },
-					"commands": [
-						"/dialogue open @s @p mudar_cabelo"
-					]
-				},
-				{
-					"name": { "rawtext": [ {"text":"§l§f>"} ] },
-					"commands": [
-						"/dialogue open @s @p personagem2"
-				]
-			}
-		]
-	},
-	{
-		"scene_tag": "personagem2",
-		"npc_name": { "rawtext": [ {"text":"§l§fEditar Personagem"} ] },
-		"text": { "rawtext": [ {"text":" "} ] },
-		"buttons": [
-			{
-				"name": { "rawtext": [ {"text":"§l§f<"} ] },
-				"commands": [
-					"/dialogue open @s @p personagem1"
-				]
-			},
-			{
-				"name": { "rawtext": [ {"text":"§l§fPele"} ] },
-				"commands": [
-					"/dialogue open @s @p mudar_pele"
-				]
-			},
-			{
-				"name": { "rawtext": [ {"text":"§l§f>"} ] },
-				"commands": [
-					"/dialogue open @s @p personagem3"
-			]
-		}
-	]
-},
-{
-	"scene_tag": "personagem3",
-	"npc_name": { "rawtext": [ {"text":"§l§fEditar Personagem"} ] },
-	"text": { "rawtext": [ {"text":" "} ] },
-	"buttons": [
-		{
-			"name": { "rawtext": [ {"text":"§l§f<"} ] },
-			"commands": [
-				"/dialogue open @s @p personagem2"
-			]
-		},
-		{
-			"name": { "rawtext": [ {"text":"§l§fVoltar"} ] },
-			"commands": [
-				"/dialogue open @s @p p"
-			]
-		},
-		{
-			"name": { "rawtext": [ {"text":"§l§f>"} ] },
-			"commands": [
-				"/dialogue open @s @p personagem"
-		]
-	}
-]
-},
-{
-		"scene_tag": "mudar_cabelo",
-		"npc_name": { "rawtext": [ {"text":"§l§fDeseja editar o Cabelo?"} ] },
-		"text": { "rawtext": [ {"text":"        §l§fPreço:\n      §a2000 Ryo§l§f"} ] },
-		"buttons": [
-			{
-				"name": { "rawtext": [ {"text":"§l§f<"} ] },
-				"commands": [
-
-					"/dialogue open @s @p mudar_cabelo2"
-
-				]
-			},
-			{
-				"name": { "rawtext": [ {"text":"§l§fOk"} ] },
-				"commands": [
-					"/dialogue open @s @p[scores={money=2000..}] cabelo1",
-					"/dialogue open @s @p[scores={money=..1999}] mudar_cabelo",
-					"/execute @p[scores={money=..1999}] ~~~ playsound note.bass ",
-					"/execute @p[scores={money=..1999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-					"/execute @p[scores={money=2000..}] ~~~ function limpar_cabelos",
-					"/execute @p[scores={money=2000..}] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-					"/execute @p[scores={money=2000..}] ~~~ scoreboard players remove @p[r=1] money 2000"
-				]
-			},
-			{
-				"name": { "rawtext": [ {"text":"§l§f>"} ] },
-				"commands": [
-					"/dialogue open @s @p mudar_cabelo2"
-			]
-		}
-	]
-},
-{
-	"scene_tag": "mudar_cabelo2",
-	"npc_name": { "rawtext": [ {"text":"§l§fDeseja editar o Cabelo?"} ] },
-	"text": { "rawtext": [ {"text":"        §l§fPreço:\n       §a2000 Ryo§l§f"} ] },
-	"buttons": [
-		{
-			"name": { "rawtext": [ {"text":"§l§f<"} ] },
-			"commands": [
-				"/dialogue open @s @p mudar_cabelo"
-			]
-		},
-		{
-			"name": { "rawtext": [ {"text":"§l§fCancelar"} ] },
-			"commands": [
-				"/dialogue open @s @p personagem"
-			]
-		},
-		{
-			"name": { "rawtext": [ {"text":"§l§f>"} ] },
-			"commands": [
-				"/dialogue open @s @p mudar_cabelo"
-		]
-	}
-]
-},
-{
-	"scene_tag": "mudar_pele",
-	"npc_name": { "rawtext": [ {"text":"§l§fDeseja editar a Pele?"} ] },
-	"text": { "rawtext": [ {"text":"        §l§fPreço:\n      §a2000 Ryo§l§f"} ] },
-	"buttons": [
-		{
-			"name": { "rawtext": [ {"text":"§l§f<"} ] },
-			"commands": [
-
-				"/dialogue open @s @p mudar_pele2"
-
-			]
-		},
-		{
-			"name": { "rawtext": [ {"text":"§l§fOk"} ] },
-			"commands": [
-				"/dialogue open @s @p[scores={money=2000..}] pele1",
-				"/dialogue open @s @p[scores={money=..1999}] mudar_pele",
-				"/execute @p[scores={money=2000..}] ~~~ event entity @s negro_amarelo",
-				"/execute @p[scores={money=2000..}] ~~~ tag @s remove branco",
-				"/execute @p[scores={money=2000..}] ~~~ tag @s remove moreno",
-				"/execute @p[scores={money=2000..}] ~~~ tag @s remove negro",
-				"/execute @p[scores={money=2000..}] ~~~ tag @s remove claro",
-				"/execute @p[scores={money=..1999}] ~~~ playsound note.bass ",
-				"/execute @p[scores={money=..1999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-				"/execute @p[scores={money=2000..}] ~~~ function limpar_cabelos",
-				"/execute @p[scores={money=2000..}] ~~~ scoreboard players remove @p[r=1] money 2000"
-			]
-		},
-		{
-			"name": { "rawtext": [ {"text":"§l§f>"} ] },
-			"commands": [
-				"/dialogue open @s @p mudar_pele2"
-		]
-	}
-]
-},
-{
-"scene_tag": "mudar_pele2",
-"npc_name": { "rawtext": [ {"text":"§l§fDeseja editar a Pele?"} ] },
-"text": { "rawtext": [ {"text":"        §l§fPreço:\n      §a2000 Ryo§l§f"} ] },
-"buttons": [
-	{
-		"name": { "rawtext": [ {"text":"§l§f<"} ] },
-		"commands": [
-			"/dialogue open @s @p mudar_pele"
-		]
-	},
-	{
-		"name": { "rawtext": [ {"text":"§l§fCancelar"} ] },
-		"commands": [
-			"/dialogue open @s @p personagem"
-		]
-	},
-	{
-		"name": { "rawtext": [ {"text":"§l§f>"} ] },
-		"commands": [
-			"/dialogue open @s @p mudar_pele"
-	]
-}
-]
-},
-{
-				"scene_tag": "p",
-				"npc_name": { "rawtext": [ {"text":"§l§fNaruto Bedrock"} ] },
-				"text": { "rawtext": [ {"text":" "} ] },
-				"buttons": [
-					{
-						"name": { "rawtext": [ {"text":"§l§fLoja"} ] },
-						"commands": [
-							"/dialogue open @s @p shop"
-						]
-					},
-					{
-						"name": { "rawtext": [ {"text":"§l§fCréditos"} ] },
-						"commands": [
-							"/execute @p ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§fDono/Criador: §l§ePorkyn\"}]}"
-						]
-					},
-					{
-						"name": { "rawtext": [ {"text":"§l§fHistória"} ] },
-						"commands": [
-
-							"/dialogue open @s @p mh1"
-						]
-					},
-					{
-						"name": { "rawtext": [ {"text":"§l§fAjuda"} ] },
-						"commands": [
-							"/execute @p ~~~ function help"
-
-						]
-					},
-					{
-						"name": { "rawtext": [ {"text":"§l§fReiniciar"} ] },
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
 						"commands": [
 							"/dialogue open @s @p reiniciar"
 						]
 					},
 					{
-						"name": { "rawtext": [ {"text":"§l§fPersonagem"} ] },
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fCancelar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p p"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p reiniciar"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "stop_music",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fMúsicas"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p stop_music2"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "Off"
+								}
+							]
+						},
+						"commands": [
+							"tag @s add off_music"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p stop_music2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "stop_music2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "Músicas"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p stop_music"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "On"
+								}
+							]
+						},
+						"commands": [
+							"tag @s remove off_music"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p stop_music"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "conf",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fOpções"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "Ajuda"
+								}
+							]
+						},
+						"commands": [
+							"/function help"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "Créditos"
+								}
+							]
+						},
+						"commands": [
+							"tellraw @s {\"rawtext\":[{\"text\":\"§lCriador/Dono: §ePorkyn Play\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "Musicas"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p stop_music"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "Voltar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p p"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "personagem",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fEditar Personagem"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p personagem4"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fCabelos"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_cabelo"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p personagem2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "personagem2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fEditar Personagem"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p personagem1"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fPele"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_pele"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p personagem3"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "personagem3",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fEditar Personagem"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p personagem2"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fVoltar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p p"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p personagem"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mudar_cabelo",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fDeseja editar o Cabelo?"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "        §l§fPreço:\n      §a2000 Ryo§l§f"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_cabelo2"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fOk"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p[scores={money=2000..}] cabelo1",
+							"/dialogue open @s @p[scores={money=..1999}] mudar_cabelo",
+							"execute @p[scores={money=..1999}] ~~~ playsound note.bass ",
+							"execute @p[scores={money=..1999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"execute @p[scores={money=2000..}] ~~~ function limpar_cabelos",
+							"execute @p[scores={money=2000..}] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"execute @p[scores={money=2000..}] ~~~ scoreboard players remove @p[r=1] money 2000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_cabelo2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mudar_cabelo2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fDeseja editar o Cabelo?"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "        §l§fPreço:\n       §a2000 Ryo§l§f"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_cabelo"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fCancelar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p personagem"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_cabelo"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mudar_pele",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fDeseja editar a Pele?"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "        §l§fPreço:\n      §a2000 Ryo§l§f"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_pele2"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fOk"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p[scores={money=2000..}] pele1",
+							"/dialogue open @s @p[scores={money=..1999}] mudar_pele",
+							"execute @p[scores={money=2000..}] ~~~ event entity @s negro_amarelo",
+							"execute @p[scores={money=2000..}] ~~~ tag @s remove branco",
+							"execute @p[scores={money=2000..}] ~~~ tag @s remove moreno",
+							"execute @p[scores={money=2000..}] ~~~ tag @s remove negro",
+							"execute @p[scores={money=2000..}] ~~~ tag @s remove claro",
+							"execute @p[scores={money=..1999}] ~~~ playsound note.bass ",
+							"execute @p[scores={money=..1999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"execute @p[scores={money=2000..}] ~~~ function limpar_cabelos",
+							"execute @p[scores={money=2000..}] ~~~ scoreboard players remove @p[r=1] money 2000"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_pele2"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "mudar_pele2",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fDeseja editar a Pele?"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": "        §l§fPreço:\n      §a2000 Ryo§l§f"
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f<"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_pele"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fCancelar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p personagem"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§f>"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mudar_pele"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "p",
+				"npc_name": {
+					"rawtext": [
+						{
+							"text": "§l§fNaruto Bedrock"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"text": " "
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fLoja"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p shop"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fCréditos"
+								}
+							]
+						},
+						"commands": [
+							"execute @p ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§fDono/Criador: §l§ePorkyn\"}]}"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fHistória"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p mh1"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fAjuda"
+								}
+							]
+						},
+						"commands": [
+							"execute @p ~~~ function help"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fReiniciar"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @p reiniciar"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"text": "§l§fPersonagem"
+								}
+							]
+						},
 						"commands": [
 							"/dialogue open @s @p[tag=mh8_naruto] personagem",
 							"/tellraw @p[tag=!mh8_naruto] {\"rawtext\":[{\"text\":\"§l§fÉ necessário completar o modo história para liberar essa opcão!\"}]}"
 						]
-							}
-						]
 					}
 				]
 			}
-		}
-		
-		
+		]
+	}
+}
