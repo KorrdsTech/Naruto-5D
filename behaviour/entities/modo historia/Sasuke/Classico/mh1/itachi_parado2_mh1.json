@@ -8,26 +8,31 @@
       "is_experimental": false
     },
     "components": {
-"minecraft:damage_sensor": {
+      "minecraft:damage_sensor": {
         "triggers": [
           {
             "on_damage": {
-              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player" }
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              }
             },
             "deals_damage": false
-}
-         ]
-          },
-          "minecraft:timer":
-          {
-            "looping": true,
-            "time": 1,
-            "time_down_event": {
-              "event": "on:efeitos"
-            }
-          },
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 1,
+        "time_down_event": {
+          "event": "on:efeitos"
+        }
+      },
       "minecraft:type_family": {
-        "family": [ "mushroomcow" ]
+        "family": [
+          "mushroomcow"
+        ]
       },
       "minecraft:knockback_resistance": {
         "value": 1.0
@@ -43,8 +48,7 @@
         "width": 0.9,
         "height": 1.3
       },
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:health": {
         "value": 1000000,
         "max": 10000000
@@ -57,17 +61,13 @@
         "avoid_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {    
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:fall_damage": {
         "value": 0.0
       },
-      "minecraft:balloonable": {
-      },
+      "minecraft:balloonable": {},
       "minecraft:behavior.float": {
         "priority": 0
       },
@@ -81,15 +81,11 @@
         "target_dist": 0.0,
         "track_target": true
       },
-	    "minecraft:physics": {
-      }
+      "minecraft:physics": {}
     },
-
-
     "events": {
       "become_cow": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:mooshroom_become_cow"
@@ -97,8 +93,7 @@
         }
       },
       "minecraft:entity_transformed": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:cow_adult"
@@ -109,8 +104,7 @@
         "randomize": [
           {
             "weight": 100,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:cow_adult"
@@ -120,62 +114,61 @@
         ]
       },
       "on:efeitos": {
-				"run_command": {
-				  "command": [
-            "execute @p[r=10,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke] ~~~ tag @s add cntr",
-            "execute @e[r=2,type=porkyn:itachi_parado2_mh1_sasuke,tag=cntr] ~~~ scoreboard players add @s cntr 1",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=1..},tag=!itachi7_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> A razão pela qual eu agi como o irmão que você queria\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=1..},tag=!itachi7_mh1_s] ~~~ playsound fala_itachi2 @a[r=25] ~~~",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=1..},tag=!itachi7_mh1_s] ~~~ kill @e[type=porkyn:itachi_parado_mh1_sasuke]",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=1..},tag=!itachi7_mh1_s] ~~~ tag @s add itachi7_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=5..},tag=!itachi8_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Foi apenas para medir o seu potencial\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=5..},tag=!itachi8_mh1_s] ~~~ tag @s add itachi8_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=10..},tag=!itachi9_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Você tem potencial para ser meu oponente.\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=10..},tag=!itachi9_mh1_s] ~~~ tag @s add itachi9_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=15..},tag=!itachi10_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Para então eu poder medir meu poder.\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=15..},tag=!itachi10_mh1_s] ~~~ tag @s add itachi10_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=20..},tag=!itachi11_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Você me odiou...\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=20..},tag=!itachi11_mh1_s] ~~~ tag @s add itachi11_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=25..},tag=!itachi12_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> E sempre teve o desejo de me superar...\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=25..},tag=!itachi12_mh1_s] ~~~ tag @s add itachi12_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=30..},tag=!itachi13_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Você deve conseguir o seu Mangekyou...\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=30..},tag=!itachi13_mh1_s] ~~~ tag @s add itachi13_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=35..},tag=!itachi14_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Mas tem um porém, você deve matar seu melhor amigo...\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=35..},tag=!itachi14_mh1_s] ~~~ tag @s add itachi14_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=40..},tag=!itachi15_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Como eu fiz.\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=40..},tag=!itachi15_mh1_s] ~~~ tag @s add itachi15_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=45..},tag=!itachi16_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Se você conseguir esses olhos...\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=45..},tag=!itachi16_mh1_s] ~~~ tag @s add itachi16_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=55..},tag=!itachi17_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Será a terceira pessoa, incluindo eu, a conseguir o Mangekyou Sharingan. \"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=55..},tag=!itachi17_mh1_s] ~~~ tag @s add itachi17_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=55..},tag=!itachi18_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Se isso acontecer...\n terá valido apena deixá-lo vivo.\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=55..},tag=!itachi18_mh1_s] ~~~ tag @s add itachi18_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=60..},tag=!itachi19_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Mas agora...\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=60..},tag=!itachi19_mh1_s] ~~~ tag @s add itachi19_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=65..},tag=!itachi20_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Você não é digno de ser morto por mim.\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=65..},tag=!itachi20_mh1_s] ~~~ tag @s add itachi20_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=70..},tag=!itachi21_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Meu irmãozinho patético..\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=70..},tag=!itachi21_mh1_s] ~~~ tag @s add itachi21_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=73..},tag=!itachi22_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Se quer me matar, me ressinta\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=73..},tag=!itachi22_mh1_s] ~~~ tag @s add itachi22_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=76..},tag=!itachi23_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Me odeie.\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=76..},tag=!itachi23_mh1_s] ~~~ tag @s add itachi23_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=78..},tag=!itachi24_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> E um dia, quando ter os mesmos olhos que eu, me encontre.\"}]}",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=78..},tag=!itachi24_mh1_s] ~~~ tag @s add itachi24_mh1_s",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ effect @p[r=30] slowness 2 255 true",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ effect @p[r=30] blindness 2 3 true",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ effect @p[r=30] slowness 2 255 true",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ effect @p[r=30] darkness 2 3 true",
-            "execute @p[r=50,tag=!mh1_sasuke] ~~~ execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ tag @s add itachi25_mh1_s",
-            "execute @p[r=150,tag=!mh1_sasuke] ~~~ execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=!itachi26_mh1_s] ~~~ title @p title §eMissão Concluida!",
-            "execute @p[r=150,tag=!mh1_sasuke] ~~~ execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=!itachi26_mh1_s] ~~~ title @p subtitle O Massacre do Clã Uchiha",
-            "execute @p[r=150,tag=!mh1_sasuke] ~~~ execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=!itachi26_mh1_s] ~~~ tag @p[tag=!mh1_sasuke] add mh1_sasuke",
-            "execute @p[r=150,tag=!mh1_sasuke] ~~~ execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=!itachi26_mh1_s] ~~~ tag @s add itachi26_mh1_s",
-            "execute @p[r=150,tag=!mh1_sasuke] ~~~ execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=itachi26_mh1_s] ~~~ kill @s"
-
-				  ]
-				}
-			  }
-		}
-	}
+        "run_command": {
+          "command": [
+            "/execute @p[r=10,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke] ~~~ tag @s add cntr",
+            "/execute @e[r=2,type=porkyn:itachi_parado2_mh1_sasuke,tag=cntr] ~~~ scoreboard players add @s cntr 1",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=1..},tag=!itachi7_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> A razão pela qual eu agi como o irmão que você queria\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=1..},tag=!itachi7_mh1_s] ~~~ playsound fala_itachi2 @a[r=25] ~~~",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=1..},tag=!itachi7_mh1_s] ~~~ kill @e[type=porkyn:itachi_parado_mh1_sasuke]",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=1..},tag=!itachi7_mh1_s] ~~~ tag @s add itachi7_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=5..},tag=!itachi8_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Foi apenas para medir o seu potencial\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=5..},tag=!itachi8_mh1_s] ~~~ tag @s add itachi8_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=10..},tag=!itachi9_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Você tem potencial para ser meu oponente.\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=10..},tag=!itachi9_mh1_s] ~~~ tag @s add itachi9_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=15..},tag=!itachi10_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Para então eu poder medir meu poder.\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=15..},tag=!itachi10_mh1_s] ~~~ tag @s add itachi10_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=20..},tag=!itachi11_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Você me odiou...\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=20..},tag=!itachi11_mh1_s] ~~~ tag @s add itachi11_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=25..},tag=!itachi12_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> E sempre teve o desejo de me superar...\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=25..},tag=!itachi12_mh1_s] ~~~ tag @s add itachi12_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=30..},tag=!itachi13_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Você deve conseguir o seu Mangekyou...\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=30..},tag=!itachi13_mh1_s] ~~~ tag @s add itachi13_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=35..},tag=!itachi14_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Mas tem um porém, você deve matar seu melhor amigo...\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=35..},tag=!itachi14_mh1_s] ~~~ tag @s add itachi14_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=40..},tag=!itachi15_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Como eu fiz.\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=40..},tag=!itachi15_mh1_s] ~~~ tag @s add itachi15_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=45..},tag=!itachi16_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Se você conseguir esses olhos...\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=45..},tag=!itachi16_mh1_s] ~~~ tag @s add itachi16_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=55..},tag=!itachi17_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Será a terceira pessoa, incluindo eu, a conseguir o Mangekyou Sharingan. \"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=55..},tag=!itachi17_mh1_s] ~~~ tag @s add itachi17_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=55..},tag=!itachi18_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Se isso acontecer...\n terá valido apena deixá-lo vivo.\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=55..},tag=!itachi18_mh1_s] ~~~ tag @s add itachi18_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=60..},tag=!itachi19_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Mas agora...\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=60..},tag=!itachi19_mh1_s] ~~~ tag @s add itachi19_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=65..},tag=!itachi20_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Você não é digno de ser morto por mim.\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=65..},tag=!itachi20_mh1_s] ~~~ tag @s add itachi20_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=70..},tag=!itachi21_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Meu irmãozinho patético..\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=70..},tag=!itachi21_mh1_s] ~~~ tag @s add itachi21_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=73..},tag=!itachi22_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Se quer me matar, me ressinta\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=73..},tag=!itachi22_mh1_s] ~~~ tag @s add itachi22_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=76..},tag=!itachi23_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> Me odeie.\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=76..},tag=!itachi23_mh1_s] ~~~ tag @s add itachi23_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=78..},tag=!itachi24_mh1_s] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha> E um dia, quando ter os mesmos olhos que eu, me encontre.\"}]}",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=78..},tag=!itachi24_mh1_s] ~~~ tag @s add itachi24_mh1_s",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ effect @p[r=30] slowness 2 255 true",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ effect @p[r=30] blindness 2 3 true",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ effect @p[r=30] slowness 2 255 true",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ effect @p[r=30] darkness 2 3 true",
+            "/execute @p[r=50,tag=!mh1_sasuke] ~~~ /execute @e[r=25,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=85..},tag=!itachi25_mh1_s] ~~~ tag @s add itachi25_mh1_s",
+            "/execute @p[r=150,tag=!mh1_sasuke] ~~~ /execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=!itachi26_mh1_s] ~~~ title @p title §eMissão Concluida!",
+            "/execute @p[r=150,tag=!mh1_sasuke] ~~~ /execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=!itachi26_mh1_s] ~~~ title @p subtitle O Massacre do Clã Uchiha",
+            "/execute @p[r=150,tag=!mh1_sasuke] ~~~ /execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=!itachi26_mh1_s] ~~~ tag @p[tag=!mh1_sasuke] add mh1_sasuke",
+            "/execute @p[r=150,tag=!mh1_sasuke] ~~~ /execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=!itachi26_mh1_s] ~~~ tag @s add itachi26_mh1_s",
+            "/execute @p[r=150,tag=!mh1_sasuke] ~~~ /execute @e[r=150,c=1,type=porkyn:itachi_parado2_mh1_sasuke,scores={cntr=86..},tag=itachi26_mh1_s] ~~~ kill @s"
+          ]
+        }
+      }
+    }
+  }
 }

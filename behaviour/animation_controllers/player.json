@@ -13,7 +13,7 @@
         "dead": {
           "on_entry": [
             "function niveis",
-            "execute @s[scores={tp=1..}] ~~~ scoreboard players remove @s tp 1"
+            "/execute @s[scores={tp=1..}] ~~~ scoreboard players remove @s tp 1"
           ],
           "transitions": [
             {
@@ -33,7 +33,7 @@
           ],
           "on_exit": [
             "/function set",
-            "execute @s[tag=kage_bunshin] ~~~ function kage_bunshin"
+            "/execute @s[tag=kage_bunshin] ~~~ function kage_bunshin"
           ]
         },
         "walk": {
@@ -57,11 +57,11 @@
             }
           ],
           "on_exit": [
-            "execute @s[tag=!corvos,tag=!kamui,tag=!hiraishin1,tag=!areia_subs] ~~~ function subs",
-            "execute @s[tag=corvos] ~~~ function subs_itachi",
-            "execute @s[tag=kamui] ~~~ function subs_obito",
-            "execute @s[tag=hiraishin1] ~~~ function subs_hiraishin",
-            "execute @s[tag=areia_subs] ~~~ function subs_areia"
+            "/execute @s[tag=!corvos,tag=!kamui,tag=!hiraishin1,tag=!areia_subs] ~~~ function subs",
+            "/execute @s[tag=corvos] ~~~ function subs_itachi",
+            "/execute @s[tag=kamui] ~~~ function subs_obito",
+            "/execute @s[tag=hiraishin1] ~~~ function subs_hiraishin",
+            "/execute @s[tag=areia_subs] ~~~ function subs_areia"
           ]
         },
         "subs": {
@@ -85,10 +85,10 @@
             }
           ],
           "on_exit": [
-            "execute @p[scores={chakra=..49},tag=hiraishin] ~~~ playsound note.bass ",
-            "execute @s[scores={chakra=50..},tag=hiraishin] ~~~ execute @s[tag=hiraishin] ~~~ playsound hiraishin @a[x=~,y=~,z=~,r=15]",
-            "execute @s[scores={chakra=50..},tag=hiraishin] ~~~ execute @s[tag=hiraishin] ~~~ tp @s @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1]",
-            "execute @s[scores={chakra=50..},tag=hiraishin] ~~~ scoreboard players remove @s chakra 50"
+            "/execute @p[scores={chakra=..49},tag=hiraishin] ~~~ playsound note.bass ",
+            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ /execute @s[tag=hiraishin] ~~~ playsound hiraishin @a[x=~,y=~,z=~,r=15]",
+            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ /execute @s[tag=hiraishin] ~~~ tp @s @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1]",
+            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ scoreboard players remove @s chakra 50"
           ]
         },
         "hiraishin_tp": {
@@ -112,7 +112,7 @@
             }
           ],
           "on_exit": [
-            "execute @s[tag=amaterasu_katon] ~~~ function katon_amaterasu"
+            "/execute @s[tag=amaterasu_katon] ~~~ function katon_amaterasu"
           ]
         },
         "amaterasu_i": {
@@ -136,15 +136,15 @@
             }
           ],
           "on_exit": [
-            "execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ tag @s add rinneganativo",
-            "execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ playsound teleport_rinnegan @a[r=5]",
-            "execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ summon porkyn:rinnegantp_1 ~~~",
-            "execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ execute @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1,tag=!rinneganativo,r=50] ~~~ summon porkyn:rinnegantp_2 ~~~",
-            "execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ execute @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1,tag=!rinneganativo,r=50] ~~~ tp @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,r=50,tag=!rinneganativo,c=1] @e[c=1,type=porkyn:rinnegantp_1,r=50]",
-            "execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ tp @s @e[type=porkyn:rinnegantp_2,r=50,c=1]",
-            "execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ tag @s remove rinneganativo",
-            "execute @p[scores={chakra=..49},tag=rinnegantp] ~~~ playsound note.bass ",
-            "execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ scoreboard players remove @s chakra 50"
+            "/execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ tag @s add rinneganativo",
+            "/execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ playsound teleport_rinnegan @a[r=5]",
+            "/execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ summon porkyn:rinnegantp_1 ~~~",
+            "/execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ /execute @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1,tag=!rinneganativo,r=50] ~~~ summon porkyn:rinnegantp_2 ~~~",
+            "/execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ /execute @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1,tag=!rinneganativo,r=50] ~~~ tp @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,r=50,tag=!rinneganativo,c=1] @e[c=1,type=porkyn:rinnegantp_1,r=50]",
+            "/execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ tp @s @e[type=porkyn:rinnegantp_2,r=50,c=1]",
+            "/execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ tag @s remove rinneganativo",
+            "/execute @p[scores={chakra=..49},tag=rinnegantp] ~~~ playsound note.bass ",
+            "/execute @s[scores={chakra=50..},tag=rinnegantp] ~~~ scoreboard players remove @s chakra 50"
           ]
         },
         "rinneganmenu": {
@@ -168,26 +168,26 @@
             }
           ],
           "on_exit": [
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ tp @e[type=corvo] ~~1000~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ kill @e[type=corvo]",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ playsound corvos @a[x=~,y=~,z=~,r=15]",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ tp @s @e[tag=!corvo,c=1]",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ playsound corvos @a[x=~,y=~,z=~,r=15]",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
-            "execute @s[scores={subs=5..}] ~~~ execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
-            "execute @s[scores={subs=5..}] ~~~ scoreboard players remove @s subs 5"
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ tp @e[type=corvo] ~~1000~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ kill @e[type=corvo]",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ playsound corvos @a[x=~,y=~,z=~,r=15]",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ tp @s @e[tag=!corvo,c=1]",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ playsound corvos @a[x=~,y=~,z=~,r=15]",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~1~",
+            "/execute @s[scores={subs=5..}] ~~~ /execute @s[tag=corvo] ~~~ summon porkyn:corvo ~~2~",
+            "/execute @s[scores={subs=5..}] ~~~ scoreboard players remove @s subs 5"
           ]
         },
         "itachi_tp": {

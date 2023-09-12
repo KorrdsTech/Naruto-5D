@@ -7,9 +7,7 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
-
 		"component_groups": {},
-
 		"components": {
 			"minecraft:type_family": {
 				"family": [
@@ -20,38 +18,37 @@
 			"minecraft:behavior.hurt_by_target": {
 				"priority": 1
 			},
-			"minecraft:timer":
-			{
+			"minecraft:timer": {
 				"looping": true,
 				"time": 30,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			  "minecraft:on_hurt": {
+			"minecraft:on_hurt": {
 				"event": "on:hurt",
 				"target": "self"
-			  },
-			  "minecraft:on_hurt_by_player": {
+			},
+			"minecraft:on_hurt_by_player": {
 				"event": "on:hurt_by_player",
 				"target": "self"
-			  },
-			  "minecraft:on_ignite": {
+			},
+			"minecraft:on_ignite": {
 				"event": "on:ignite",
 				"target": "self"
-			  },
-			  "minecraft:on_target_acquired": {
+			},
+			"minecraft:on_target_acquired": {
 				"event": "on:target_acquired",
 				"target": "self"
-			  },
-			  "minecraft:on_target_escape": {
+			},
+			"minecraft:on_target_escape": {
 				"event": "on:target_escape",
 				"target": "self"
-			  },
-			  "minecraft:on_wake_with_owner": {
+			},
+			"minecraft:on_wake_with_owner": {
 				"event": "on:wake_with_owner",
 				"target": "self"
-			  },
+			},
 			"minecraft:attack": {
 				"damage": 0
 			},
@@ -95,23 +92,24 @@
 					}
 				]
 			},
-
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
 				"reselect_targets": true,
 				"within_radius": 25.0,
 				"must_see_forget_duration": 17.0,
-				"entity_types": 
-				  {
+				"entity_types": {
 					"filters": {
-					  "any_of": [
-						{ "test": "is_family", "subject": "other", "value": "nada" }
-					  ]
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "nada"
+							}
+						]
 					},
 					"max_dist": 35
-				  }
-				  
+				}
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -119,7 +117,6 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
-			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0.8
@@ -178,40 +175,33 @@
 			},
 			"on:death": {
 				"run_command": {
-				  "command": [
-					"execute @p[r=10] ~~~ title @p title §eMissão Concluida!",
-					"execute @p[r=10] ~~~ title @p subtitle §fO fim das lágrimas",
-					"execute @p[r=10] ~~~ tag @s add mh9_sasuke"
-
-				  ]
-				}
-			  },
-			  "on:hurt": {
-				"run_command": {
-				  "command": [
-
-				  ]
-				}
-			  },
-			  "on:hurt_by_player": {
-				"run_command": {
-				  "command": [
-
-				  ]
-				}
-			  },
-			  "on:efeitos": {
-				  "run_command": {
 					"command": [
-
-						"execute @e[type=porkyn:naruto_mh9_sasuke,r=100] ~~~ playsound rasengan @a[r=9]",
+						"/execute @p[r=10] ~~~ title @p title §eMissão Concluida!",
+						"/execute @p[r=10] ~~~ title @p subtitle §fO fim das lágrimas",
+						"/execute @p[r=10] ~~~ tag @s add mh9_sasuke"
+					]
+				}
+			},
+			"on:hurt": {
+				"run_command": {
+					"command": []
+				}
+			},
+			"on:hurt_by_player": {
+				"run_command": {
+					"command": []
+				}
+			},
+			"on:efeitos": {
+				"run_command": {
+					"command": [
+						"/execute @e[type=porkyn:naruto_mh9_sasuke,r=100] ~~~ playsound rasengan @a[r=9]",
 						"replaceitem entity @e[type=porkyn:naruto_mh9_sasuke,r=100] slot.weapon.mainhand 1 porkyn:rasengan",
 						"effect @e[type=porkyn:naruto_mh9_sasuke,r=100] resistance 1 5 true",
-						"execute @e[type=porkyn:naruto_mh9_sasuke,r=100] ~~~ summon ender_crystal ^^^3 minecraft:crystal_explode"
+						"/execute @e[type=porkyn:naruto_mh9_sasuke,r=100] ~~~ summon ender_crystal ^^^3 minecraft:crystal_explode"
 					]
-				  }
 				}
-			  }
-		  }
-	  }
-	  
+			}
+		}
+	}
+}

@@ -7,9 +7,7 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
-
 		"component_groups": {},
-
 		"components": {
 			"minecraft:type_family": {
 				"family": [
@@ -24,38 +22,37 @@
 				"name": "§lConstrutor da Ponte",
 				"hud_range": 7
 			},
-			"minecraft:timer":
-			{
+			"minecraft:timer": {
 				"looping": false,
 				"time": 18,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			  "minecraft:on_hurt": {
+			"minecraft:on_hurt": {
 				"event": "on:hurt",
 				"target": "self"
-			  },
-			  "minecraft:on_hurt_by_player": {
+			},
+			"minecraft:on_hurt_by_player": {
 				"event": "on:hurt_by_player",
 				"target": "self"
-			  },
-			  "minecraft:on_ignite": {
+			},
+			"minecraft:on_ignite": {
 				"event": "on:ignite",
 				"target": "self"
-			  },
-			  "minecraft:on_target_acquired": {
+			},
+			"minecraft:on_target_acquired": {
 				"event": "on:target_acquired",
 				"target": "self"
-			  },
-			  "minecraft:on_target_escape": {
+			},
+			"minecraft:on_target_escape": {
 				"event": "on:target_escape",
 				"target": "self"
-			  },
-			  "minecraft:on_wake_with_owner": {
+			},
+			"minecraft:on_wake_with_owner": {
 				"event": "on:wake_with_owner",
 				"target": "self"
-			  },
+			},
 			"minecraft:attack": {
 				"damage": 0
 			},
@@ -99,23 +96,20 @@
 					}
 				]
 			},
-
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 0,
 				"must_see": false,
 				"reselect_targets": false,
 				"within_radius": 0,
 				"must_see_forget_duration": 0,
-				"entity_types": 
-				  {
+				"entity_types": {
 					"filters": {
-					  "any_of": [
-						{ }
-					  ]
+						"any_of": [
+							{}
+						]
 					},
 					"max_dist": 0
-				  }
-				  
+				}
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -123,7 +117,6 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
-			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0.8
@@ -179,43 +172,37 @@
 			},
 			"on:death": {
 				"run_command": {
-				  "command": [
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ title @p title §4Missão Falhada",
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ title @p subtitle §fUma missão Perigosa!!!",
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tag @a[r=50] remove kill1",
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tag @a[r=50] remove kill2",
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tag @e[type=porkyn:zabuza_mh3_sasuke,r=150] add kill",
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tag @e[type=porkyn:haku_mh3_sasuke,r=150] add kill",
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tp @e[type=porkyn:zabuza_mh3_sasuke,r=150] ~~-500~",
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tp @e[type=porkyn:haku_mh3_sasuke,r=150] ~~-500~",
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ kill @e[type=porkyn:zabuza_mh3_sasuke,tag=kill]",
-					"execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ kill @e[type=porkyn:haku_mh3_sasuke,tag=kill]"
-
-				  ]
+					"command": [
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ title @p title §4Missão Falhada",
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ title @p subtitle §fUma missão Perigosa!!!",
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tag @a[r=50] remove kill1",
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tag @a[r=50] remove kill2",
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tag @e[type=porkyn:zabuza_mh3_sasuke,r=150] add kill",
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tag @e[type=porkyn:haku_mh3_sasuke,r=150] add kill",
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tp @e[type=porkyn:zabuza_mh3_sasuke,r=150] ~~-500~",
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ tp @e[type=porkyn:haku_mh3_sasuke,r=150] ~~-500~",
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ kill @e[type=porkyn:zabuza_mh3_sasuke,tag=kill]",
+						"/execute @p[r=50,tag=mh2_sasuke,tag=!mh4_sasuke] ~~~ kill @e[type=porkyn:haku_mh3_sasuke,tag=kill]"
+					]
 				}
-			  },
-			  "on:hurt": {
+			},
+			"on:hurt": {
 				"run_command": {
-				  "command": [
-
-				  ]
+					"command": []
 				}
-			  },
-			  "on:hurt_by_player": {
+			},
+			"on:hurt_by_player": {
 				"run_command": {
-				  "command": [
-
-				  ]
+					"command": []
 				}
-			  },
-			  "on:efeitos": {
-				  "run_command": {
+			},
+			"on:efeitos": {
+				"run_command": {
 					"command": [
 						"tellraw @p[r=40] {\"rawtext\":[{\"text\":\"§e<Construtor da Ponte>§f Eii! Seu idiota! Me ajude!\"}]}"
 					]
-				  }
 				}
-			  }
-		  }
-	  }
-	  
+			}
+		}
+	}
+}

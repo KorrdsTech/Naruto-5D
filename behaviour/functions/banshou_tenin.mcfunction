@@ -11,5 +11,5 @@ tellraw @s[scores={chakra=50..}] {"rawtext":[{"text":"§l>Você utilizou o Bansh
 tellraw @s[scores={chakra=..49}] {"rawtext":[{"text":"§4>Você não possui chakra para utilizar esse jutsu!<"}]}
 scoreboard players remove @s[scores={chakra=50..}] chakra 50	
 
-								       	Sistema criado por @porkyn Play
+Sistema criado por @porkyn Play
 =======================================================================================================

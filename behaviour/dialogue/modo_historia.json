@@ -95,7 +95,7 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fÉ necessário completar o modo história do Naruto primeiro.\"}]}",
+							"/execute @p[r=1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fÉ necessário completar o modo história do Naruto primeiro.\"}]}",
 							"/dialogue open @s @p[r=1,tag=mh8_naruto] mh1_sasuke"
 						]
 					},
@@ -151,14 +151,14 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=!mh1_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Mizuki-Sensei>§f É uma pena que você não tenha passado no teste final..\nMas eu posso te ajudar! tem um pergaminho na sala do Hokage.\nDizem que ele contém diversos jutsus secretos..\"}]}",
-							"execute @p[r=1,tag=mh1_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§eVocê não pode fazer esta missão de novo.\"}]}",
-							"execute @p[r=1,tag=!mh1_naruto] ~~~ execute @p[r=1,tag=!mh1_naruto] ~~~ structure load konoha ~~-1~",
-							"execute @p[r=1,tag=!mh1_naruto] ~~~ fill ~~1~~~~ air",
-							"execute @p[r=1,tag=!mh1_naruto] ~~~ time set midnight",
-							"execute @p[r=1,tag=!mh1_naruto] ~~~ execute @p ~~1~22 spawnpoint",
-							"execute @p[r=1,tag=!mh1_naruto] ~~~ summon porkyn:mizuki_parado ~1~~17",
-							"execute @p[r=1,tag=!mh1_naruto] ~~~ tp @p ~~~22"
+							"/execute @p[r=1,tag=!mh1_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Mizuki-Sensei>§f É uma pena que você não tenha passado no teste final..\nMas eu posso te ajudar! tem um pergaminho na sala do Hokage.\nDizem que ele contém diversos jutsus secretos..\"}]}",
+							"/execute @p[r=1,tag=mh1_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§eVocê não pode fazer esta missão de novo.\"}]}",
+							"/execute @p[r=1,tag=!mh1_naruto] ~~~ /execute @p[r=1,tag=!mh1_naruto] ~~~ structure load konoha ~~-1~",
+							"/execute @p[r=1,tag=!mh1_naruto] ~~~ fill ~~1~~~~ air",
+							"/execute @p[r=1,tag=!mh1_naruto] ~~~ time set midnight",
+							"/execute @p[r=1,tag=!mh1_naruto] ~~~ /execute @p ~~1~22 spawnpoint",
+							"/execute @p[r=1,tag=!mh1_naruto] ~~~ summon porkyn:mizuki_parado ~1~~17",
+							"/execute @p[r=1,tag=!mh1_naruto] ~~~ tp @p ~~~22"
 						]
 					},
 					{
@@ -213,11 +213,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh1_naruto] ~~~ stopsound @s",
-							"execute @p[r=1,tag=mh1_naruto] ~~~ time set day",
-							"execute @p[r=1,tag=mh1_naruto] ~~~ execute @p ~~1~ spawnpoint",
-							"execute @p[r=1,tag=mh1_naruto] ~~~ summon porkyn:ebisu ~1~~5",
-							"execute @p[r=1,tag=mh1_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Ebisu-Sensei>§f Konohamaru!! Fique longe desse garoto!! \nEle é uma má influencia para você!\"}]}"
+							"/execute @p[r=1,tag=mh1_naruto] ~~~ stopsound @s",
+							"/execute @p[r=1,tag=mh1_naruto] ~~~ time set day",
+							"/execute @p[r=1,tag=mh1_naruto] ~~~ /execute @p ~~1~ spawnpoint",
+							"/execute @p[r=1,tag=mh1_naruto] ~~~ summon porkyn:ebisu ~1~~5",
+							"/execute @p[r=1,tag=mh1_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Ebisu-Sensei>§f Konohamaru!! Fique longe desse garoto!! \nEle é uma má influencia para você!\"}]}"
 						]
 					},
 					{
@@ -272,10 +272,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh2_naruto] ~~~ time set day",
-							"execute @p[r=1,tag=mh2_naruto] ~~~ execute @p ~~1~ spawnpoint",
-							"execute @p[r=1,tag=mh2_naruto] ~~~ summon porkyn:kakashi_parado ~1~1~5",
-							"execute @p[r=1,tag=mh2_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kakashi-Sensei>§f Para vocês passarem, só precisam pegar um desses guizos\n\"}]}"
+							"/execute @p[r=1,tag=mh2_naruto] ~~~ time set day",
+							"/execute @p[r=1,tag=mh2_naruto] ~~~ /execute @p ~~1~ spawnpoint",
+							"/execute @p[r=1,tag=mh2_naruto] ~~~ summon porkyn:kakashi_parado ~1~1~5",
+							"/execute @p[r=1,tag=mh2_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kakashi-Sensei>§f Para vocês passarem, só precisam pegar um desses guizos\n\"}]}"
 						]
 					},
 					{
@@ -330,12 +330,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh3_naruto] ~~~ time set day",
-							"execute @p[r=1,tag=mh3_naruto] ~~~ execute @p ~~1~ spawnpoint",
-							"execute @p[r=1,tag=mh3_naruto] ~~~ summon porkyn:zabuza_mh4_naruto ~1~~5",
-							"execute @p[r=1,tag=mh3_naruto] ~~~ summon porkyn:velho_mh4 ~1~~",
-							"execute @p[r=1,tag=mh3_naruto] ~~~ summon porkyn:haku_mh4_naruto ~-1~~5",
-							"execute @p[r=1,tag=mh3_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fProteja o Contrutor de Pontes!\"}]}"
+							"/execute @p[r=1,tag=mh3_naruto] ~~~ time set day",
+							"/execute @p[r=1,tag=mh3_naruto] ~~~ /execute @p ~~1~ spawnpoint",
+							"/execute @p[r=1,tag=mh3_naruto] ~~~ summon porkyn:zabuza_mh4_naruto ~1~~5",
+							"/execute @p[r=1,tag=mh3_naruto] ~~~ summon porkyn:velho_mh4 ~1~~",
+							"/execute @p[r=1,tag=mh3_naruto] ~~~ summon porkyn:haku_mh4_naruto ~-1~~5",
+							"/execute @p[r=1,tag=mh3_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fProteja o Contrutor de Pontes!\"}]}"
 						]
 					},
 					{
@@ -390,13 +390,13 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh4_naruto] ~~~ time set day",
-							"execute @p[r=1,tag=mh4_naruto] ~~~ structure load parte1 ~~~",
-							"execute @p[r=1,tag=mh4_naruto] ~~~ structure load parte2 ~64~~",
-							"execute @p[r=1,tag=mh4_naruto] ~~~ structure load parte3 ~~~64",
-							"execute @p[r=1,tag=mh4_naruto] ~~~ structure load parte4 ~64~~64",
+							"/execute @p[r=1,tag=mh4_naruto] ~~~ time set day",
+							"/execute @p[r=1,tag=mh4_naruto] ~~~ structure load parte1 ~~~",
+							"/execute @p[r=1,tag=mh4_naruto] ~~~ structure load parte2 ~64~~",
+							"/execute @p[r=1,tag=mh4_naruto] ~~~ structure load parte3 ~~~64",
+							"/execute @p[r=1,tag=mh4_naruto] ~~~ structure load parte4 ~64~~64",
 							"/summon porkyn:arena_load ~~~",
-							"execute @p[r=1,tag=mh4_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote Neji!\"}]}"
+							"/execute @p[r=1,tag=mh4_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote Neji!\"}]}"
 						]
 					},
 					{
@@ -451,11 +451,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh5_naruto,tag=inv_sapo] ~~~ time set day",
-							"execute @p[r=1,tag=mh5_naruto,tag=inv_sapo] ~~~ summon porkyn:gaara_mh6_naruto ~~~",
+							"/execute @p[r=1,tag=mh5_naruto,tag=inv_sapo] ~~~ time set day",
+							"/execute @p[r=1,tag=mh5_naruto,tag=inv_sapo] ~~~ summon porkyn:gaara_mh6_naruto ~~~",
 							"replaceitem entity @e[type=porkyn:gaara_mh6_naruto,tag=inv_sapo] slot.armor.legs 1 porkyn:modo_shukaku_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[r=1,tag=mh5_naruto,tag=inv_sapo] ~~~ playsound music2 @p",
-							"execute @p[r=1,tag=mh5_naruto,tag=!inv_sapo] ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§fPara fazer essa missão é necessário que você aprenda o Jutsu de Invocação!\"}]}"
+							"/execute @p[r=1,tag=mh5_naruto,tag=inv_sapo] ~~~ playsound music2 @p",
+							"/execute @p[r=1,tag=mh5_naruto,tag=!inv_sapo] ~~~ tellraw @s {\"rawtext\":[{\"text\":\"§fPara fazer essa missão é necessário que você aprenda o Jutsu de Invocação!\"}]}"
 						]
 					},
 					{
@@ -510,9 +510,9 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh6_naruto] ~~~ time set day",
-							"execute @p[r=1,tag=mh6_naruto] ~~~ summon porkyn:kimimaro_mh7_naruto ~3~~",
-							"execute @p[r=1,tag=mh6_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Kimimaro!\"}]}"
+							"/execute @p[r=1,tag=mh6_naruto] ~~~ time set day",
+							"/execute @p[r=1,tag=mh6_naruto] ~~~ summon porkyn:kimimaro_mh7_naruto ~3~~",
+							"/execute @p[r=1,tag=mh6_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Kimimaro!\"}]}"
 						]
 					},
 					{
@@ -567,9 +567,9 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh7_naruto] ~~~ time set day",
-							"execute @p[r=1,tag=mh7_naruto] ~~~ summon porkyn:sasuke_mh8_naruto ~~~",
-							"execute @p[r=1,tag=mh7_naruto] ~~~ playsound music2 @p"
+							"/execute @p[r=1,tag=mh7_naruto] ~~~ time set day",
+							"/execute @p[r=1,tag=mh7_naruto] ~~~ summon porkyn:sasuke_mh8_naruto ~~~",
+							"/execute @p[r=1,tag=mh7_naruto] ~~~ playsound music2 @p"
 						]
 					},
 					{
@@ -624,10 +624,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh8_naruto] ~~~ time set day",
-							"execute @p[r=1,tag=mh8_naruto] ~~~ summon porkyn:kakashi_mh9_naruto ~2~~",
-							"execute @p[r=1,tag=mh8_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote Kakashi!\"}]}",
-							"execute @p[r=1,tag=mh8_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fe não deixe a sakura morrer.\"}]}"
+							"/execute @p[r=1,tag=mh8_naruto] ~~~ time set day",
+							"/execute @p[r=1,tag=mh8_naruto] ~~~ summon porkyn:kakashi_mh9_naruto ~2~~",
+							"/execute @p[r=1,tag=mh8_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote Kakashi!\"}]}",
+							"/execute @p[r=1,tag=mh8_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fe não deixe a sakura morrer.\"}]}"
 						]
 					},
 					{
@@ -682,10 +682,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh9_naruto] ~~~ time set day",
-							"execute @p[r=1,tag=mh9_naruto] ~~~ summon porkyn:kakuzu_mh10_naruto ~3~~",
-							"execute @p[r=1,tag=mh9_naruto] ~~~ summon porkyn:hidan_mh10_naruto ~3~~",
-							"execute @p[r=1,tag=mh9_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Kakuzu e Hidan!\"}]}"
+							"/execute @p[r=1,tag=mh9_naruto] ~~~ time set day",
+							"/execute @p[r=1,tag=mh9_naruto] ~~~ summon porkyn:kakuzu_mh10_naruto ~3~~",
+							"/execute @p[r=1,tag=mh9_naruto] ~~~ summon porkyn:hidan_mh10_naruto ~3~~",
+							"/execute @p[r=1,tag=mh9_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Kakuzu e Hidan!\"}]}"
 						]
 					},
 					{
@@ -740,8 +740,8 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh10_naruto] ~~~ summon porkyn:pain_caminhos ~3~~",
-							"execute @p[r=1,tag=mh10_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Pain!\"}]}"
+							"/execute @p[r=1,tag=mh10_naruto] ~~~ summon porkyn:pain_caminhos ~3~~",
+							"/execute @p[r=1,tag=mh10_naruto] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Pain!\"}]}"
 						]
 					},
 					{

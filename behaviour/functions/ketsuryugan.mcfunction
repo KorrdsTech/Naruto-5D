@@ -4,7 +4,7 @@ execute @s[scores={chakra=200..}] ~~~ playsound mangekyou @a[r=5]
 
 replaceitem entity @s[scores={chakra=200..}] slot.weapon.mainhand 0 air
 replaceitem entity @s[scores={chakra=200..}] slot.armor.head 1 porkyn:ketsuryugan
-											
+
 effect @s[scores={chakra=200..}] poison 1 1 true
 effect @s[scores={chakra=200..}] strength 900 5 true
 effect @s[scores={chakra=200..}] speed 900 4 true

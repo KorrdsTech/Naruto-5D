@@ -1,4 +1,4 @@
-										
+
 ===========================EFEITOS=======================================================================
 
 effect @s[scores={chakra=250..},tag=papel] health_boost 670 8 true
@@ -25,5 +25,5 @@ tellraw @s[tag=!papel] {"rawtext":[{"text":"§4>Você não pode utilizar esse mo
 give @s[tag=!papel] porkyn:asa_papel
 
 
-								       	Sistema criado por @porkyn Play
+Sistema criado por @porkyn Play
 =======================================================================================================

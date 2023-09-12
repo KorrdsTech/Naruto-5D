@@ -40,14 +40,14 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=10,tag=!mh1_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§eVocê liberou um novo personagem! Sasuke Versão Criança.\nVocê pode voltar para seu personagem na aba personagens do menu.\"}]}",
-							"execute @p[r=10,tag=!mh1_sasuke] ~~~ execute @p[r=10,tag=!mh1_sasuke] ~~~ function sasuke_kid",
-							"execute @p[r=10,tag=!mh1_sasuke] ~~~ execute @p[r=10,tag=!mh1_sasuke] ~~~ structure load uchiha1 ~~-3~",
-							"execute @p[r=10,tag=!mh1_sasuke] ~~~ fill ~~1~~~~ air",
-							"execute @p[r=10,tag=!mh1_sasuke] ~~~ execute @p[r=10,tag=!mh1_sasuke] ~~~ tp @s ~21~1~51",
-							"execute @p[r=128,tag=!mh1_sasuke] ~~~ time set day",
-							"execute @p[r=128,tag=!mh1_sasuke] ~~~ execute @p ~~~ spawnpoint",
-							"execute @p[r=128,tag=!mh1_sasuke] ~~~ function massacre_uchiha"
+							"/execute @p[r=10,tag=!mh1_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§eVocê liberou um novo personagem! Sasuke Versão Criança.\nVocê pode voltar para seu personagem na aba personagens do menu.\"}]}",
+							"/execute @p[r=10,tag=!mh1_sasuke] ~~~ /execute @p[r=10,tag=!mh1_sasuke] ~~~ function sasuke_kid",
+							"/execute @p[r=10,tag=!mh1_sasuke] ~~~ /execute @p[r=10,tag=!mh1_sasuke] ~~~ structure load uchiha1 ~~-3~",
+							"/execute @p[r=10,tag=!mh1_sasuke] ~~~ fill ~~1~~~~ air",
+							"/execute @p[r=10,tag=!mh1_sasuke] ~~~ /execute @p[r=10,tag=!mh1_sasuke] ~~~ tp @s ~21~1~51",
+							"/execute @p[r=128,tag=!mh1_sasuke] ~~~ time set day",
+							"/execute @p[r=128,tag=!mh1_sasuke] ~~~ /execute @p ~~~ spawnpoint",
+							"/execute @p[r=128,tag=!mh1_sasuke] ~~~ function massacre_uchiha"
 						]
 					},
 					{
@@ -102,14 +102,14 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ stopsound @s",
-							"execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ time set day",
-							"execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ structure load floresta ~-2~-1~-27",
-							"execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ tp @s ~22~1~-3",
-							"execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ execute @p ~~1~ spawnpoint",
-							"execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ summon porkyn:kakashi_mh2_sasuke ~1~~5",
-							"execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ summon porkyn:arvore_naruto_mh2_sasuke ~1~~-3",
-							"execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kakashi-Sensei>§ePara passarem só pegar um desses guizos!\"}]}"
+							"/execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ stopsound @s",
+							"/execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ time set day",
+							"/execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ structure load floresta ~-2~-1~-27",
+							"/execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ tp @s ~22~1~-3",
+							"/execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ /execute @p ~~1~ spawnpoint",
+							"/execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ summon porkyn:kakashi_mh2_sasuke ~1~~5",
+							"/execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ summon porkyn:arvore_naruto_mh2_sasuke ~1~~-3",
+							"/execute @p[r=100,tag=mh1_sasuke,tag=!mh2_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kakashi-Sensei>§ePara passarem só pegar um desses guizos!\"}]}"
 						]
 					},
 					{
@@ -164,12 +164,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ time set day",
-							"execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ execute @p ~~1~ spawnpoint",
-							"execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ summon porkyn:zabuza_mh3_sasuke ~1~~5",
-							"execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ summon porkyn:velho_mh3_sasuke ~1~~",
-							"execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ summon porkyn:haku_mh3_sasuke ~-1~~5",
-							"execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fProteja o Contrutor de Pontes!\"}]}"
+							"/execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ time set day",
+							"/execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ /execute @p ~~1~ spawnpoint",
+							"/execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ summon porkyn:zabuza_mh3_sasuke ~1~~5",
+							"/execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ summon porkyn:velho_mh3_sasuke ~1~~",
+							"/execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ summon porkyn:haku_mh3_sasuke ~-1~~5",
+							"/execute @p[r=1,tag=mh2_sasuke,tag=!mh3_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fProteja o Contrutor de Pontes!\"}]}"
 						]
 					},
 					{
@@ -224,8 +224,8 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh3_sasuke,tag=!mh4_sasuke] ~~~ summon porkyn:rocklee_mh4_sasuke ~1~~5",
-							"execute @p[r=1,tag=mh3_sasuke,tag=!mh4_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Rock Lee!\"}]}"
+							"/execute @p[r=1,tag=mh3_sasuke,tag=!mh4_sasuke] ~~~ summon porkyn:rocklee_mh4_sasuke ~1~~5",
+							"/execute @p[r=1,tag=mh3_sasuke,tag=!mh4_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Rock Lee!\"}]}"
 						]
 					},
 					{
@@ -280,8 +280,8 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh4_sasuke,tag=!mh5_sasuke] ~~~ summon porkyn:dosu_mh5_sasuke ~1~~5",
-							"execute @p[r=1,tag=mh4_sasuke,tag=!mh5_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Dosu Kinuta!\"}]}"
+							"/execute @p[r=1,tag=mh4_sasuke,tag=!mh5_sasuke] ~~~ summon porkyn:dosu_mh5_sasuke ~1~~5",
+							"/execute @p[r=1,tag=mh4_sasuke,tag=!mh5_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Dosu Kinuta!\"}]}"
 						]
 					},
 					{
@@ -336,13 +336,13 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ time set day",
-							"execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ structure load parte1 ~~~",
-							"execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ structure load parte2 ~64~~",
-							"execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ structure load parte3 ~~~64",
-							"execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ structure load parte4 ~64~~64",
+							"/execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ time set day",
+							"/execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ structure load parte1 ~~~",
+							"/execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ structure load parte2 ~64~~",
+							"/execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ structure load parte3 ~~~64",
+							"/execute @p[r=1,tag=mh5_sasuke,tag=!mh6_sasuke] ~~~ structure load parte4 ~64~~64",
 							"/summon porkyn:arena_load_sasuke ~~~",
-							"execute @p[r=1,tag=!mh6_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote Gaara!\"}]}"
+							"/execute @p[r=1,tag=!mh6_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote Gaara!\"}]}"
 						]
 					},
 					{
@@ -397,11 +397,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ summon porkyn:itachi_mh7_sasuke ~3~~",
-							"execute @p[r=1,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ summon porkyn:kisame_mh7_sasuke ~-3~~",
-							"execute @p[r=1,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ summon porkyn:jiraiya_mh7_sasuke ~~~-3",
-							"execute @p[r=1,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ summon porkyn:naruto_mh7_sasuke ~~~3",
-							"execute @p[r=1,tag=!mh7_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Itachi e o Kisame (Sem que o Naruto ou Jiraiya morra)\"}]}"
+							"/execute @p[r=1,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ summon porkyn:itachi_mh7_sasuke ~3~~",
+							"/execute @p[r=1,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ summon porkyn:kisame_mh7_sasuke ~-3~~",
+							"/execute @p[r=1,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ summon porkyn:jiraiya_mh7_sasuke ~~~-3",
+							"/execute @p[r=1,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ summon porkyn:naruto_mh7_sasuke ~~~3",
+							"/execute @p[r=1,tag=!mh7_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Itachi e o Kisame (Sem que o Naruto ou Jiraiya morra)\"}]}"
 						]
 					},
 					{
@@ -456,15 +456,15 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§eVocê liberou um novo personagem! Sasuke Versão Criança.\nVocê pode voltar para seu personagem na aba personagens do menu.\"}]}",
-							"execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ execute @p[r=10,tag=!mh8_sasuke] ~~~ function sasuke_kid",
-							"execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ execute @p[r=10,tag=!mh8_sasuke] ~~~ structure load hospital ~~~",
-							"execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ fill ~~1~~~~ air",
-							"execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ execute @p[r=10,tag=!mh8_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fSe encontre com o Naruto no terraço.\"}]}",
-							"execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ execute @p[r=10,tag=!mh8_sasuke] ~~~ summon porkyn:naruto_parado2_mh8_sasuke ~24~25~20",
-							"execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ execute @p[r=10,tag=!mh8_sasuke] ~~~ tp @s ~38~6~10",
-							"execute @p[r=128,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ time set day",
-							"execute @p[r=128,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ execute @p ~~~ spawnpoint"
+							"/execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§eVocê liberou um novo personagem! Sasuke Versão Criança.\nVocê pode voltar para seu personagem na aba personagens do menu.\"}]}",
+							"/execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ /execute @p[r=10,tag=!mh8_sasuke] ~~~ function sasuke_kid",
+							"/execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ /execute @p[r=10,tag=!mh8_sasuke] ~~~ structure load hospital ~~~",
+							"/execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ fill ~~1~~~~ air",
+							"/execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ /execute @p[r=10,tag=!mh8_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fSe encontre com o Naruto no terraço.\"}]}",
+							"/execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ /execute @p[r=10,tag=!mh8_sasuke] ~~~ summon porkyn:naruto_parado2_mh8_sasuke ~24~25~20",
+							"/execute @p[r=10,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ /execute @p[r=10,tag=!mh8_sasuke] ~~~ tp @s ~38~6~10",
+							"/execute @p[r=128,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ time set day",
+							"/execute @p[r=128,tag=mh7_sasuke,tag=!mh8_sasuke] ~~~ /execute @p ~~~ spawnpoint"
 						]
 					},
 					{
@@ -519,12 +519,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:naruto_mh9_sasuke ~3~~",
-							"execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:rasengan_naruto_mh9_sasuke ~-3~~",
-							"execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:kurama_naruto_mh9_sasuke ~~~-3",
-							"execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:kurama2_naruto_mh9_sasuke ~~~3",
-							"execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:kurama3_naruto_mh9_sasuke ~~~3",
-							"execute @p[r=1,tag=!mh9_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Naruto.\"}]}"
+							"/execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:naruto_mh9_sasuke ~3~~",
+							"/execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:rasengan_naruto_mh9_sasuke ~-3~~",
+							"/execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:kurama_naruto_mh9_sasuke ~~~-3",
+							"/execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:kurama2_naruto_mh9_sasuke ~~~3",
+							"/execute @p[r=1,tag=mh8_sasuke,tag=!mh9_sasuke] ~~~ summon porkyn:kurama3_naruto_mh9_sasuke ~~~3",
+							"/execute @p[r=1,tag=!mh9_sasuke] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fDerrote o Naruto.\"}]}"
 						]
 					},
 					{

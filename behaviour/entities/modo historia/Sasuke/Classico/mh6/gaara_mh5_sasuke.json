@@ -181,35 +181,30 @@
 				"run_command": {
 					"command": [
 						"scoreboard players add @a[r=20,tag=!mh6_sasuke] tp 50",
-						"execute @p[r=10] ~~~ title @p title §eMissão Concluida!!!",
-						"execute @p[r=10] ~~~ title @p subtitle §fSasuke Vs. Gaara",
-						"execute @p[r=10] ~~~ tag @s add mh6_sasuke"
+						"/execute @p[r=10] ~~~ title @p title §eMissão Concluida!!!",
+						"/execute @p[r=10] ~~~ title @p subtitle §fSasuke Vs. Gaara",
+						"/execute @p[r=10] ~~~ tag @s add mh6_sasuke"
 					]
 				}
 			},
 			"on:hurt": {
 				"run_command": {
-					"command": [
-
-					]
+					"command": []
 				}
 			},
 			"on:hurt_by_player": {
 				"run_command": {
-					"command": [
-
-					]
+					"command": []
 				}
 			},
 			"on:efeitos": {
 				"run_command": {
 					"command": [
-						"execute @e[type=porkyn:gaara_mh6_sasuke,r=1] ~~~ scoreboard players add @s cntr 1",
-						"execute @s[scores={cntr=1}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Os seus olhos... são iguais os meus.\"}]}",
-						"execute @s[scores={cntr=7}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Só pelo seus olhos, consigo sentir o seu ódio.\"}]}",
-						"execute @s[scores={cntr=15}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§fLuto apenas pelo meu bem e vivo para amar ninguém além de mim mesmo.\"}]}",
-						"execute @s[scores={cntr=100}] ~~~ scoreboard players set @s cntr 0"
-
+						"/execute @e[type=porkyn:gaara_mh6_sasuke,r=1] ~~~ scoreboard players add @s cntr 1",
+						"/execute @s[scores={cntr=1}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Os seus olhos... são iguais os meus.\"}]}",
+						"/execute @s[scores={cntr=7}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Só pelo seus olhos, consigo sentir o seu ódio.\"}]}",
+						"/execute @s[scores={cntr=15}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§fLuto apenas pelo meu bem e vivo para amar ninguém além de mim mesmo.\"}]}",
+						"/execute @s[scores={cntr=100}] ~~~ scoreboard players set @s cntr 0"
 					]
 				}
 			}

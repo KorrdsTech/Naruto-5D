@@ -8,30 +8,35 @@
       "is_experimental": false
     },
     "components": {
-"minecraft:damage_sensor": {
+      "minecraft:damage_sensor": {
         "triggers": [
           {
             "on_damage": {
-              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player" }
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              }
             },
             "deals_damage": false
-}
-         ]
-          },
-      "minecraft:type_family": {
-        "family": [ "mushroomcow" ]
+          }
+        ]
       },
-      "minecraft:timer":
-			{
-				"looping": true,
-				"time": 2,
-				"time_down_event": {
-					"event": "on:efeitos"
-				}
-			},
+      "minecraft:type_family": {
+        "family": [
+          "mushroomcow"
+        ]
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 2,
+        "time_down_event": {
+          "event": "on:efeitos"
+        }
+      },
       "minecraft:scale": {
-				"value": 5
-			},
+        "value": 5
+      },
       "minecraft:knockback_resistance": {
         "value": 1.0
       },
@@ -46,8 +51,7 @@
         "width": 0,
         "height": 0
       },
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:health": {
         "value": 10,
         "max": 10
@@ -60,17 +64,13 @@
         "avoid_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {    
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:fall_damage": {
         "value": 0.0
       },
-      "minecraft:balloonable": {
-      },
+      "minecraft:balloonable": {},
       "minecraft:behavior.float": {
         "priority": 0
       },
@@ -84,15 +84,11 @@
         "target_dist": 0.0,
         "track_target": true
       },
-	    "minecraft:physics": {
-      }
+      "minecraft:physics": {}
     },
-
-
     "events": {
       "become_cow": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:mooshroom_become_cow"
@@ -100,8 +96,7 @@
         }
       },
       "minecraft:entity_transformed": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:cow_adult"
@@ -112,8 +107,7 @@
         "randomize": [
           {
             "weight": 100,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:cow_adult"
@@ -125,16 +119,15 @@
       "on:efeitos": {
         "run_command": {
           "command": [
-            "execute @e[type=porkyn:invocation,r=1,tag=sapo_d] ~~~ summon porkyn:inv_sapo_d ~~~",
-            "execute @e[type=porkyn:invocation,r=1,tag=sapo_c] ~~~ summon porkyn:inv_sapo_c ~~~",
-            "execute @e[type=porkyn:invocation,r=1,tag=sapo_b] ~~~ summon porkyn:inv_sapo_b ~~~",
-            "execute @e[type=porkyn:invocation,r=1,tag=sapo_a] ~~~ summon porkyn:inv_sapo_a ~~~",
-            "execute @e[type=porkyn:invocation,r=1,tag=sapo_s] ~~~ summon porkyn:inv_sapo_s ~~~",
+            "/execute @e[type=porkyn:invocation,r=1,tag=sapo_d] ~~~ summon porkyn:inv_sapo_d ~~~",
+            "/execute @e[type=porkyn:invocation,r=1,tag=sapo_c] ~~~ summon porkyn:inv_sapo_c ~~~",
+            "/execute @e[type=porkyn:invocation,r=1,tag=sapo_b] ~~~ summon porkyn:inv_sapo_b ~~~",
+            "/execute @e[type=porkyn:invocation,r=1,tag=sapo_a] ~~~ summon porkyn:inv_sapo_a ~~~",
+            "/execute @e[type=porkyn:invocation,r=1,tag=sapo_s] ~~~ summon porkyn:inv_sapo_s ~~~",
             "tp @s ~~-5000~"
-    
           ]
         }
-        }
+      }
     }
   }
 }

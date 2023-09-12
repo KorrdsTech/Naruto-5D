@@ -8,26 +8,31 @@
       "is_experimental": false
     },
     "components": {
-"minecraft:damage_sensor": {
+      "minecraft:damage_sensor": {
         "triggers": [
           {
             "on_damage": {
-              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player" }
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              }
             },
             "deals_damage": false
-}
-         ]
-          },
-          "minecraft:timer":
-          {
-            "looping": true,
-            "time": 1,
-            "time_down_event": {
-              "event": "on:efeitos"
-            }
-          },
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 1,
+        "time_down_event": {
+          "event": "on:efeitos"
+        }
+      },
       "minecraft:type_family": {
-        "family": [ "mushroomcow" ]
+        "family": [
+          "mushroomcow"
+        ]
       },
       "minecraft:knockback_resistance": {
         "value": 1.0
@@ -43,8 +48,7 @@
         "width": 0,
         "height": 0
       },
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:health": {
         "value": 1000000,
         "max": 10000000
@@ -57,17 +61,13 @@
         "avoid_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {    
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:fall_damage": {
         "value": 0.0
       },
-      "minecraft:balloonable": {
-      },
+      "minecraft:balloonable": {},
       "minecraft:behavior.float": {
         "priority": 0
       },
@@ -81,15 +81,11 @@
         "target_dist": 0.0,
         "track_target": true
       },
-	    "minecraft:physics": {
-      }
+      "minecraft:physics": {}
     },
-
-
     "events": {
       "become_cow": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:mooshroom_become_cow"
@@ -97,8 +93,7 @@
         }
       },
       "minecraft:entity_transformed": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:cow_adult"
@@ -109,8 +104,7 @@
         "randomize": [
           {
             "weight": 100,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:cow_adult"
@@ -120,26 +114,23 @@
         ]
       },
       "on:efeitos": {
-				"run_command": {
-				  "command": [
-
-            "execute @p[r=50,tag=pergaminho,tag=!mh1_naruto,tag=!fala_iruka] ~~~ execute @e[r=5,type=porkyn:iruka_3] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Iruka-Sensei>§f Naruto...\"}]}",  
-            "execute @p[r=50,tag=pergaminho,tag=!mh1_naruto,tag=!fala_iruka] ~~~ execute @e[r=5,type=porkyn:iruka_3] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fParabéns! Você passou! \nVamos comer lamen essa noite!\"}]}",
-            "execute @p[r=50,tag=pergaminho,tag=!mh1_naruto,tag=!fala_iruka] ~~~ tag @s add fala_iruka",
-            "execute @p[r=2,tag=!mh1_naruto] ~~~ execute @e[type=porkyn:iruka_3,r=50] ~~~ tag @s add cntr",
-            "execute @e[type=porkyn:iruka_3,r=50,tag=cntr] ~~~ scoreboard players add @s cntr 1",
-            "execute @s[scores={cntr=1..}] ~~~ execute @p[r=50,tag=!mh1_naruto] ~~~ title @p title §eMissão Concluida!!!",
-            "execute @s[scores={cntr=1..}] ~~~ execute @p[r=50,tag=!mh1_naruto] ~~~ title @p subtitle Roubando o pergaminho Sagrado",
-            "execute @s[scores={cntr=1..}] ~~~ execute @p[r=50,tag=!mh1_naruto] ~~~ give @p[r=50,tag=!mh1_naruto] porkyn:jutsu_sexy",
-            "execute @s[scores={cntr=1..}] ~~~ kill @e[type=porkyn:death_mizuki,r=100]",
-            "execute @s[scores={cntr=1..}] ~~~ execute @p[r=70,tag=!mh1_naruto] ~~~ tag @s add mh1_naruto",
-            "execute @s[scores={cntr=1..}] ~~~ tp @s ~~200~",
-            "execute @s[scores={cntr=1..}] ~~~ kill @s"
-
-
-				  ]
-				}
-			  }
-		}
-	}
+        "run_command": {
+          "command": [
+            "/execute @p[r=50,tag=pergaminho,tag=!mh1_naruto,tag=!fala_iruka] ~~~ /execute @e[r=5,type=porkyn:iruka_3] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Iruka-Sensei>§f Naruto...\"}]}",
+            "/execute @p[r=50,tag=pergaminho,tag=!mh1_naruto,tag=!fala_iruka] ~~~ /execute @e[r=5,type=porkyn:iruka_3] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§fParabéns! Você passou! \nVamos comer lamen essa noite!\"}]}",
+            "/execute @p[r=50,tag=pergaminho,tag=!mh1_naruto,tag=!fala_iruka] ~~~ tag @s add fala_iruka",
+            "/execute @p[r=2,tag=!mh1_naruto] ~~~ /execute @e[type=porkyn:iruka_3,r=50] ~~~ tag @s add cntr",
+            "/execute @e[type=porkyn:iruka_3,r=50,tag=cntr] ~~~ scoreboard players add @s cntr 1",
+            "/execute @s[scores={cntr=1..}] ~~~ /execute @p[r=50,tag=!mh1_naruto] ~~~ title @p title §eMissão Concluida!!!",
+            "/execute @s[scores={cntr=1..}] ~~~ /execute @p[r=50,tag=!mh1_naruto] ~~~ title @p subtitle Roubando o pergaminho Sagrado",
+            "/execute @s[scores={cntr=1..}] ~~~ /execute @p[r=50,tag=!mh1_naruto] ~~~ give @p[r=50,tag=!mh1_naruto] porkyn:jutsu_sexy",
+            "/execute @s[scores={cntr=1..}] ~~~ kill @e[type=porkyn:death_mizuki,r=100]",
+            "/execute @s[scores={cntr=1..}] ~~~ /execute @p[r=70,tag=!mh1_naruto] ~~~ tag @s add mh1_naruto",
+            "/execute @s[scores={cntr=1..}] ~~~ tp @s ~~200~",
+            "/execute @s[scores={cntr=1..}] ~~~ kill @s"
+          ]
+        }
+      }
+    }
+  }
 }

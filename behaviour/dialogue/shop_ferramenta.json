@@ -40,12 +40,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..19}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..19}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=20..}] ~~~ give @p porkyn:kunai_rank_d",
-							"execute @p[scores={money=20..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={money=..19}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..19}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=20..}] ~~~ give @p porkyn:kunai_rank_d",
+							"/execute @p[scores={money=20..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p shop_ferramenta1",
-							"execute @p[scores={money=20..}] ~~~ scoreboard players remove @p[r=1] money 20"
+							"/execute @p[scores={money=20..}] ~~~ scoreboard players remove @p[r=1] money 20"
 						]
 					},
 					{
@@ -100,12 +100,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..149}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..149}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=150..}] ~~~ give @p porkyn:kunai_rank_c",
-							"execute @p[scores={money=150..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={money=..149}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..149}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=150..}] ~~~ give @p porkyn:kunai_rank_c",
+							"/execute @p[scores={money=150..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p kunai_rank_c",
-							"execute @p[scores={money=150..}] ~~~ scoreboard players remove @p[r=1] money 150"
+							"/execute @p[scores={money=150..}] ~~~ scoreboard players remove @p[r=1] money 150"
 						]
 					},
 					{
@@ -160,12 +160,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..499}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=500..}] ~~~ give @p porkyn:kunai_rank_b",
-							"execute @p[scores={money=500..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={money=..499}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=500..}] ~~~ give @p porkyn:kunai_rank_b",
+							"/execute @p[scores={money=500..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p kunai_rank_b",
-							"execute @p[scores={money=500..}] ~~~ scoreboard players remove @p[r=1] money 500"
+							"/execute @p[scores={money=500..}] ~~~ scoreboard players remove @p[r=1] money 500"
 						]
 					},
 					{
@@ -220,12 +220,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=1200..}] ~~~ give @p porkyn:kunai_rank_a",
-							"execute @p[scores={money=1200..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=1200..}] ~~~ give @p porkyn:kunai_rank_a",
+							"/execute @p[scores={money=1200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p kunai_rank_a",
-							"execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
+							"/execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
 						]
 					},
 					{
@@ -280,12 +280,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..2499}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..2499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=2500..}] ~~~ give @p porkyn:kunai_rank_s",
-							"execute @p[scores={money=2500..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={money=..2499}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..2499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=2500..}] ~~~ give @p porkyn:kunai_rank_s",
+							"/execute @p[scores={money=2500..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p kunai_rank_s",
-							"execute @p[scores={money=2500..}] ~~~ scoreboard players remove @p[r=1] money 2500"
+							"/execute @p[scores={money=2500..}] ~~~ scoreboard players remove @p[r=1] money 2500"
 						]
 					},
 					{
@@ -340,12 +340,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..999}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=999..}] ~~~ give @p porkyn:foice_tripla",
-							"execute @p[scores={money=999..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={money=..999}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=999..}] ~~~ give @p porkyn:foice_tripla",
+							"/execute @p[scores={money=999..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p shop_ferramenta2",
-							"execute @p[scores={money=999..}] ~~~ scoreboard players remove @p[r=1] money 999"
+							"/execute @p[scores={money=999..}] ~~~ scoreboard players remove @p[r=1] money 999"
 						]
 					},
 					{
@@ -400,11 +400,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..2999}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..2999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=3000..}] ~~~ give @p porkyn:samehada",
-							"execute @p[scores={money=3000..}] ~~~ dialogue open @s @p shop_ferramenta3",
-							"execute @p[scores={money=3000..}] ~~~ scoreboard players remove @p[r=1] money 3000"
+							"/execute @p[scores={money=..2999}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..2999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=3000..}] ~~~ give @p porkyn:samehada",
+							"/execute @p[scores={money=3000..}] ~~~ dialogue open @s @p shop_ferramenta3",
+							"/execute @p[scores={money=3000..}] ~~~ scoreboard players remove @p[r=1] money 3000"
 						]
 					},
 					{
@@ -459,11 +459,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=600..}] ~~~ give @p porkyn:katana_sasuke",
-							"execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_ferramenta4",
-							"execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:katana_sasuke",
+							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_ferramenta4",
+							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
 						]
 					},
 					{
@@ -518,11 +518,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..2899}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..2899}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=2900..}] ~~~ give @p porkyn:kubikiribocho",
-							"execute @p[scores={money=2900..}] ~~~ dialogue open @s @p shop_ferramenta5",
-							"execute @p[scores={money=2900..}] ~~~ scoreboard players remove @p[r=1] money 2900"
+							"/execute @p[scores={money=..2899}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..2899}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=2900..}] ~~~ give @p porkyn:kubikiribocho",
+							"/execute @p[scores={money=2900..}] ~~~ dialogue open @s @p shop_ferramenta5",
+							"/execute @p[scores={money=2900..}] ~~~ scoreboard players remove @p[r=1] money 2900"
 						]
 					},
 					{

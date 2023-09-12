@@ -7,9 +7,7 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
-
 		"component_groups": {},
-
 		"components": {
 			"minecraft:type_family": {
 				"family": [
@@ -24,38 +22,37 @@
 				"name": "§lKakashi-Sensei",
 				"hud_range": 7
 			},
-			"minecraft:timer":
-			{
+			"minecraft:timer": {
 				"looping": true,
 				"time": 1,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			  "minecraft:on_hurt": {
+			"minecraft:on_hurt": {
 				"event": "on:hurt",
 				"target": "self"
-			  },
-			  "minecraft:on_hurt_by_player": {
+			},
+			"minecraft:on_hurt_by_player": {
 				"event": "on:hurt_by_player",
 				"target": "self"
-			  },
-			  "minecraft:on_ignite": {
+			},
+			"minecraft:on_ignite": {
 				"event": "on:ignite",
 				"target": "self"
-			  },
-			  "minecraft:on_target_acquired": {
+			},
+			"minecraft:on_target_acquired": {
 				"event": "on:target_acquired",
 				"target": "self"
-			  },
-			  "minecraft:on_target_escape": {
+			},
+			"minecraft:on_target_escape": {
 				"event": "on:target_escape",
 				"target": "self"
-			  },
-			  "minecraft:on_wake_with_owner": {
+			},
+			"minecraft:on_wake_with_owner": {
 				"event": "on:wake_with_owner",
 				"target": "self"
-			  },
+			},
 			"minecraft:attack": {
 				"damage": 12
 			},
@@ -99,23 +96,24 @@
 					}
 				]
 			},
-
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
 				"reselect_targets": true,
 				"within_radius": 25.0,
 				"must_see_forget_duration": 17.0,
-				"entity_types": 
-				  {
+				"entity_types": {
 					"filters": {
-					  "any_of": [
-						{ "test": "is_family", "subject": "other", "value": "" }
-					  ]
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": ""
+							}
+						]
 					},
 					"max_dist": 35
-				  }
-				  
+				}
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -123,7 +121,6 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
-			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0
@@ -182,46 +179,45 @@
 			},
 			"on:death": {
 				"run_command": {
-				  "command": [
-            "execute @p[r=8,tag=!fala1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kkakashi-Sensei>§fCalma... eu ainda não disse para começarem. \n Agora podem começar...\"}]}",
-            "tag @p add fala1",
-            "tag @e[type=porkyn:kakashi_parado] add cntr"
-				  ]
-				}
-			  },
-			  "on:hurt": {
-				"run_command": {
-				  "command": [
-            "execute @p[r=8,tag=!fala1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kkakashi-Sensei>§fCalma... eu ainda não disse para começarem. \n Agora podem começar...\"}]}",
-            "tag @p add fala1",
-            "tag @e[type=porkyn:kakashi_parado] add cntr"
-				  ]
-				}
-			  },
-			  "on:hurt_by_player": {
-				"run_command": {
-				  "command": [
-            "execute @p[r=8,tag=!fala1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kkakashi-Sensei>§fCalma... eu ainda não disse para começarem.\"}]}",
-            "tag @p add fala1",
-            "tag @e[type=porkyn:kakashi_parado] add cntr"
-				  ]
-				}
-			  },
-			  "on:efeitos": {
-				  "run_command": {
 					"command": [
-            "execute @e[type=porkyn:kakashi_parado,r=8,tag=cntr] ~~~ scoreboard players add @s cntr 1",
-            "execute @s[scores={cntr=4..}] ~~~ particle minecraft:egg_destroy_emitter ~~1~",
-            "execute @s[scores={cntr=4..}] ~~~ execute @a[r=20] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kkakashi-Sensei>§f Agora podem começar...\"}]}",
-					  "execute @s[scores={cntr=4..}] ~~~ particle minecraft:egg_destroy_emitter ~~1~",
-					  "execute @s[scores={cntr=4..}] ~~~ playsound subs @a[x=~,y=~,z=~,r=10]",
-            "execute @s[scores={cntr=4..}] ~~~ summon porkyn:guizo ~~2~",
-            "execute @s[scores={cntr=4..}] ~~~ tp @s ~~200~",
-            "execute @s[scores={cntr=4..}] ~~~ kill @s"
+						"/execute @p[r=8,tag=!fala1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kkakashi-Sensei>§fCalma... eu ainda não disse para começarem. \n Agora podem começar...\"}]}",
+						"tag @p add fala1",
+						"tag @e[type=porkyn:kakashi_parado] add cntr"
 					]
-				  }
 				}
-			  }
-		  }
-	  }
-	  
+			},
+			"on:hurt": {
+				"run_command": {
+					"command": [
+						"/execute @p[r=8,tag=!fala1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kkakashi-Sensei>§fCalma... eu ainda não disse para começarem. \n Agora podem começar...\"}]}",
+						"tag @p add fala1",
+						"tag @e[type=porkyn:kakashi_parado] add cntr"
+					]
+				}
+			},
+			"on:hurt_by_player": {
+				"run_command": {
+					"command": [
+						"/execute @p[r=8,tag=!fala1] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kkakashi-Sensei>§fCalma... eu ainda não disse para começarem.\"}]}",
+						"tag @p add fala1",
+						"tag @e[type=porkyn:kakashi_parado] add cntr"
+					]
+				}
+			},
+			"on:efeitos": {
+				"run_command": {
+					"command": [
+						"/execute @e[type=porkyn:kakashi_parado,r=8,tag=cntr] ~~~ scoreboard players add @s cntr 1",
+						"/execute @s[scores={cntr=4..}] ~~~ particle minecraft:egg_destroy_emitter ~~1~",
+						"/execute @s[scores={cntr=4..}] ~~~ /execute @a[r=20] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Kkakashi-Sensei>§f Agora podem começar...\"}]}",
+						"/execute @s[scores={cntr=4..}] ~~~ particle minecraft:egg_destroy_emitter ~~1~",
+						"/execute @s[scores={cntr=4..}] ~~~ playsound subs @a[x=~,y=~,z=~,r=10]",
+						"/execute @s[scores={cntr=4..}] ~~~ summon porkyn:guizo ~~2~",
+						"/execute @s[scores={cntr=4..}] ~~~ tp @s ~~200~",
+						"/execute @s[scores={cntr=4..}] ~~~ kill @s"
+					]
+				}
+			}
+		}
+	}
+}

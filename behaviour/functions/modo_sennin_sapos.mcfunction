@@ -3,7 +3,7 @@ execute @s[scores={chakra=300..}] ~~~ function hair_kakashi
 replaceitem entity  @s[scores={chakra=300..}] slot.weapon.mainhand 0 air
 replaceitem entity  @s[scores={chakra=300..}] slot.armor.head 1 porkyn:modo_sennin_sapos
 execute @s[scores={chakra=..299}] ~~~ playsound note.bass
-											
+
 effect @s[scores={chakra=300..}] strength 540 3 true
 effect @s[scores={chakra=300..}] resistance 540 0 true
 effect @s[scores={chakra=300..}] regeneration 540 0 true

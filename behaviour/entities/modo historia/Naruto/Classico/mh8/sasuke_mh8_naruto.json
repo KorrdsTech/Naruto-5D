@@ -180,11 +180,10 @@
 			"on:death": {
 				"run_command": {
 					"command": [
-						"execute @p[r=10] ~~~ title @p title §eMissão Concluida!",
-						"execute @p[r=10] ~~~ title @p subtitle O Fim Das Lágrimas",
+						"/execute @p[r=10] ~~~ title @p title §eMissão Concluida!",
+						"/execute @p[r=10] ~~~ title @p subtitle O Fim Das Lágrimas",
 						"scoreboard players add @a[r=2] tp 400",
-						"execute @p[r=10] ~~~ tag @s add mh8_naruto"
-
+						"/execute @p[r=10] ~~~ tag @s add mh8_naruto"
 					]
 				}
 			},
@@ -211,25 +210,17 @@
 			"on:efeitos": {
 				"run_command": {
 					"command": [
-						"execute @e[type=porkyn:sasuke_mh8_naruto,r=1] ~~~ scoreboard players add @s cntr 1",
-
-						"execute @s[scores={cntr=10}] ~~~ function bola_fogo_sasuke",
-
-						"execute @s[scores={cntr=30}] ~~~ function bola_fogo_sasuke",
-
-						"execute @s[scores={cntr=25}] ~~~ playsound sharingan @a[r=12]",
+						"/execute @e[type=porkyn:sasuke_mh8_naruto,r=1] ~~~ scoreboard players add @s cntr 1",
+						"/execute @s[scores={cntr=10}] ~~~ function bola_fogo_sasuke",
+						"/execute @s[scores={cntr=30}] ~~~ function bola_fogo_sasuke",
+						"/execute @s[scores={cntr=25}] ~~~ playsound sharingan @a[r=12]",
 						"effect @s[scores={cntr=25}] speed 50 4 true",
-
-						"execute @s[scores={cntr=40}] ~~~ function bola_fogo_sasuke",
-
-						"execute @s[scores={cntr=1}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Sasuke>§f Apenas cale a boca uma vez! O que diabos você sabe sobre isso?! Não é como se você tivesse uma família em primeiro lugar! Você estava sozinho desde o começo, o que faz você pensar que sabe alguma coisa sobre isso?! Hã?! Eu estou sofrendo agora porque eu tinha esses laços, como você poderia entender como é perder tudo isso!\"}]}",
-
-						"execute @s[scores={cntr=20}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Sasuke>§f Eu sei que nós quatro trabalhamos juntos. E por um tempo, eu pensei que poderia escolher esse caminho. Mas no final, eu decidi me vingar. Esse sempre foi o meu propósito de viver\"}]}",
-
-						"execute @s[scores={cntr=35}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Sasuke>§f É por termos laços, que sofremos…\"}]}","scoreboard players add @p[r=5] money 1",
-
-						"execute @e[scores={cntr=50}] ~~~ scoreboard players set @s cntr 0"
-
+						"/execute @s[scores={cntr=40}] ~~~ function bola_fogo_sasuke",
+						"/execute @s[scores={cntr=1}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Sasuke>§f Apenas cale a boca uma vez! O que diabos você sabe sobre isso?! Não é como se você tivesse uma família em primeiro lugar! Você estava sozinho desde o começo, o que faz você pensar que sabe alguma coisa sobre isso?! Hã?! Eu estou sofrendo agora porque eu tinha esses laços, como você poderia entender como é perder tudo isso!\"}]}",
+						"/execute @s[scores={cntr=20}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Sasuke>§f Eu sei que nós quatro trabalhamos juntos. E por um tempo, eu pensei que poderia escolher esse caminho. Mas no final, eu decidi me vingar. Esse sempre foi o meu propósito de viver\"}]}",
+						"/execute @s[scores={cntr=35}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<Sasuke>§f É por termos laços, que sofremos…\"}]}",
+						"scoreboard players add @p[r=5] money 1",
+						"/execute @e[scores={cntr=50}] ~~~ scoreboard players set @s cntr 0"
 					]
 				}
 			}

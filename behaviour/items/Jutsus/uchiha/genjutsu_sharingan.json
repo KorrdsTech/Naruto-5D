@@ -8,7 +8,6 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
- 
 			"minecraft:mining_speed": 1,
 			"minecraft:damage": 0,
 			"minecraft:on_use": {
@@ -19,19 +18,35 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lGenjutsu: Sharingan"
-            },
-  	"minecraft:render_offsets": {
-  		"main_hand": {
-	  		"third_person": {
-				"position": [0.26, 1.0, -0.55],
-	  			"scale": [0, 0, 0]
-	  		},
-	  		"first_person": {
-  				"position": [7.08, -1.6, -12.8],
-	  			"scale": [0, 0, 0]
-		  	}
- 	  	}
-	},
+			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"third_person": {
+						"position": [
+							0.26,
+							1.0,
+							-0.55
+						],
+						"scale": [
+							0,
+							0,
+							0
+						]
+					},
+					"first_person": {
+						"position": [
+							7.08,
+							-1.6,
+							-12.8
+						],
+						"scale": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
 			"minecraft:cooldown": {
 				"category": "genjutsu_sharingan",
 				"duration": 1.0
@@ -47,12 +62,12 @@
 						"run_command": {
 							"command": [
 								"tag @s add gen_sharingan",
-								"execute @s[scores={chakra=50..}] ~~~ playsound sharingan @a[r=10]",
-								"execute @s[scores={chakra=50..}] ~~~ execute @e[r=4] ~~~ effect @e[tag=!gen_sharingan,r=4] slowness 5 40 true",
+								"/execute @s[scores={chakra=50..}] ~~~ playsound sharingan @a[r=10]",
+								"/execute @s[scores={chakra=50..}] ~~~ /execute @e[r=4] ~~~ effect @e[tag=!gen_sharingan,r=4] slowness 5 40 true",
 								"clear @a[tag=!gen_sharingan,r=4] milk_bucket",
 								"effect @a[tag=!gen_sharingan,r=4,tag=rinnegan] slowness 0 1 true",
 								"tellraw @s[scores={chakra=50..}] {\"rawtext\":[{\"text\":\"§4-50CK\"}]}",
-								"execute @s[scores={chakra=..49}] ~~~ playsound note.bass",
+								"/execute @s[scores={chakra=..49}] ~~~ playsound note.bass",
 								"scoreboard players remove @s[scores={chakra=50..}] chakra 50",
 								"tag @s remove gen_sharingan"
 							]

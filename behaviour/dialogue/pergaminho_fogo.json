@@ -40,12 +40,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..199}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=200..}] ~~~ give @p porkyn:bola_fogo_d 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[scores={tp=200..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={tp=..199}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=200..}] ~~~ give @p porkyn:bola_fogo_d 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute @p[scores={tp=200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p estilo_fogo",
-							"execute @p[scores={tp=200..}] ~~~ scoreboard players remove @p[r=1] tp 200"
+							"/execute @p[scores={tp=200..}] ~~~ scoreboard players remove @p[r=1] tp 200"
 						]
 					},
 					{

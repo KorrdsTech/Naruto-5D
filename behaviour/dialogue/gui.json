@@ -40,7 +40,7 @@
 							]
 						},
 						"commands": [
-							"execute @p ~~~ function reiniciar"
+							"/execute @p ~~~ function reiniciar"
 						]
 					},
 					{
@@ -494,11 +494,11 @@
 						"commands": [
 							"/dialogue open @s @p[scores={money=2000..}] cabelo1",
 							"/dialogue open @s @p[scores={money=..1999}] mudar_cabelo",
-							"execute @p[scores={money=..1999}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..1999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=2000..}] ~~~ function limpar_cabelos",
-							"execute @p[scores={money=2000..}] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[scores={money=2000..}] ~~~ scoreboard players remove @p[r=1] money 2000"
+							"/execute @p[scores={money=..1999}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..1999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=2000..}] ~~~ function limpar_cabelos",
+							"/execute @p[scores={money=2000..}] ~~~ replaceitem entity @p slot.armor.feet 1 hair:naruto_amarelo 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute @p[scores={money=2000..}] ~~~ scoreboard players remove @p[r=1] money 2000"
 						]
 					},
 					{
@@ -610,15 +610,15 @@
 						"commands": [
 							"/dialogue open @s @p[scores={money=2000..}] pele1",
 							"/dialogue open @s @p[scores={money=..1999}] mudar_pele",
-							"execute @p[scores={money=2000..}] ~~~ event entity @s negro_amarelo",
-							"execute @p[scores={money=2000..}] ~~~ tag @s remove branco",
-							"execute @p[scores={money=2000..}] ~~~ tag @s remove moreno",
-							"execute @p[scores={money=2000..}] ~~~ tag @s remove negro",
-							"execute @p[scores={money=2000..}] ~~~ tag @s remove claro",
-							"execute @p[scores={money=..1999}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..1999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=2000..}] ~~~ function limpar_cabelos",
-							"execute @p[scores={money=2000..}] ~~~ scoreboard players remove @p[r=1] money 2000"
+							"/execute @p[scores={money=2000..}] ~~~ event entity @s negro_amarelo",
+							"/execute @p[scores={money=2000..}] ~~~ tag @s remove branco",
+							"/execute @p[scores={money=2000..}] ~~~ tag @s remove moreno",
+							"/execute @p[scores={money=2000..}] ~~~ tag @s remove negro",
+							"/execute @p[scores={money=2000..}] ~~~ tag @s remove claro",
+							"/execute @p[scores={money=..1999}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..1999}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=2000..}] ~~~ function limpar_cabelos",
+							"/execute @p[scores={money=2000..}] ~~~ scoreboard players remove @p[r=1] money 2000"
 						]
 					},
 					{
@@ -728,7 +728,7 @@
 							]
 						},
 						"commands": [
-							"execute @p ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§fDono/Criador: §l§ePorkyn\"}]}"
+							"/execute @p ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§fDono/Criador: §l§ePorkyn\"}]}"
 						]
 					},
 					{
@@ -752,7 +752,7 @@
 							]
 						},
 						"commands": [
-							"execute @p ~~~ function help"
+							"/execute @p ~~~ function help"
 						]
 					},
 					{

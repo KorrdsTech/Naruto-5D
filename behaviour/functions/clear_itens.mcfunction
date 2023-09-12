@@ -102,12 +102,12 @@ execute @s[scores={carregarsubs=5000..}] ~~~ scoreboard players set @s carregars
 
 
 <CHAKRA>
-execute @s[tag=senju] ~~~ execute @s[scores={chakra=5000..}] ~~~ scoreboard players set @s chakra 10000
-execute @s[tag=uzumaki] ~~~ execute @s[scores={chakra=2500..}] ~~~ scoreboard players set @s chakra 2500
-execute @s[tag=uchiha] ~~~ execute @s[scores={chakra=1000..}] ~~~ scoreboard players set @s chakra 1000
-execute @s[tag=hyuuga] ~~~ execute @s[scores={chakra=1000..}] ~~~ scoreboard players set @s chakra 1000
-execute @s[tag=chinoike] ~~~ execute @s[scores={chakra=1100..}] ~~~ scoreboard players set @s chakra 1100
-execute @s[tag=!chinoike,tag=!hyuuga,tag=!uchiha,tag=!uzumaki,tag=!senju] ~~~ execute @s[scores={chakra=1100..}] ~~~ scoreboard players set @s chakra 1000
+execute @s[tag=senju] ~~~ /execute @s[scores={chakra=5000..}] ~~~ scoreboard players set @s chakra 10000
+execute @s[tag=uzumaki] ~~~ /execute @s[scores={chakra=2500..}] ~~~ scoreboard players set @s chakra 2500
+execute @s[tag=uchiha] ~~~ /execute @s[scores={chakra=1000..}] ~~~ scoreboard players set @s chakra 1000
+execute @s[tag=hyuuga] ~~~ /execute @s[scores={chakra=1000..}] ~~~ scoreboard players set @s chakra 1000
+execute @s[tag=chinoike] ~~~ /execute @s[scores={chakra=1100..}] ~~~ scoreboard players set @s chakra 1100
+execute @s[tag=!chinoike,tag=!hyuuga,tag=!uchiha,tag=!uzumaki,tag=!senju] ~~~ /execute @s[scores={chakra=1100..}] ~~~ scoreboard players set @s chakra 1000
 execute @s[scores={chakra=..0}] ~~~ scoreboard players set @s chakra 0
 execute @s[scores={chakra=1000..},tag=kurama] ~~~ scoreboard players set @s chakra_kurama 1000
 execute @s[scores={chakra=..0,tag=kurama] ~~~ scoreboard players set @s chakra_kurama 0

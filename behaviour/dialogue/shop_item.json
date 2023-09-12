@@ -40,12 +40,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..19}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..19}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=20..}] ~~~ give @p porkyn:boost_chakra_1",
-							"execute @p[scores={tp=20..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={tp=..19}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..19}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=20..}] ~~~ give @p porkyn:boost_chakra_1",
+							"/execute @p[scores={tp=20..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p shop_item1",
-							"execute @p[scores={tp=20..}] ~~~ scoreboard players remove @p[r=1] tp 20"
+							"/execute @p[scores={tp=20..}] ~~~ scoreboard players remove @p[r=1] tp 20"
 						]
 					},
 					{
@@ -100,12 +100,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..39}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..39}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=40..}] ~~~ give @p porkyn:boost_chakra_2",
-							"execute @p[scores={tp=40..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={tp=..39}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..39}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=40..}] ~~~ give @p porkyn:boost_chakra_2",
+							"/execute @p[scores={tp=40..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p shop_item2",
-							"execute @p[scores={tp=40..}] ~~~ scoreboard players remove @p[r=1] tp 40"
+							"/execute @p[scores={tp=40..}] ~~~ scoreboard players remove @p[r=1] tp 40"
 						]
 					},
 					{
@@ -160,11 +160,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..79}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..79}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=80..}] ~~~ give @p porkyn:boost_chakra_3",
-							"execute @p[scores={tp=80..}] ~~~ dialogue open @s @p shop_item3",
-							"execute @p[scores={tp=80..}] ~~~ scoreboard players remove @p[r=1] tp 80"
+							"/execute @p[scores={tp=..79}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..79}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=80..}] ~~~ give @p porkyn:boost_chakra_3",
+							"/execute @p[scores={tp=80..}] ~~~ dialogue open @s @p shop_item3",
+							"/execute @p[scores={tp=80..}] ~~~ scoreboard players remove @p[r=1] tp 80"
 						]
 					},
 					{
@@ -219,11 +219,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..159}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..159}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=160..}] ~~~ give @p porkyn:boost_chakra_4",
-							"execute @p[scores={tp=160..}] ~~~ dialogue open @s @p shop_item4",
-							"execute @p[scores={tp=160..}] ~~~ scoreboard players remove @p[r=1] tp 160"
+							"/execute @p[scores={tp=..159}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..159}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=160..}] ~~~ give @p porkyn:boost_chakra_4",
+							"/execute @p[scores={tp=160..}] ~~~ dialogue open @s @p shop_item4",
+							"/execute @p[scores={tp=160..}] ~~~ scoreboard players remove @p[r=1] tp 160"
 						]
 					},
 					{

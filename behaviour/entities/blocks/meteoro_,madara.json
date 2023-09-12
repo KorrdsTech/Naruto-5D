@@ -67,21 +67,21 @@
 				"has_gravity": true
 			},
 			"minecraft:health": {
-			  "value": 100000,
-			  "max": 100000
+				"value": 100000,
+				"max": 100000
 			}
 		},
 		"events": {
 			"porkyn:kill": {
 				"run_command": {
 					"command": [
-			            "effect @s slow_falling",
+						"effect @s slow_falling",
 						"fill ~5~~-5 ~-5~~5 fire",
 						"effect @e[r=30,tag=!estaca,type=!porkyn:estaca_madeira_1,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] instant_damage 3 1 true",
-						"execute @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^^2^3 minecraft:crystal_explode",
-						"execute @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^3^2^ minecraft:crystal_explode",
-						"execute @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^-3^2^ minecraft:crystal_explode",
-						"execute @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^^2^-3 minecraft:crystal_explode"
+						"/execute @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^^2^3 minecraft:crystal_explode",
+						"/execute @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^3^2^ minecraft:crystal_explode",
+						"/execute @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^-3^2^ minecraft:crystal_explode",
+						"/execute @e[r=20,type=!porkyn:meteoro_madara,type=!porkyn:meteoro_madara2] ~~~ summon ender_crystal ^^2^-3 minecraft:crystal_explode"
 					]
 				}
 			},

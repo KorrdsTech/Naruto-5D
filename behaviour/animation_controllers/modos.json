@@ -10,11 +10,11 @@
             }
           ],
           "on_exit": [
-            "execute @s[tag=rank_d] ~~~ function rank_d",
-            "execute @s[tag=rank_c] ~~~ function rank_c",
-            "execute @s[tag=rank_b] ~~~ function rank_b",
-            "execute @s[tag=rank_a] ~~~ function rank_a",
-            "execute @s[tag=rank_s] ~~~ function rank_s"
+            "/execute @s[tag=rank_d] ~~~ function rank_d",
+            "/execute @s[tag=rank_c] ~~~ function rank_c",
+            "/execute @s[tag=rank_b] ~~~ function rank_b",
+            "/execute @s[tag=rank_a] ~~~ function rank_a",
+            "/execute @s[tag=rank_s] ~~~ function rank_s"
           ]
         },
         "modos": {
@@ -38,10 +38,10 @@
             }
           ],
           "on_exit": [
-            "execute @p[scores={chakra=..49},tag=hiraishin] ~~~ playsound note.bass ",
-            "execute @s[scores={chakra=50..},tag=hiraishin] ~~~ execute @s[tag=hiraishin] ~~~ playsound hiraishin @a[x=~,y=~,z=~,r=15]",
-            "execute @s[scores={chakra=50..},tag=hiraishin] ~~~ execute @s[tag=hiraishin] ~~~ tp @s @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1]",
-            "execute @s[scores={chakra=50..},tag=hiraishin] ~~~ scoreboard players remove @s chakra 50"
+            "/execute @p[scores={chakra=..49},tag=hiraishin] ~~~ playsound note.bass ",
+            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ /execute @s[tag=hiraishin] ~~~ playsound hiraishin @a[x=~,y=~,z=~,r=15]",
+            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ /execute @s[tag=hiraishin] ~~~ tp @s @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1]",
+            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ scoreboard players remove @s chakra 50"
           ]
         },
         "hiraishin_tp": {

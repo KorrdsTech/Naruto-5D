@@ -40,12 +40,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..499}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=500..}] ~~~ give @p porkyn:clones_sombras_d 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[scores={tp=500..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={tp=..499}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=500..}] ~~~ give @p porkyn:clones_sombras_d 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute @p[scores={tp=500..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal",
-							"execute @p[scores={tp=500..}] ~~~ scoreboard players remove @p[r=1] tp 500"
+							"/execute @p[scores={tp=500..}] ~~~ scoreboard players remove @p[r=1] tp 500"
 						]
 					},
 					{
@@ -100,12 +100,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..1199}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=1200..}] ~~~ give @p porkyn:rasengan 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[scores={tp=1200..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={tp=..1199}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=1200..}] ~~~ give @p porkyn:rasengan 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute @p[scores={tp=1200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal2",
-							"execute @p[scores={tp=1200..}] ~~~ scoreboard players remove @p[r=1] tp 1200"
+							"/execute @p[scores={tp=1200..}] ~~~ scoreboard players remove @p[r=1] tp 1200"
 						]
 					},
 					{
@@ -160,15 +160,15 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..3199}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..3199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=3200..}] ~~~ give @p porkyn:kunai_m 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[scores={tp=3200..}] ~~~ give @p porkyn:hiraishinmarca_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[scores={tp=3200..}] ~~~ give @p porkyn:help_hiraishin 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[scores={tp=3200..}] ~~~ tag @s add hiraishin",
-							"execute @p[scores={tp=3200..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={tp=..3199}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..3199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=3200..}] ~~~ give @p porkyn:kunai_m 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute @p[scores={tp=3200..}] ~~~ give @p porkyn:hiraishinmarca_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute @p[scores={tp=3200..}] ~~~ give @p porkyn:help_hiraishin 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute @p[scores={tp=3200..}] ~~~ tag @s add hiraishin",
+							"/execute @p[scores={tp=3200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal3",
-							"execute @p[scores={tp=3200..}] ~~~ scoreboard players remove @p[r=1] tp 3200"
+							"/execute @p[scores={tp=3200..}] ~~~ scoreboard players remove @p[r=1] tp 3200"
 						]
 					},
 					{
@@ -223,13 +223,13 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..1199}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=1200..}] ~~~ give @p porkyn:inv_sapo_d 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[scores={tp=1200..}] ~~~ tag @p add inv_sapo",
-							"execute @p[scores={tp=1200..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={tp=..1199}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=1200..}] ~~~ give @p porkyn:inv_sapo_d 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute @p[scores={tp=1200..}] ~~~ tag @p add inv_sapo",
+							"/execute @p[scores={tp=1200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal4",
-							"execute @p[scores={tp=1200..}] ~~~ scoreboard players remove @p[r=1] tp 1200"
+							"/execute @p[scores={tp=1200..}] ~~~ scoreboard players remove @p[r=1] tp 1200"
 						]
 					},
 					{
@@ -284,13 +284,13 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..1199}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=1200..}] ~~~ give @p porkyn:selamento_a 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-							"execute @p[scores={tp=1200..}] ~~~ tag @p add selamento",
-							"execute @p[scores={tp=1200..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={tp=..1199}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=1200..}] ~~~ give @p porkyn:selamento_a 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+							"/execute @p[scores={tp=1200..}] ~~~ tag @p add selamento",
+							"/execute @p[scores={tp=1200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal4",
-							"execute @p[scores={tp=1200..}] ~~~ scoreboard players remove @p[r=1] tp 1200"
+							"/execute @p[scores={tp=1200..}] ~~~ scoreboard players remove @p[r=1] tp 1200"
 						]
 					},
 					{

@@ -40,12 +40,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..299}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..299}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=300..}] ~~~ give @p porkyn:roupa_naruto_kid",
-							"execute @p[scores={money=300..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={money=..299}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..299}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=300..}] ~~~ give @p porkyn:roupa_naruto_kid",
+							"/execute @p[scores={money=300..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p shop_co1",
-							"execute @p[scores={money=300..}] ~~~ scoreboard players remove @p[r=1] money 300"
+							"/execute @p[scores={money=300..}] ~~~ scoreboard players remove @p[r=1] money 300"
 						]
 					},
 					{
@@ -100,12 +100,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..299}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..299}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=300..}] ~~~ give @p porkyn:roupa_sasuke_kid1",
-							"execute @p[scores={money=300..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={money=..299}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..299}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=300..}] ~~~ give @p porkyn:roupa_sasuke_kid1",
+							"/execute @p[scores={money=300..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p shop_co2",
-							"execute @p[scores={money=300..}] ~~~ scoreboard players remove @p[r=1] money 300"
+							"/execute @p[scores={money=300..}] ~~~ scoreboard players remove @p[r=1] money 300"
 						]
 					},
 					{
@@ -160,11 +160,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_sennin_sapoos",
-							"execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co3",
-							"execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_sennin_sapoos",
+							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co3",
+							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
 						]
 					},
 					{
@@ -219,11 +219,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_sasuke_2",
-							"execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co4",
-							"execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_sasuke_2",
+							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co4",
+							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
 						]
 					},
 					{
@@ -278,11 +278,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_obito",
-							"execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co5",
-							"execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_obito",
+							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co5",
+							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
 						]
 					},
 					{
@@ -337,11 +337,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..799}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..799}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=800..}] ~~~ give @p porkyn:roupa_mitsuki",
-							"execute @p[scores={money=800..}] ~~~ dialogue open @s @p shop_co6",
-							"execute @p[scores={money=800..}] ~~~ scoreboard players remove @p[r=1] money 800"
+							"/execute @p[scores={money=..799}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..799}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=800..}] ~~~ give @p porkyn:roupa_mitsuki",
+							"/execute @p[scores={money=800..}] ~~~ dialogue open @s @p shop_co6",
+							"/execute @p[scores={money=800..}] ~~~ scoreboard players remove @p[r=1] money 800"
 						]
 					},
 					{
@@ -396,11 +396,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_boruto",
-							"execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co7",
-							"execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_boruto",
+							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co7",
+							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
 						]
 					},
 					{
@@ -455,11 +455,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_neji",
-							"execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co8",
-							"execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_neji",
+							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co8",
+							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
 						]
 					},
 					{
@@ -514,11 +514,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=1200..}] ~~~ give @p porkyn:roupa_tobirama",
-							"execute @p[scores={money=1200..}] ~~~ dialogue open @s @p shop_co9",
-							"execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
+							"/execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=1200..}] ~~~ give @p porkyn:roupa_tobirama",
+							"/execute @p[scores={money=1200..}] ~~~ dialogue open @s @p shop_co9",
+							"/execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
 						]
 					},
 					{
@@ -573,11 +573,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=1200..}] ~~~ give @p porkyn:colete_jounin",
-							"execute @p[scores={money=1200..}] ~~~ dialogue open @s @p shop_co10",
-							"execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
+							"/execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=1200..}] ~~~ give @p porkyn:colete_jounin",
+							"/execute @p[scores={money=1200..}] ~~~ dialogue open @s @p shop_co10",
+							"/execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
 						]
 					},
 					{
@@ -632,11 +632,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..2399}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..2399}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=2400..}] ~~~ give @p porkyn:manto_akatsuki",
-							"execute @p[scores={money=2400..}] ~~~ dialogue open @s @p shop_co11",
-							"execute @p[scores={money=2400..}] ~~~ scoreboard players remove @p[r=1] money 2400"
+							"/execute @p[scores={money=..2399}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..2399}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=2400..}] ~~~ give @p porkyn:manto_akatsuki",
+							"/execute @p[scores={money=2400..}] ~~~ dialogue open @s @p shop_co11",
+							"/execute @p[scores={money=2400..}] ~~~ scoreboard players remove @p[r=1] money 2400"
 						]
 					},
 					{
@@ -691,11 +691,11 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={money=..2499}] ~~~ playsound note.bass ",
-							"execute @p[scores={money=..2499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"execute @p[scores={money=2500..}] ~~~ give @p porkyn:mantoc_akatsukic",
-							"execute @p[scores={money=2500..}] ~~~ dialogue open @s @p shop_co12",
-							"execute @p[scores={money=2500..}] ~~~ scoreboard players remove @p[r=1] money 2500"
+							"/execute @p[scores={money=..2499}] ~~~ playsound note.bass ",
+							"/execute @p[scores={money=..2499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+							"/execute @p[scores={money=2500..}] ~~~ give @p porkyn:mantoc_akatsukic",
+							"/execute @p[scores={money=2500..}] ~~~ dialogue open @s @p shop_co12",
+							"/execute @p[scores={money=2500..}] ~~~ scoreboard players remove @p[r=1] money 2500"
 						]
 					},
 					{

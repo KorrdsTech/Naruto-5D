@@ -258,12 +258,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={chakra=..49}] ~~~ playsound note.bass ",
-							"execute @p[scores={chakra=50..}] ~~~ execute @p[scores={chakra=200..}] ~~~ tag @s remove loadkamui2",
-							"execute @p[scores={chakra=50..}] ~~~ playanimation @s animation.kamui porkyn 100",
-							"execute @p[scores={chakra=50..}] ~~~ playsound kamui @a[r=5]",
-							"execute @p[scores={chakra=50..}] ~~~ tag @s add loadkamui",
-							"execute @p[scores={chakra=50..}] ~~~ scoreboard players remove @s chakra 50"
+							"/execute @p[scores={chakra=..49}] ~~~ playsound note.bass ",
+							"/execute @p[scores={chakra=50..}] ~~~ /execute @p[scores={chakra=200..}] ~~~ tag @s remove loadkamui2",
+							"/execute @p[scores={chakra=50..}] ~~~ playanimation @s animation.kamui porkyn 100",
+							"/execute @p[scores={chakra=50..}] ~~~ playsound kamui @a[r=5]",
+							"/execute @p[scores={chakra=50..}] ~~~ tag @s add loadkamui",
+							"/execute @p[scores={chakra=50..}] ~~~ scoreboard players remove @s chakra 50"
 						]
 					},
 					{
@@ -275,7 +275,7 @@
 							]
 						},
 						"commands": [
-							"execute @s[tag=sair] ~~~ tag @s remove sair",
+							"/execute @s[tag=sair] ~~~ tag @s remove sair",
 							"/tp @p @e[c=1,type=porkyn:kamui_1]"
 						]
 					},
@@ -288,7 +288,7 @@
 							]
 						},
 						"commands": [
-							"execute @s[tag=sair] ~~~ tag @s remove sair",
+							"/execute @s[tag=sair] ~~~ tag @s remove sair",
 							"/tp @p @e[c=1,type=porkyn:kamui_2]"
 						]
 					},
@@ -301,7 +301,7 @@
 							]
 						},
 						"commands": [
-							"execute @s[tag=sair] ~~~ tag @s remove sair",
+							"/execute @s[tag=sair] ~~~ tag @s remove sair",
 							"/tp @p @e[c=1,type=porkyn:kamui_3]"
 						]
 					},
@@ -314,7 +314,7 @@
 							]
 						},
 						"commands": [
-							"execute @s[tag=sair] ~~~ tag @s remove sair",
+							"/execute @s[tag=sair] ~~~ tag @s remove sair",
 							"/tp @p @e[c=1,type=porkyn:kamui_4]"
 						]
 					},
@@ -327,7 +327,7 @@
 							]
 						},
 						"commands": [
-							"execute @s[tag=sair] ~~~ tag @s remove sair",
+							"/execute @s[tag=sair] ~~~ tag @s remove sair",
 							"/tp @p @e[c=1,type=porkyn:kamui_5]"
 						]
 					}

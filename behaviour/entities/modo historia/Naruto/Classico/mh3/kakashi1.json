@@ -7,9 +7,7 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
-
 		"component_groups": {},
-
 		"components": {
 			"minecraft:type_family": {
 				"family": [
@@ -24,38 +22,37 @@
 				"name": "§lKakashi-Sensei",
 				"hud_range": 7
 			},
-			"minecraft:timer":
-			{
+			"minecraft:timer": {
 				"looping": true,
 				"time": 20,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			  "minecraft:on_hurt": {
+			"minecraft:on_hurt": {
 				"event": "on:hurt",
 				"target": "self"
-			  },
-			  "minecraft:on_hurt_by_player": {
+			},
+			"minecraft:on_hurt_by_player": {
 				"event": "on:hurt_by_player",
 				"target": "self"
-			  },
-			  "minecraft:on_ignite": {
+			},
+			"minecraft:on_ignite": {
 				"event": "on:ignite",
 				"target": "self"
-			  },
-			  "minecraft:on_target_acquired": {
+			},
+			"minecraft:on_target_acquired": {
 				"event": "on:target_acquired",
 				"target": "self"
-			  },
-			  "minecraft:on_target_escape": {
+			},
+			"minecraft:on_target_escape": {
 				"event": "on:target_escape",
 				"target": "self"
-			  },
-			  "minecraft:on_wake_with_owner": {
+			},
+			"minecraft:on_wake_with_owner": {
 				"event": "on:wake_with_owner",
 				"target": "self"
-			  },
+			},
 			"minecraft:attack": {
 				"damage": 18
 			},
@@ -99,23 +96,24 @@
 					}
 				]
 			},
-
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
 				"reselect_targets": true,
 				"within_radius": 25.0,
 				"must_see_forget_duration": 17.0,
-				"entity_types": 
-				  {
+				"entity_types": {
 					"filters": {
-					  "any_of": [
-						{ "test": "is_family", "subject": "other", "value": "player" }
-					  ]
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							}
+						]
 					},
 					"max_dist": 35
-				  }
-				  
+				}
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -123,7 +121,6 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
-			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0.8
@@ -182,38 +179,31 @@
 			},
 			"on:death": {
 				"run_command": {
-				  "command": [
-					"execute @p[r=8] ~~~ title @p title §eMissão Concluida!!!",
-					"execute @p[r=8] ~~~ title @p subtitle Time 7",
-					"scoreboard players add @a[r=20,tag=!mh3_naruto] tp 40",
-					"execute @p[r=70] ~~~ tag @s add mh3_naruto"
-					
-
-				  ]
+					"command": [
+						"/execute @p[r=8] ~~~ title @p title §eMissão Concluida!!!",
+						"/execute @p[r=8] ~~~ title @p subtitle Time 7",
+						"scoreboard players add @a[r=20,tag=!mh3_naruto] tp 40",
+						"/execute @p[r=70] ~~~ tag @s add mh3_naruto"
+					]
 				}
-			  },
-			  "on:hurt": {
+			},
+			"on:hurt": {
 				"run_command": {
-				  "command": [
-
-				  ]
+					"command": []
 				}
-			  },
-			  "on:hurt_by_player": {
+			},
+			"on:hurt_by_player": {
 				"run_command": {
-				  "command": [
-
-				  ]
+					"command": []
 				}
-			  },
-			  "on:efeitos": {
-				  "run_command": {
+			},
+			"on:efeitos": {
+				"run_command": {
 					"command": [
 						"tellraw @p[r=20] {\"rawtext\":[{\"text\":\"§e<Kakashi-Sensei>§f Normalmente os idiotas são os mais fracos...\"}]}"
 					]
-				  }
 				}
-			  }
-		  }
-	  }
-	  
+			}
+		}
+	}
+}

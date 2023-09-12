@@ -204,7 +204,7 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1] ~~~ event entity @s branco_amarelo",
+							"/execute @p[r=1] ~~~ event entity @s branco_amarelo",
 							"/dialogue open @s @p pele4"
 						]
 					},
@@ -231,7 +231,7 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1] ~~~ event entity @s moreno_amarelo",
+							"/execute @p[r=1] ~~~ event entity @s moreno_amarelo",
 							"/dialogue open @s @p pele2"
 						]
 					}
@@ -263,7 +263,7 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1] ~~~ event entity @s negro_amarelo",
+							"/execute @p[r=1] ~~~ event entity @s negro_amarelo",
 							"/dialogue open @s @p pele1"
 						]
 					},
@@ -290,7 +290,7 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1] ~~~ event entity @s claro_amarelo",
+							"/execute @p[r=1] ~~~ event entity @s claro_amarelo",
 							"/dialogue open @s @p pele3"
 						]
 					}
@@ -322,7 +322,7 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1] ~~~ event entity @s moreno_amarelo",
+							"/execute @p[r=1] ~~~ event entity @s moreno_amarelo",
 							"/dialogue open @s @p pele2"
 						]
 					},
@@ -349,7 +349,7 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1] ~~~ event entity @s branco_amarelo",
+							"/execute @p[r=1] ~~~ event entity @s branco_amarelo",
 							"/dialogue open @s @p pele4"
 						]
 					}
@@ -381,7 +381,7 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1] ~~~ event entity @s claro_amarelo",
+							"/execute @p[r=1] ~~~ event entity @s claro_amarelo",
 							"/dialogue open @s @p pele3"
 						]
 					},
@@ -408,7 +408,7 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1] ~~~ event entity @s negro_amarelo",
+							"/execute @p[r=1] ~~~ event entity @s negro_amarelo",
 							"/dialogue open @s @p pele1"
 						]
 					}
@@ -440,10 +440,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_branco",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_branco",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_branco",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_branco",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_branco",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_branco",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_branco",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_branco",
 							"/dialogue open @s @p olho6"
 						]
 					},
@@ -471,10 +471,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_vermelho",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_vermelho",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_vermelho",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_vermelho",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_vermelho",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_vermelho",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_vermelho",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_vermelho",
 							"/dialogue open @s @p olho2"
 						]
 					}
@@ -506,10 +506,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_amarelo",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_amarelo",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_amarelo",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_amarelo",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_amarelo",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_amarelo",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_amarelo",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_amarelo",
 							"/dialogue open @s @p olho1"
 						]
 					},
@@ -537,10 +537,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_verde",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_verde",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_verde",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_verde",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_verde",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_verde",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_verde",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_verde",
 							"/dialogue open @s @p olho3"
 						]
 					}
@@ -572,10 +572,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_vermelho",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_vermelho",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_vermelho",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_vermelho",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_vermelho",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_vermelho",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_vermelho",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_vermelho",
 							"/dialogue open @s @p olho2"
 						]
 					},
@@ -603,10 +603,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_azul",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_azul",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_azul",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_azul",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_azul",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_azul",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_azul",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_azul",
 							"/dialogue open @s @p olho4"
 						]
 					}
@@ -638,10 +638,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_verde",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_verde",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_verde",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_verde",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_verde",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_verde",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_verde",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_verde",
 							"/dialogue open @s @p olho3"
 						]
 					},
@@ -669,10 +669,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_preto",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_preto",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_preto",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_preto",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_preto",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_preto",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_preto",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_preto",
 							"/dialogue open @s @p olho5"
 						]
 					}
@@ -704,10 +704,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_azul",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_azul",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_azul",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_azul",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_azul",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_azul",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_azul",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_azul",
 							"/dialogue open @s @p olho4"
 						]
 					},
@@ -735,10 +735,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_branco",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_branco",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_branco",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_branco",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_branco",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_branco",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_branco",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_branco",
 							"/dialogue open @s @p olho6"
 						]
 					}
@@ -770,10 +770,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_preto",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_preto",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_preto",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_preto",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_preto",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_preto",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_preto",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_preto",
 							"/dialogue open @s @p olho5"
 						]
 					},
@@ -801,10 +801,10 @@
 							]
 						},
 						"commands": [
-							"execute @p[r=1,tag=branco] ~~~ event entity @s branco_amarelo",
-							"execute @p[r=1,tag=escuro] ~~~ event entity @s negro_amarelo",
-							"execute @p[r=1,tag=claro] ~~~ event entity @s claro_amarelo",
-							"execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_amarelo",
+							"/execute @p[r=1,tag=branco] ~~~ event entity @s branco_amarelo",
+							"/execute @p[r=1,tag=escuro] ~~~ event entity @s negro_amarelo",
+							"/execute @p[r=1,tag=claro] ~~~ event entity @s claro_amarelo",
+							"/execute @p[r=1,tag=moreno] ~~~ event entity @s moreno_amarelo",
 							"/dialogue open @s @p olho1"
 						]
 					}

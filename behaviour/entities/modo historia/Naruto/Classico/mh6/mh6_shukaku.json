@@ -7,34 +7,30 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
-
 		"component_groups": {},
-
 		"components": {
 			"minecraft:type_family": {
 				"family": [
 					"vitima"
 				]
 			},
-			"minecraft:scale":{
+			"minecraft:scale": {
 				"value": 1
 			},
 			"minecraft:boss": {
 				"name": "§l§eShukaku: §f§lThe One-Tail",
 				"hud_range": 55
 			},
-			"minecraft:timer":
-			{
+			"minecraft:timer": {
 				"looping": false,
 				"time": 5,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			
 			"minecraft:knockback_resistance": {
 				"protection": 1
-			  },
+			},
 			"minecraft:behavior.hurt_by_target": {
 				"priority": 1
 			},
@@ -81,23 +77,24 @@
 					}
 				]
 			},
-
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
 				"reselect_targets": true,
 				"within_radius": 75.0,
 				"must_see_forget_duration": 75.0,
-				"entity_types": 
-				  {
+				"entity_types": {
 					"filters": {
-					  "any_of": [
-						{ "test": "is_family", "subject": "other", "value": "player" }
-					  ]
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							}
+						]
 					},
 					"max_dist": 10
-				  }
-				  
+				}
 			},
 			"minecraft:movement": {
 				"value": 0.5
@@ -105,7 +102,6 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
-			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 1
@@ -164,25 +160,22 @@
 			},
 			"on:death": {
 				"run_command": {
-				  "command": [
-					"execute @p[r=100,tag=!mh6_naruto] ~~~ title @p title §eMissão Concluida!",
-					"execute @p[r=100,tag=!mh6_naruto] ~~~ title @p subtitle Jinchuuriki Vs. Jinchuuriki",
-					"execute @p[r=100,tag=!mh6_naruto] ~~~ clear @p porkyn:mh6_invocation",
-					"scoreboard players add @a[r=20,tag=!mh6_naruto] tp 150",
-					"execute @p[r=100,tag=!mh6_naruto] ~~~ tag @s add mh6_naruto"
-
-				  ]
+					"command": [
+						"/execute @p[r=100,tag=!mh6_naruto] ~~~ title @p title §eMissão Concluida!",
+						"/execute @p[r=100,tag=!mh6_naruto] ~~~ title @p subtitle Jinchuuriki Vs. Jinchuuriki",
+						"/execute @p[r=100,tag=!mh6_naruto] ~~~ clear @p porkyn:mh6_invocation",
+						"scoreboard players add @a[r=20,tag=!mh6_naruto] tp 150",
+						"/execute @p[r=100,tag=!mh6_naruto] ~~~ tag @s add mh6_naruto"
+					]
 				}
-			  },
-			  "on:efeitos": {
+			},
+			"on:efeitos": {
 				"run_command": {
-				  "command": [
-
-					"tellraw @p {\"rawtext\":[{\"text\":\"§e<Shukaku>§f Finalmente eu estou livreee!!!\"}]}"
-
-				  ]
+					"command": [
+						"tellraw @p {\"rawtext\":[{\"text\":\"§e<Shukaku>§f Finalmente eu estou livreee!!!\"}]}"
+					]
 				}
-			  }
+			}
 		}
 	}
 }

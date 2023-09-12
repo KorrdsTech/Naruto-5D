@@ -8,7 +8,6 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
- 
 			"minecraft:mining_speed": 1,
 			"minecraft:damage": 0,
 			"minecraft:on_use": {
@@ -19,19 +18,35 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lGrande piramide de areia [Rank:S]"
-            },
-  	"minecraft:render_offsets": {
-  		"main_hand": {
-	  		"third_person": {
-				"position": [0.26, 1.0, -0.55],
-	  			"scale": [0, 0, 0]
-	  		},
-	  		"first_person": {
-  				"position": [7.08, -1.6, -12.8],
-	  			"scale": [0, 0, 0]
-		  	}
- 	  	}
-	},
+			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"third_person": {
+						"position": [
+							0.26,
+							1.0,
+							-0.55
+						],
+						"scale": [
+							0,
+							0,
+							0
+						]
+					},
+					"first_person": {
+						"position": [
+							7.08,
+							-1.6,
+							-12.8
+						],
+						"scale": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
 			"minecraft:cooldown": {
 				"category": "grande_piramide_areia",
 				"duration": 1.0
@@ -46,25 +61,24 @@
 					{
 						"run_command": {
 							"command": [
-"playsound estilo_areia @a[scores={chakra=40..},tag=areia,x=~,y=~,z=~,r=5]",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ playanimation @s animation.caixao_areia porkyntop 10",
-"tellraw @s[tag=!areia] {\"rawtext\":[{\"text\":\"§4>Você não pode utilizar esse jutsu, pois seu elemento de chakra não corresponde ao do jutsu!<\"}]}",
-"tellraw @s[scores={chakra=..39},tag=areia] {\"rawtext\":[{\"text\":\"§4>Você não possui chakra para utilizar esse jutsu!<\"}]}",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-10~~-10~10~0~10 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-9~~-9~9~1~9 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-8~~-8~8~2~8 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-7~~-7~7~3~7 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-6~~-6~6~4~6 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-5~~-5~5~5~5 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-4~~-4~4~6~4 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-3~~-3~3~7~3 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-2~~-2~2~8~2 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ execute @e[r=10,tag=!areia] ~~~ fill ~-1~~-1~1~9~1 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ tp @s ~ ~20 ~",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ fill ~2~-1~2~-2~-1~-2 sandstone",
-"execute @s[tag=areia,scores={chakra=40..}] ~~~ fill ~1~-2~1~-1~-2~-1 sandstone",
-"scoreboard players remove @s[scores={chakra=40..},tag=areia] chakra 40"
-
+								"playsound estilo_areia @a[scores={chakra=40..},tag=areia,x=~,y=~,z=~,r=5]",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ playanimation @s animation.caixao_areia porkyntop 10",
+								"tellraw @s[tag=!areia] {\"rawtext\":[{\"text\":\"§4>Você não pode utilizar esse jutsu, pois seu elemento de chakra não corresponde ao do jutsu!<\"}]}",
+								"tellraw @s[scores={chakra=..39},tag=areia] {\"rawtext\":[{\"text\":\"§4>Você não possui chakra para utilizar esse jutsu!<\"}]}",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-10~~-10~10~0~10 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-9~~-9~9~1~9 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-8~~-8~8~2~8 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-7~~-7~7~3~7 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-6~~-6~6~4~6 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-5~~-5~5~5~5 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-4~~-4~4~6~4 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-3~~-3~3~7~3 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-2~~-2~2~8~2 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ /execute @e[r=10,tag=!areia] ~~~ fill ~-1~~-1~1~9~1 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ tp @s ~ ~20 ~",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ fill ~2~-1~2~-2~-1~-2 sandstone",
+								"/execute @s[tag=areia,scores={chakra=40..}] ~~~ fill ~1~-2~1~-1~-2~-1 sandstone",
+								"scoreboard players remove @s[scores={chakra=40..},tag=areia] chakra 40"
 							]
 						}
 					}

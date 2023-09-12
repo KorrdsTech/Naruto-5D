@@ -65,7 +65,7 @@
 						},
 						"commands": [
 							"/dialogue open @s @p[tag=pergaminho] pergaminho",
-							"execute @p[r=1,tag=!pergaminho] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§lVocê precisa pegar o Pergaminho de Jutsus para liberar essa opção!\"}]}"
+							"/execute @p[r=1,tag=!pergaminho] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§lVocê precisa pegar o Pergaminho de Jutsus para liberar essa opção!\"}]}"
 						]
 					},
 					{

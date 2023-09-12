@@ -8,7 +8,6 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
- 
 			"minecraft:mining_speed": 1,
 			"minecraft:damage": 0,
 			"minecraft:on_use": {
@@ -19,19 +18,35 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lAbrir Selo"
-            },
-  	"minecraft:render_offsets": {
-  		"main_hand": {
-	  		"third_person": {
-				"position": [0.26, 1.0, -0.55],
-	  			"scale": [0, 0, 0]
-	  		},
-	  		"first_person": {
-  				"position": [7.08, -1.6, -12.8],
-	  			"scale": [0, 0, 0]
-		  	}
- 	  	}
-	},
+			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"third_person": {
+						"position": [
+							0.26,
+							1.0,
+							-0.55
+						],
+						"scale": [
+							0,
+							0,
+							0
+						]
+					},
+					"first_person": {
+						"position": [
+							7.08,
+							-1.6,
+							-12.8
+						],
+						"scale": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
 			"minecraft:cooldown": {
 				"category": "selo",
 				"duration": 1.0
@@ -46,27 +61,25 @@
 					{
 						"run_command": {
 							"command": [
-									"tellraw @p {\"rawtext\":[{\"text\":\"§b+500 CHAKRA\"}]}",
-									"tag @p add chakra_bijuu",
-									"replaceitem entity @p slot.weapon.mainhand 1 porkyn:fechar_selo_kurama1",
-									"execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:kurama_4 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-									"execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ effect @s regeneration 500 0 true",
-									"execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ effect @s speed 500 5 true",
-									"execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ effect @s haste 500 4 true",
-									"execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ effect @s absorption 500 50 true",
-
-									"execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:kurama_5 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-									"execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ effect @s regeneration 500 1 true",
-									"execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ effect @s speed 500 6 true",
-									"execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ effect @s haste 500 6 true",
-									"execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ effect @s absorption 500 100 true",
-
-									"execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:kurama_6 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-									"execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ tag @s add barion_ativo",
-									"execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ effect @s regeneration 500 2 true",
-									"execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ effect @s speed 500 7 true",
-									"execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ effect @s haste 500 7 true",
-									"execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ effect @s absorption 500 150 true"
+								"tellraw @p {\"rawtext\":[{\"text\":\"§b+500 CHAKRA\"}]}",
+								"tag @p add chakra_bijuu",
+								"replaceitem entity @p slot.weapon.mainhand 1 porkyn:fechar_selo_kurama1",
+								"/execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:kurama_4 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ effect @s regeneration 500 0 true",
+								"/execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ effect @s speed 500 5 true",
+								"/execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ effect @s haste 500 4 true",
+								"/execute @p[tag=kurama2,tag=!hagoromo,r=1] ~~~ effect @s absorption 500 50 true",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:kurama_5 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ effect @s regeneration 500 1 true",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ effect @s speed 500 6 true",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ effect @s haste 500 6 true",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=!isshiki,r=1] ~~~ effect @s absorption 500 100 true",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:kurama_6 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ tag @s add barion_ativo",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ effect @s regeneration 500 2 true",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ effect @s speed 500 7 true",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ effect @s haste 500 7 true",
+								"/execute @p[tag=kurama2,tag=hagoromo,tag=isshiki,r=1] ~~~ effect @s absorption 500 150 true"
 							]
 						}
 					}

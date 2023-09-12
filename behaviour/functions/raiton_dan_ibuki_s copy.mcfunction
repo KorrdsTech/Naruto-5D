@@ -1,4 +1,4 @@
-//susanoo_shisui
+susanoo_shisui
 execute @s[scores={chakra=150..},tag=msd_shisui] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[scores={chakra=150..}] haste 100 4 true
 effect @s[scores={chakra=150..}] absorption 100 100 true

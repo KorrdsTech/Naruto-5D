@@ -40,12 +40,12 @@
 							]
 						},
 						"commands": [
-							"execute @p[scores={tp=..199}] ~~~ playsound note.bass ",
-							"execute @p[scores={tp=..199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
-							"execute @p[scores={tp=200..}] ~~~ give @p porkyn:raiton_dan_ibuki_d",
-							"execute @p[scores={tp=200..}] ~~~ playsound bamboo @s",
+							"/execute @p[scores={tp=..199}] ~~~ playsound note.bass ",
+							"/execute @p[scores={tp=..199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
+							"/execute @p[scores={tp=200..}] ~~~ give @p porkyn:raiton_dan_ibuki_d",
+							"/execute @p[scores={tp=200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p estilo_raio",
-							"execute @p[scores={tp=200..}] ~~~ scoreboard players remove @p[r=1] tp 200"
+							"/execute @p[scores={tp=200..}] ~~~ scoreboard players remove @p[r=1] tp 200"
 						]
 					},
 					{

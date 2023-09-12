@@ -1,5 +1,5 @@
-execute @s[scores={chakra=350..}] ~~~ execute @s[scores={tp=8000..},tag=!s2_susanoo,tag=ms_shisui] ~~~ give @s porkyn:s3_shisui
-execute @s[scores={chakra=350..}] ~~~ execute @s[scores={tp=8000..},tag=!s2_susanoo,tag=ms_shisui] ~~~ tag @s add ss2_susanoo
+execute @s[scores={chakra=350..}] ~~~ /execute @s[scores={tp=8000..},tag=!s2_susanoo,tag=ms_shisui] ~~~ give @s porkyn:s3_shisui
+execute @s[scores={chakra=350..}] ~~~ /execute @s[scores={tp=8000..},tag=!s2_susanoo,tag=ms_shisui] ~~~ tag @s add ss2_susanoo
 
 execute @s[scores={chakra=350..}] ~~~ playsound susanoo @a[r=5]											
 

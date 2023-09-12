@@ -1,7 +1,7 @@
 
 
 execute @s[scores={chakra=374..1000001}] ~~~ playsound sharingan @a[x=~,y=~,z=~,r=5]
- 
+
 execute @s[scores={chakra=374..1000001}] ~~~ effect @s resistance 9800 3 true
 execute @s[scores={chakra=374..1000001}] ~~~ effect @s speed 9800 6 true
 execute @s[scores={chakra=374..1000001}] ~~~ effect @s strength 9800 5 true
