@@ -452,7 +452,190 @@
             }
           ]
 
-        }
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:r1",
+              "quantity": 1
+            }
+          ]
+        },
+                {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:r2",
+              "quantity": 1
+            }
+          ]
+        },
+                {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:r3",
+              "quantity": 1
+            }
+          ]
+
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:r4",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "r27",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:r31",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:r33",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:r39",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "porkyn:ryo",
+              "quantity": 60
+            }
+          ],
+          "gives": [
+            {
+              "item": "porkyn:h1",
+              "quantity": 1
+            }
+          ]
+        },
+                {
+                  "wants": [
+                    {
+                      "item": "porkyn:ryo",
+                      "quantity": 60
+                    }
+                  ],
+                  "gives": [
+                    {
+                      "item": "porkyn:h2",
+                      "quantity": 1
+                    }
+                  ]
+                },
+                {
+                  "wants": [
+                    {
+                      "item": "porkyn:ryo",
+                      "quantity": 60
+                    }
+                  ],
+                  "gives": [
+                    {
+                      "item": "porkyn:h3",
+                      "quantity": 1
+                    }
+                  ]
+                },
+                {
+                  "wants": [
+                    {
+                      "item": "porkyn:ryo",
+                      "quantity": 60
+                    }
+                  ],
+                  "gives": [
+                    {
+                      "item": "porkyn:h4",
+                      "quantity": 1
+                    }
+                  ]
+                },
+                {
+                  "wants": [
+                    {
+                      "item": "porkyn:ryo",
+                      "quantity": 60
+                    }
+                  ],
+                  "gives": [
+                    {
+                      "item": "porkyn:h5",
+                      "quantity": 1
+                    }
+                  ]
+                }
       ]
     }
   ]

@@ -973,6 +973,45 @@
             },
             "karmai2": {
                   "textures": "textures/items/karmai2"
+            },
+            "r1": {
+                  "textures": "textures/items/r1"
+            },
+            "r2": {
+                  "textures": "textures/items/r2"
+            },
+            "r3": {
+                  "textures": "textures/items/r3"
+            },
+            "r4": {
+                  "textures": "textures/items/r4"
+            },
+            "r27": {
+                  "textures": "textures/items/r27"
+            },
+            "r31": {
+                  "textures": "textures/items/r31"
+            },
+            "r33": {
+                  "textures": "textures/items/r33"
+            },
+            "r39": {
+                  "textures": "textures/items/r39"
+            },
+            "h1": {
+                  "textures": "textures/items/h1"
+            },
+            "h2": {
+                  "textures": "textures/items/h2"
+            },
+            "h3": {
+                  "textures": "textures/items/h3"
+            },
+            "h4": {
+                  "textures": "textures/items/h4"
+            },
+            "h5": {
+                  "textures": "textures/items/h5"
             }
       }
 }

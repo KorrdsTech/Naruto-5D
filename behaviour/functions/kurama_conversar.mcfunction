@@ -1,5 +1,5 @@
-structure load mente_kurama ~ 284 ~
-tp @s ~30 290 ~8
+structure load mente_kurama ~ ~ ~
+tp @s ~30 ~ ~8
 gamemode s
 clear @p porkyn:conversar_kurama
 give @s porkyn:abrir_selo_kurama
