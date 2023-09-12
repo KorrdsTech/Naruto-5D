@@ -8,6 +8,7 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
+ 
 			"minecraft:mining_speed": 1,
 			"minecraft:damage": 0,
 			"minecraft:on_use": {
@@ -18,35 +19,19 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lEstilo Madeira: Estacas de Madeira§a[Rank A]"
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"third_person": {
-						"position": [
-							0.26,
-							1.0,
-							-0.55
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"first_person": {
-						"position": [
-							7.08,
-							-1.6,
-							-12.8
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
 			"minecraft:cooldown": {
 				"category": "estaca_a",
 				"duration": 1.0
@@ -61,16 +46,16 @@
 					{
 						"run_command": {
 							"command": [
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^30^2",
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^35^5",
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^40^10",
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^45^15",
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^50^20",
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^55^25",
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^60^30",
-								"/execute @s[scores={chakra=..149}] ~~~ playsound note.bass",
-								"/execute @s[scores={chakra=150..}] ~~~ tag @s add estaca",
-								"/execute @s[scores={chakra=150..}] ~~~ scoreboard players remove @s chakra 150"
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^30^2",
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^35^5",
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^40^10",
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^45^15",
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^50^20",
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^55^25",
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:estaca_madeira_1 ^^60^30",
+								"execute @s[scores={chakra=..149}] ~~~ playsound note.bass",
+								"execute @s[scores={chakra=150..}] ~~~ tag @s add estaca",
+								"execute @s[scores={chakra=150..}] ~~~ scoreboard players remove @s chakra 150"
 							]
 						}
 					}

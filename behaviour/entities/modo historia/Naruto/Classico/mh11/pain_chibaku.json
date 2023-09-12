@@ -209,18 +209,18 @@
 			"on:efeitos": {
 				"run_command": {
 					"command": [
-						"/execute @s[scores={pdn=1..}] ~~~ playanimation @s animation.mao_alto porkyn 1",
-						"/execute @s[scores={pdn=1..}] ~~~ summon porkyn:chibaku ~~~",
-						"/execute @s[scores={pdn=1..}] ~~~ summon porkyn:chibaku2 ~~~",
-						"/execute @s[scores={pdn=1..}] ~~~ summon porkyn:chibaku3 ~~~",
-						"/execute @s[scores={pdn=1..}] ~~~ playsound estilo_terra @a[r=45]",
-						"/execute @s[scores={pdn=1..}] ~~~ tag @s add chibakutensei",
-						"/execute @s[scores={pdn=1..}] ~~~ effect @e[type=!porkyn:chibaku,type=!porkyn:chibaku2,tag=!chibakutensei,r=45] levitation 18 2 true",
-						"/execute @s[scores={pdn=1..}] ~~~ effect @e[type=porkyn:chibaku3,r=45] levitation 17 1 true",
-						"/execute @s[scores={pdn=1..}] ~~~ fill ~-10~-1~-10 ~10~8~10 air",
-						"/execute @s[scores={pdn=1..}] ~~~ fill ~-7~-2~-7 ~7~1~7 air",
-						"/execute @s[scores={pdn=1..}] ~~~ fill ~-4~-3~-4 ~4~1~4 air",
-						"/execute @s[scores={pdn=1..}] ~~~ fill ~-2~-4~-2 ~2~1~2 air",
+						"execute @s[scores={pdn=1..}] ~~~ playanimation @s animation.mao_alto porkyn 1",
+						"execute @s[scores={pdn=1..}] ~~~ summon porkyn:chibaku ~~~",
+						"execute @s[scores={pdn=1..}] ~~~ summon porkyn:chibaku2 ~~~",
+						"execute @s[scores={pdn=1..}] ~~~ summon porkyn:chibaku3 ~~~",
+						"execute @s[scores={pdn=1..}] ~~~ playsound estilo_terra @a[r=45]",
+						"execute @s[scores={pdn=1..}] ~~~ tag @s add chibakutensei",
+						"execute @s[scores={pdn=1..}] ~~~ effect @e[type=!porkyn:chibaku,type=!porkyn:chibaku2,tag=!chibakutensei,r=45] levitation 18 2 true",
+						"execute @s[scores={pdn=1..}] ~~~ effect @e[type=porkyn:chibaku3,r=45] levitation 17 1 true",
+						"execute @s[scores={pdn=1..}] ~~~ fill ~-10~-1~-10 ~10~8~10 air",
+						"execute @s[scores={pdn=1..}] ~~~ fill ~-7~-2~-7 ~7~1~7 air",
+						"execute @s[scores={pdn=1..}] ~~~ fill ~-4~-3~-4 ~4~1~4 air",
+						"execute @s[scores={pdn=1..}] ~~~ fill ~-2~-4~-2 ~2~1~2 air",
 						"scoreboard players set @s pdn 0"
 					]
 				}

@@ -202,13 +202,14 @@
 			"on:efeitos": {
 				"run_command": {
 					"command": [
-						"/execute @e[type=porkyn:gaara_mh6_naruto,r=1] ~~~ scoreboard players add @s cntr 1",
-						"/execute @s[scores={cntr=1}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Família? Deixe-me dizer que tipo de vinculo que eu tenho com eles. São apenas pedaços de carne unidos pelo ódio e pela intenção de matar!\"}]}",
-						"/execute @s[scores={cntr=7}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Luto apenas pelo meu bem e vivo para amar ninguém além de mim mesmo.\"}]}",
-						"/execute @s[scores={cntr=15}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Eu sou uma relíquia da qual você quer se livrar, então por que eu existo e vivo? Para existir, você precisa de um propósito; existir sem motivo é o mesmo que estar morto.\"}]}",
-						"/execute @s[scores={cntr=17}] ~~~ replaceitem entity @p[r=100,tag=!mh5_naruto] slot.armor.legs 1 porkyn:mh5_modo_kurama 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-						"/execute @s[scores={cntr=17}] ~~~ playsound music1 @a[r=100,tag=!mh5_naruto]",
-						"/execute @s[scores={cntr=100}] ~~~ scoreboard players set @s cntr 0"
+						"execute @e[type=porkyn:gaara_mh6_naruto,r=1] ~~~ scoreboard players add @s cntr 1",
+						"execute @s[scores={cntr=1}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Família? Deixe-me dizer que tipo de vinculo que eu tenho com eles. São apenas pedaços de carne unidos pelo ódio e pela intenção de matar!\"}]}",
+						"execute @s[scores={cntr=7}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Luto apenas pelo meu bem e vivo para amar ninguém além de mim mesmo.\"}]}",
+						"execute @s[scores={cntr=15}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<gaara>§f Eu sou uma relíquia da qual você quer se livrar, então por que eu existo e vivo? Para existir, você precisa de um propósito; existir sem motivo é o mesmo que estar morto.\"}]}",
+						"execute @s[scores={cntr=17}] ~~~ replaceitem entity @p[r=100,tag=!mh5_naruto] slot.armor.legs 1 porkyn:mh5_modo_kurama 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+						"execute @s[scores={cntr=17}] ~~~ playsound music1 @a[r=100,tag=!mh5_naruto]",
+						"execute @s[scores={cntr=100}] ~~~ scoreboard players set @s cntr 0"
+
 					]
 				}
 			}

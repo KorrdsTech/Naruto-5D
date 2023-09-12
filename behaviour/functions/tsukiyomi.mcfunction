@@ -2,8 +2,8 @@ tag @s add tsukuyomi
 
 execute @s[scores={chakra=250..}] ~~~ playsound tsukuyomi @a[tag=!tsukuyomi,x=~,y=~,z=~,r=4]
 
-execute @s[scores={chakra=250..}] ~~~ /execute @e[r=4] ~~~ effect @e[tag=!tsukuyomi,r=4] blindness 20 1 true
-execute @s[scores={chakra=250..}] ~~~ /execute @e[r=4] ~~~ effect @e[tag=!tsukuyomi,r=4] slowness 20 40 true
+execute @s[scores={chakra=250..}] ~~~ execute @e[r=4] ~~~ effect @e[tag=!tsukuyomi,r=4] blindness 20 1 true
+execute @s[scores={chakra=250..}] ~~~ execute @e[r=4] ~~~ effect @e[tag=!tsukuyomi,r=4] slowness 20 40 true
 clear @a[tag=!tsukuyomi,r=4] milk_bucket
 
 effect @a[tag=!tsukuyomi,r=4,tag=rinnegan] slowness 3 1 true

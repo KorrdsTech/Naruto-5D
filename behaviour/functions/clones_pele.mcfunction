@@ -23,7 +23,7 @@ execute @s[tag=claro,tag=olho_verde] ~~~ replaceitem entity @e[type=porkyn:clone
 execute @s[tag=claro,tag=olho_preto] ~~~ replaceitem entity @e[type=porkyn:clone,r=5] slot.armor.head 1 porkyn:claro_preto
 execute @s[tag=claro,tag=olho_branco] ~~~ replaceitem entity @e[type=porkyn:clone,r=5] slot.armor.head 1 porkyn:claro_branco
 
-cabelos
+//cabelos
 
 execute @s[tag=amarelo] ~~~ function clone_hair_amarelo
 execute @s[tag=verde_e] ~~~ function clone_hair_verde_e

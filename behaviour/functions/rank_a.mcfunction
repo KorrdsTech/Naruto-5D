@@ -46,7 +46,7 @@ effect @s[scores={chakra=100..},tag=uchiha] health_boost 400 69 true
 effect @s[scores={chakra=100..},tag=uchiha] instant_health 1 255 true
 tellraw @s[scores={chakra=100..},tag=uchiha] {"rawtext":[{"text":"§4-100CK"}]}
 
-susanoo_itachi
+//susanoo_itachi
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_itachi] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -63,7 +63,7 @@ effect @s[tag=uchiha,scores={chakra=250..}] absorption 300 200 true
 effect @s[tag=uchiha,scores={chakra=250..}] slowness 300 0 true
 effect @s[tag=uchiha,scores={chakra=250..}] jump_boost 300 4 true
 
-susanoo_sasuke
+//susanoo_sasuke
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_sasuke] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -80,7 +80,7 @@ effect @s[tag=uchiha,scores={chakra=250..}] absorption 300 200 true
 effect @s[tag=uchiha,scores={chakra=250..}] slowness 300 0 true
 effect @s[tag=uchiha,scores={chakra=250..}] jump_boost 300 4 true
 
-susanoo_madara
+//susanoo_madara
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_madara] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -97,7 +97,7 @@ effect @s[tag=uchiha,scores={chakra=250..}] absorption 300 200 true
 effect @s[tag=uchiha,scores={chakra=250..}] slowness 300 0 true
 effect @s[tag=uchiha,scores={chakra=250..}] jump_boost 300 4 true
 
-susanoo_obito
+//susanoo_obito
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_obito] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -114,7 +114,7 @@ effect @s[tag=uchiha,scores={chakra=250..}] absorption 300 200 true
 effect @s[tag=uchiha,scores={chakra=250..}] slowness 300 0 true
 effect @s[tag=uchiha,scores={chakra=250..}] jump_boost 300 4 true
 
-susanoo_shisui
+//susanoo_shisui
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_shisui] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -137,25 +137,25 @@ scoreboard players remove @s[scores={chakra=200..},tag=uchiha] chakra 100
 scoreboard players remove @s[scores={chakra=150..},tag=uchiha] chakra 50
 
 
-execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_sasuke] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_itachi] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_obito] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_madara] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_shisui] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s add rng
-execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
-execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
-execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800				
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_sasuke] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_itachi] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_obito] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_madara] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..},tag=msd_shisui] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s add rng_s
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..}] ~~~ give @p porkyn:help_amenotejiraka 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ /execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
+execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_sasuke] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_itachi] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_obito] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_madara] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_shisui] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:r_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s add rng
+execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
+execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
+execute @s[tag=uchiha,tag=celula_hashirama,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800				
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_sasuke] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_itachi] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_obito] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_madara] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..},tag=msd_shisui] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:rs_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s add rng_s
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..}] ~~~ give @p porkyn:help_amenotejiraka 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uchiha,tag=rinnegan_supremo,scores={chakra=100..},tag=uchiha] ~~~ execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
 scoreboard players remove @s[scores={chakra=100..},tag=uchiha] chakra 100
 
 
@@ -174,16 +174,16 @@ effect @s[tag=hyuuga,scores={chakra=100..}] jump_boost 400 1 true
 effect @s[tag=hyuuga,scores={chakra=100..}] health_boost 400 119 true
 effect @s[tag=hyuuga,scores={chakra=100..}] instant_health 1 255 true
 tellraw @s[tag=hyuuga,scores={chakra=100..}] {rawtext:[{text:§4-100CK}]}
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ replaceitem entity @s slot.armor.head 1 porkyn:tenseigan 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 9 true
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 0 true
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 150 true
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
-execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ replaceitem entity @s slot.armor.head 1 porkyn:tenseigan 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 9 true
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 0 true
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 150 true
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
+execute @s[tag=hyuuga,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
 scoreboard players remove @s[tag=hyuuga,scores={chakra=100..}] chakra 100
 
 uzumaki
@@ -197,16 +197,16 @@ effect @s[tag=uzumaki,scores={chakra=100..}] jump_boost 400 1 true
 effect @s[tag=uzumaki,scores={chakra=100..}] health_boost 400 144 true
 effect @s[tag=uzumaki,scores={chakra=100..}] instant_health 1 255 true
 tellraw @s[tag=uzumaki,scores={chakra=100..}] {rawtext:[{text:§4-100CK}]}
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:correntes_adamantinas_5 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 8 true
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 0 true
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 188 true
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
-execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:correntes_adamantinas_5 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 8 true
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 0 true
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 188 true
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
+execute @s[tag=uzumaki,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
 scoreboard players remove @s[tag=uzumaki,scores={chakra=100..}] chakra 100
 
 chinoike
@@ -222,16 +222,16 @@ effect @s[tag=chinoike,scores={chakra=100..}] resistance 400 3 true
 effect @s[tag=chinoike,scores={chakra=100..}] health_boost 400 44 true
 effect @s[tag=chinoike,scores={chakra=100..}] instant_health 1 255 true
 tellraw @s[tag=chinoike,scores={chakra=100..}] {rawtext:[{text:§4-100CK}]}
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:ketsuryugan_5 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 12 true
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 3 true
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 57 true
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
-execute @s[tag=chinoike,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ replaceitem entity  @s slot.armor.head 1 porkyn:ketsuryugan_5 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 12 true
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 3 true
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 57 true
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
+execute @s[tag=chinoike,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
 scoreboard players remove @s[tag=chinoike,scores={chakra=100..}] chakra 100
 
 kazekage
@@ -259,16 +259,16 @@ effect @s[tag=kazekage,scores={chakra=100..}] speed 300 1 true
 effect @s[tag=kazekage,scores={chakra=100..}] health_boost 400 169 true
 effect @s[tag=kazekage,scores={chakra=100..}] instant_health 1 255 true
 tellraw @s[tag=kazekage,scores={chakra=100..}] {rawtext:[{text:§4-100CK}]}
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ replaceitem entity  @s slot.armor.chest 1 porkyn:cabaca_areia_5 
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 7 true
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 213 true
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 3 true
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
-execute @s[tag=kazekage,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ replaceitem entity  @s slot.armor.chest 1 porkyn:cabaca_areia_5 
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 7 true
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 213 true
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 3 true
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
+execute @s[tag=kazekage,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
 scoreboard players remove @s[tag=kazekage,scores={chakra=100..}] chakra 100
 
 senju
@@ -299,18 +299,18 @@ clear @s[tag=senju,scores={chakra=100..}] porkyn:estaca_madeira_1_c
 clear @s[tag=senju,scores={chakra=100..}] porkyn:estaca_madeira_1_d
 give @s[tag=senju,scores={chakra=100..}] porkyn:estaca_madeira_1_a 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ replaceitem entity @s slot.armor.head 1 porkyn:senju_5
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 6 true
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 1 true
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 244 true
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
-execute @s[tag=senju,scores={chakra=100..}] ~~~ /execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ replaceitem entity @s slot.armor.head 1 porkyn:senju_5
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] strength 500 6 true
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] speed 500 1 true
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] jump_boost 500 1 true
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] health_boost 500 244 true
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] resistance 500 3 true
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ effect @s[scores={chakra=100..}] instant_health 1 255 true
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s remove rank_a
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ tag @s add rank_s
+execute @s[tag=senju,scores={chakra=100..}] ~~~ execute @s[scores={tp=12800..}] ~~~ scoreboard players remove @s tp 12800
 
-golem
+//golem
 execute @s[tag=senju,scores={chakra=500..}] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:golem_madeira_1 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=senju,scores={chakra=500..}] haste 100 4 true
 effect @s[tag=senju,scores={chakra=500..}] absorption 100 100 true

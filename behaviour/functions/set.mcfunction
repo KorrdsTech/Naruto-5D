@@ -147,10 +147,10 @@ tag @s[tag=!ccc] add ccc
 
 kamui
 execute @s[tag=loadkamui] ~~~ scoreboard players add @s loadkamui 1
-execute @p ~~~ /execute @s[scores={loadkamui=200..}] ~~~ tag @s remove loadkamui
-execute @p ~~~ /execute @s[scores={loadkamui=200..}] ~~~ tag @s add kamui1a
-execute @p ~~~ /execute @s[scores={loadkamui=200..}] ~~~ effect @s night_vision 0 0 true
-execute @p ~~~ /execute @s[scores={loadkamui=200..}] ~~~ scoreboard players set @s loadkamui 0
+execute @p ~~~ execute @s[scores={loadkamui=200..}] ~~~ tag @s remove loadkamui
+execute @p ~~~ execute @s[scores={loadkamui=200..}] ~~~ tag @s add kamui1a
+execute @p ~~~ execute @s[scores={loadkamui=200..}] ~~~ effect @s night_vision 0 0 true
+execute @p ~~~ execute @s[scores={loadkamui=200..}] ~~~ scoreboard players set @s loadkamui 0
 
 execute @s[tag=kamui1a] ~~~ setblock ~ 100 ~ end_portal
 execute @s[tag=kamui1a] ~~~ tp @s ~ 100 ~
@@ -191,19 +191,19 @@ execute @s[tag=corvos,scores={carregarsubs=5000..}] ~~~ scoreboard players add @
 execute @s[scores={carregarsubs=5000..}] ~~~ scoreboard players set @s carregarsubs 0
 
 <CHAKRA>
-execute @s[tag=!otsutsuki,tag=senju] ~~~ /execute @s[scores={chakra=2000..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 2000
-execute @s[tag=!otsutsuki,tag=senju] ~~~ /execute @s[scores={chakra=2500..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 2500
-execute @s[tag=!otsutsuki,tag=uzumaki] ~~~ /execute @s[scores={chakra=1750..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 1750
-execute @s[tag=!otsutsuki,tag=uzumaki] ~~~ /execute @s[scores={chakra=2250..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 2250
-execute @s[tag=!otsutsuki,tag=uchiha] ~~~ /execute @s[scores={chakra=375..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 375
-execute @s[tag=!otsutsuki,tag=uchiha] ~~~ /execute @s[scores={chakra=875..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 875
-execute @s[tag=!otsutsuki,tag=hyuuga] ~~~ /execute @s[scores={chakra=750..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 750
-execute @s[tag=!otsutsuki,tag=hyuuga] ~~~ /execute @s[scores={chakra=1250..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 1250
-execute @s[tag=!otsutsuki,tag=chinoike] ~~~ /execute @s[scores={chakra=750..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 750
-execute @s[tag=!otsutsuki,tag=chinoike] ~~~ /execute @s[scores={chakra=1250..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 1250
-execute @s[tag=!otsutsuki,tag=kazekage] ~~~ /execute @s[scores={chakra=1000..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 1000
+execute @s[tag=!otsutsuki,tag=senju] ~~~ execute @s[scores={chakra=2000..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 2000
+execute @s[tag=!otsutsuki,tag=senju] ~~~ execute @s[scores={chakra=2500..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 2500
+execute @s[tag=!otsutsuki,tag=uzumaki] ~~~ execute @s[scores={chakra=1750..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 1750
+execute @s[tag=!otsutsuki,tag=uzumaki] ~~~ execute @s[scores={chakra=2250..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 2250
+execute @s[tag=!otsutsuki,tag=uchiha] ~~~ execute @s[scores={chakra=375..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 375
+execute @s[tag=!otsutsuki,tag=uchiha] ~~~ execute @s[scores={chakra=875..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 875
+execute @s[tag=!otsutsuki,tag=hyuuga] ~~~ execute @s[scores={chakra=750..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 750
+execute @s[tag=!otsutsuki,tag=hyuuga] ~~~ execute @s[scores={chakra=1250..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 1250
+execute @s[tag=!otsutsuki,tag=chinoike] ~~~ execute @s[scores={chakra=750..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 750
+execute @s[tag=!otsutsuki,tag=chinoike] ~~~ execute @s[scores={chakra=1250..},tag=chakra_bijuu] ~~~ scoreboard players set @s chakra 1250
+execute @s[tag=!otsutsuki,tag=kazekage] ~~~ execute @s[scores={chakra=1000..},tag=!chakra_bijuu] ~~~ scoreboard players set @s chakra 1000
 
-execute @s[tag=!cla] ~~~ /execute @s[scores={chakra=1000..}] ~~~ scoreboard players set @s chakra 100
+execute @s[tag=!cla] ~~~ execute @s[scores={chakra=1000..}] ~~~ scoreboard players set @s chakra 100
 execute @s[scores={chakra=..0}] ~~~ scoreboard players set @s chakra 0
 execute @s[scores={chakra=..0,tag=kurama] ~~~ scoreboard players set @s chakra_kurama 0
 
@@ -227,36 +227,36 @@ execute @s[tag=edotensei] ~~~ scoreboard players add @s chakra 5
 
 
 
-execute @a[tag=ferro_on] ~~~ /execute @e[tag=!ferro_on,r=10] ~~~ kill @e[r=30,type=item]
-execute @a[tag=ferro_on] ~~~ /execute @e[tag=!ferro_on,r=10] ~~~ fill ^^2^ ^^1^ concretepowder 15
+execute @a[tag=ferro_on] ~~~ execute @e[tag=!ferro_on,r=10] ~~~ kill @e[r=30,type=item]
+execute @a[tag=ferro_on] ~~~ execute @e[tag=!ferro_on,r=10] ~~~ fill ^^2^ ^^1^ concretepowder 15
 execute @a[tag=ferro_on] ~~~ scoreboard players add @s on_sand 1
-execute @a[tag=ferro_on] ~~~ /execute @e[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
-execute @a[tag=ferro_on] ~~~ /execute @e[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
+execute @a[tag=ferro_on] ~~~ execute @e[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
+execute @a[tag=ferro_on] ~~~ execute @e[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
 
 
-execute @a[tag=areia_on] ~~~ /execute @e[tag=!areia_on,r=10] ~~~ kill @e[r=30,type=item]
-execute @a[tag=areia_on] ~~~ /execute @e[tag=!areia_on,r=10] ~~~ fill ^^2^ ^^1^ sand
+execute @a[tag=areia_on] ~~~ execute @e[tag=!areia_on,r=10] ~~~ kill @e[r=30,type=item]
+execute @a[tag=areia_on] ~~~ execute @e[tag=!areia_on,r=10] ~~~ fill ^^2^ ^^1^ sand
 execute @a[tag=areia_on] ~~~ scoreboard players add @s on_sand 1
-execute @a[tag=areia_on] ~~~ /execute @e[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
-execute @a[tag=areia_on] ~~~ /execute @e[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
+execute @a[tag=areia_on] ~~~ execute @e[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
+execute @a[tag=areia_on] ~~~ execute @e[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
 
-execute @e[tag=ferro_on,type=porkyn:shink] ~~~ /execute @a[tag=!ferro_on,r=10] ~~~ kill @e[r=30,type=item]
-execute @e[tag=ferro_on,type=porkyn:shink] ~~~ /execute @a[tag=!ferro_on,r=10] ~~~ fill ^^2^ ^^1^ concretepowder 15
+execute @e[tag=ferro_on,type=porkyn:shink] ~~~ execute @a[tag=!ferro_on,r=10] ~~~ kill @e[r=30,type=item]
+execute @e[tag=ferro_on,type=porkyn:shink] ~~~ execute @a[tag=!ferro_on,r=10] ~~~ fill ^^2^ ^^1^ concretepowder 15
 execute @e[tag=ferro_on,type=porkyn:shink] ~~~ scoreboard players add @s on_sand 1
-execute @e[tag=ferro_on,type=porkyn:shink] ~~~ /execute @a[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
-execute @e[tag=ferro_on,type=porkyn:shink] ~~~ /execute @a[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
+execute @e[tag=ferro_on,type=porkyn:shink] ~~~ execute @a[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
+execute @e[tag=ferro_on,type=porkyn:shink] ~~~ execute @a[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
 
-execute @e[tag=areia_on,type=porkyn:gaara_kid] ~~~ /execute @a[tag=!areia_on,r=10] ~~~ kill @e[r=30,type=item]
-execute @e[tag=areia_on,type=porkyn:gaara_kid] ~~~ /execute @a[tag=!areia_on,r=10] ~~~ fill ^^2^ ^^1^ sand
+execute @e[tag=areia_on,type=porkyn:gaara_kid] ~~~ execute @a[tag=!areia_on,r=10] ~~~ kill @e[r=30,type=item]
+execute @e[tag=areia_on,type=porkyn:gaara_kid] ~~~ execute @a[tag=!areia_on,r=10] ~~~ fill ^^2^ ^^1^ sand
 execute @e[tag=areia_on,type=porkyn:gaara_kid] ~~~ scoreboard players add @s on_sand 1
-execute @e[tag=areia_on,type=porkyn:gaara_kid] ~~~ /execute @a[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
-execute @e[tag=areia_on,type=porkyn:gaara_kid] ~~~ /execute @a[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
+execute @e[tag=areia_on,type=porkyn:gaara_kid] ~~~ execute @a[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
+execute @e[tag=areia_on,type=porkyn:gaara_kid] ~~~ execute @a[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
 
-execute @a[tag=ouro_on] ~~~ /execute @e[tag=!ouro_on,r=10] ~~~ kill @e[r=30,type=item]
-execute @a[tag=ouro_on] ~~~ /execute @e[tag=!ouro_on,r=10] ~~~ fill ^^2^ ^^1^ concretepowder 4
+execute @a[tag=ouro_on] ~~~ execute @e[tag=!ouro_on,r=10] ~~~ kill @e[r=30,type=item]
+execute @a[tag=ouro_on] ~~~ execute @e[tag=!ouro_on,r=10] ~~~ fill ^^2^ ^^1^ concretepowder 4
 execute @a[tag=ouro_on] ~~~ scoreboard players add @s on_sand 1
-execute @e[tag=ouro_on] ~~~ /execute @e[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
-execute @a[tag=ouro_on] ~~~ /execute @e[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
+execute @e[tag=ouro_on] ~~~ execute @e[scores={on_sand=70}] ~~~ scoreboard players remove @s chakra 1
+execute @a[tag=ouro_on] ~~~ execute @e[scores={on_sand=70}] ~~~ scoreboard players set @s on_sand 0
 
 
 
@@ -265,7 +265,7 @@ execute @a[tag=ouro_on] ~~~ /execute @e[scores={on_sand=70}] ~~~ scoreboard play
 
 modo barion
 
-execute @s[tag=barion_ativo] ~~~ particle minecraft:redstone_ore_dust_particle ^.2^^
+execute @s[tag=barion_ativo] ~~~ particle minecraft:redstone_ore_dust_particle ^0.2^^
 execute @s[tag=barion_ativo] ~~~ particle minecraft:redstone_ore_dust_particle ^-0.2^^
 
 execute @s[tag=barion_ativo] ~~~ scoreboard players add @s barion_ativo 1
@@ -294,7 +294,7 @@ execute @s[tag=idade1,scores={idade=1000..},tag=!idade1_] ~~~ tag @s add idade1_
 
 idade 2 up
 execute @s[tag=idade2up,tag=!idade2up_] ~~~ scoreboard players add @s idade 1
-execute @s[tag=idade2up,scores={idade=1..}] ~~~ /execute @s[tag=idade2up,scores={idade=..2}] ~~~ playanimation @s animation.idade1 porkyn 1
+execute @s[tag=idade2up,scores={idade=1..}] ~~~ execute @s[tag=idade2up,scores={idade=..2}] ~~~ playanimation @s animation.idade1 porkyn 1
 execute @s[tag=idade2up,scores={idade=20..}] ~~~ playanimation @s animation.idade2 porkyn 10000000
 execute @s[tag=idade2up,scores={idade=20..}] ~~~ tag @s add idade2
 execute @s[tag=idade2up,scores={idade=20..}] ~~~ tag @s remove idade2up

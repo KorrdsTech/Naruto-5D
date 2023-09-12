@@ -8,6 +8,7 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
+ 
 			"minecraft:mining_speed": 1,
 			"minecraft:damage": 0,
 			"minecraft:on_use": {
@@ -18,34 +19,18 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lChibaku Tensei"
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"third_person": {
-						"position": [
-							0.26,
-							1.0,
-							-0.55
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"first_person": {
-						"position": [
-							7.08,
-							-1.6,
-							-12.8
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				}
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  			}
+ 	  			}
 			},
 			"minecraft:cooldown": {
 				"category": "chibaku",
@@ -55,8 +40,8 @@
 				"texture": "chibaku"
 			},
 			"minecraft:health": {
-				"value": 100000,
-				"max": 100000
+			  "value": 100000,
+			  "max": 100000
 			}
 		},
 		"events": {
@@ -66,18 +51,18 @@
 						"run_command": {
 							"command": [
 								"playanimation @p animation.mao_alto porkyn 1",
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:chibaku ~~~",
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:chibaku2 ~~~",
-								"/execute @s[scores={chakra=150..}] ~~~ summon porkyn:chibaku3 ~~~",
-								"/execute @s[scores={chakra=150..}] ~~~ playsound estilo_terra @a[r=45]",
-								"/execute @s[scores={chakra=150..}] ~~~ tag @p add chibakutensei",
-								"/execute @s[scores={chakra=150..}] ~~~ effect @e[type=!porkyn:chibaku,type=!porkyn:chibaku2,tag=!chibakutensei,r=45] levitation 18 2 true",
-								"/execute @s[scores={chakra=150..}] ~~~ effect @e[type=porkyn:chibaku3,r=45] levitation 17 1 true",
-								"/execute @s[scores={chakra=150..}] ~~~ fill ~-10~-1~-10 ~10~8~10 air",
-								"/execute @s[scores={chakra=150..}] ~~~ fill ~-7~-2~-7 ~7~1~7 air",
-								"/execute @s[scores={chakra=150..}] ~~~ fill ~-4~-3~-4 ~4~1~4 air",
-								"/execute @s[scores={chakra=150..}] ~~~ fill ~-2~-4~-2 ~2~1~2 air",
-								"/execute @s[scores={chakra=..149}] ~~~ playsound note.bass",
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:chibaku ~~~",
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:chibaku2 ~~~",
+								"execute @s[scores={chakra=150..}] ~~~ summon porkyn:chibaku3 ~~~",
+								"execute @s[scores={chakra=150..}] ~~~ playsound estilo_terra @a[r=45]",
+								"execute @s[scores={chakra=150..}] ~~~ tag @p add chibakutensei",
+								"execute @s[scores={chakra=150..}] ~~~ effect @e[type=!porkyn:chibaku,type=!porkyn:chibaku2,tag=!chibakutensei,r=45] levitation 18 2 true",
+								"execute @s[scores={chakra=150..}] ~~~ effect @e[type=porkyn:chibaku3,r=45] levitation 17 1 true",
+								"execute @s[scores={chakra=150..}] ~~~ fill ~-10~-1~-10 ~10~8~10 air",
+								"execute @s[scores={chakra=150..}] ~~~ fill ~-7~-2~-7 ~7~1~7 air",
+								"execute @s[scores={chakra=150..}] ~~~ fill ~-4~-3~-4 ~4~1~4 air",
+								"execute @s[scores={chakra=150..}] ~~~ fill ~-2~-4~-2 ~2~1~2 air",
+								"execute @s[scores={chakra=..149}] ~~~ playsound note.bass",
 								"scoreboard players remove @s[scores={chakra=100..}] chakra 150"
 							]
 						}

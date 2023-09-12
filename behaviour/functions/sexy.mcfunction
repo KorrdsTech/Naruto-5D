@@ -16,7 +16,7 @@ tellraw @s[scores={chakra=40..}] {"rawtext":[{"text":"§f§l======§4§lJutsu Se
 give @s[scores={chakra=..39}] porkyn:sexy
 execute @s[scores={chakra=..39}] ~~~ playsound note.bass
 scoreboard players remove @s[scores={chakra=40..}] chakra 40
-
+		
 clear @a[r=10] milk
 
 

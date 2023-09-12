@@ -7,7 +7,9 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
+
 		"component_groups": {},
+
 		"components": {
 			"minecraft:type_family": {
 				"family": [
@@ -21,37 +23,38 @@
 				"name": "§lEbisu",
 				"hud_range": 10
 			},
-			"minecraft:timer": {
+			"minecraft:timer":
+			{
 				"looping": false,
 				"time": 10,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			"minecraft:on_hurt": {
+			  "minecraft:on_hurt": {
 				"event": "on:hurt",
 				"target": "self"
-			},
-			"minecraft:on_hurt_by_player": {
+			  },
+			  "minecraft:on_hurt_by_player": {
 				"event": "on:hurt_by_player",
 				"target": "self"
-			},
-			"minecraft:on_ignite": {
+			  },
+			  "minecraft:on_ignite": {
 				"event": "on:ignite",
 				"target": "self"
-			},
-			"minecraft:on_target_acquired": {
+			  },
+			  "minecraft:on_target_acquired": {
 				"event": "on:target_acquired",
 				"target": "self"
-			},
-			"minecraft:on_target_escape": {
+			  },
+			  "minecraft:on_target_escape": {
 				"event": "on:target_escape",
 				"target": "self"
-			},
-			"minecraft:on_wake_with_owner": {
+			  },
+			  "minecraft:on_wake_with_owner": {
 				"event": "on:wake_with_owner",
 				"target": "self"
-			},
+			  },
 			"minecraft:attack": {
 				"damage": 18
 			},
@@ -95,24 +98,23 @@
 					}
 				]
 			},
+
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
 				"reselect_targets": true,
 				"within_radius": 25.0,
 				"must_see_forget_duration": 17.0,
-				"entity_types": {
+				"entity_types": 
+				  {
 					"filters": {
-						"any_of": [
-							{
-								"test": "is_family",
-								"subject": "other",
-								"value": "player"
-							}
-						]
+					  "any_of": [
+						{ "test": "is_family", "subject": "other", "value": "player" }
+					  ]
 					},
 					"max_dist": 35
-				}
+				  }
+				  
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -120,6 +122,7 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
+			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0.8
@@ -178,32 +181,38 @@
 			},
 			"on:death": {
 				"run_command": {
+				  "command": [
+					"execute @p[r=20] ~~~ title @p title §eMissão Concluida!!!",
+					"execute @p[r=20] ~~~ title @p subtitle O Pervertido",
+					"tag @p[tag=!mh2_naruto,tag=mh1_naruto,r=20] add mh2_naruto",
+					"scoreboard players add @a[r=20] tp 30"
+
+				  ]
+				}
+			  },
+			  "on:hurt": {
+				"run_command": {
+				  "command": [
+
+				  ]
+				}
+			  },
+			  "on:hurt_by_player": {
+				"run_command": {
+				  "command": [
+
+				  ]
+				}
+			  },
+			  "on:efeitos": {
+				  "run_command": {
 					"command": [
-						"/execute @p[r=20] ~~~ title @p title §eMissão Concluida!!!",
-						"/execute @p[r=20] ~~~ title @p subtitle O Pervertido",
-						"tag @p[tag=!mh2_naruto,tag=mh1_naruto,r=20] add mh2_naruto",
-						"scoreboard players add @a[r=20] tp 30"
+						"execute @p[r=150,tag=pergaminho] ~~~ give @s porkyn:clones_sombras_sexy",
+						"execute @p[r=150,tag=pergaminho] ~~~ title @p title Você ganhou o Jutsu Sexy!\"}]}"
 					]
+				  }
 				}
-			},
-			"on:hurt": {
-				"run_command": {
-					"command": []
-				}
-			},
-			"on:hurt_by_player": {
-				"run_command": {
-					"command": []
-				}
-			},
-			"on:efeitos": {
-				"run_command": {
-					"command": [
-						"/execute @p[r=150,tag=pergaminho] ~~~ give @s porkyn:clones_sombras_sexy",
-						"/execute @p[r=150,tag=pergaminho] ~~~ title @p title Você ganhou o Jutsu Sexy!\"}]}"
-					]
-				}
-			}
-		}
-	}
-}
+			  }
+		  }
+	  }
+	  

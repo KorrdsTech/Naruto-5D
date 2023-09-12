@@ -1,58 +1,39 @@
 {
-  "format_version": "1.10.0",
-  "animation_controllers": {
+	"format_version": "1.10.0",
+	"animation_controllers": {
     "controller.animation.modos": {
       "states": {
         "default": {
-          "transitions": [
-            {
-              "modos": "query.is_jumping && query.is_sneaking"
-            }
-          ],
-          "on_exit": [
-            "/execute @s[tag=rank_d] ~~~ function rank_d",
-            "/execute @s[tag=rank_c] ~~~ function rank_c",
-            "/execute @s[tag=rank_b] ~~~ function rank_b",
-            "/execute @s[tag=rank_a] ~~~ function rank_a",
-            "/execute @s[tag=rank_s] ~~~ function rank_s"
+          "transitions": [ { "modos":"query.is_jumping && query.is_sneaking" } ],
+          "on_exit": [ 
+        "/execute @s[tag=rank_d] ~~~ function rank_d",
+        "/execute @s[tag=rank_c] ~~~ function rank_c",
+        "/execute @s[tag=rank_b] ~~~ function rank_b",
+        "/execute @s[tag=rank_a] ~~~ function rank_a",
+        "/execute @s[tag=rank_s] ~~~ function rank_s"
           ]
         },
         "modos": {
-          "transitions": [
-            {
-              "default": "!query.is_jumping && query.is_sneaking"
-            }
-          ],
-          "on_exit": [
-            ""
-          ]
+          "transitions": [ {"default":"!query.is_jumping && query.is_sneaking"} ],
+          "on_exit": [ "" ]     
         }
       }
     },
     "controller.animation.hiraishin_tp": {
       "states": {
         "default": {
-          "transitions": [
-            {
-              "hiraishin_tp": "query.get_equipped_item_name == 'kunai_m' && query.is_jumping && query.is_sneaking"
-            }
-          ],
-          "on_exit": [
+          "transitions": [ { "hiraishin_tp":"query.get_equipped_item_name == 'kunai_m' && query.is_jumping && query.is_sneaking" } ],
+          "on_exit": [ 
+
             "/execute @p[scores={chakra=..49},tag=hiraishin] ~~~ playsound note.bass ",
-            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ /execute @s[tag=hiraishin] ~~~ playsound hiraishin @a[x=~,y=~,z=~,r=15]",
-            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ /execute @s[tag=hiraishin] ~~~ tp @s @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1]",
+            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ execute @s[tag=hiraishin] ~~~ playsound hiraishin @a[x=~,y=~,z=~,r=15]",
+            "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ execute @s[tag=hiraishin] ~~~ tp @s @e[type=!porkyn:rinnegantp_2,type=!porkyn:rinnegantp_1,type=!porkyn:corvo,type=!item,c=1]",
             "/execute @s[scores={chakra=50..},tag=hiraishin] ~~~ scoreboard players remove @s chakra 50"
           ]
         },
         "hiraishin_tp": {
-          "transitions": [
-            {
-              "default": "!query.is_jumping && query.is_sneaking"
-            }
-          ],
-          "on_exit": [
-            ""
-          ]
+          "transitions": [ {"default":"!query.is_jumping && query.is_sneaking"} ],
+          "on_exit": [ "" ]                    
         }
       }
     }

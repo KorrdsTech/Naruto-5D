@@ -180,10 +180,11 @@
 			"on:death": {
 				"run_command": {
 					"command": [
-						"/execute @p[r=100] ~~~ title @p title §eMissão Concluida!",
-						"/execute @p[r=100] ~~~ title @p subtitle Um Novo Inimigo Aparece!",
+						
+						"execute @p[r=100] ~~~ title @p title §eMissão Concluida!",
+						"execute @p[r=100] ~~~ title @p subtitle Um Novo Inimigo Aparece!",
 						"scoreboard players add @a[r=20] tp 150",
-						"/execute @p[r=100] ~~~ tag @s add mh7_naruto"
+						"execute @p[r=100] ~~~ tag @s add mh7_naruto"
 					]
 				}
 			},
@@ -210,11 +211,12 @@
 			"on:efeitos": {
 				"run_command": {
 					"command": [
-						"/execute @e[type=porkyn:kimimaro_mh7_naruto,r=1] ~~~ scoreboard players add @s cntr 1",
-						"/execute @s[scores={cntr=1}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<kimimaro>§f Eu percebi recentemente... que todos vivem por uma razão. Todo mundo tem algo importante a realizar. A busca para descobrir o que é isso... é a única liberdade que foi dada a nós, seres humanos.\"}]}",
-						"/execute @s[scores={cntr=15}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<kimimaro>§f Por causa da minha doença, não vou suportar muito tempo mais... Mas... Isso não vai acontecer porque eu não estou sozinho. Enquanto eu estiver realizando os desejos de Orochimaru... Ficarei no coração dele para sempre.\"}]}",
-						"/execute @s[scores={cntr=30}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<kimimaro>§f Não foi lavagem cerebral. Eu tenho minhas próprias razões para agir assim. O que diabos você acha que sabe?!!\"}]}",
-						"/execute @s[scores={cntr=50}] ~~~ scoreboard players set @s cntr 0"
+						"execute @e[type=porkyn:kimimaro_mh7_naruto,r=1] ~~~ scoreboard players add @s cntr 1",
+						"execute @s[scores={cntr=1}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<kimimaro>§f Eu percebi recentemente... que todos vivem por uma razão. Todo mundo tem algo importante a realizar. A busca para descobrir o que é isso... é a única liberdade que foi dada a nós, seres humanos.\"}]}",
+						"execute @s[scores={cntr=15}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<kimimaro>§f Por causa da minha doença, não vou suportar muito tempo mais... Mas... Isso não vai acontecer porque eu não estou sozinho. Enquanto eu estiver realizando os desejos de Orochimaru... Ficarei no coração dele para sempre.\"}]}",
+						"execute @s[scores={cntr=30}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§e<kimimaro>§f Não foi lavagem cerebral. Eu tenho minhas próprias razões para agir assim. O que diabos você acha que sabe?!!\"}]}",
+						"execute @s[scores={cntr=50}] ~~~ scoreboard players set @s cntr 0"
+
 					]
 				}
 			}

@@ -8,6 +8,7 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
+ 
 			"minecraft:mining_speed": 1,
 			"minecraft:damage": 0,
 			"minecraft:on_use": {
@@ -18,35 +19,19 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lCasulo de areia de Ferro"
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"third_person": {
-						"position": [
-							0.26,
-							1.0,
-							-0.55
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"first_person": {
-						"position": [
-							7.08,
-							-1.6,
-							-12.8
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
 			"minecraft:cooldown": {
 				"category": "defesa_areia_ferro",
 				"duration": 1.0
@@ -61,13 +46,18 @@
 					{
 						"run_command": {
 							"command": [
-								"playsound estilo_areia_ferro @a[scores={chakra=40..},tag=areia_ferro,x=~,y=~,z=~,r=5]",
-								"/execute @s[tag=areia_ferro,scores={chakra=40..}] ~~~ playanimation @s animation.caixao_areia_ferro porkyntop 10",
-								"tellraw @s[tag=!areia_ferro] {\"rawtext\":[{\"text\":\"§4>Você não pode utilizar esse jutsu, pois seu elemento de chakra não corresponde ao do jutsu!<\"}]}",
-								"/execute @s[tag=areia_ferro,scores={chakra=40..}] ~~~ /execute @p ~~~ fill ~-2~-2~-2~2~3~2 air",
-								"/execute @s[tag=areia_ferro,scores={chakra=40..}] ~~~ /execute @p ~~~ fill ~-2~-2~-2~2~3~2 concretepowder 15 hollow",
-								"/execute @s[tag=areia_ferro,scores={chakra=40..}] ~~~ /execute @p ~~~ fill ~-1~-1~-1~1~2~1 concretepowder 15 hollow",
-								"scoreboard players remove @s[scores={chakra=40..},tag=areia_ferro] chakra 40"
+"playsound estilo_areia_ferro @a[scores={chakra=40..},tag=areia_ferro,x=~,y=~,z=~,r=5]",
+"execute @s[tag=areia_ferro,scores={chakra=40..}] ~~~ playanimation @s animation.caixao_areia_ferro porkyntop 10",
+
+"tellraw @s[tag=!areia_ferro] {\"rawtext\":[{\"text\":\"§4>Você não pode utilizar esse jutsu, pois seu elemento de chakra não corresponde ao do jutsu!<\"}]}",
+
+"execute @s[tag=areia_ferro,scores={chakra=40..}] ~~~ execute @p ~~~ fill ~-2~-2~-2~2~3~2 air",
+
+"execute @s[tag=areia_ferro,scores={chakra=40..}] ~~~ execute @p ~~~ fill ~-2~-2~-2~2~3~2 concretepowder 15 hollow",
+
+"execute @s[tag=areia_ferro,scores={chakra=40..}] ~~~ execute @p ~~~ fill ~-1~-1~-1~1~2~1 concretepowder 15 hollow",
+
+"scoreboard players remove @s[scores={chakra=40..},tag=areia_ferro] chakra 40"
 							]
 						}
 					}

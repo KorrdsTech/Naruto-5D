@@ -87,9 +87,9 @@
 				"run_command": {
 					"command": [
 						"dialogue open @s @p[r=1,tag=!idade] idade1",
-						"/execute @p[r=1,tag=!idade] ~~~ playanimation @s animation.idade1 a 1000",
+						"execute @p[r=1,tag=!idade] ~~~ playanimation @s animation.idade1 a 1000",
 						"dialogue open @s @p[r=1,tag=!pele] pele3",
-						"/execute @p[r=1,tag=!pele] ~~~ event entity @s claro_amarelo",
+						"execute @p[r=1,tag=!pele] ~~~ event entity @s claro_amarelo",
 						"dialogue open @s @p[r=1,tag=pele,tag=!olho] olho1",
 						"replaceitem entity @p[r=1,tag=pele,tag=olho,tag=!hair] slot.armor.head 1 porkyn:uchiha_1 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
 						"dialogue open @s @p[r=1,tag=pele,tag=olho,tag=!hair] cabelo1",

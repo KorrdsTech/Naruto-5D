@@ -7,7 +7,9 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
+
 		"component_groups": {},
+
 		"components": {
 			"minecraft:type_family": {
 				"family": [
@@ -22,37 +24,38 @@
 				"name": "§lJiraiya",
 				"hud_range": 7
 			},
-			"minecraft:timer": {
+			"minecraft:timer":
+			{
 				"looping": false,
 				"time": 18,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			"minecraft:on_hurt": {
+			  "minecraft:on_hurt": {
 				"event": "on:hurt",
 				"target": "self"
-			},
-			"minecraft:on_hurt_by_player": {
+			  },
+			  "minecraft:on_hurt_by_player": {
 				"event": "on:hurt_by_player",
 				"target": "self"
-			},
-			"minecraft:on_ignite": {
+			  },
+			  "minecraft:on_ignite": {
 				"event": "on:ignite",
 				"target": "self"
-			},
-			"minecraft:on_target_acquired": {
+			  },
+			  "minecraft:on_target_acquired": {
 				"event": "on:target_acquired",
 				"target": "self"
-			},
-			"minecraft:on_target_escape": {
+			  },
+			  "minecraft:on_target_escape": {
 				"event": "on:target_escape",
 				"target": "self"
-			},
-			"minecraft:on_wake_with_owner": {
+			  },
+			  "minecraft:on_wake_with_owner": {
 				"event": "on:wake_with_owner",
 				"target": "self"
-			},
+			  },
 			"minecraft:attack": {
 				"damage": 10
 			},
@@ -96,24 +99,23 @@
 					}
 				]
 			},
+
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 0,
 				"must_see": false,
 				"reselect_targets": false,
 				"within_radius": 0,
 				"must_see_forget_duration": 0,
-				"entity_types": {
+				"entity_types": 
+				  {
 					"filters": {
-						"any_of": [
-							{
-								"test": "is_family",
-								"subject": "other",
-								"value": "inimigo"
-							}
-						]
+					  "any_of": [
+						{ "test": "is_family", "subject": "other", "value": "inimigo" }
+					  ]
 					},
 					"max_dist": 0
-				}
+				  }
+				  
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -121,6 +123,7 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
+			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0.8
@@ -176,35 +179,43 @@
 			},
 			"on:death": {
 				"run_command": {
+				  "command": [
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ title @p title §4Missão Falhada",
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ title @p subtitle §fVocê é fraco...",
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tag @a[r=50] remove kill1",
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tag @a[r=50] remove kill2",
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tag @e[type=porkyn:itachi_mh7_sasuke,r=150] add kill",
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tag @e[type=porkyn:kisame_mh7_sasuke,r=150] add kill",
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tp @e[type=porkyn:itachi_mh7_sasuke,r=150] ~~-500~",
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tp @e[type=porkyn:kisame_mh7_sasuke,r=150] ~~-500~",
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ kill @e[type=porkyn:itachi_mh7_sasuke,tag=kill]",
+					"execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ kill @e[type=porkyn:kisame_mh7_sasuke,tag=kill]"
+
+				  ]
+				}
+			  },
+			  "on:hurt": {
+				"run_command": {
+				  "command": [
+
+				  ]
+				}
+			  },
+			  "on:hurt_by_player": {
+				"run_command": {
+				  "command": [
+
+				  ]
+				}
+			  },
+			  "on:efeitos": {
+				  "run_command": {
 					"command": [
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ title @p title §4Missão Falhada",
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ title @p subtitle §fVocê é fraco...",
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tag @a[r=50] remove kill1",
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tag @a[r=50] remove kill2",
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tag @e[type=porkyn:itachi_mh7_sasuke,r=150] add kill",
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tag @e[type=porkyn:kisame_mh7_sasuke,r=150] add kill",
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tp @e[type=porkyn:itachi_mh7_sasuke,r=150] ~~-500~",
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ tp @e[type=porkyn:kisame_mh7_sasuke,r=150] ~~-500~",
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ kill @e[type=porkyn:itachi_mh7_sasuke,tag=kill]",
-						"/execute @p[r=50,tag=mh6_sasuke,tag=!mh7_sasuke] ~~~ kill @e[type=porkyn:kisame_mh7_sasuke,tag=kill]"
+
 					]
+				  }
 				}
-			},
-			"on:hurt": {
-				"run_command": {
-					"command": []
-				}
-			},
-			"on:hurt_by_player": {
-				"run_command": {
-					"command": []
-				}
-			},
-			"on:efeitos": {
-				"run_command": {
-					"command": []
-				}
-			}
-		}
-	}
-}
+			  }
+		  }
+	  }
+	  

@@ -1,44 +1,24 @@
 {
 	"format_version": "1.17.100",
-	"minecraft:npc_dialogue": {
-		"scenes": [
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
 			{
 				"scene_tag": "jutsus_normal",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fKage Bunshin §b500 TP"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": " "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fKage Bunshin §b500 TP"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal4"
+
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fAprender"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§fAprender"} ] },
 						"commands": [
 							"/execute @p[scores={tp=..499}] ~~~ playsound note.bass ",
 							"/execute @p[scores={tp=..499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
@@ -46,59 +26,33 @@
 							"/execute @p[scores={tp=500..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal",
 							"/execute @p[scores={tp=500..}] ~~~ scoreboard players remove @p[r=1] tp 500"
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal2"
+
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "jutsus_normal2",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fRasengan §b1200 TP"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": " "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fRasengan §b1200 TP"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal"
+
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fAprender"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§fAprender"} ] },
 						"commands": [
 							"/execute @p[scores={tp=..1199}] ~~~ playsound note.bass ",
 							"/execute @p[scores={tp=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
@@ -106,59 +60,33 @@
 							"/execute @p[scores={tp=1200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal2",
 							"/execute @p[scores={tp=1200..}] ~~~ scoreboard players remove @p[r=1] tp 1200"
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal3"
+
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "jutsus_normal3",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fHiraishin §b3200 TP"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": " "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fHiraishin §b3200 TP"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal2"
+
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fAprender"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§fAprender"} ] },
 						"commands": [
 							"/execute @p[scores={tp=..3199}] ~~~ playsound note.bass ",
 							"/execute @p[scores={tp=..3199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
@@ -169,59 +97,33 @@
 							"/execute @p[scores={tp=3200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal3",
 							"/execute @p[scores={tp=3200..}] ~~~ scoreboard players remove @p[r=1] tp 3200"
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal4"
+
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "jutsus_normal4",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fInvocação [Gamabunta] §b1200 TP"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": " "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fInvocação [Gamabunta] §b1200 TP"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal3"
+
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fAprender"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§fAprender"} ] },
 						"commands": [
 							"/execute @p[scores={tp=..1199}] ~~~ playsound note.bass ",
 							"/execute @p[scores={tp=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
@@ -230,59 +132,33 @@
 							"/execute @p[scores={tp=1200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal4",
 							"/execute @p[scores={tp=1200..}] ~~~ scoreboard players remove @p[r=1] tp 1200"
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal5"
+
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "jutsus_normal5",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fSelamento §b1200 TP"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": " "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fSelamento §b1200 TP"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal4"
+
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fAprender"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§fAprender"} ] },
 						"commands": [
 							"/execute @p[scores={tp=..1199}] ~~~ playsound note.bass ",
 							"/execute @p[scores={tp=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí o TP para comprar isso!\"}]}",
@@ -291,77 +167,51 @@
 							"/execute @p[scores={tp=1200..}] ~~~ playsound bamboo @s",
 							"/dialogue open @s @p jutsus_normal4",
 							"/execute @p[scores={tp=1200..}] ~~~ scoreboard players remove @p[r=1] tp 1200"
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal6"
+
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "jutsus_normal6",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§f"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": " "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§f"} ] },
+				"text": { "rawtext": [ {"text":" "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal4"
+
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fVoltar"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§fVoltar"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsu_outros"
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
 						"commands": [
 							"/dialogue open @s @p jutsus_normal"
+
+						]
+							}
 						]
 					}
 				]
 			}
-		]
-	}
-}
+		}
+		
+
+
+	
+		

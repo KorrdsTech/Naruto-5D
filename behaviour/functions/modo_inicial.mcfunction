@@ -50,7 +50,7 @@ tag @s[tag=uzumaki,tag=!uzumaki_inicio,scores={lvl=4..}] add uzumaki_inicio
 
 
 <kAZEKAGE>
-execute @s[tag=areia] ~~~ /execute @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] ~~~ playsound @a[x=~,y=~,z=~,r=5]
+execute @s[tag=areia] ~~~ execute @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] ~~~ playsound @a[x=~,y=~,z=~,r=5]
 execute @s[tag=areia] ~~~ effect @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] health_boost 540 1 true
 execute @s[tag=areia] ~~~ effect @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] strength 540 0 true
 execute @s[tag=areia] ~~~ effect @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] speed 540 1 true
@@ -61,7 +61,7 @@ execute @s[tag=areia] ~~~ replaceitem entity @s[tag=kazekage,tag=!kazekage_inici
 execute @s[tag=areia] ~~~ tellraw @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] {"rawtext":[{"text":"§lVocê desbloqueou a §eLiberação De Areia!"}]}
 execute @s[tag=areia] ~~~ tag @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] add kazekage_inicio
 
-execute @s[tag=areia_ferro] ~~~ /execute @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] ~~~ playsound @a[x=~,y=~,z=~,r=5]
+execute @s[tag=areia_ferro] ~~~ execute @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] ~~~ playsound @a[x=~,y=~,z=~,r=5]
 execute @s[tag=areia_ferro] ~~~ effect @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] health_boost 540 1 true
 execute @s[tag=areia_ferro] ~~~ effect @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] strength 540 0 true
 execute @s[tag=areia_ferro] ~~~ effect @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] speed 540 1 true
@@ -72,7 +72,7 @@ execute @s[tag=areia_ferro] ~~~ replaceitem entity @s[tag=kazekage,tag=!kazekage
 execute @s[tag=areia_ferro] ~~~ tellraw @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] {"rawtext":[{"text":"§lVocê desbloqueou a §eLiberação De Areia!"}]}
 execute @s[tag=areia_ferro] ~~~ tag @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] add kazekage_inicio
 
-execute @s[tag=areia_ouro] ~~~ /execute @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] ~~~ playsound @a[x=~,y=~,z=~,r=5]
+execute @s[tag=areia_ouro] ~~~ execute @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] ~~~ playsound @a[x=~,y=~,z=~,r=5]
 execute @s[tag=areia_ouro] ~~~ effect @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] health_boost 540 1 true
 execute @s[tag=areia_ouro] ~~~ effect @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] strength 540 0 true
 execute @s[tag=areia_ouro] ~~~ effect @s[tag=kazekage,tag=!kazekage_inicio,scores={lvl=4..}] speed 540 1 true

@@ -9,6 +9,7 @@
 			"minecraft:foil": true,
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
+ 
 			"minecraft:mining_speed": 1,
 			"minecraft:damage": 0,
 			"minecraft:on_use": {
@@ -19,35 +20,19 @@
 			"minecraft:use_duration": 1,
 			"minecraft:display_name": {
 				"value": "§lInvocar Gamabunta §d[Rank S]"
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"third_person": {
-						"position": [
-							0.26,
-							1.0,
-							-0.55
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"first_person": {
-						"position": [
-							7.08,
-							-1.6,
-							-12.8
-						],
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
+            },
+  	"minecraft:render_offsets": {
+  		"main_hand": {
+	  		"third_person": {
+				"position": [0.26, 1.0, -0.55],
+	  			"scale": [0, 0, 0]
+	  		},
+	  		"first_person": {
+  				"position": [7.08, -1.6, -12.8],
+	  			"scale": [0, 0, 0]
+		  	}
+ 	  	}
+	},
 			"minecraft:cooldown": {
 				"category": "inv",
 				"duration": 1.0
@@ -62,12 +47,13 @@
 					{
 						"run_command": {
 							"command": [
-								"/execute @s[scores={chakra=100..}] ~~~ summon porkyn:invocation ~~~",
-								"/execute @s[scores={chakra=100..}] ~~~ playsound jutsu @a[r=10]",
-								"/execute @s[scores={chakra=100..}] ~~~ tag @e[type=porkyn:invocation,r=10] add sapo_s ",
-								"/execute @s[scores={chakra=100..}] ~~~ /execute @e[type=porkyn:invocation,r=1] ~~~ playanimation @s animation.invocation",
-								"/execute @s[scores={chakra=..99}] ~~~ playsound note.bass",
-								"/execute @s[scores={chakra=100..}] ~~~ scoreboard players remove @s chakra 100"
+								"execute @s[scores={chakra=100..}] ~~~ summon porkyn:invocation ~~~",
+								"execute @s[scores={chakra=100..}] ~~~ playsound jutsu @a[r=10]",
+								"execute @s[scores={chakra=100..}] ~~~ tag @e[type=porkyn:invocation,r=10] add sapo_s ",
+								"execute @s[scores={chakra=100..}] ~~~ execute @e[type=porkyn:invocation,r=1] ~~~ playanimation @s animation.invocation",
+								"execute @s[scores={chakra=..99}] ~~~ playsound note.bass",
+								"execute @s[scores={chakra=100..}] ~~~ scoreboard players remove @s chakra 100"
+								
 							]
 						}
 					}

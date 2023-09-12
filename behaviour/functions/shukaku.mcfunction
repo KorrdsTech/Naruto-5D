@@ -1,8 +1,8 @@
-execute @s[scores={chakra=..75}] ~~~ /execute @s[scores={chakra=50..}] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:shukaku_1
-execute @s[scores={chakra=..49}] ~~~ /execute @s[scores={chakra=30..}] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:shukaku_2
-execute @s[scores={chakra=..29}] ~~~ /execute @s[scores={chakra=1..}] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:shukaku_3
-execute @s[scores={chakra=..5}] ~~~ /execute @s[scores={chakra=1..},tag=!batalha_shukaku] ~~~ give @s porkyn:batalha_shukaku
-execute @s[scores={chakra=..5}] ~~~ /execute @s[scores={chakra=1..},tag=!batalha_shukaku] ~~~ tag @s add batalha_shukaku
+execute @s[scores={chakra=..75}] ~~~ execute @s[scores={chakra=50..}] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:shukaku_1
+execute @s[scores={chakra=..49}] ~~~ execute @s[scores={chakra=30..}] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:shukaku_2
+execute @s[scores={chakra=..29}] ~~~ execute @s[scores={chakra=1..}] ~~~ replaceitem entity @s slot.armor.chest 1 porkyn:shukaku_3
+execute @s[scores={chakra=..5}] ~~~ execute @s[scores={chakra=1..},tag=!batalha_shukaku] ~~~ give @s porkyn:batalha_shukaku
+execute @s[scores={chakra=..5}] ~~~ execute @s[scores={chakra=1..},tag=!batalha_shukaku] ~~~ tag @s add batalha_shukaku
 
 
 effect @s[scores={chakra=..75}] regeneration 1 0 true

@@ -1,772 +1,415 @@
 {
 	"format_version": "1.17.100",
-	"minecraft:npc_dialogue": {
-		"scenes": [
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
 			{
 				"scene_tag": "shop_co1",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fLamen §a5,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fLamen §a5,00 Ryo"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
+					
 							"/dialogue open @s @p shop_co13"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={money=..299}] ~~~ playsound note.bass ",
+								"/execute @p[scores={money=..299}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+								"/execute @p[scores={money=300..}] ~~~ give @p porkyn:roupa_naruto_kid",
+								"/execute @p[scores={money=300..}] ~~~ playsound bamboo @s",
+								"/dialogue open @s @p shop_co1",
+								"/execute @p[scores={money=300..}] ~~~ scoreboard players remove @p[r=1] money 300"
 							]
 						},
-						"commands": [
-							"/execute @p[scores={money=..299}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..299}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=300..}] ~~~ give @p porkyn:roupa_naruto_kid",
-							"/execute @p[scores={money=300..}] ~~~ playsound bamboo @s",
-							"/dialogue open @s @p shop_co1",
-							"/execute @p[scores={money=300..}] ~~~ scoreboard players remove @p[r=1] money 300"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co2"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [	
+								"/dialogue open @s @p shop_co2"
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "shop_co2",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§f §a300,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§f §a300,00 Ryo"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_co1"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={money=..299}] ~~~ playsound note.bass ",
+								"/execute @p[scores={money=..299}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+								"/execute @p[scores={money=300..}] ~~~ give @p porkyn:roupa_sasuke_kid1",
+								"/execute @p[scores={money=300..}] ~~~ playsound bamboo @s",
+								"/dialogue open @s @p shop_co2",
+								"/execute @p[scores={money=300..}] ~~~ scoreboard players remove @p[r=1] money 300"
+
 							]
 						},
-						"commands": [
-							"/execute @p[scores={money=..299}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..299}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=300..}] ~~~ give @p porkyn:roupa_sasuke_kid1",
-							"/execute @p[scores={money=300..}] ~~~ playsound bamboo @s",
-							"/dialogue open @s @p shop_co2",
-							"/execute @p[scores={money=300..}] ~~~ scoreboard players remove @p[r=1] money 300"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co3"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_co3"
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "shop_co3",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fNaruto Modo Sábio 2 §a600,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fNaruto Modo Sábio 2 §a600,00 Ryo"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_co2"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+								"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+								"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_sennin_sapoos",
+								"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co3",
+								"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+
 							]
 						},
-						"commands": [
-							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_sennin_sapoos",
-							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co3",
-							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co4"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_co4"
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "shop_co4",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fSasuke Shippuden §a600,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fSasuke Shippuden §a600,00 Ryo"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_co3"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+								"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+								"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_sasuke_2",
+								"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co4",
+								"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+
 							]
 						},
-						"commands": [
-							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_sasuke_2",
-							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co4",
-							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co5"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_co5"
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "shop_co5",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fObito [Kid] §a600,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fObito [Kid] §a600,00 Ryo"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_co4"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
+						
+							
+							]					},
+						{
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+								"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+								"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_obito",
+								"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co5",
+								"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+
 							]
 						},
-						"commands": [
-							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_obito",
-							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co5",
-							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co6"
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_co6"
 						]
 					}
 				]
 			},
 			{
 				"scene_tag": "shop_co6",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fMitsuki §a800,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fMitsuki §a800,00 Ryo"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_co5"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
-							]
-						},
-						"commands": [
-							"/execute @p[scores={money=..799}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..799}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=800..}] ~~~ give @p porkyn:roupa_mitsuki",
-							"/execute @p[scores={money=800..}] ~~~ dialogue open @s @p shop_co6",
-							"/execute @p[scores={money=800..}] ~~~ scoreboard players remove @p[r=1] money 800"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co7"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "shop_co7",
-				"npc_name": {
-					"rawtext": [
+						
+							
+							]					},
 						{
-							"text": "§l§fBoruto §a600,00 Ryo"
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={money=..799}] ~~~ playsound note.bass ",
+								"/execute @p[scores={money=..799}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+								"/execute @p[scores={money=800..}] ~~~ give @p porkyn:roupa_mitsuki",
+								"/execute @p[scores={money=800..}] ~~~ dialogue open @s @p shop_co6",
+								"/execute @p[scores={money=800..}] ~~~ scoreboard players remove @p[r=1] money 800"
+
+							]
+						},
+						{
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_co7"
+							]
 						}
 					]
 				},
-				"text": {
-					"rawtext": [
+				{
+					"scene_tag": "shop_co7",
+					"npc_name": { "rawtext": [ {"text":"§l§fBoruto §a600,00 Ryo"} ] },
+					"text": { "rawtext": [ {"text":"          "} ] },
+					"buttons": [
 						{
-							"text": "          "
+							"name": { "rawtext": [ {"text":"§l§f<"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_co6"
+							
+								
+								]					},
+							{
+								"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+								"commands": [
+									"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+									"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+									"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_boruto",
+									"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co7",
+									"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+	
+								]
+							},
+							{
+								"name": { "rawtext": [ {"text":"§l§f>"} ] },
+								"commands": [
+									"/dialogue open @s @p shop_co8"
+								]
+							}
+						]
+					},
+					{
+						"scene_tag": "shop_co8",
+						"npc_name": { "rawtext": [ {"text":"§l§fNeji [Kid] §a600,00 Ryo"} ] },
+						"text": { "rawtext": [ {"text":"          "} ] },
+						"buttons": [
+							{
+								"name": { "rawtext": [ {"text":"§l§f<"} ] },
+								"commands": [
+									"/dialogue open @s @p shop_co7"
+								
+									
+									]					},
+								{
+									"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+									"commands": [
+										"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
+										"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+										"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_neji",
+										"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co8",
+										"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
+		
+									]
+								},
+								{
+									"name": { "rawtext": [ {"text":"§l§f>"} ] },
+									"commands": [
+										"/dialogue open @s @p shop_co9"
+								]
 						}
 					]
 				},
-				"buttons": [
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co6"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
-							]
-						},
-						"commands": [
-							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_boruto",
-							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co7",
-							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co8"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "shop_co8",
-				"npc_name": {
-					"rawtext": [
+				{
+					"scene_tag": "shop_co9",
+					"npc_name": { "rawtext": [ {"text":"§l§fTobirama [Kid] §a1200,00 Ryo"} ] },
+					"text": { "rawtext": [ {"text":"          "} ] },
+					"buttons": [
 						{
-							"text": "§l§fNeji [Kid] §a600,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
-				"buttons": [
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
+							"name": { "rawtext": [ {"text":"§l§f<"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_co8"
+							
+								
+								]					},
+							{
+								"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+								"commands": [
+									"/execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
+									"/execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+									"/execute @p[scores={money=1200..}] ~~~ give @p porkyn:roupa_tobirama",
+									"/execute @p[scores={money=1200..}] ~~~ dialogue open @s @p shop_co9",
+									"/execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
+	
+								]
+							},
+							{
+								"name": { "rawtext": [ {"text":"§l§f>"} ] },
+								"commands": [
+									"/dialogue open @s @p shop_co10"
 							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co7"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
-							]
-						},
-						"commands": [
-							"/execute @p[scores={money=..599}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..599}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=600..}] ~~~ give @p porkyn:roupa_neji",
-							"/execute @p[scores={money=600..}] ~~~ dialogue open @s @p shop_co8",
-							"/execute @p[scores={money=600..}] ~~~ scoreboard players remove @p[r=1] money 600"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co9"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "shop_co9",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fTobirama [Kid] §a1200,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
-				"buttons": [
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co8"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
-							]
-						},
-						"commands": [
-							"/execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=1200..}] ~~~ give @p porkyn:roupa_tobirama",
-							"/execute @p[scores={money=1200..}] ~~~ dialogue open @s @p shop_co9",
-							"/execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co10"
-						]
 					}
 				]
 			},
 			{
 				"scene_tag": "shop_co10",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fKakashi §a1200,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
+				"npc_name": { "rawtext": [ {"text":"§l§fKakashi §a1200,00 Ryo"} ] },
+				"text": { "rawtext": [ {"text":"          "} ] },
 				"buttons": [
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f<"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_co9"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
-							]
-						},
-						"commands": [
-							"/execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
-							"/execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
-							"/execute @p[scores={money=1200..}] ~~~ give @p porkyn:colete_jounin",
-							"/execute @p[scores={money=1200..}] ~~~ dialogue open @s @p shop_co10",
-							"/execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co11"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "shop_co11",
-				"npc_name": {
-					"rawtext": [
+						
+							
+							]					},
 						{
-							"text": "§l§fManto Akatsuki §a2400,00 Ryo"
-						}
-					]
-				},
-				"text": {
-					"rawtext": [
+							"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
+							"commands": [
+								"/execute @p[scores={money=..1199}] ~~~ playsound note.bass ",
+								"/execute @p[scores={money=..1199}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
+								"/execute @p[scores={money=1200..}] ~~~ give @p porkyn:colete_jounin",
+								"/execute @p[scores={money=1200..}] ~~~ dialogue open @s @p shop_co10",
+								"/execute @p[scores={money=1200..}] ~~~ scoreboard players remove @p[r=1] money 1200"
+
+							]
+						},
 						{
-							"text": "          "
-						}
-					]
-				},
-				"buttons": [
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co10"
+							"name": { "rawtext": [ {"text":"§l§f>"} ] },
+							"commands": [
+								"/dialogue open @s @p shop_co11"
 						]
-					},
+				}
+			]
+		},
+		{
+			"scene_tag": "shop_co11",
+			"npc_name": { "rawtext": [ {"text":"§l§fManto Akatsuki §a2400,00 Ryo"} ] },
+			"text": { "rawtext": [ {"text":"          "} ] },
+			"buttons": [
+				{
+					"name": { "rawtext": [ {"text":"§l§f<"} ] },
+					"commands": [
+						"/dialogue open @s @p shop_co10"
+					
+						
+						]					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
 						"commands": [
 							"/execute @p[scores={money=..2399}] ~~~ playsound note.bass ",
 							"/execute @p[scores={money=..2399}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
 							"/execute @p[scores={money=2400..}] ~~~ give @p porkyn:manto_akatsuki",
 							"/execute @p[scores={money=2400..}] ~~~ dialogue open @s @p shop_co11",
 							"/execute @p[scores={money=2400..}] ~~~ scoreboard players remove @p[r=1] money 2400"
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_co12"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "shop_co12",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": "§l§fManto Akatsuki 2 §a2500,00 Ryo"
-						}
 					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
-				"buttons": [
+				}
+			]
+		},
+		{
+			"scene_tag": "shop_co12",
+			"npc_name": { "rawtext": [ {"text":"§l§fManto Akatsuki 2 §a2500,00 Ryo"} ] },
+			"text": { "rawtext": [ {"text":"          "} ] },
+			"buttons": [
+				{
+					"name": { "rawtext": [ {"text":"§l§f<"} ] },
+					"commands": [
+						"/dialogue open @s @p shop_co11"
+					
+						
+						]					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co11"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fComprar"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§fComprar"} ] },
 						"commands": [
 							"/execute @p[scores={money=..2499}] ~~~ playsound note.bass ",
 							"/execute @p[scores={money=..2499}] ~~~ tellraw @p {\"rawtext\":[{\"text\":\"§l§cVocê não possuí dinheiro para comprar isso!\"}]}",
 							"/execute @p[scores={money=2500..}] ~~~ give @p porkyn:mantoc_akatsukic",
 							"/execute @p[scores={money=2500..}] ~~~ dialogue open @s @p shop_co12",
 							"/execute @p[scores={money=2500..}] ~~~ scoreboard players remove @p[r=1] money 2500"
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_co13"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "shop_co13",
-				"npc_name": {
-					"rawtext": [
-						{
-							"text": ""
-						}
 					]
-				},
-				"text": {
-					"rawtext": [
-						{
-							"text": "          "
-						}
-					]
-				},
-				"buttons": [
+				}
+			]
+		},
+		{
+			"scene_tag": "shop_co13",
+			"npc_name": { "rawtext": [ {"text":""} ] },
+			"text": { "rawtext": [ {"text":"          "} ] },
+			"buttons": [
+				{
+					"name": { "rawtext": [ {"text":"§l§f<"} ] },
+					"commands": [
+						"/dialogue open @s @p shop_co12"
+					
+						
+						]					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f<"
-								}
-							]
-						},
-						"commands": [
-							"/dialogue open @s @p shop_co12"
-						]
-					},
-					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§fVoltar"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§fVoltar"} ] },
 						"commands": [
 							"/dialogue open @s @p p"
+
 						]
 					},
 					{
-						"name": {
-							"rawtext": [
-								{
-									"text": "§l§f>"
-								}
-							]
-						},
+						"name": { "rawtext": [ {"text":"§l§f>"} ] },
 						"commands": [
 							"/dialogue open @s @p shop_co1"
+					]
+
+
+
+							}
 						]
 					}
 				]
 			}
-		]
-	}
-}
+		}
+		
+		

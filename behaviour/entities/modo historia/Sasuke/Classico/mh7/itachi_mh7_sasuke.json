@@ -7,10 +7,13 @@
 			"is_summonable": true,
 			"is_experimental": false
 		},
+
 		"component_groups": {},
+
 		"components": {
 			"minecraft:type_family": {
 				"family": [
+
 					"inimigo"
 				]
 			},
@@ -21,37 +24,38 @@
 				"name": "§lItachi Uchiha",
 				"hud_range": 7
 			},
-			"minecraft:timer": {
+			"minecraft:timer":
+			{
 				"looping": false,
 				"time": 18,
 				"time_down_event": {
 					"event": "on:efeitos"
 				}
 			},
-			"minecraft:on_hurt": {
+			  "minecraft:on_hurt": {
 				"event": "on:hurt",
 				"target": "self"
-			},
-			"minecraft:on_hurt_by_player": {
+			  },
+			  "minecraft:on_hurt_by_player": {
 				"event": "on:hurt_by_player",
 				"target": "self"
-			},
-			"minecraft:on_ignite": {
+			  },
+			  "minecraft:on_ignite": {
 				"event": "on:ignite",
 				"target": "self"
-			},
-			"minecraft:on_target_acquired": {
+			  },
+			  "minecraft:on_target_acquired": {
 				"event": "on:target_acquired",
 				"target": "self"
-			},
-			"minecraft:on_target_escape": {
+			  },
+			  "minecraft:on_target_escape": {
 				"event": "on:target_escape",
 				"target": "self"
-			},
-			"minecraft:on_wake_with_owner": {
+			  },
+			  "minecraft:on_wake_with_owner": {
 				"event": "on:wake_with_owner",
 				"target": "self"
-			},
+			  },
 			"minecraft:attack": {
 				"damage": 48
 			},
@@ -95,24 +99,23 @@
 					}
 				]
 			},
+
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
 				"reselect_targets": true,
 				"within_radius": 25.0,
 				"must_see_forget_duration": 17.0,
-				"entity_types": {
+				"entity_types": 
+				  {
 					"filters": {
-						"any_of": [
-							{
-								"test": "is_family",
-								"subject": "other",
-								"value": "vitima"
-							}
-						]
+					  "any_of": [
+						{ "test": "is_family", "subject": "other", "value": "vitima" }
+					  ]
 					},
 					"max_dist": 35
-				}
+				  }
+				  
 			},
 			"minecraft:movement": {
 				"value": 0.25
@@ -120,6 +123,7 @@
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
+			
 			"minecraft:behavior.random_stroll": {
 				"priority": 6,
 				"speed_multiplier": 0.8
@@ -178,36 +182,43 @@
 			},
 			"on:death": {
 				"run_command": {
+				  "command": [
+					"execute @p[r=15] ~~~ tag @s add kill2",
+					"scoreboard players add @a[r=20,tag=!mh7_sasuke] tp 50",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ title @p title §eMissão Concluida!!!",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ title @p subtitle §fVocê é fraco...",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ tp @e[type=porkyn:jiraiya_mh7_sasuke,r=150] ~~-500~",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ kill @e[type=porkyn:jiraiya_mh7_sasuke]",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ tp @e[type=porkyn:naruto_mh7_sasuke,r=150] ~~-500~",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ kill @e[type=porkyn:naruto_mh7_sasuke]",
+					"execute @p[r=10,tag=kill1,tag=kill2] ~~~ tag @s add mh7_sasuke"
+
+				  ]
+				}
+			  },
+			  "on:hurt": {
+				"run_command": {
+				  "command": [
+
+				  ]
+				}
+			  },
+			  "on:hurt_by_player": {
+				"run_command": {
+				  "command": [
+
+				  ]
+				}
+			  },
+			  "on:efeitos": {
+				  "run_command": {
 					"command": [
-						"/execute @p[r=15] ~~~ tag @s add kill2",
-						"scoreboard players add @a[r=20,tag=!mh7_sasuke] tp 50",
-						"/execute @p[r=10,tag=kill1,tag=kill2] ~~~ title @p title §eMissão Concluida!!!",
-						"/execute @p[r=10,tag=kill1,tag=kill2] ~~~ title @p subtitle §fVocê é fraco...",
-						"/execute @p[r=10,tag=kill1,tag=kill2] ~~~ tp @e[type=porkyn:jiraiya_mh7_sasuke,r=150] ~~-500~",
-						"/execute @p[r=10,tag=kill1,tag=kill2] ~~~ kill @e[type=porkyn:jiraiya_mh7_sasuke]",
-						"/execute @p[r=10,tag=kill1,tag=kill2] ~~~ tp @e[type=porkyn:naruto_mh7_sasuke,r=150] ~~-500~",
-						"/execute @p[r=10,tag=kill1,tag=kill2] ~~~ kill @e[type=porkyn:naruto_mh7_sasuke]",
-						"/execute @p[r=10,tag=kill1,tag=kill2] ~~~ tag @s add mh7_sasuke"
-					]
-				}
-			},
-			"on:hurt": {
-				"run_command": {
-					"command": []
-				}
-			},
-			"on:hurt_by_player": {
-				"run_command": {
-					"command": []
-				}
-			},
-			"on:efeitos": {
-				"run_command": {
-					"command": [
+
 						"tellraw @p[r=40] {\"rawtext\":[{\"text\":\"§e<Itachi Uchiha>§f Você é fraco... lhe falta ódio\"}]}"
 					]
+				  }
 				}
-			}
-		}
-	}
-}
+			  }
+		  }
+	  }
+	  

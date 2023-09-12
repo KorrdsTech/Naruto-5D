@@ -179,8 +179,8 @@
 			"on:death": {
 				"run_command": {
 					"command": [
-						"/execute @p[r=20] ~~~ title @p title §eMissão Concluida!!!",
-						"/execute @p[r=20] ~~~ title @p subtitle Exame Chunin",
+						"execute @p[r=20] ~~~ title @p title §eMissão Concluida!!!",
+						"execute @p[r=20] ~~~ title @p subtitle Exame Chunin",
 						"tag @p[tag=!mh5_naruto,tag=mh1_naruto,r=20] add mh5_naruto",
 						"scoreboard players add @a[r=20] tp 60"
 					]
@@ -188,26 +188,31 @@
 			},
 			"on:hurt": {
 				"run_command": {
-					"command": []
+					"command": [
+
+					]
 				}
 			},
 			"on:hurt_by_player": {
 				"run_command": {
-					"command": []
+					"command": [
+
+					]
 				}
 			},
 			"on:efeitos": {
 				"run_command": {
 					"command": [
-						"/execute @e[type=porkyn:neji_mh5_naruto,r=5] ~~~ scoreboard players add @s cntr 1",
-						"/execute @s[scores={cntr=1}] ~~~ tellraw @p[r=20] {\"rawtext\":[{\"text\":\"§e<Neji>§f Um fracassado, sempre será um fracassado. E você não pode mudar isso.\"}]}",
-						"/execute @s[scores={cntr=7}] ~~~ tellraw @p[r=20] {\"rawtext\":[{\"text\":\"§e<Neji>§f A maldição representa uma marca do pássaro em uma gaiola.... É .... o símbolo de estar amarrado a um destino inescapável.\"}]}",
-						"/execute @s[scores={cntr=15}] ~~~ tellraw @p[r=20] {\"rawtext\":[{\"text\":\"§e<Neji>§f O destino é algo decidido no nascimento e, não importa o que você tente, as pessoas não podem mudar isso.\"}]}",
-						"/execute @s[scores={cntr=17}] ~~~ replaceitem entity @p[r=100] slot.armor.legs 1 porkyn:mh5_modo_kurama 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
-						"/execute @s[scores={cntr=17}] ~~~ tellraw @p[r=20] {\"rawtext\":[{\"text\":\"§e<Neji>§f E-esse chakra... Como isso é possível!?\"}]}",
-						"/execute @s[scores={cntr=17}] ~~~ effect @p[r=100] regeneration 200 2 true",
-						"/execute @s[scores={cntr=17}] ~~~ playsound music1 @a[r=100]",
-						"/execute @s[scores={cntr=100}] ~~~ scoreboard players set @s cntr 0"
+						"execute @e[type=porkyn:neji_mh5_naruto,r=5] ~~~ scoreboard players add @s cntr 1",
+						"execute @s[scores={cntr=1}] ~~~ tellraw @p[r=20] {\"rawtext\":[{\"text\":\"§e<Neji>§f Um fracassado, sempre será um fracassado. E você não pode mudar isso.\"}]}",
+						"execute @s[scores={cntr=7}] ~~~ tellraw @p[r=20] {\"rawtext\":[{\"text\":\"§e<Neji>§f A maldição representa uma marca do pássaro em uma gaiola.... É .... o símbolo de estar amarrado a um destino inescapável.\"}]}",
+						"execute @s[scores={cntr=15}] ~~~ tellraw @p[r=20] {\"rawtext\":[{\"text\":\"§e<Neji>§f O destino é algo decidido no nascimento e, não importa o que você tente, as pessoas não podem mudar isso.\"}]}",
+						"execute @s[scores={cntr=17}] ~~~ replaceitem entity @p[r=100] slot.armor.legs 1 porkyn:mh5_modo_kurama 1 0 {\"item_lock\":{\"mode\":\"lock_in_inventory\"},\"keep_on_death\":{}}",
+						"execute @s[scores={cntr=17}] ~~~ tellraw @p[r=20] {\"rawtext\":[{\"text\":\"§e<Neji>§f E-esse chakra... Como isso é possível!?\"}]}",
+						"execute @s[scores={cntr=17}] ~~~ effect @p[r=100] regeneration 200 2 true",
+						"execute @s[scores={cntr=17}] ~~~ playsound music1 @a[r=100]",
+						"execute @s[scores={cntr=100}] ~~~ scoreboard players set @s cntr 0"
+
 					]
 				}
 			}

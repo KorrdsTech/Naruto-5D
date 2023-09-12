@@ -70,19 +70,19 @@
 			"porkyn:kill": {
 				"run_command": {
 					"command": [
-						"/execute @s[tag=matatabi] ~~~ summon porkyn:matatabi2 ~~15~",
-						"/execute @s[tag=shukaku] ~~~ summon porkyn:shukaku2 ~~15~",
-						"/execute @s[tag=kurama] ~~~ summon porkyn:kurama2 ~~15~",
+						"execute @s[tag=matatabi] ~~~ summon porkyn:matatabi2 ~~15~",
+						"execute @s[tag=shukaku] ~~~ summon porkyn:shukaku2 ~~15~",
+						"execute @s[tag=kurama] ~~~ summon porkyn:kurama2 ~~15~",
 						"summon lightning_bolt ~~~",
 						"summon lightning_bolt ~~~",
 						"summon lightning_bolt ~~~",
 						"summon lightning_bolt ~~~",
-						"/execute @s[tag=shukaku] ~~~ fill ~4 ~-1 ~4 ~-4 ~-1 ~-4 sand 0 replace grass",
-						"/execute @s[tag=shukaku] ~~~ fill ~5 ~-1 ~-3 ~-5 ~-1 ~3 sand 0 replace grass",
-						"/execute @s[tag=shukaku] ~~~ fill ~6 ~-1 ~-2 ~-6 ~-1 ~2 sand 0 replace grass",
-						"/execute @s[tag=shukaku] ~~~ fill ~-4 ~-1 ~4 ~4 ~-1 ~-4 sand 0 replace grass",
-						"/execute @s[tag=shukaku] ~~~ fill ~-3 ~-1 ~5 ~3 ~-1 ~-5 sand 0 replace grass",
-						"/execute @s[tag=shukaku] ~~~ fill ~2 ~-1 ~5 ~2 ~-1 ~-5 sand 0 replace grass",
+						"execute @s[tag=shukaku] ~~~ fill ~4 ~-1 ~4 ~-4 ~-1 ~-4 sand 0 replace grass",
+						"execute @s[tag=shukaku] ~~~ fill ~5 ~-1 ~-3 ~-5 ~-1 ~3 sand 0 replace grass",
+						"execute @s[tag=shukaku] ~~~ fill ~6 ~-1 ~-2 ~-6 ~-1 ~2 sand 0 replace grass",
+						"execute @s[tag=shukaku] ~~~ fill ~-4 ~-1 ~4 ~4 ~-1 ~-4 sand 0 replace grass",
+						"execute @s[tag=shukaku] ~~~ fill ~-3 ~-1 ~5 ~3 ~-1 ~-5 sand 0 replace grass",
+						"execute @s[tag=shukaku] ~~~ fill ~2 ~-1 ~5 ~2 ~-1 ~-5 sand 0 replace grass",
 						"weather thunder",
 						"tp @s ~ ~80 ~",
 						"kill @s"

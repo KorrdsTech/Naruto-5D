@@ -78,7 +78,7 @@ effect @s[tag=uchiha,scores={chakra=100..}] health_boost 500 88 true
 effect @s[tag=uchiha,scores={chakra=100..}] instant_health 1 255 true
 tellraw @s[tag=uchiha,scores={chakra=100..}] {"rawtext":[{"text":"§4-100CK"}]}
 
-susanoo_itachi
+//susanoo_itachi
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_itachi] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_itachi 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -99,7 +99,7 @@ effect @s[tag=uchiha,scores={chakra=300..}] haste 500 20 true
 effect @s[tag=uchiha,scores={chakra=300..}] absorption 500 255 true
 effect @s[tag=uchiha,scores={chakra=300..}] slowness 0 0 true
 effect @s[tag=uchiha,scores={chakra=300..}] jump_boost 500 6 true
-susanoo_sasuke
+//susanoo_sasuke
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_sasuke] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_sasuke 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -120,7 +120,7 @@ effect @s[tag=uchiha,scores={chakra=300..}] haste 500 20 true
 effect @s[tag=uchiha,scores={chakra=300..}] absorption 500 255 true
 effect @s[tag=uchiha,scores={chakra=300..}] slowness 0 0 true
 effect @s[tag=uchiha,scores={chakra=300..}] jump_boost 500 6 true
-susanoo_madara
+//susanoo_madara
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_madara] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_madara 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -141,7 +141,7 @@ effect @s[tag=uchiha,scores={chakra=300..}] haste 500 20 true
 effect @s[tag=uchiha,scores={chakra=300..}] absorption 500 255 true
 effect @s[tag=uchiha,scores={chakra=300..}] slowness 0 0 true
 effect @s[tag=uchiha,scores={chakra=300..}] jump_boost 500 6 true
-susanoo_obito
+//susanoo_obito
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_obito] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_obito 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -162,7 +162,7 @@ effect @s[tag=uchiha,scores={chakra=300..}] haste 500 20 true
 effect @s[tag=uchiha,scores={chakra=300..}] absorption 500 255 true
 effect @s[tag=uchiha,scores={chakra=300..}] slowness 0 0 true
 effect @s[tag=uchiha,scores={chakra=300..}] jump_boost 500 6 true
-susanoo_shisui
+//susanoo_shisui
 execute @s[tag=uchiha,scores={chakra=150..},tag=msd_shisui] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:s1_shisui 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=uchiha,scores={chakra=150..}] haste 100 4 true
 effect @s[tag=uchiha,scores={chakra=150..}] absorption 100 100 true
@@ -293,7 +293,7 @@ clear @s[tag=senju,scores={chakra=100..}] porkyn:estaca_madeira_1_c
 clear @s[tag=senju,scores={chakra=100..}] porkyn:estaca_madeira_1_d
 give @s[tag=senju,scores={chakra=100..}] porkyn:estaca_madeira_1_s 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 
-golem
+//golem
 execute @s[tag=senju,scores={chakra=500..}] ~~~  replaceitem entity @s slot.armor.chest 1 porkyn:golem_madeira_1 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[tag=senju,scores={chakra=500..}] haste 100 4 true
 effect @s[tag=senju,scores={chakra=500..}] absorption 100 100 true

@@ -5,7 +5,7 @@ execute @s[scores={chakra=500..}] ~~~ playsound byakugan @a[r=5]
 replaceitem entity  @s[scores={chakra=500..}] slot.weapon.mainhand 0 air
 replaceitem entity  @s[scores={chakra=500..}] slot.armor.head 1 porkyn:hashirama_jougan
 execute @s[scores={chakra=..499}] ~~~ playsound note.bass
-
+											
 effect @s[scores={chakra=500..}] strength 900 11 true
 effect @s[scores={chakra=500..}] speed 900 5 true
 effect @s[scores={chakra=500..}] resistance 900 2 true

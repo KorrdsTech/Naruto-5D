@@ -4,7 +4,7 @@ execute @s[scores={chakra=100..}] ~~~ playsound sharingan @a[r=5]
 replaceitem entity  @s[scores={chakra=100..}] slot.weapon.mainhand 0 air
 replaceitem entity  @s[scores={chakra=100..}] slot.armor.head 1 porkyn:rs_sasuke
 execute @s[scores={chakra=..99}] ~~~ playsound note.bass
-skill rinnegan
+						//skill rinnegan
 execute @s[scores={chakra=100..}] ~~~ clear @p porkyn:shinra_tensei
 execute @s[scores={chakra=100..}] ~~~ give @p porkyn:shinra_tensei 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 execute @s[scores={chakra=100..}] ~~~ clear @p porkyn:chibaku
@@ -22,7 +22,7 @@ execute @s[scores={chakra=100..}] ~~~ clear @p porkyn:rinnegan_6
 execute @s[scores={chakra=100..}] ~~~ give @p porkyn:rinnegan_1 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 execute @s[scores={chakra=100..}] ~~~ give @p porkyn:rinneganmenu 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 
-skill mangekyou
+						//skill mangekyou
 execute @s[scores={chakra=100..}] ~~~ clear @p porkyn:amaterasu_i
 execute @s[scores={chakra=100..}] ~~~ give @p porkyn:amaterasu_i 1 0 {"item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}
 effect @s[scores={chakra=100..}] strength 500 9 true
